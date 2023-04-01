@@ -1223,53 +1223,51 @@
 	+ ほんとうに こうかんしますか?
    1fe	= あれ?\n
 	+ こうかんは やめに するの?
-   1ff	= %ls  %ls  Lv.%d\n
-	+ なまえ ： %ls\n
-	+ おや ： %ls\n
-	+ トレーナー ： %ls\n
-	+ マーキング ： %ls
-   200	= %ls  %ls  Lv.%d\n
-	+ なまえ ： %ls\n
-	+ おや ： %ls
-   201	= タマゴ\n
-	+ てにいれた ひ ： %ls\n
-	+ トレーナー ： %ls\n
-	+ マーキング ： %ls
-   202	= ポケモンを つれてきてくれて\n
-	+ ありがとう!
-   203	= おかげで このぼくじょうも、\n
-	+ もっと にぎやかに なるよ!
-   204	= これからも どんどん\n
-	+ ポケモンを つかまえて\n
-	+ つれてきてほしいんだけど……。
-   205	= せっかく つかまえるなら、\n
-	+ まだ ポケモンずかんに のっていない\n
-	+ ポケモンが いいと おもわない?
-   206	= いまの きみの ポケモンずかんは……。\n
-	+ みつけたかず %dひき\n
-	+ つかまえたかず %dひきね。
+   1ff	= %ls  %ls  Lv. %d\n
+	+ Name: %ls\n
+	+ OT: %ls\n
+	+ Trainer: %ls\n
+	+ Mark: %ls
+   200	= %ls  %ls  Lv. %d\n
+	+ Name: %ls\n
+	+ OT: %ls
+   201	= Egg\n
+	+ Obtained: %ls\n
+	+ Trainer: %ls\n
+	+ Mark: %ls
+   202	= Thank you for bringing your\n
+	+ Pokémon to the Ranch!
+   203	= This will make the Ranch more\n
+	+ fun and lively!
+   204	= I'd like for you to keep bringing\n
+	+ Pokémon to the Ranch, but...
+   205	= If you're going to catch\n
+	+ Pokémon anyway, why don't\n
+	+ you try to catch Pokémon not\n
+	+ found in your Pokédex?
+   206	= According to your Pokédex,\n
+	+ you have...\n
+	+ Seen: %d\n
+	+ Obtained: %d
    207	= いまの きみの ポケモンずかんは……。\n
 	+ みつけたかず %d%ls\n
 	+ つかまえたかず %d%lsね。
-   208	= すごい! ポケモンずかんに のっている\n
-	+ ポケモンは ぜんぶ\n
-	+ あつめちゃったみたいね。
-   209	= きみの ポケモンずかんの かんせいに\n
-	+ きょうりょくしたかったけど、\n
-	+ わたしが できることは ないみたい。
-   20a	= きみは かなりの うでまえね!\n
-	+ それじゃ、わたしが きになってる\n
-	+ ポケモンを おねがい\n
-	+ しちゃおうかな?
-   20b	= きみの ポケモンずかんを かんせい\n
-	+ させるには……えーと、えーと。
-   20c	= そうだ!\n
-	+ この ポケモンを つかまえるのが\n
-	+ いいんじゃないかな?
-   20d	= ……さて、と。\n
-	+ また ぼくじょうに なにか ポケモンを\n
-	+ つれてきて ほしいなーって\n
-	+ おもってるのよね。
+   208	= How great! You have collected\n
+	+ all the Pokémon in the Pokédex!
+   209	= I thought I could help you to\n
+	+ complete your Pokédex, but\n
+	+ I guess there is no need for it.
+   20a	= You've got skills!\n
+	+ Maybe I can ask you for a\n
+	+ Pokémon I am interested in?
+   20b	= To complete your Pokédex...\n
+	+ Let me see...
+   20c	= Ah!\n
+	+ How about this Pokémon?
+   20d	= Okay.\n
+	+ I've been thinking about asking\n
+	+ you to bring some more\n
+	+ Pokémon to the Ranch.
    20e	= ポケモンずかんを かんせいさせた\n
 	+ きみの うでまえを みこんで、\n
 	+ また おねがいして いいかな?
