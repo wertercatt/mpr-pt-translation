@@ -46,28 +46,25 @@
 #
 #------------------------------------------------------------------------------
 
-     0	= (さくじょ)
-     1	= “みんなのポケモン牧場(ぼくじょう)”\n
-	+ に ようこそ!
-     2	= わたしの なまえは ユカリ。\n
-	+ ポケモンぼくじょうの システムを\n
-	+ つくったのは、この わたしなの。\n
-	+ よろしくね!
-     3	= ポケモンぼくじょうってのはね、\n
-	+ たくさんの ポケモンと にんげんが、\n
-	+ みんなで たのしく\n
-	+ くらせるような ばしょなの。
-     4	= ポケモンぼくじょうが\n
-	+ どんな とこなのかは、\n
-	+ じっさいに みてみれば\n
-	+ すぐ わかると おもうよ!
-     5	= まずは わたしが いまから\n
-	+ ぼくじょうに いくから\n
-	+ よく みててよ!
-     6	= それじゃ いくよ!
-     7	= 3……。
-     8	= 2……。
-     9	= 1……。
+     0	= 
+     1	= Welcome to My Pokémon\n
+	+ Ranch!
+     2	= My name is Hayley.\n
+	+ I'm the creator of the\n
+	+ Pokémon Ranch!\n
+	+ It's so nice to meet you!
+     3	= The Pokémon Ranch is a place\n
+	+ where people and Pokémon\n
+	+ enjoy living together.
+     4	= You'll soon see what kind of\n
+	+ place the Pokémon Ranch is by\n
+	+ simply taking a look around!
+     5	= I'm on my way to the Ranch...\n
+	+ Keep your eyes on me, okay?
+     6	= Are you ready?
+     7	= 3...
+     8	= 2...
+     9	= 1...
      a	= レッツ ゴー!
      b	= ……はいっ とうちゃーく!\n
 	+ ここが ポケモンぼくじょうだよ!
