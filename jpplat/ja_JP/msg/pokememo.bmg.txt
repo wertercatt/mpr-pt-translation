@@ -1,0 +1,100 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =   0x110000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= 
+     1	= ユカリが つれてきた。
+     2	= ユカリが つれてきた。
+     3	= 10ぴき あつまった。
+     4	= 100ぴき あつまった。
+     5	= 1000びき あつまった。
+     6	= %{}と いっしょに あそびにきた。
+     7	= %{}と いっしょに あそびにきた。
+     8	= %{}が ぼくじょうに あずけた。
+     9	= チューモクを みた。
+     a	= ジグザグパレードを みた。
+     b	= ダッシュレースを みた。
+     c	= スカイパレードを みた。
+     d	= トーテムポールを みた。
+     e	= ピョンピョンダンスを みた。
+     f	= ピカチュウカイを みた。
+    10	= ワイワイダンスを みた。
+    11	= ヨイヨイダンスを みた。
+    12	= ジグザグダンスを みた。
+    13	= クルクルダンスを みた。
+    14	= フレフレダンスを みた。
+    15	= コーラスを みた。
+    16	= メリーゴーランドを みた。
+    17	= ジホーを みた。
+    18	= キーボードを みた。
+    19	= クラクラダンスを みた。
+    1a	= ドスコイパレードを みた。
+    1b	= トーナメントを みた。
+    1c	= ディグポンを みた。
+    1d	= オシクラマンジュウを みた。
+    1e	= フラワーダンスを みた。
+    1f	= タビダチを みた。
+    20	= キドウを みた。
+    21	= フッカツを みた。
+    22	= キタムキを みた。
+    23	= スイスイジャンプを みた。
+    24	= ロトムルーレットを みた。
+    25	= タイケツを みた。
+    26	= ぼくじょうの みんなに えを かいてもらった。
+    27	= ハッピーバースデーを みた。
+    28	= ポケモン・ウォンテッドを たっせいした。
+    29	= %{}から こうかんで もらった。
+    2a	= ぼくじょうが レベル%dに なった。
+    2b	= ぼくじょうに やってきた。
+    2c	= ぼくじょうで %dじかん すごした。
+    2d	= しゃしんを とった。
+    2e	= つまんだ。
+    2f	= じっくり ながめた。
+    30	= ぼくじょうで あそんだ。
+    31	= パレードを ながめた。
+    32	= %{}が %{}を ぼくじょうに あずけた。
+

@@ -1,0 +1,163 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x04
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = []
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xb0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= %lsは %lsと おしゃべりしてるみたい
+     1	= %lsは だれかと おしゃべりしてるのかな
+     2	= %lsは おなかが すいてるみたい
+     3	= %lsは %lsに おやつを あげた
+     4	= %lsは うれしそう
+     5	= %lsは にんきものだ
+     6	= %lsは %lsを おいかけてるのかな
+     7	= %lsは だれかを おいかけてるみたい
+     8	= %lsは %lsから にげてるのかな
+     9	= %lsは だれかから にげてるみたい
+     a	= %lsは %lsを なでてる
+     b	= %lsは %lsを はこんでる
+     c	= %lsは %lsを もちあげられるかな
+     d	= あっ!
+     e	= %lsは はこぶのを あきらめたのかな
+     f	= %lsは なんだか たのしそう
+    10	= %lsは ごきげんだ
+    11	= %lsは %lsに のって たのしそう
+    12	= %lsは くつろいでるみたい
+    13	= %lsは %lsに つまずいちゃった
+    14	= %lsは ねむっているみたい
+    15	= %lsは %lsと いっしょに ねむっている
+    16	= %lsは %lsと あそんでる
+    17	= おや?
+    18	= %lsは %lsと かけっこしてる
+    19	= %lsは とても たのしそう
+    1a	= %lsは かなり ごきげんみたい
+    1b	= %lsは さくの ていれを してる
+    1c	= %lsは %lsを ひろった
+    1d	= %lsは みんなと なかよく あるいてる
+    1e	= %lsは みんなと なかよく あるいてる
+    1f	= %lsは こうしんちゅう
+    20	= %lsは %lsを のせた
+    21	= %lsは がっかりしてるみたい
+    22	= %lsは %lsを のせてる
+    23	= %lsは %lsが きになってるのかな
+    24	= %lsは なにかを きにしてるみたい
+    25	= %lsは %lsが きになるのかな
+    26	= %lsは なにかが きになるみたい
+    27	= %lsは ぼんやりしてる
+    28	= %lsは なかまが きになってるのかな
+    29	= %lsは なかに はいりたがってるみたい
+    2a	= %lsは ねむくなってきたのかな
+    2b	= %lsは のんびりしてる
+    2c	= %lsは あばれたいみたい
+    2d	= %lsは ひとなつっこそうだ
+    2e	= %lsは %lsタイプが にがてなようだ
+    2f	= %lsは よるに なると げんきに なるみたい
+    30	= %lsは さんぽを してる
+    31	= %lsは なかまの そばが すきみたい
+    32	= %lsは なかまの そばに いたいのかな
+    33	= %lsは %lsの ちかくが とっても すきみたい
+    34	= %lsは %lsの ちかくに いたいのかな
+    35	= %lsは たのしそう
+    36	= %lsは にげだした
+    37	= %lsは %lsチャレンジを たのしんだみたい
+    38	= %lsは うまく よけた
+    39	= %lsは まわってる
+    3a	= %lsは とんだ
+    3b	= %lsは %lsに ちょうせんした
+    3c	= ちょうせん せいこう!
+    3d	= おとしあなに はいりきらなかったみたい
+    3e	= %lsは %lsに とびこんだ
+    3f	= %lsは %lsに おちた
+    40	= %lsは %lsに おどろいた
+    41	= %lsは %lsを みつめてる
+    42	= %lsは そらを さんぽしてるのかな
+    43	= %lsは たいへんな ものを ひろってしまった!
+    44	= %lsは ちゅうもくされたいのかな
+    45	= %lsは みんなを ひきよせたいみたい
+    46	= ちょうせん しっぱい!
+    47	= %lsは どこかへ とびだそうとしてるのかな
+    48	= %lsが でてきた
+    49	= %lsは よろこんでるのかな
+    4a	= %lsは %lsの マネを してるのかな
+    4b	= %lsは うたを うたってるみたい
+    4c	= %lsは なんだか さみしそう
+    4d	= %lsは あたまが いたいのかな
+    4e	= %lsの ようすが なんだか おかしい
+    4f	= %lsが %lsに はこばれてる
+    50	= %lsは なんだか うれしそう
+    51	= %lsは こっそり %lsの あとを つけてるみたい
+    52	= %lsは あばれてる
+    53	= %lsは じぶんの しっぽを おいかけてるのかな
+    54	= %lsは うしろあるきを してる
+    55	= あんな ポケモンや こんな ポケモンを ぼくじょうに
+	+  あつめて……。
+    56	= ここで ポケモンたちと いっしょに
+	+  くらしてみたいの。
+    57	= ポケモンたちが あそぶ おもちゃも おいてみたいな。
+    58	= ときには ポケモンと のんびり
+	+  くつろいでみたり……。
+    59	= はい、ポーズ!\n
+	+ いっしょに しゃしんも とりたいな!
+    5a	= それは きっと ゆめみたいに たのしい
+	+  まいにちね……。
+    5b	= %lsは めを さましたみたい
+    5c	= %lsは どこかへ むかってるみたい
+    5d	= %lsは なかまのことが きになるみたい
+    5e	= %lsは なかまのことが きになるのかな
+    5f	= %lsは %lsのことを きにしてるみたい
+    60	= %lsは %lsが こわいのかな
+    61	= %lsは なにかを こわがってるみたい
+    62	= %lsは %lsが にがてなのかな
+    63	= %lsは ころんだ
+    64	= これは %lsの %ls
+    65	= このひとは %ls
+    66	= %lsは わざの れんしゅうちゅう
+    67	= %lsは みんなを よんでるみたい
+    68	= これは %lsの %ls
+    69	= これは %lsの %ls ニックネームは %ls
+    6a	= %ls は %lsで くつろぎちゅう
+    6b	= %lsは %lsに ちかづきすぎちゃった
+    6c	= パンパカパーン!
+

@@ -1,0 +1,116 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x04
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = []
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0x10000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= 1がつ
+     1	= 2がつ
+     2	= 3がつ
+     3	= 4がつ
+     4	= 5がつ
+     5	= 6がつ
+     6	= 7がつ
+     7	= 8がつ
+     8	= 9がつ
+     9	= 10がつ
+     a	= 11がつ
+     b	= 12がつ
+     c	= 1がつ
+     d	= 2がつ
+     e	= 3がつ
+     f	= 4がつ
+    10	= 5がつ
+    11	= 6がつ
+    12	= 7がつ
+    13	= 8がつ
+    14	= 9がつ
+    15	= 10がつ
+    16	= 11がつ
+    17	= 12がつ
+    18	= (にち)
+    19	= (げつ)
+    1a	= (か)
+    1b	= (すい)
+    1c	= (もく)
+    1d	= (きん)
+    1e	= (ど)
+    1f	= にちようび
+    20	= げつようび
+    21	= かようび
+    22	= すいようび
+    23	= もくようび
+    24	= きんようび
+    25	= どようび
+    26	= (日)
+    27	= (月)
+    28	= (火)
+    29	= (水)
+    2a	= (木)
+    2b	= (金)
+    2c	= (土)
+    2d	= .
+    2e	= ,
+    2f	= 0
+    30	= /
+    31	= %d/%d/%d
+    32	= %d/%d
+    33	= %dねん %ls %dにち
+    34	= %ls %dにち
+    35	= 1
+    36	= 0
+    37	= :
+    38	= %d:%02d:%02d
+    39	= %d:%02d
+    3a	= ごぜん
+    3b	= ごご
+    3c	= 24
+    3d	= %d'%02d%quot;%02d
+    3e	= 0
+    3f	= %dじ %dふん %dびょう
+    40	= %dじ %dふん
+    41	= 0
+    42	= 0
+

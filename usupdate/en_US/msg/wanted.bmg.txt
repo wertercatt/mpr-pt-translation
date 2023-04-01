@@ -1,0 +1,476 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x04
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = []
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xc0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= About\n
+	+ %ls
+     1	= Location
+     2	= Time
+     3	= Catch it at a Honey Tree.
+     4	= Restore a Fossil at the Mining\n
+	+ Museum in Oreburgh City.
+     5	= Catch it at the Capture Show\n
+	+ in Pal Park.
+     6	= Evolve by leveling up NOSEPASS\n
+	+ in Mt. Coronet.
+     7	= Evolve by making GLIGAR hold\n
+	+ the Razor Fang while leveling up.
+     8	= Evolve by leveling up EEVEE\n
+	+ on Route 217.
+     9	= Evolve by leveling up MANTYKE.
+     a	= Evolve by making SNEASEL hold\n
+	+ the Razor Claw while leveling up.
+     b	= Evolve by leveling up FEEBAS.
+     c	= Evolve by leveling up EEVEE\n
+	+ in Eterna Forest.
+     d	= Evolve by leveling up MAGNETON\n
+	+ in Mt. Coronet.
+     e	= Evolve by giving an item to\n
+	+ %ls%ls.
+     f	= Evolve when %ls%ls\n
+	+ is at Lv. %d.
+    10	= Evolve %ls%ls by\n
+	+ leveling up with high Friendship.
+    11	= Evolve by trading\n
+	+ %ls%ls.
+    12	= Evolve during trade by making\n
+	+ %ls%ls hold an item.
+    13	= Evolve by teaching a move and\n
+	+ leveling up %ls%ls.
+    14	= Obtain an Egg at the Pokémon Day\n
+	+ Care in Solaceon Town and hatch it.
+    15	= How to catch it is unknown.
+    16	= Route 201
+    17	= Route 202
+    18	= Route 203
+    19	= Route 204
+    1a	= Route 205
+    1b	= Route 205
+    1c	= Route 205
+    1d	= Route 206
+    1e	= Route 207
+    1f	= Route 208
+    20	= Route 209
+    21	= Route 210
+    22	= Route 210
+    23	= Route 211
+    24	= Route 211
+    25	= Route 211
+    26	= Route 212
+    27	= Route 212
+    28	= Route 212
+    29	= Route 213
+    2a	= Route 214
+    2b	= Route 215
+    2c	= Route 216
+    2d	= Route 217
+    2e	= Route 218
+    2f	= Route 219
+    30	= Route 220
+    31	= Route 221
+    32	= Route 222
+    33	= Route 223
+    34	= Route 224
+    35	= Route 225
+    36	= Route 226
+    37	= Route 227
+    38	= Route 228
+    39	= Route 229
+    3a	= Route 230
+    3b	= Honey Tree
+    3c	= Ravaged Path
+    3d	= Ruin Maniac Cave\n
+	+ (Maniac Tunnel)
+    3e	= Lake Acuity
+    3f	= Sendoff Spring
+    40	= Celestic Town
+    41	= Snowpoint Temple
+    42	= Snowpoint Temple
+    43	= Snowpoint Temple
+    44	= Snowpoint Temple
+    45	= Oreburgh Gate
+    46	= Oreburgh Gate
+    47	= Oreburgh Gate
+    48	= Oreburgh Mine
+    49	= Iron Island
+    4a	= Iron Island
+    4b	= Iron Island
+    4c	= Iron Island
+    4d	= Iron Island
+    4e	= Iron Island
+    4f	= Trophy Garden
+    50	= Lake Verity
+    51	= Solaceon Ruins
+    52	= Pastoria Great Marsh
+    53	= Pastoria Great Marsh
+    54	= Pastoria Great Marsh
+    55	= Pastoria Great Marsh
+    56	= Pastoria Great Marsh
+    57	= Pastoria Great Marsh
+    58	= Pastoria Great Marsh
+    59	= Fuego Ironworks
+    5a	= Valley Windworks
+    5b	= Victory Road
+    5c	= Victory Road
+    5d	= Victory Road
+    5e	= Victory Road
+    5f	= Victory Road
+    60	= Mt. Coronet
+    61	= Mt. Coronet
+    62	= Mt. Coronet
+    63	= Mt. Coronet
+    64	= Mt. Coronet
+    65	= Mt. Coronet
+    66	= Mt. Coronet
+    67	= Mt. Coronet
+    68	= Mt. Coronet
+    69	= Mt. Coronet
+    6a	= Mt. Coronet
+    6b	= Mt. Coronet
+    6c	= Mt. Coronet
+    6d	= Sunyshore City
+    6e	= Pastoria City
+    6f	= Stark Mountain
+    70	= Stark Mountain
+    71	= Eterna City
+    72	= Eterna Forest
+    73	= Twinleaf Town
+    74	= Pokémon League
+    75	= Wayward Cave
+    76	= Wayward Cave
+    77	= Wayward Cave
+    78	= Canalave City
+    79	= Turnback Cave
+    7a	= Old Chateau
+    7b	= Resort Area
+    7c	= Lake Valor
+    7d	= Valor Lakefront
+    7e	= Lost Tower
+    7f	= Lost Tower
+    80	= Lost Tower
+    81	= Lost Tower
+    82	= Lost Tower
+    83	= Anytime
+    84	= Morning
+    85	= Morning/Day
+    86	= Night
+    87	= ・Lv. %d or higher
+    88	= ・Honey Tree
+    89	= ・When Defense > Attack
+    8a	= ・Pastoria Great Marsh random daily
+    8b	= ・HOUNDOUR Egg
+    8c	= ・KOFFING Egg
+    8d	= ・WHISMUR Egg
+    8e	= ・SPINARAK Egg
+    8f	= ・SHUPPET Egg
+    90	= ・POOCHYENA Egg
+    91	= ・LEDYBA Egg
+    92	= ・WYNAUT Egg
+    93	= ・TAILLOW Egg
+    94	= ・Fishing: (Old Rod)
+    95	= ・Fishing: (Good Rod)
+    96	= ・Fishing: (Super Rod)
+    97	= ・Item: Up-Grade
+    98	= ・Item: Dubious Disc
+    99	= ・Item: Electirizer
+    9a	= ・Item: Shiny Stone
+    9b	= ・Item: Fire Stone
+    9c	= ・Item: Thunderstone
+    9d	= ・Item: DeepSeaTooth
+    9e	= ・Item: Magmarizer
+    9f	= ・Item: Metal Coat
+    a0	= ・Item: Dawn Stone
+    a1	= ・Item: Water Stone
+    a2	= ・Item: King's Rock
+    a3	= ・Item: Protector
+    a4	= ・Item: Reaper Cloth
+    a5	= ・Item: Leaf Stone
+    a6	= ・Item: Dragon Scale
+    a7	= ・Item: Razor Fang
+    a8	= ・Item: Razor Claw
+    a9	= ・Item: Sun Stone
+    aa	= ・Item: Moon Stone
+    ab	= ・Item: DeepSeaScale
+    ac	= ・Item: Dusk Stone
+    ad	= ・Damp Rock
+    ae	= ・Icy Rock
+    af	= ・Fossil: Helix Fossil
+    b0	= ・Fossil: Old Amber
+    b1	= ・Fossil: Dome Fossil
+    b2	= ・Fossil: Root Fossil
+    b3	= ・Fossil: Armor Fossil
+    b4	= ・Fossil: Claw Fossil
+    b5	= ・Fossil: Skull Fossil
+    b6	= ・When Attack = Defense
+    b7	= ・When Attack > Defense
+    b8	= ・On the water (Surf)
+    b9	= ・Diamond only
+    ba	= ・Pearl only
+    bb	= ・Pal Park
+    bc	= ・4 FL/Waterfall Area
+    bd	= ・About UNOWN
+    be	= ・About FEEBAS
+    bf	= ・About DRIFLOON
+    c0	= ・About MIME JR.
+    c1	= ・About SPIRITOMB
+    c2	= ・About SHEDINJA
+    c3	= ・About BONSLY
+    c4	= ・Level up between 4 a.m. and 8 p.m.
+    c5	= ・Level up between 8 p.m. and 4 a.m.
+    c6	= ・Poké Radar required
+    c7	= ・Rare in Diamond
+    c8	= ・Rare in Pearl
+    c9	= ・Mass Outbreak
+    ca	= ・While having Double Hit learned
+    cb	= ・While having AncientPower learned
+    cc	= ・While having Rollout learned
+    cd	= ・Dual Slot Emerald
+    ce	= ・Dual Slot FireRed
+    cf	= ・Dual Slot LeafGreen
+    d0	= ・Dual Slot Ruby
+    d1	= ・Dual Slot Sapphire
+    d2	= ・After obtaining National Pokédex
+    d3	= ・Trophy Garden
+    d4	= Get some Honey in Floaroma Meadow and\n
+	+ slather it on a Honey Tree, then wait for half\n
+	+ a day. Come back to the tree, and you'll find\n
+	+ a Pokémon. The Pokémon you find varies\n
+	+ with the Honey Tree.
+    d5	= A new Pokémon is available daily in each\n
+	+ area of the Pastoria Great Marsh.\n
+	+ Look through the telescope in the upstairs\n
+	+ observatory to check out all the Pokémon\n
+	+ that are available today.
+    d6	= The Pokémon and location of the\n
+	+ Mass Outbreak change every day.\n
+	+ Speak to a person in Sandgem Town\n
+	+ to find out information about\n
+	+ the Mass Outbreak.
+    d7	= Pokémon seen in the Trophy Garden change\n
+	+ after you have a little chat with Backlot.\n
+	+ You can chat with him only once a day.
+    d8	= You can discover an Egg by leaving\n
+	+ HOUNDOOM♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.\n
+	+ HOUNDOOM is found only in Pearl.
+    d9	= You can discover an Egg by leaving\n
+	+ WEEZING♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    da	= You can discover an Egg by leaving\n
+	+ LOUDRED♀ or EXPLOUD♀ and a\n
+	+ Pokémon that gets along with it\n
+	+ at the Pokémon Day Care.
+    db	= You can discover an Egg by leaving\n
+	+ MIGHTYENA♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.\n
+	+ MIGHTYENA can be found only in Diamond.
+    dc	= You can discover an Egg by leaving\n
+	+ ARIADOS♀ and a Pokémon that gets along\n
+	+ with it at the Pokémon Day Care.
+    dd	= You can discover an Egg by leaving\n
+	+ BANETTE♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    de	= You can discover an Egg by leaving\n
+	+ LEDIAN♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    df	= You can discover an Egg by leaving\n
+	+ WOBBUFFET♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.\n
+	+ Either of the Pokémon has to hold the\n
+	+ Lax Incense.
+    e0	= You can discover an Egg by leaving\n
+	+ SWELLOW♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    e1	= You can get an Up-Grade in Eterna City.
+    e2	= You can get a Dubious Disc on Route 225.
+    e3	= Electirizer is an item that wild ELEKID\n
+	+ sometimes have. You can catch\n
+	+ ELEKID at Valley Windworks.\n
+	+ Dual Slot: FireRed
+    e4	= You can get a Shiny Stone on Iron Island\n
+	+ or on Route 228.
+    e5	= You can get a Fire Stone in Fuego Ironworks.\n
+	+ You can also get it by digging in the\n
+	+ Underground.
+    e6	= You can get a Thunderstone in Sunyshore\n
+	+ City. You can also get it by digging in the\n
+	+ Underground.
+    e7	= DeepSeaTooth is an item that wild\n
+	+ CARVANHA or SHARPEDO sometimes have.
+    e8	= Magmarizer is an item that wild MAGBY\n
+	+ sometimes have. You can catch\n
+	+ MAGBY on Route 227.\n
+	+ Dual Slot: LeafGreen
+    e9	= Metal Coat is an item that wild BRONZOR\n
+	+ or STEELIX sometimes have.
+    ea	= You can get a Dawn Stone at Mt. Coronet\n
+	+ or on Route 225.
+    eb	= You can get a Water Stone on Route 213.\n
+	+ You can also get it by digging in the\n
+	+ Underground.
+    ec	= King's Rock is an item that Pokémon with\n
+	+ the Pickup ability sometimes find.
+    ed	= You can get a Protector on Route 228.
+    ee	= You can get a Reaper Cloth on Route 229.
+    ef	= You can get a Leaf Stone in Floaroma\n
+	+ Meadow. You can also get it by digging\n
+	+ in the Underground.
+    f0	= Dragon Scale is an item that wild HORSEA\n
+	+ or SEADRA sometimes have.
+    f1	= You can get a Sun Stone by digging\n
+	+ in the Underground. Also, wild\n
+	+ SOLROCK sometimes have it.
+    f2	= You can get a Moon Stone by digging\n
+	+ in the Underground. Also, wild\n
+	+ LUNATONE sometimes have it.
+    f3	= DeepSeaScale is an item that wild\n
+	+ RELICANTH sometimes have.
+    f4	= You can get a Dusk Stone in the Galactic\n
+	+ Warehouse or on Victory Road.
+    f5	= Dig for Fossils in the Underground using\n
+	+ the Explorer Kit. You'll find more kinds of\n
+	+ Fossils after obtaining the National Pokédex.
+    f6	= Pal Park is available on Route 221\n
+	+ after obtaining the National Pokédex.\n
+	+ You can bring over Pokémon caught in\n
+	+ GBA-series Pokémon games and catch them\n
+	+ at the Capture Show.
+    f7	= Once you catch 26 kinds of UNOWN,\n
+	+ the Maniac Tunnel on Route 214 opens.\n
+	+ From there, you can enter the room where\n
+	+ UNOWN! and UNOWN? can be caught.
+    f8	= If its Attack is higher than its Defense, it\n
+	+ evolves to HITMONLEE. If its Defense is\n
+	+ higher than its Attack, it evolves to\n
+	+ HITMONCHAN. If its Attack and its Defense\n
+	+ are the same, it evolves to HITMONTOP.
+    f9	= Fish by using Surf. FEEBAS only appear\n
+	+ in four spots. Once you find the right\n
+	+ spot, FEEBAS will appear 50% of the\n
+	+ time. The locations change every day.
+    fa	= It appears in front of Valley Windworks\n
+	+ every Friday.
+    fb	= Once you obtain the National Pokédex\n
+	+ in Pearl, it appears in the Trophy Garden\n
+	+ after you have a little chat with Backlot.
+    fc	= 1. Put the Odd Keystone in the Broken\n
+	+     Stone Tower.\n
+	+ 2. Go underground using the Explorer Kit.\n
+	+ 3. Greet 32 people in the Underground.\n
+	+ 4. Find SPIRITOMB at the Hallowed Tower.
+    fd	= You can get SHEDINJA if you have room\n
+	+ in your party, have a Poké Ball,\n
+	+ and let NINCADA level up to Lv. 20.
+    fe	= Once you obtain the National Pokédex\n
+	+ in Diamond, it appears in Trophy Garden\n
+	+ after you have a little chat with Backlot.
+    ff	= An EEVEE with high Friendship evolves to\n
+	+ either ESPEON or UMBREON by leveling up\n
+	+ the EEVEE at a certain time.
+   100	= Once you obtain the National Pokédex\n
+	+ in Pearl, you can catch it on Route 224.
+   101	= You get the Poké Radar once you obtain\n
+	+ the National Pokédex. When you use it,\n
+	+ grass nearby will start to rustle,\n
+	+ so head toward it.
+   102	= AIPOM learns Double Hit at Lv. 32.
+   103	= TANGELA learns AncientPower at Lv. 33.
+   104	= YANMA learns AncientPower at Lv. 33.
+   105	= You can teach it AncientPower by\n
+	+ giving the Move Tutor one Heart Scale.\n
+	+ You can find a Heart Scale by digging\n
+	+ in the Underground.
+   106	= LICKITUNG learns Rollout at Lv. 33.
+   107	= It appears once you insert a GBA-series\n
+	+ Pokémon game into the GBA slot\n
+	+ on your Nintendo DS.
+   108	= You can get a Razor Claw on either\n
+	+ Victory Road or on Route 224.
+   109	= You can get a Razor Fang in the Battle Park.
+   10a	= Choose from the briefcase that\n
+	+ Prof. Rowan left at Lake Verity.
+   10b	= Hatch the Egg Riley gave you on\n
+	+ Iron Island.
+   10c	= Investigate the TV in the\n
+	+ Old Chateau at night.
+   10d	= You can meet it at Lake Acuity.
+   10e	= After you meet it at Lake Verity, it\n
+	+ roams all over the Sinnoh region.
+   10f	= You can meet it at Lake Valor.
+   110	= You can find it at the Spear Pillar\n
+	+ on Mt. Coronet.
+   111	= You can meet it in Stark Mountain.
+   112	= You can meet it in\n
+	+ Snowpoint Temple.
+   113	= You can meet it in the\n
+	+ Turnback Cave.
+   114	= After you find it at Fullmoon Island,\n
+	+ it roams all over the Sinnoh region.
+   115	= You can choose either TURTWIG, PIPLUP,\n
+	+ or CHIMCHAR. If your friend chose a\n
+	+ different Pokémon from yours, have your\n
+	+ friend trade with you.
+   116	= Adding REGIROCK, REGICE, and REGISTEEL\n
+	+ to your party enables you to find it.
+   117	= Morning/Night
+   118	= Have a high Beauty condition when\n
+	+ FEEBAS levels up.
+   119	= Have REMORAID in your party when\n
+	+ MANTYKE levels up.
+   11a	= ・About MANTINE
+   11b	= ・About MILOTIC
+   11c	= ・About TURTWIG
+   11d	= ・About CHIMCHAR
+   11e	= ・About PIPLUP
+   11f	= ・About REGIGIGAS
+   120	= Discover it at the Pokémon Day\n
+	+ Care in Solaceon Town.
+   121	= ・About Eggs
+   122	= You can discover an Egg by leaving a\n
+	+ Pokémon and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+
