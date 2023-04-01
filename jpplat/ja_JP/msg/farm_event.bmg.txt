@@ -631,44 +631,51 @@
     fb	= Long time no see!\n
 	+ I haven't seen you for\n
 	+ %d year(s)!
-    fc	= おひさしぶり!\n
-	+ 1ねんぶりだね!
-    fd	= ポケモンたちが\n
-	+ さびしがってたよ!
-    fe	= おひさしぶり!\n
-	+ %dかげつぶりだね!
-    ff	= おひさしぶり!\n
-	+ 1かげつぶりだね!
-   100	= ポケモンたちが\n
-	+ さびしがってたよ!
-   101	= おひさしぶり!\n
-	+ %dしゅうかんぶりだね!
-   102	= おひさしぶり!\n
-	+ 1しゅうかんぶりだね!
-   103	= ひさびさだから、\n
-	+ ポケモンたちも よろこんでるよ!
-   104	= こんにちは!\n
-	+ きょうも ぼくじょうに きてくれて、\n
-	+ ありがとね!
-   105	= こんにちは!\n
-	+ きょうも きてくれたんだね。\n
-	+ うれしいよ!
-   106	= こんにちは!\n
-	+ きょうも ぼくじょうで\n
-	+ たのしんでいってね!
-   107	= %lsさんの\n
-	+ %lsぼくじょうへ\n
-	+ とうちゃくしました!
-   108	= %lsぼくじょうで\n
-	+ ゆっくり あそんでいってください!
-   109	= かえりたく なったら、ひだりうえの\n
-	+ ドアを ポイントして \x{e042}ですよ。
-   10a	= それでは、ごゆっくり!
-   10b	= %lsぼくじょうで\n
-	+ ゆっくり あそんでいってください!
-   10c	= かえりたく なったら、ひだりうえの\n
-	+ ドアを ポイントして \x{e042}ですよ。
-   10d	= それでは、ごゆっくり!
+    fc	= Long time no see!\n
+	+ I haven't seen you for\n
+	+ a year!
+    fd	= The Pokémon missed you \n
+	+ so much!
+    fe	= Long time no see!\n
+	+ I haven't seen you for\n
+	+ %d month(s)!
+    ff	= Long time no see!\n
+	+ I haven't seen you for\n
+	+ a month!
+   100	= I bet the Pokémon missed you\n
+	+ so much!
+   101	= Well, hello there!\n
+	+ I haven't seen you for\n
+	+ %d week(s)!
+   102	= Well, hello there!\n
+	+ I haven't seen you for\n
+	+ a week!
+   103	= The Pokémon look very happy\n
+	+ to see you!
+   104	= Hello!\n
+	+ Thanks for coming back to the\n
+	+ Ranch today!
+   105	= Hello!\n
+	+ I am so glad to see you again!
+   106	= Hello!\n
+	+ Enjoy your time at the Ranch!
+   107	= You have arrived at\n
+	+ %ls's\n
+	+ %ls Ranch!
+   108	= Please enjoy\n
+	+ %ls Ranch!
+   109	= To leave this Ranch, move the\n
+	+ cursor onto the door located at\n
+	+ the top left of the screen and\n
+	+ press \x{e042}.
+   10a	= Enjoy!
+   10b	= Please enjoy\n
+	+ %ls Ranch!
+   10c	= To leave this Ranch, move the\n
+	+ cursor onto the door located at\n
+	+ the top left of the screen and\n
+	+ press \x{e042}.
+   10d	= Enjoy!
    10e	= 「おきにいり」が\n
 	+ きょうの ぼくじょうの テーマです。
    10f	= 「オーナー」が\n
@@ -1034,31 +1041,31 @@
 	+ ざんねんだな。
    1bc	= また いつか さそいに いくから、\n
 	+ そのときには、ぜひ みにきてくれ!
-   1bd	= じゃあね!\n
+   1bd	= So long!\n
 	+ \n
-	+ ミテ・ミーテ!
-   1be	= ここが ユカリさんと きみたちの\n
-	+ ぼくじょうね?\n
-	+ ウワサどおり ステキね!
-   1bf	= ワタシは「みてみて☆クラブ」\n
-	+ かいいんばんごう %1$dばん!\n
-	+ %2$lsよ!
-   1c0	= うふふ。\n
-	+ ワタシが こだわってる ポケモン、\n
-	+ なんだか わかる?
-   1c1	= こたえが しりたいなら、\n
-	+ ぼくじょうに あそびに きて!
-   1c2	= やったぁ! うれしいな!\n
-	+ では、ワタシの ぼくじょうへ\n
-	+ レッツゴー!
-   1c3	= そっかぁ……。\n
-	+ みてもらいたかったんだけど、\n
-	+ ざんねん!
-   1c4	= また いつか さそいに いくから、\n
-	+ そのときには、ぜひ みにきてね!
-   1c5	= それじゃあね!\n
+	+ Look-See ya!
+   1be	= So... This is your and Hayley's\n
+	+ Ranch? I heard so much\n
+	+ about it!
+   1bf	= My name is %2$ls,\n
+	+ a member of Club Look-See.\n
+	+ My Member No. is %1$d!
+   1c0	= Hehe.\n
+	+ Do you want to take a guess\n
+	+ which Pokémon I love?
+   1c1	= Would you like to come to my\n
+	+ Ranch to find out?
+   1c2	= Yes? Cool!\n
+	+ Okay, let's go to my Ranch!
+   1c3	= I see...\n
+	+ That's too bad. I really wanted\n
+	+ to show you my Ranch.
+   1c4	= I will come back and invite you\n
+	+ to my Ranch again, so until\n
+	+ next time!
+   1c5	= So long!\n
 	+ \n
-	+ ミテ・ミーテ!
+	+ Look-See ya!
    1c6	= かいいんばんごう %1$dばん\n
 	+ %2$ls、\n
 	+ ただいま さんじょう!
@@ -1305,8 +1312,7 @@
    21a	= わたしの きになる
    21b	= %lsは\n
 	+ かえって いきました。
-   21c	= %lsは\n
-	+ かえって いきました。
+   21c	= %ls has left.
    21d	= BUNEARY, a Pokémon you can\n
 	+ catch in the Eterna Forest.\n
 	+ \fA cute, fluffy Pokémon, isn't it?\n
