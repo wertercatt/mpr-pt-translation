@@ -65,96 +65,84 @@
      7	= 3...
      8	= 2...
      9	= 1...
-     a	= レッツ ゴー!
-     b	= ……はいっ とうちゃーく!\n
-	+ ここが ポケモンぼくじょうだよ!
-     c	= ポケモンぼくじょうでは、\n
-	+ にんげんも ポケモンも\n
-	+ こんな すがたに なるんだ。\n
-	+ ほら かわいいでしょ!
-     d	= ポケモンぼくじょうは、\n
-	+ たくさんの ポケモンを\n
-	+ あずけておける ところなの。
-     e	= しかも ただ ポケモンを\n
-	+ あずけておける だけじゃなくて、
-     f	= そこにいる ポケモンたちの\n
-	+ くらしを かんさつすることが\n
-	+ できるのよ!
-    10	= これから この ぼくじょうを\n
-	+ ポケモンで いっぱいに したいと\n
-	+ おもってるのよね。
-    11	= たくさんの ポケモンに\n
-	+ かこまれて くらすのが、\n
-	+ わたしの ながねんの ゆめなんだ……。
-    12	= あぁ あこがれの、\n
-	+ ポケモンで いっぱいの\n
-	+ ぼくじょう……。
+     a	= Here we go!
+     b	= ...Here we are!\n
+	+ This is the Pokémon Ranch!
+     c	= At this Ranch, both people and\n
+	+ Pokémon turn into this form.\n
+	+ Look! So cute, right?
+     d	= The Pokémon Ranch is a\n
+	+ place where you can keep\n
+	+ lots of Pokémon.
+     e	= Not only do you keep the\n
+	+ Pokémon there...
+     f	= You can watch Pokémon live\n
+	+ out their daily lives!
+    10	= I've been thinking about making\n
+	+ this Ranch full of Pokémon.
+    11	= A life surrounded by lots\n
+	+ of Pokémon has been my\n
+	+ long-cherished dream...\n
+    12	= Ah...\n
+	+ A Ranch filled with Pokémon...\n
+	+ It's fantastic... It's fabulous...\n
+	+ It's...it's...fantabulous...
     13	= !
-    14	= いけない いけない。\n
-	+ つい うっとり しちゃったよ。
-    15	= まあ いまは まだ これだけしか\n
-	+ ポケモンが いないんだけど、
-    16	= これから ポケモンを\n
-	+ ふやしていこうと おもってるのよね。
-    17	= で そこでなんだけどさ!\n
-	+ きみたちに おねがいが あるんだよ!
-    18	= わたしと いっしょに\n
-	+ この ぼくじょうを\n
-	+ ポケモンで いっぱいに してみない?
-    19	= てつだって くれるよね?
-    1a	= ……え?\n
-	+ うーん おねーさん、\n
-	+ へんじが よく きこえなかったなぁ!\n
-	+ もういっかい きくよ!
-    1b	= やった! そうこなくっちゃ!
-    1c	= それじゃ さっそく\n
-	+ きみたちにも ぼくじょうに\n
-	+ きてもらうよ!
-    1d	= ぼくじょうに つれていきたい\n
-	+ Miiを じゆうに えらんでね。\n
-	+ おおぜい つれていくと、\n
-	+ にぎやかに なるから おすすめだよ!
-    1e	= じゃあ これから この ぼくじょうを\n
-	+ ポケモンで いっぱいに するための、\n
-	+ わたしの けいかくを\n
-	+ せつめいするよ!
-    1f	= これから わたしは まいにち\n
-	+ ポケモンを 1ぴきずつ \n
-	+ つれてくる つもりなんだ。
-    20	= きみたちには ぼくじょうで\n
-	+ わたしが つれてきた ポケモンを\n
-	+ あずかって ほしいの!
-    21	= まいにち ぼくじょうに\n
-	+ きてくれれば、\n
-	+ いちにち 1ぴきずつ\n
-	+ ポケモンが ふえていくよ!
-    22	= わたしと いっしょに、\n
-	+ すこしずつ ポケモンを\n
-	+ ふやしていこ!
-    23	= DSばん ポケットモンスターで\n
-	+ つかまえた ポケモンたちも\n
-	+ ぼくじょうに つれてくることが\n
-	+ できるよ。
-    24	= そうすれば\n
-	+ ぼくじょうの ポケモンを\n
-	+ もっと ふやせるんだよ!
-    25	= もし ポケモンを もっているなら\n
-	+ ぜひ つれてきてよ!
-    26	= ところで、DSばん\n
-	+ ポケットモンスターは もってる?
-    27	= わぁ それは ナイスだよ!\n
-	+ きみたちが もってる ポケモンを\n
-	+ ぼくじょうに つれてくることも\n
-	+ できるよ。
-    28	= そうすれば、\n
-	+ ぼくじょうの ポケモンを\n
-	+ もっと ふやせるんだよ!
-    29	= もし ポケモンを もっているなら\n
-	+ ぜひ つれてきてよ!
-    2a	= そっかー……。\n
-	+ もし もっていたら、\n
-	+ ポケモンを もっと\n
-	+ ふやすことも できたんだけどね。
+    14	= Oops! Sorry!\n
+	+ I was daydreaming again.
+    15	= These are all the Pokémon\n
+	+ I have so far.
+    16	= I want to keep adding more\n
+	+ Pokémon to the Ranch.
+    17	= And, you!\n
+	+ May I ask you a favor?
+    18	= How does you and me filling\n
+	+ this Ranch with Pokémon\n
+	+ sound to you?
+    19	= Will you help me?
+    1a	= ...What?\n
+	+ Hmm, I didn't quite catch that.\n
+	+ Let me ask you one more time.
+    1b	= That's great! I knew it!
+    1c	= I'll take you to the Ranch\n
+	+ right away!
+    1d	= Select the Miis you want to\n
+	+ take to the Ranch.\n
+	+ The more you take, the more\n
+	+ lively it gets, so don't be shy!
+    1e	= Now, to let you in on my plan\n
+	+ about how we'll fill this Ranch\n
+	+ with Pokémon!
+    1f	= Beginning today, I will bring a\n
+	+ Pokémon a day to the Ranch.
+    20	= I only ask that you take good\n
+	+ care of them!
+    21	= When you visit the Ranch, every\n
+	+ day you'll find one new\n
+	+ Pokémon added to the Ranch!\n
+    22	= Let's work together to fill this\n
+	+ Ranch with Pokémon\n
+	+ little by little!
+    23	= You can bring Pokémon that\n
+	+ you caught in Pokémon game versions\n
+	+ for the Nintendo DS.
+    24	= That's one way to add more\n
+	+ Pokémon to the Ranch!
+    25	= If you have any Pokémon,\n
+	+ be sure to bring them here!
+    26	= By the way... Do you have\n
+	+ a Nintendo DS?
+    27	= Wow! That's wonderful!\n
+	+ You can bring your own\n
+	+ Pokémon to the Ranch!
+    28	= That's one way to add more\n
+	+ Pokémon to the Ranch!
+    29	= Yes, if you have any Pokémon,\n
+	+ be sure to bring them here!
+    2a	= I see...\n
+	+ If you did, that could be one\n
+	+ way to add a large number\n
+	+ of Pokémon to the Ranch.
     2b	= ま ないなら しょうがないね。\n
 	+ わたしが まいにち\n
 	+ ポケモンを つれてくるから、\n
