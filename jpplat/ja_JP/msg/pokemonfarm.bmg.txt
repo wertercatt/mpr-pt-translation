@@ -537,7 +537,7 @@
    142	= Sumo Parade
    143	= Tournament
    144	= Whack-a-Mole
-   145	= Oshikura Manju
+   145	= Shoving Game
    146	= Flower Dance
    147	= Journey
    148	= Orbit

@@ -143,547 +143,494 @@
 	+ If you did, that could be one\n
 	+ way to add a large number\n
 	+ of Pokémon to the Ranch.
-    2b	= ま ないなら しょうがないね。\n
-	+ わたしが まいにち\n
-	+ ポケモンを つれてくるから、\n
-	+ それで ポケモンを ふやしていこ!
-    2c	= どう? ぼくじょうの ポケモンを\n
-	+ ふやす ほうほう、わかった?
-    2d	= きょうは さいしょだから とくべつに、\n
-	+ わたしが つれてきた 6ぴきの\n
-	+ ポケモンを、この ぼくじょうに\n
-	+ あずけていくよ。
-    2e	= この 6ぴきから わたしたちの\n
-	+ ぼくじょうを はじめましょ!
-    2f	= あした、%lsからは、\n
-	+ いちにち 1ぴきずつ ポケモンを\n
-	+ つれてくるから おたのしみに!
-    30	= もっと くわしいことを\n
-	+ しりたいときは\n
-	+ がめん ひだりしたの\n
-	+ 「?」マークを おしてみてよ。
-    31	= ポケモンが ふえれば ふえるほど\n
-	+ ぼくじょうは どんどん\n
-	+ にぎやかに なっていくよ。
-    32	= ぼくじょうの ポケモンたちを\n
-	+ かんさつして たのしんでね!
-    33	= それじゃ これからも よろしく!
-    34	= あ、かえるんだね。\n
-	+ おつかれさま!
-    35	= かえるまえに ちょっと\n
-	+ ききたいんだけど いいかな?
-    36	= あした、%lsに、\n
-	+ どんな ポケモンを ぼくじょうに\n
-	+ つれてこよっかなーって\n
-	+ かんがえてた とこなんだけど……。
-    37	= あした つれてくるのは\n
-	+ %ls ポケモンが いい?
-    38	= あした つれてくるのは\n
-	+ あかい ポケモンが いい?
-    39	= あした つれてくるのは\n
-	+ あおい ポケモンが いい?
-    3a	= あした つれてくるのは\n
-	+ きいろい ポケモンが いい?
-    3b	= あした つれてくるのは\n
-	+ みどりの ポケモンが いい?
-    3c	= あした つれてくるのは\n
-	+ くろい ポケモンが いい?
-    3d	= あした つれてくるのは\n
-	+ ちゃいろい ポケモンが いい?
-    3e	= あした つれてくるのは\n
-	+ むらさきの ポケモンが いい?
-    3f	= あした つれてくるのは\n
-	+ はいいろの ポケモンが いい?
-    40	= あした つれてくるのは\n
-	+ しろい ポケモンが いい?
-    41	= あした つれてくるのは\n
-	+ ピンクの ポケモンが いい?
-    42	= あした つれてくるのは\n
-	+ ちいさい ポケモンが いい?
-    43	= あした つれてくるのは\n
-	+ おおきい ポケモンが いい?
-    44	= あした つれてくるのは\n
-	+ かるい ポケモンが いい?
-    45	= あした つれてくるのは\n
-	+ おもい ポケモンが いい?
-    46	= あした つれてくるのは\n
-	+ あつい ポケモンが いい?
-    47	= あした つれてくるのは\n
-	+ つめたい ポケモンが いい?
-    48	= あした つれてくるのは\n
-	+ こわい ポケモンが いい?
-    49	= あした つれてくるのは\n
-	+ すばやい ポケモンが いい?
-    4a	= あした つれてくるのは\n
-	+ まるい ポケモンが いい?
-    4b	= あした つれてくるのは\n
-	+ とぶ ポケモンが いい?
-    4c	= あした つれてくるのは\n
-	+ がんじょうな ポケモンが いい?
-    4d	= あした つれてくるのは\n
-	+ きあいが はいってる ポケモンが いい?
-    4e	= あした つれてくるのは\n
-	+ しびれる ポケモンが いい?
-    4f	= あした つれてくるのは\n
-	+ マイペースな ポケモンが いい?
-    50	= あした つれてくるのは\n
-	+ どんかんな ポケモンが いい?
-    51	= あした つれてくるのは\n
-	+ くさい ポケモンが いい?
-    52	= あした つれてくるのは\n
-	+ うたう ポケモンが いい?
-    53	= あした つれてくるのは\n
-	+ あまい かおりの ポケモンが いい?
-    54	= それじゃあ、\n
-	+ %ls ポケモンは どう?
-    55	= それじゃあ、\n
-	+ あかい ポケモンは どう?
-    56	= それじゃあ、\n
-	+ あおい ポケモンは どう?
-    57	= それじゃあ、\n
-	+ きいろい ポケモンは どう?
-    58	= それじゃあ、\n
-	+ みどりの ポケモンは どう?
-    59	= それじゃあ、\n
-	+ くろい ポケモンは どう?
-    5a	= それじゃあ、\n
-	+ ちゃいろい ポケモンは どう?
-    5b	= それじゃあ、\n
-	+ むらさきの ポケモンは どう?
-    5c	= それじゃあ、\n
-	+ はいいろの ポケモンは どう?
-    5d	= それじゃあ、\n
-	+ しろい ポケモンは どう?
-    5e	= それじゃあ、\n
-	+ ピンクの ポケモンは どう?
-    5f	= それじゃあ、\n
-	+ ちいさい ポケモンは どう?
-    60	= それじゃあ、\n
-	+ おおきい ポケモンは どう?
-    61	= それじゃあ、\n
-	+ かるい ポケモンは どう?
-    62	= それじゃあ、\n
-	+ おもい ポケモンは どう?
-    63	= それじゃあ、\n
-	+ あつい ポケモンは どう?
-    64	= それじゃあ、\n
-	+ つめたい ポケモンは どう?
-    65	= それじゃあ、\n
-	+ こわい ポケモンは どう?
-    66	= それじゃあ、\n
-	+ すばやい ポケモンは どう?
-    67	= それじゃあ、\n
-	+ まるい ポケモンは どう?
-    68	= それじゃあ、\n
-	+ とぶ ポケモンは どう?
-    69	= それじゃあ、\n
-	+ がんじょうな ポケモンは どう?
-    6a	= それじゃあ、\n
-	+ きあいが はいってる ポケモンは どう?
-    6b	= それじゃあ、\n
-	+ しびれる ポケモンは どう?
-    6c	= それじゃあ、\n
-	+ マイペースな ポケモンは どう?
-    6d	= それじゃあ、\n
-	+ どんかんな ポケモンは どう?
-    6e	= それじゃあ、\n
-	+ くさい ポケモンは どう?
-    6f	= それじゃあ、\n
-	+ うたう ポケモンは どう?
-    70	= それじゃあ、\n
-	+ あまい かおりの ポケモンは どう?
-    71	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
+    2b	= Oh, well. That's okay.\n
+	+ I'll bring a Pokémon every day!\n
+	+ Let's start from there!
+    2c	= You know how Pokémon are\n
+	+ added to the Ranch now, right?
+    2d	= As today's the first and a very\n
+	+ special day, I brought six\n
+	+ Pokémon to add to the Ranch!
+    2e	= Let's start our Ranch with these\n
+	+ six Pokémon!
+    2f	= Beginning tomorrow,\n
+	+ %ls,\n
+	+ I will bring one Pokémon a day.\n
+	+ Isn't that so exciting!?
+    30	= If you are interested in more\n
+	+ details, press the "?" button\n
+	+ located at the lower left of\n
+	+ the screen.
+    31	= The Ranch will become more\n
+	+ lively as you get more and\n
+	+ more Pokémon.
+    32	= Enjoy watching Pokémon at the\n
+	+ Ranch!
+    33	= Let's have a great time!
+    34	= Ah, are you leaving?\n
+	+ Well, thanks for your help!
+    35	= May I ask you a question before\n
+	+ you go?
+    36	= Tomorrow is %ls.\n
+	+ I've been wondering what kind\n
+	+ of Pokémon I should bring to\n
+	+ the Ranch...
+    37	= Will %ls\n
+	+ Pokémon be okay tomorrow?
+    38	= Is a red Pokémon\n
+	+ okay for tomorrow?
+    39	= Is a blue Pokémon\n
+	+ okay for tomorrow?
+    3a	= Is a yellow Pokémon\n
+	+ okay for tomorrow?
+    3b	= Is a green Pokémon\n
+	+ okay for tomorrow?
+    3c	= Is a black Pokémon\n
+	+ okay for tomorrow?
+    3d	= Is a brown Pokémon\n
+	+ okay for tomorrow?
+    3e	= Is a purple Pokémon\n
+	+ okay for tomorrow?
+    3f	= Is a gray Pokémon\n
+	+ okay for tomorrow?
+    40	= Is a white Pokémon\n
+	+ okay for tomorrow?
+    41	= Is a pink Pokémon\n
+	+ okay for tomorrow?
+    42	= Is a short Pokémon\n
+	+ okay for tomorrow?
+    43	= Is a tall Pokémon\n
+	+ okay for tomorrow?
+    44	= Is a light Pokémon\n
+	+ okay for tomorrow?
+    45	= Is a heavy Pokémon\n
+	+ okay for tomorrow?
+    46	= Is a fiery Pokémon\n
+	+ okay for tomorrow?
+    47	= Is a cold Pokémon\n
+	+ okay for tomorrow?
+    48	= Is a scary Pokémon\n
+	+ okay for tomorrow?
+    49	= Is a fast Pokémon\n
+	+ okay for tomorrow?
+    4a	= Is a round Pokémon\n
+	+ okay for tomorrow?
+    4b	= Is a flying Pokémon\n
+	+ okay for tomorrow?
+    4c	= Is a sturdy Pokémon\n
+	+ okay for tomorrow?
+    4d	= Is a focused Pokémon\n
+	+ okay for tomorrow?
+    4e	= Is a paralyzing Pokémon\n
+	+ okay for tomorrow?
+    4f	= Is an easygoing Pokémon\n
+	+ okay for tomorrow?
+    50	= Is an oblivious Pokémon\n
+	+ okay for tomorrow?
+    51	= Is a stinky Pokémon\n
+	+ okay for tomorrow?
+    52	= Is a singing Pokémon\n
+	+ okay for tomorrow?
+    53	= Is a sweet-smelling Pokémon\n
+	+ okay for tomorrow?
+    54	= Okay, perhaps\n
 	+ %ls\n
-	+ ポケモンに するね!
-    72	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ あかい\n
-	+ ポケモンに するね!
-    73	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ あおい\n
-	+ ポケモンに するね!
-    74	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ きいろい\n
-	+ ポケモンに するね!
-    75	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ みどりの\n
-	+ ポケモンに するね!
-    76	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ くろい\n
-	+ ポケモンに するね!
-    77	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ ちゃいろい\n
-	+ ポケモンに するね!
-    78	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ むらさきの\n
-	+ ポケモンに するね!
-    79	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ はいいろの\n
-	+ ポケモンに するね!
-    7a	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ しろい\n
-	+ ポケモンに するね!
-    7b	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ ピンクの\n
-	+ ポケモンに するね!
-    7c	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ ちいさい\n
-	+ ポケモンに するね!
-    7d	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ おおきい\n
-	+ ポケモンに するね!
-    7e	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ かるい\n
-	+ ポケモンに するね!
-    7f	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ おもい\n
-	+ ポケモンに するね!
-    80	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ あつい\n
-	+ ポケモンに するね!
-    81	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ つめたい\n
-	+ ポケモンに するね!
-    82	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ こわい\n
-	+ ポケモンに するね!
-    83	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ すばやい\n
-	+ ポケモンに するね!
-    84	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ まるい\n
-	+ ポケモンに するね!
-    85	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ とぶ\n
-	+ ポケモンに するね!
-    86	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ がんじょうな\n
-	+ ポケモンに するね!
-    87	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ きあいが はいってる\n
-	+ ポケモンに するね!
-    88	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ しびれる\n
-	+ ポケモンに するね!
-    89	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ マイペースな\n
-	+ ポケモンに するね!
-    8a	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ どんかんな\n
-	+ ポケモンに するね!
-    8b	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ くさい\n
-	+ ポケモンに するね!
-    8c	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ うたう\n
-	+ ポケモンに するね!
-    8d	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ あまい かおりの\n
-	+ ポケモンに するね!
-    8e	= それなら わたしが きめちゃうよ!\n
-	+ あした つれてくるのは\n
-	+ わたしの きになる\n
-	+ ポケモンに するね!
-    8f	= ……よーし、あの ポケモンに\n
-	+ きーめたっ!
-    90	= あした つれてくる ポケモンを\n
-	+ おたのしみに!
-    91	= そんじゃ またね!
-    92	= ついに ぼくじょうの ポケモンが\n
-	+ %lsひきに なったようね!
-    93	= ついに ぼくじょうの ポケモンが\n
-	+ %d%lsに なったようね!
-    94	= それじゃ ぼくじょうを おおきく しよ!\n
-	+ あした、%lsには\n
-	+ こうじが おわると おもうから\n
-	+ おたのしみに!
-    95	= あれ、もう ぼくじょうに\n
-	+ ポケモンが %lsひきも\n
-	+ いるじゃない!
-    96	= あれ、もう ぼくじょうに\n
-	+ ポケモンが %d%lsも\n
-	+ いるじゃない!
-    97	= それじゃあ またまた\n
-	+ ぼくじょうを おおきく\n
-	+ しなくっちゃね!
-    98	= %lsには こうじが\n
-	+ おわると おもうから おたのしみに!
-    99	= いまは ちょっと\n
-	+ ぼくじょうが せまいけど、\n
-	+ %lsまでは\n
-	+ この ひろさで ガマンしといて!
-    9a	= きょうも ポケモンを つれてきたよ!
-    9b	= ぼくじょうが おおきく なった\n
-	+ おいわいに、おおめに\n
-	+ ポケモンを つれてきたよ!
-    9c	= きょうは ポケモンを\n
-	+ つれてこなかったよ。
-    9d	= わたし、%lsひきも\n
-	+ あずけてるからね。
-    9e	= わたし、%d%lsも\n
-	+ あずけてるからね。
-    9f	= みんな わたしの たいせつな\n
-	+ ポケモンだよ。\n
-	+ かわいがってあげてね!
-    a0	= わたしの たいせつな\n
-	+ ポケモンだよ。\n
-	+ かわいがってあげてね!
-    a1	= ぼくじょうは もう\n
-	+ おおきく ならないけど、
-    a2	= これからも、ポケモンたちと\n
-	+ この ぼくじょうの こと、よろしくね!
-    a3	= ポケモンが %lsひきに なったら、\n
-	+ ぼくじょうを もっと\n
-	+ おおきく ひろげよっか!
-    a4	= ポケモンが %d%lsに なったら、\n
-	+ ぼくじょうを もっと\n
-	+ おおきく ひろげよっか!
-    a5	= ぼくじょうの ポケモンを\n
-	+ どんどん ふやしていこ!
-    a6	= これからも ポケモンを\n
-	+ どんどん ふやして\n
-	+ ぼくじょうを おおきく していこ!
-    a7	= ポケモンが %lsひきに なったら、\n
-	+ ぼくじょうを もっと\n
-	+ おおきく ひろげよっか!
-    a8	= ポケモンが %d%lsに なったら、\n
-	+ ぼくじょうを もっと\n
-	+ おおきく ひろげよっか!
-    a9	= ……って、あれ?
-    aa	= きみたちも ポケモンぼくじょうに\n
-	+ なれてきたんじゃ ないかな?
-    ab	= これからは、ぼくじょうを じっくり\n
-	+ みるときには 「フリーモード」を\n
-	+ つかうと べんりだよ!
-    ac	= 「フリーモード」が\n
-	+ つかえるように なった!
-    ad	= あとね、これから まいにち\n
-	+ ぼくじょうに 「おもちゃばこ」が\n
-	+ とどくように なったよ!
-    ae	= おもちゃばこには\n
-	+ ポケモンたちが あそぶ\n
-	+ おもちゃが はいってるの。
-    af	= なかは あけての おたのしみ!\n
-	+ ぼくじょうの どこかに\n
-	+ とどいてる はずだから\n
-	+ 「フリーモード」で さがしてね。
-    b0	= え? おもちゃばこの あけかた?\n
-	+ うーん、それは わたしにも\n
-	+ わからないなぁ。
-    b1	= 「フリーモード」で いろいろ\n
-	+ ためしてみたら どうかな?
-    b2	= ぼくじょうの ポケモンも\n
-	+ ずいぶん ふえてきたね!
-    b3	= これだけ ポケモンが いると\n
-	+ きにいった ポケモンが\n
-	+ どれだったか わからなく なりそうね。
-    b4	= これからは 「おきにいり」を\n
-	+ うまく つかうと いいよ。
-    b5	= 「おきにいり」が\n
-	+ つかえるように なった!
-    b6	= それからね、「おもちゃばこ」が\n
-	+ これから まいにち 2こ\n
-	+ とどくように なったよ!
-    b7	= たのしみだね!
-    b8	= ついに ぼくじょうに、\n
-	+ 20にんの Miiを\n
-	+ つれてこられるように したよ!
-    b9	= ぼくじょうに つれてこられる\n
-	+ Miiの かずは これいじょうは\n
-	+ ふやせないんだけど、20にんも\n
-	+ Miiが いれば じゅうぶんだよね?
-    ba	= いろんな Miiを\n
-	+ どんどん ぼくじょうに つれてきてね!
-    bb	= (さくじょ)
-    bc	= それからね、「おもちゃばこ」が\n
-	+ これから まいにち 3こ\n
-	+ とどくように なったよ!
-    bd	= たのしみだね!
-    be	= きょうは さらにっ!\n
-	+ めずらしい ポケモンを\n
-	+ つれてきてるんだ!
-    bf	= この フィオネは、マナフィと、\n
-	+ あいしょうのよい ポケモンとの\n
-	+ あいだに みつかった タマゴから\n
-	+ かえった めずらしい ポケモンなの。
-    c0	= (さくじょ)
-    c1	= ぼくじょうに あずけておくから\n
-	+ なかよくして あげてね。
-    c2	= そうそう、「おもちゃばこ」が\n
-	+ これから まいにち 4こ\n
-	+ とどくように なったよ!
-    c3	= たのしみだね!
-    c4	= ついに ぼくじょうに\n
-	+ あずけられる ポケモンが\n
-	+ 1000びきに なったね!
-    c5	= おめでとう!
-    c6	= ぼくじょうは これからも\n
-	+ レベルアップして ひろく なるから、
-    c7	= ぼくじょうが ポケモンで\n
-	+ いっぱいに なるのを めざして\n
-	+ がんばっていきましょ!
-    c8	= そうそう、「おもちゃばこ」が\n
-	+ これから まいにち 5こ\n
-	+ とどくように なったよ!
-    c9	= なかに はいってる\n
-	+ おもちゃの しゅるいも\n
-	+ ふえたらしいよ。
-    ca	= ポケモンたちが えを えがく\n
-	+ ふしぎな おもちゃが\n
-	+ でてくるかも しれないって!
-    cb	= たのしみだね!
-    cc	= あ、それからね、こんかいの こうじで\n
-	+ きゅうしゃを すみごこちバツグンに\n
-	+ かいぞうしたの。
-    cd	= ぼくじょうが いっぱいになったら\n
-	+ わたしの ポケモンたちには\n
-	+ きゅうしゃに はいってもらうね。
-    ce	= （さくじょ）
-    cf	= だから、わたしが あずけてる\n
-	+ ポケモンの かずは きにしないで\n
-	+ どんどん ポケモンを つれてきてね。
-    d0	= ついに ぼくじょうの\n
-	+ レベルが %dに なったね!\n
-	+ きみたちの おかげだよ。\n
-	+ ありがとう!
-    d1	= わたしが ゆめみてた、\n
-	+ おおきくて ポケモンが たくさんいる\n
-	+ ぼくじょう……。
-    d2	= そう、わたしが ゆめみてたのは、\n
-	+ まさに こんな ぼくじょうだったのよ!
-    d3	= わたしの ぼくじょうなかまに\n
-	+ きみたちを えらんで、ほんとうに\n
-	+ ……よかった!
-    d4	= ここにいる みんなと いっしょなら、\n
-	+ これからも ずっと たのしく\n
-	+ くらしていけるきが するよ。
-    d5	= いつまでも いつまでも\n
-	+ ずーっと みんなと いっしょに……。
-    d6	= ……なーんてね!\n
-	+ えへへ。
-    d7	= きょうは とくべつな ひだから\n
-	+ とっても めずらしい ポケモンを\n
-	+ つれてきてるんだ!
-    d8	= この ミュウは、\n
-	+ すべての ポケモンの いでんしを\n
-	+ もつと いわれている\n
-	+ まぼろしの ポケモンなんだよ!
-    d9	= (さくじょ)
-    da	= ぼくじょうに あずけておくから\n
-	+ なかよくしてあげてね。
-    db	= そうそう、「おもちゃばこ」が\n
-	+ これから まいにち 6こ\n
-	+ とどくように なったよ!
-    dc	= たのしみだね!
-    dd	= そうそう、ぼくじょうの\n
-	+ かくちょうこうじが おわって、\n
-	+ ぼくじょうが おおきく なったよ!
-    de	= これで もっと ポケモンが ふえても\n
-	+ だいじょうぶだね!
-    df	= ぼくじょうが\n
-	+ レベル%dに あがった!
-    e0	= たくさん ポケモンを あずけて\n
-	+ ぼくじょうが\n
-	+ レベル%dから レベル%dに\n
-	+ いっきに あがった!
-    e1	= ぼくじょうが ひろくなった!
-    e2	= あずけられる ポケモンの かずが\n
-	+ %lsひきから %lsひきに ふえた!
-    e3	= あずけられる ポケモンの かずが\n
-	+ %d%lsから %d%lsに ふえた!
-    e4	= つれてこられる Miiの にんずうが\n
-	+ %dにんから %dにんに ふえた!
-    e5	= あっ!\n
-	+ ウォンテッドポケモンを\n
-	+ つれてきてくれたんだね!\n
-	+ やるじゃない!
-    e6	= これで この ぼくじょうも、\n
-	+ いっそう にぎやかになるよ!\n
-	+ ありがとね!
-    e7	= 「ポケモン・ウォンテッド」に\n
-	+ %lsが ついかされた!
-    e8	= 「ポケモン・ウォンテッド」に\n
-	+ %lsが ついかされた!\n
-	+ %lsが ついかされた!
-    e9	= 「ポケモン・ウォンテッド」に\n
-	+ %lsが ついかされた!\n
-	+ %lsが ついかされた!\n
-	+ %lsが ついかされた!
-    ea	= こんどから きみが ぼくじょうに\n
-	+ ポケモンを つれてきたら、\n
-	+ ウォンテッドポケモンか どうかを\n
-	+ わたしが しらべてあげるよ!
-    eb	= つかまえる ほうほうは\n
-	+ けいじばんに くわしく\n
-	+ かいておいたから、よろしくっ!
-    ec	= ウォンテッドポケモンを\n
-	+ つかまえたら つれてきてね。
-    ed	= ウォンテッドポケモンを\n
-	+ ぼくじょうまで おねがいね!
-    ee	= ウォンテッドポケモンを つかまえたら\n
-	+ ぼくじょうまで よろしくね。
-    ef	= そういえば こんかい きみが\n
-	+ つかまえて きてくれた\n
-	+ %{}だけど、
-    f0	= %lsくんが\n
-	+ つかまえたがってた\n
-	+ みたいだよ?
-    f1	= %lsさんが\n
-	+ つかまえたがってた\n
-	+ みたいだよ?
-    f2	= つかまえかたを おしえて あげたり、\n
-	+ こうかんしてあげたり すると\n
-	+ よろこぶんじゃ ないかな?
-    f3	= つかまえかたを おしえて あげたり、\n
-	+ こうかんしてあげたり すると\n
-	+ よろこぶんじゃ ないかな?
-    f4	= つかまえるのが むずかしい\n
-	+ ポケモンは、GTSで こうかんして\n
-	+ てにいれるのも いいかもね!
-    f5	= それじゃ、がんばって!
-    f6	= つかまえる ほうほうは\n
-	+ けいじばんに くわしく\n
-	+ かいておいたから、よろしくっ!
-    f7	= そういえば さいきん\n
-	+ ポケモン つかまえてる?
-    f8	= きみたちの ポケモンずかんの\n
-	+ ようすも しりたいし、\n
-	+ DSを せつぞくしてくれると\n
-	+ うれしいな!
-    f9	= では、あとは ごゆっくり。\n
-	+ それじゃ、またね!
-    fa	= では、あとは ごゆっくり。\n
-	+ そんじゃ、またね!
-    fb	= おひさしぶり!\n
-	+ %dねんぶりだね!
+	+ Pokémon?
+    55	= Okay, perhaps a\n
+	+ red Pokémon?
+    56	= Okay, perhaps a\n
+	+ blue Pokémon?
+    57	= Okay, perhaps a\n
+	+ yellow Pokémon?
+    58	= Okay, perhaps a\n
+	+ green Pokémon?
+    59	= Okay, perhaps a\n
+	+ black Pokémon?
+    5a	= Okay, perhaps a\n
+	+ brown Pokémon?
+    5b	= Okay, perhaps a\n
+	+ purple Pokémon?
+    5c	= Okay, perhaps a\n
+	+ gray Pokémon?
+    5d	= Okay, perhaps a\n
+	+ white Pokémon?
+    5e	= Okay, perhaps a\n
+	+ pink Pokémon?
+    5f	= Okay, perhaps a\n
+	+ short Pokémon?
+    60	= Okay, perhaps a\n
+	+ tall Pokémon?
+    61	= Okay, perhaps a\n
+	+ light Pokémon?
+    62	= Okay, perhaps a\n
+	+ heavy Pokémon?
+    63	= Okay, perhaps a\n
+	+ fiery Pokémon?
+    64	= Okay, perhaps a\n
+	+ cold Pokémon?
+    65	= Okay, perhaps a\n
+	+ scary Pokémon?
+    66	= Okay, perhaps a\n
+	+ fast Pokémon?
+    67	= Okay, perhaps a\n
+	+ round Pokémon?
+    68	= Okay, perhaps a\n
+	+ flying Pokémon?
+    69	= Okay, perhaps a\n
+	+ sturdy Pokémon?
+    6a	= Okay, perhaps a\n
+	+ focused Pokémon?
+    6b	= Okay, perhaps a\n
+	+ paralyzing Pokémon?
+    6c	= Okay, perhaps an\n
+	+ easygoing Pokémon?
+    6d	= Okay, perhaps an\n
+	+ oblivious Pokémon?
+    6e	= Okay, perhaps a\n
+	+ stinky Pokémon?
+    6f	= Okay, perhaps a\n
+	+ singing Pokémon?
+    70	= Okay, perhaps a\n
+	+ sweet-smelling Pokémon?
+    71	= All right. Leave it to me!\n
+	+ I will bring\n
+	+ %ls\n
+	+ Pokémon tomorrow!
+    72	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ red Pokémon tomorrow!
+    73	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ blue Pokémon tomorrow!
+    74	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ yellow Pokémon tomorrow!
+    75	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ green Pokémon tomorrow!
+    76	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ black Pokémon tomorrow!
+    77	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ brown Pokémon tomorrow!
+    78	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ purple Pokémon tomorrow!
+    79	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ gray Pokémon tomorrow!
+    7a	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ white Pokémon tomorrow!
+    7b	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ pink Pokémon tomorrow!
+    7c	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ short Pokémon tomorrow!
+    7d	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ tall Pokémon tomorrow!
+    7e	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ light Pokémon tomorrow!
+    7f	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ heavy Pokémon tomorrow!
+    80	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ fiery Pokémon tomorrow!
+    81	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ cold Pokémon tomorrow!
+    82	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ scary Pokémon tomorrow!
+    83	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ fast Pokémon tomorrow!
+    84	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ round Pokémon tomorrow!
+    85	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ flying Pokémon tomorrow!
+    86	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ sturdy Pokémon tomorrow!
+    87	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ focused Pokémon tomorrow!
+    88	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ paralyzing Pokémon tomorrow!
+    89	= All right. Leave it to me!\n
+	+ I will bring an\n
+	+ easygoing Pokémon tomorrow!
+    8a	= All right. Leave it to me!\n
+	+ I will bring an\n
+	+ oblivious Pokémon tomorrow!
+    8b	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ stinky Pokémon tomorrow!
+    8c	= All right. Leave it to me!\n
+	+ I will bring a\n
+	+ singing Pokémon tomorrow!
+    8d	= All right. Leave it to me!\n
+	+ I will bring a sweet-smelling \n
+	+ Pokémon tomorrow!
+    8e	= All right. Leave it to me!\n
+	+ I will bring a Pokémon\n
+	+ I'm interested in tomorrow!
+    8f	= All right!\n
+	+ I think I know just the Pokémon!
+    90	= I bet you can't wait to see the\n
+	+ Pokémon I bring here tomorrow!
+    91	= See ya!
+    92	= The number of Pokémon at the\n
+	+ Ranch has become %d!
+    93	= 
+    94	= Okay. Let's expand the Ranch!\n
+	+ Its construction is expected to\n
+	+ be done on %ls!
+    95	= Oh? The number of Pokémon at\n
+	+ the Ranch is already %d!
+    96	= 
+    97	= Okay.\n
+	+ Let's expand the Ranch again!
+    98	= Its construction is expected to\n
+	+ be done on %ls!
+    99	= For now, please be patient with\n
+	+ the size of the Ranch... It will\n
+	+ be expanded on %ls!
+    9a	= I brought a Pokémon again!
+    9b	= I brought extra Pokémon\n
+	+ to celebrate the completion\n
+	+ of the Ranch expansion!
+    9c	= I did not bring any Pokémon to\n
+	+ the Ranch today.
+    9d	= So far, I have brought\n
+	+ %d Pokémon.
+    9e	= 
+    9f	= Here are my precious Pokémon.\n
+	+ Please take good care of them!
+    a0	= It's my precious Pokémon.\n
+	+ Please take good care of it!
+    a1	= Although the Ranch will not\n
+	+ get any bigger...
+    a2	= Please look after the Pokémon\n
+	+ and the Ranch!
+    a3	= Once the number of Pokémon\n
+	+ becomes %d, let's expand\n
+	+ the Ranch!
+    a4	= 
+    a5	= Let's keep adding Pokémon to\n
+	+ the Ranch!
+    a6	= Let's expand the Ranch by\n
+	+ adding more Pokémon!
+    a7	= Once the number of Pokémon\n
+	+ becomes %d, let's expand\n
+	+ the Ranch!
+    a8	= 
+    a9	= ...Oh!?
+    aa	= You are familiar now with the\n
+	+ Pokémon Ranch, aren't you?
+    ab	= From now on, you should use\n
+	+ Free Mode to watch the Ranch.\n
+	+ It's so handy!
+    ac	= Free Mode is added to\n
+	+ the menu!
+    ad	= Great news!\n
+	+ A Toy Box will be delivered to\n
+	+ the Ranch every day starting\n
+	+ today!
+    ae	= A toy that Pokémon can play\n
+	+ with is stored in the Toy Box.\n
+    af	= It's like a treasure box!\n
+	+ You'll find it somewhere on\n
+	+ the Ranch. Look for it\n
+	+ using Free Mode.
+    b0	= How do you open the box?\n
+	+ Well, that's one thing I\n
+	+ don't know.
+    b1	= Hmm... Maybe you can try\n
+	+ opening it using Free Mode.
+    b2	= I see a good crowd of Pokémon\n
+	+ gathering on the Ranch!
+    b3	= With this many Pokémon, I bet\n
+	+ it's not easy to find your\n
+	+ favorite Pokémon.
+    b4	= From now on, you should use\n
+	+ Favorites to organize Pokémon.
+    b5	= Favorites is added to the menu!
+    b6	= More great news!\n
+	+ Two Toy Boxes will be delivered\n
+	+ to the Ranch every day starting\n
+	+ today!
+    b7	= Mmm-hmm... How exciting!
+    b8	= The number of Miis you can\n
+	+ bring to the Ranch is now 20!
+    b9	= That is the max number of Miis\n
+	+ you can bring to the Ranch.\n
+	+ Twenty is enough, isn't it?
+    ba	= Bring more Miis to the Ranch,\n
+	+ please!
+    bb	= 
+    bc	= More great news!\n
+	+ Three Toy Boxes will be\n
+	+ delivered to the Ranch every\n
+	+ day starting today!
+    bd	= Mmm-hmm... How exciting!
+    be	= I have wonderful news!\n
+	+ I brought a special Pokémon!
+    bf	= PHIONE, a special Pokémon\n
+	+ that hatched from an Egg found\n
+	+ with MANAPHY and a Pokémon\n
+	+ that gets along with it.
+    c0	= 
+    c1	= I'll add it to the Ranch.\n
+	+ Please take good care of it!
+    c2	= More great news!\n
+	+ Four Toy Boxes will be delivered\n
+	+ to the Ranch every day starting\n
+	+ today!
+    c3	= Mmm-hmm... So exciting!
+    c4	= The number of Pokémon you\n
+	+ can keep is now 1,000!
+    c5	= Congratulations!
+    c6	= The Ranch will continue to\n
+	+ expand by leveling up...
+    c7	= Let's try to get 1,000 Pokémon\n
+	+ on the Ranch!
+    c8	= More great news!\n
+	+ Five Toy Boxes will be delivered \n
+	+ to the Ranch every day starting\n
+	+ today!
+    c9	= Not only that, but the variety of\n
+	+ toys inside the box has\n
+	+ increased!
+    ca	= You might get lucky and find a\n
+	+ toy that Pokémon can draw\n
+	+ pictures with!
+    cb	= It's really exciting!
+    cc	= Oh, you know what? The stable\n
+	+ has been remodeled, and\n
+	+ it's super comfortable.
+    cd	= When the Ranch is filled, I will\n
+	+ ask my Pokémon to stay inside\n
+	+ the stable.
+    ce	= That means you can bring up to\n
+	+ 1,000 of your Pokémon to the\n
+	+ Ranch!
+    cf	= Don't worry about my Pokémon.\n
+	+ Bring as many Pokémon as you\n
+	+ like!
+    d0	= The Ranch has finally reached\n
+	+ its max level! Congratulations!
+    d1	= The Ranch I was longing for...\n
+	+ So vast...\n
+	+ So full of Pokémon...
+    d2	= It's so fantabulous!\n
+	+ This is the Ranch I dreamt\n
+	+ about, and it's right in front\n
+	+ of me!
+    d3	= I am so glad that I chose you\n
+	+ as my Ranch partner!
+    d4	= I believe I'll enjoy living here\n
+	+ with everyone for a long time.
+    d5	= With everyone... \n
+	+ My whole life...
+    d6	= ...Why not?\n
+	+ Hehe.
+    d7	= Today is such a special day.\n
+	+ I brought a very rare Pokémon!
+    d8	= This is MEW, a Pokémon that\n
+	+ is said to possess the genes\n
+	+ of all Pokémon.
+    d9	= 
+    da	= I will add it to the Ranch.\n
+	+ Please take good care of it!
+    db	= More great news!\n
+	+ Six Toy Boxes will be delivered\n
+	+ to the Ranch every day starting\n
+	+ today!
+    dc	= So exciting!
+    dd	= The Ranch is no longer under\n
+	+ construction, and it's bigger\n
+	+ now!
+    de	= That's more space for\n
+	+ Pokémon!
+    df	= The Ranch is now Level %d!
+    e0	= Due to the large number of\n
+	+ Pokémon added, the level\n
+	+ of the Ranch has jumped\n
+	+ from %d to %d!
+    e1	= The Ranch has expanded!
+    e2	= The number of Pokémon you\n
+	+ can keep has increased from\n
+	+ %d to %d!
+    e3	= 
+    e4	= The number of Miis you can\n
+	+ bring has increased from\n
+	+ %d to %d!
+    e5	= Wow!\n
+	+ That's the Wanted Pokémon!\n
+	+ Good job!
+    e6	= This will make the Ranch a\n
+	+ little more fun and lively!\n
+	+ Thank you!
+    e7	= Added to Wanted Pokémon!\n
+	+ %ls
+    e8	= Added to Wanted Pokémon!\n
+	+ %ls\n
+	+ %ls
+    e9	= Added to Wanted Pokémon!\n
+	+ %ls\n
+	+ %ls\n
+	+ %ls
+    ea	= From now on, I will check to see\n
+	+ if the Pokémon you bring to the\n
+	+ Ranch is a Wanted Pokémon!
+    eb	= How to catch the Wanted\n
+	+ Pokémon is posted on the BBS.\n
+	+ You should check it out!
+    ec	= Bring the Wanted Pokémon\n
+	+ here when you catch it.
+    ed	= Please take the Wanted\n
+	+ Pokémon out to the Ranch!
+    ee	= Bring the Wanted Pokémon\n
+	+ to the Ranch once you catch it.
+    ef	= Oh, you know what?\n
+	+ The %ls you\n
+	+ just brought to the Ranch...
+    f0	= %ls was looking\n
+	+ for it.
+    f1	= %ls was looking\n
+	+ for it.
+    f2	= Maybe you can explain how to\n
+	+ catch or trade the Pokémon?
+    f3	= Maybe you can explain how to\n
+	+ catch or trade the Pokémon?
+    f4	= Trading Pokémon on GTS could\n
+	+ be another option when it's too\n
+	+ hard to catch the Pokémon!
+    f5	= Okay, good luck!
+    f6	= How to catch the Wanted\n
+	+ Pokémon is posted on the BBS.\n
+	+ You should check it out!
+    f7	= By the way, have you caught\n
+	+ any Pokémon lately?
+    f8	= I'd love to see your Pokédex!\n
+	+ Why don't you connect your\n
+	+ Nintendo DS?
+    f9	= Have a good time!\n
+	+ See ya!
+    fa	= Have a good time!\n
+	+ See ya!
+    fb	= Long time no see!\n
+	+ I haven't seen you for\n
+	+ %d year(s)!
     fc	= おひさしぶり!\n
 	+ 1ねんぶりだね!
     fd	= ポケモンたちが\n
@@ -1360,146 +1307,131 @@
 	+ かえって いきました。
    21c	= %lsは\n
 	+ かえって いきました。
-   21d	= この ミミロルは、\n
-	+ ハクタイのもりで つかまえられる\n
-	+ ポケモンだよ。\n
-	+ \fふわふわしていて、\n
-	+ とても かわいい ポケモンだよね。\n
-	+ \fよく なついた ミミロルは、\n
-	+ べつの ポケモンに しんかするみたい。\n
-	+ きみも なつかせてみたら どうかな?
-   21e	= この ムクバードは、\n
-	+ わたしの そだてていた ムックルが\n
-	+ しんかしたんだよ。\n
-	+ \f「そらをとぶ」を おぼえれば\n
-	+ いろんな ところに いけるし、\n
-	+ バトルでも たよりに なるの!
-   21f	= この キノココは、\n
-	+ ノモセだいしつげんで つかまえられる\n
-	+ ポケモンだよ。\n
-	+ \fポケモンを つかまえるのに\n
-	+ べんりな わざを つかうことが\n
-	+ できるんだよ。\n
-	+ \fわたしが そだてた\n
-	+ この キノココが いれば、\n
-	+ きっと たくさんの ポケモンを\n
-	+ つかまえられるんじゃ ないかな?
-   220	= この ケイコウオは、\n
-	+ いいつりざおを つかって、\n
-	+ 205ばんどうろで つりあげたの。\n
-	+ \fしんかすると、\n
-	+ もっと ステキな ポケモンに\n
-	+ なるみたいだよ!
-   221	= この パチリスは、\n
-	+ 205ばんどうろで つかまえたの。\n
-	+ \fしっぽが ふわふわしていて、\n
-	+ とても かわいい ポケモンでしょ。\n
-	+ まえばが でてるのも かわいいよね。
-   222	= ポニータは、\n
-	+ あかい ほのおの しっぽと\n
-	+ たてがみが ステキよね。\n
-	+ \fそして なんといっても\n
-	+ ぼくじょうに いるのが にあうよね!
-   223	= この カラナクシは、\n
-	+ 213ばんどうろで つかまえたの。\n
-	+ \fこの ポケモンは、\n
-	+ すんでいる ばしょに よって\n
-	+ いろが ちがうんだよ。\n
-	+ \f205ばんどうろには\n
-	+ ピンクの カラナクシも\n
-	+ いるみたいだから、\n
-	+ そっちも さがしてみたら?
-   224	= この グレッグルは、\n
-	+ ノモセだいしつげんで つかまえたの。\n
-	+ \fちょっと なまいきそうだけど、\n
-	+ なんだか にくめない かおつきだよね。\n
-	+ \fバトルで やくだつ わざも\n
-	+ いろいろ おぼえられるよ!
-   225	= この ユキカブリは、\n
-	+ 216ばんどうろで つかまえたの。\n
-	+ \fとても ひとなつっこい\n
-	+ ポケモンなんだよ。\n
-	+ \fそだててあげると、\n
-	+ なかなか つよい ポケモンに\n
-	+ しんかするみたいね。
-   226	= この ピカチュウは、\n
-	+ ポケモンやしきの じまんのうらにわで\n
-	+ つかまえたんだよ。\n
-	+ \fあいきょうが あって、\n
-	+ とっても かわいい ポケモンよね!\n
-	+ \fピカチュウを つれていると、\n
-	+ ヨスガシティの ふれあいひろばにも\n
-	+ はいれるみたいよ。
-   227	= この ホエルコは、\n
-	+ すごいつりざおを つかって、\n
-	+ 223ばんすいどうで つりあげたの。\n
-	+ \fしんかすると、すごく おおきな\n
-	+ ポケモンに なるみたい。
-   228	= この ミルタンクは、\n
-	+ ポケトレを つかって\n
-	+ つかまえられる ポケモンだよ。\n
-	+ \fミルタンクって、\n
-	+ ぼくじょうの イメージに\n
-	+ ピッタリの ポケモンだと おもわない?
-   229	= この ヤンヤンマは、\n
-	+ ノモセだいしつげんで つかまえられる\n
-	+ ポケモンだよ。\n
-	+ \f「げんしのちから」という\n
-	+ わざを おぼえているから、\n
-	+ レベルアップするときに つよい\n
-	+ ポケモンに しんかするとおもうよ。
-   22a	= ベロリンガは、\n
-	+ ベローンと したが のびてて\n
-	+ あいきょうの ある ポケモンよね!
-   22b	= この ソーナノは、\n
-	+ タマゴから かえった ポケモンなの。\n
-	+ \fみているだけで\n
-	+ あかるい きもちに なる、\n
-	+ かわいい ポケモンだよね。\n
-	+ \fしんかすると、\n
-	+ おもしろい ポケモンに\n
-	+ なるみたいだよ。
-   22c	= この イーブイは、\n
-	+ ポケモンやしきの うらにわで\n
-	+ つかまえたの。\n
-	+ \fいろんな ポケモンに\n
-	+ しんかすることの できる、\n
-	+ めずらしい ポケモンなんだよ。
-   22d	= この プテラは、\n
-	+ ちかつうろで てにいれた\n
-	+ 「ひみつのコハク」から\n
-	+ ふくげんしてもらったんだよ。\n
-	+ \fなんだか、\n
-	+ こだいの ロマンを\n
-	+ かんじる ポケモンよね!
-   22e	= この ロコンは、\n
-	+ 209ばんどうろで つかまえられる\n
-	+ ポケモンだよ。\n
-	+ \fなかなか であうことの できない\n
-	+ ポケモンだから、\n
-	+ ともだちに じまんできるかも!
-   22f	= モンジャラは、\n
-	+ ぜんしんが ツルに おおわれていて\n
-	+ ふしぎな ポケモンだよね!
-   230	= この ミツハニーは、\n
-	+ あまい かおりが する きに\n
-	+ あまいミツを ぬって つかまえたんだ。\n
-	+ \fミツハニーは、\n
-	+ メスだけが しんか できるんだけど、\n
-	+ メスは めったに いないんだよ!
-   231	= この フィオネは、マナフィと、\n
-	+ あいしょうのよい ポケモンとの\n
-	+ あいだに みつかった タマゴから\n
-	+ かえった めずらしい ポケモンなの。\n
-	+ \fてもちポケモンに いれて\n
-	+ ともだちにも\n
-	+ しょうかいしてみたら どうかな?
-   232	= この ミュウは、\n
-	+ すべての ポケモンの いでんしを\n
-	+ もつと いわれている\n
-	+ まぼろしの ポケモンなんだよ!\n
-	+ \fバトルでも かつやくしてくれるし\n
-	+ みんなに じまんできちゃうかも!
+   21d	= BUNEARY, a Pokémon you can\n
+	+ catch in the Eterna Forest.\n
+	+ \fA cute, fluffy Pokémon, isn't it?\n
+	+ \fA BUNEARY with a high\n
+	+ Friendship level evolves into a\n
+	+ new Pokémon. How about you\n
+	+ treat it well and make it happy?
+   21e	= This STARAVIA evolved from a\n
+	+ STARLY I was taking care of.\n
+	+ \fIt will take you anywhere once\n
+	+ it learns Fly, and you can count\n
+	+ on it during battle, too!
+   21f	= SHROOMISH, a Pokémon you\n
+	+ can catch in the Pastoria\n
+	+ Great Marsh.\n
+	+ \fIt learns moves that are\n
+	+ useful for catching Pokémon.\n
+	+ \fMaybe you can catch more\n
+	+ Pokémon when you have it in\n
+	+ your party?
+   220	= FINNEON, a Pokémon I caught\n
+	+ on Route 205 using the\n
+	+ Good Rod.\n
+	+ \fOnce it evolves, it may become\n
+	+ a more attractive Pokémon!
+   221	= I caught this PACHIRISU on\n
+	+ Route 205.\n
+	+ \fIt has a fluffy tail. A very cute\n
+	+ Pokémon, isn't it?\n
+	+ Its bucktoothed smile is also\n
+	+ very charming!
+   222	= PONYTA, a Pokémon you can\n
+	+ catch on Route 211.\n
+	+ \fWith a red fiery tail and a\n
+	+ cool mane, it's the perfect\n
+	+ Pokémon to have on the Ranch!
+   223	= SHELLOS, a Pokémon I caught\n
+	+ on Route 213.\n
+	+ \fIts colors differ from region\n
+	+ to region.\n
+	+ \fMaybe you can look for a pink\n
+	+ SHELLOS on Route 205?
+   224	= I caught a CROAGUNK in the\n
+	+ Pastoria Great Marsh.\n
+	+ \fIt may be feisty, but it's hard to\n
+	+ hate that face!\n
+	+ \fIt learns several useful moves\n
+	+ for battle.\n
+   225	= SNOVER, a Pokémon I caught\n
+	+ on Route 216.\n
+	+ \fIt's a very friendly Pokémon.\n
+	+ \fOnce it evolves, it becomes a\n
+	+ powerful Pokémon.
+   226	= PIKACHU, a Pokémon I caught\n
+	+ in the Trophy Garden.\n
+	+ \fIt's a lovely Pokémon, isn't it?\n
+	+ When you have a PIKACHU in\n
+	+ your party, you can enter into\n
+	+ Amity Square.
+   227	= WAILMER, a Pokémon I caught\n
+	+ on Route 223 using the\n
+	+ Super Rod.\n
+	+ \fI heard it evolves into a huge\n
+	+ Pokémon!
+   228	= MILTANK, a Pokémon you can\n
+	+ catch on Route 209 using\n
+	+ the Poké Radar.\n
+	+ \fDon't you think MILTANK\n
+	+ is a Pokémon that matches\n
+	+ the image of the Ranch well?
+   229	= YANMA, a Pokémon you can\n
+	+ catch in the Pastoria Great\n
+	+ Marsh.\n
+	+ \fIt evolves into a powerful\n
+	+ Pokémon by leveling it up once\n
+	+ it's learned the move\n
+	+ AncientPower.
+   22a	= LICKITUNG, a Pokémon I caught\n
+	+ near Lake Valor during a\n
+	+ Mass Outbreak.\n
+	+ \fIt's a cute Pokémon with its\n
+	+ tongue sticking out!
+   22b	= WYNAUT, a Pokémon that\n
+	+ hatched from an Egg.\n
+	+ \fI get delighted just by looking\n
+	+ at it.\n
+	+ \fI heard it evolves into an\n
+	+ interesting Pokémon.
+   22c	= EEVEE, a Pokémon I caught\n
+	+ in the Trophy Garden.\n
+	+ \fIt's a rare Pokémon that has\n
+	+ several evolutionary forms.
+   22d	= AERODACTYL, it was restored\n
+	+ from an Old Amber obtained in\n
+	+ the Underground.\n
+	+ \fIt's a Pokémon that makes you\n
+	+ believe there was a so-called\n
+	+ "ancient era," isn't it?
+   22e	= VULPIX, a Pokémon you can\n
+	+ catch on Route 209.\n
+	+ \fBecause so few have seen it,\n
+	+ you should show it off to your\n
+	+ friends!
+   22f	= TANGELA, a Pokémon you\n
+	+ can catch in the Pal Park.\n
+	+ \fIt is shrouded by vines...\n
+	+ Such a mysterious Pokémon!
+   230	= COMBEE, a Pokémon I caught\n
+	+ by putting Honey on a\n
+	+ Honey Tree.\n
+	+ \fOnly female COMBEE evolve,\n
+	+ and they're very hard to find!
+   231	= PHIONE, a special Pokémon\n
+	+ that hatched from an Egg found\n
+	+ with MANAPHY and a Pokémon\n
+	+ that gets along with it.\n
+	+ \fWhat about introducing it to\n
+	+ your friends by having it in your\n
+	+ party?
+   232	= MEW, a very rare Pokémon that\n
+	+ is said to possess the genes\n
+	+ of all Pokémon!\n
+	+ \fNo doubt it is useful for\n
+	+ battle, and you could show\n
+	+ it off to your friends!
    233	= こんにちは! ユカリだよ。
    234	= こんにちは! ユカリだよ。\n
 	+ おひさしぶりだね!
