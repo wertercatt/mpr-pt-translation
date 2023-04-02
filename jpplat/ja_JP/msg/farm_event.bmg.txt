@@ -630,26 +630,26 @@
 	+ See ya!
     fb	= Long time no see!\n
 	+ I haven't seen you for\n
-	+ %d year(s)!
+	+ %d years!
     fc	= Long time no see!\n
 	+ I haven't seen you for\n
-	+ a year!
+	+ 1 year!
     fd	= The Pokémon missed you \n
 	+ so much!
     fe	= Long time no see!\n
 	+ I haven't seen you for\n
-	+ %d month(s)!
+	+ %d months!
     ff	= Long time no see!\n
 	+ I haven't seen you for\n
-	+ a month!
+	+ 1 month!
    100	= I bet the Pokémon missed you\n
 	+ so much!
    101	= Well, hello there!\n
 	+ I haven't seen you for\n
-	+ %d week(s)!
+	+ %d weeks!
    102	= Well, hello there!\n
 	+ I haven't seen you for\n
-	+ a week!
+	+ 1 week!
    103	= The Pokémon look very happy\n
 	+ to see you!
    104	= Hello!\n
@@ -934,113 +934,105 @@
 	+ きょうの ぼくじょうの テーマです。
    18f	= 「めずらしい」が\n
 	+ きょうの ぼくじょうの テーマです。
-   190	= ここが ぼくの\n
-	+ じまんの ぼくじょうさ。\n
-	+ すみずみまで みていってくれ!
-   191	= かえりたくなったら ひだりうえの\n
-	+ ドアを ポイントして \x{e042}だよ。
-   192	= それじゃ、ごゆっくり!
-   193	= ここが ワタシの\n
-	+ じまんの ぼくじょうよ。\n
-	+ すみずみまで みていってね!
-   194	= かえりたくなったら ひだりうえの\n
-	+ ドアを ポイントして \x{e042}よ。
-   195	= それじゃ、ごゆっくり!
-   196	= %lsぼくじょう\n
-	+ から\n
-	+ %lsさんが\n
-	+ やってきました。
-   197	= こんにちは!\n
-	+ %lsぼくじょうの\n
-	+ しゃしんを もってきました。
-   198	= こんにちは!\n
-	+ %lsぼくじょうの\n
-	+ %lsです。
-   199	= こんにちは!\n
-	+ %lsぼくじょうの\n
-	+ しゃしんを もってきました。
-   19a	= こんにちは!\n
-	+ %lsぼくじょうの\n
-	+ %lsです。
-   19b	= よかったら、いまから\n
-	+ %lsぼくじょうへ\n
-	+ あそびに きませんか?
-   19c	= それでは、\n
-	+ %lsぼくじょうへ\n
-	+ しゅっぱつしましょう!
-   19d	= それじゃあ、つぎの きかいには\n
-	+ ぜひ あそびに きてくださいね。
-   19e	= また あいましょう!\n
-	+ さようなら!
-   19f	= よかったら、いまから\n
-	+ %lsぼくじょうへ\n
-	+ あそびに きませんか?
-   1a0	= それでは、\n
-	+ %lsぼくじょうへ\n
-	+ しゅっぱつしましょう!
-   1a1	= それじゃあ、つぎの きかいには\n
-	+ ぜひ あそびに きてくださいね。
-   1a2	= また あいましょう!\n
-	+ さようなら!
-   1a3	= あそびに いきますか?
-   1a4	= %lsぼくじょうへ\n
-	+ きてくれて ありがとう!
-   1a5	= また さそいに いくから\n
-	+ そのときは よろしく おねがいします。
-   1a6	= それでは、きをつけて\n
-	+ かえってください!
-   1a7	= %lsぼくじょうへ\n
-	+ きてくれて ありがとう!
-   1a8	= また さそいに いくから\n
-	+ そのときは よろしく おねがいします。
-   1a9	= それでは、きをつけて\n
-	+ かえってください!
-   1aa	= はじめまして!
-   1ab	= ここが ユカリさんと きみたちの\n
-	+ ぼくじょうかな?\n
-	+ なかなか ステキだね!
-   1ac	= ぼくは「みてみて☆クラブ」\n
-	+ かいいんばんごう %1$dばん!\n
-	+ %2$lsだよ!
-   1ad	= ぼくら「みてみて☆クラブ」は……。
-   1ae	= ひとつ!\n
-	+ ぼくじょうづくりには\n
-	+ こだわりを もつべし!
-   1af	= ひとつ!\n
-	+ じぶんの ぼくじょうは\n
-	+ みせびらかすべし!
-   1b0	= ……ってのを モットーにした\n
-	+ クラブなんだよ。
-   1b1	= てなわけで、ぼくの こだわりの\n
-	+ ぼくじょうを ぜひ\n
-	+ みてもらいたいんだ!
-   1b2	= あそびに きてくれるかな?
-   1b3	= まぁまぁ そういわずに。
-   1b4	= ぜひ きみたちに\n
-	+ 「みてみて☆クラブ」の\n
-	+ すばらしさを しってほしいんだ!
-   1b5	= やったぁ! そうこなくっちゃ!\n
-	+ では、ぼくの ぼくじょうへ\n
-	+ レッツゴー!
-   1b6	= ここが ユカリさんと きみたちの\n
-	+ ぼくじょうだね?\n
-	+ ウワサどおり ステキだね!
-   1b7	= ぼくは「みてみて☆クラブ」\n
-	+ かいいんばんごう %1$dばん!\n
-	+ %2$lsだよ!
-   1b8	= ふっふっふ。\n
-	+ ぼくが こだわってる ポケモンが、\n
-	+ なんだか わかるかな?
-   1b9	= こたえを しりたければ、\n
-	+ ぼくの ぼくじょうに きたまえ!
-   1ba	= やったぁ! そうこなくっちゃ!\n
-	+ では、ぼくの ぼくじょうへ\n
-	+ レッツゴー!
-   1bb	= そうか……。\n
-	+ みてもらいたかったんだけど、\n
-	+ ざんねんだな。
-   1bc	= また いつか さそいに いくから、\n
-	+ そのときには、ぜひ みにきてくれ!
+   190	= I'm very proud of this Ranch!\n
+	+ Check out every corner of it!
+   191	= To leave this Ranch, move the\n
+	+ cursor onto the door located at\n
+	+ the top left of the screen and\n
+	+ press \x{e042}.
+   192	= Enjoy!
+   193	= I'm very proud of this Ranch!\n
+	+ Check out every corner of it!
+   194	= To leave this Ranch, move the\n
+	+ cursor onto the door located at\n
+	+ the top left of the screen and\n
+	+ press \x{e042}.
+   195	= Enjoy!
+   196	= %2$ls has arrived\n
+	+ from %1$ls\n
+	+ Ranch.
+   197	= Hello!\n
+	+ I brought a picture of\n
+	+ %ls Ranch.
+   198	= Hello!\n
+	+ I'm %2$ls\n
+	+ from %1$ls Ranch!
+   199	= Hello!\n
+	+ I brought a picture of\n
+	+ %ls Ranch.
+   19a	= Hello!\n
+	+ I'm %2$ls\n
+	+ from %1$ls Ranch.
+   19b	= Why don't you come to\n
+	+ %ls Ranch?
+   19c	= Okay!\n
+	+ Let's go to\n
+	+ %ls Ranch!
+   19d	= Okay. Maybe next time.
+   19e	= Hope to see you again!\n
+	+ Good-bye!
+   19f	= Would you like to come to\n
+	+ %ls Ranch?
+   1a0	= Okay!\n
+	+ Let's go to\n
+	+ %ls Ranch!
+   1a1	= Okay. Maybe next time.
+   1a2	= Hope to see you again!\n
+	+ Good-bye!
+   1a3	= Do you want to go?
+   1a4	= Thanks for visiting\n
+	+ %ls Ranch!
+   1a5	= I will visit again and invite you\n
+	+ to my Ranch. See you then!
+   1a6	= Thanks again, and take care!
+   1a7	= Thanks for visiting\n
+	+ %ls Ranch!
+   1a8	= I will visit again and invite you\n
+	+ to my Ranch. See you then!
+   1a9	= Thanks again, and take care!
+   1aa	= How do you do?
+   1ab	= So... This is your and Hayley's\n
+	+ Ranch? Looks nice!
+   1ac	= My name is %2$ls, \n
+	+ a member of Club Look-See.\n
+	+ My Member No. is %1$d!
+   1ad	= The mottos of Club Look-See\n
+	+ are...
+   1ae	= Ranch!\n
+	+ That's something you should be\n
+	+ picky about!
+   1af	= Ranch!\n
+	+ That's something you should\n
+	+ show off to as many people as\n
+	+ you can!
+   1b0	= These are mottos of the Club!
+   1b1	= Now, I want to show you my\n
+	+ Ranch! The one I really care\n
+	+ about.
+   1b2	= Will you come to my Ranch?
+   1b3	= Come on! Don't be shy!
+   1b4	= I want you to know how great\n
+	+ Club Look-See can be!
+   1b5	= All right! That's the way!\n
+	+ Okay, let's go to my Ranch!
+   1b6	= So... This is your and Hayley's\n
+	+ Ranch? I heard a great deal\n
+	+ about it!
+   1b7	= My name is %2$ls,\n
+	+ a member of Club Look-See.\n
+	+ My Member No. is %1$d!
+   1b8	= Haha!\n
+	+ Do you know what my favorite\n
+	+ Pokémon is?
+   1b9	= Visit my Ranch to find out!
+   1ba	= All right! That's the way!\n
+	+ Okay, let's go to my Ranch!
+   1bb	= I see...\n
+	+ That's too bad. I really wanted\n
+	+ to show you my Ranch.
+   1bc	= I will come back and invite you\n
+	+ to my Ranch again, so until\n
+	+ next time!
    1bd	= So long!\n
 	+ \n
 	+ Look-See ya!
@@ -1080,149 +1072,135 @@
 	+ みにきて くれないかな?
    1cb	= いまから また ワタシの ぼくじょうを\n
 	+ みにきて くれないかしら?
-   1cc	= ぼくの ぼくじょうを\n
-	+ みてくれて ありがとう!
-   1cd	= いやー。\n
-	+ きみたちが みてくれるのは、\n
-	+ すごく はげみになるよ。
-   1ce	= そうだ、ほかの メンバーにも\n
-	+ きみたちのこと、おしえておくよ!
-   1cf	= これからも 「みてみて☆クラブ」の\n
-	+ メンバーが やってきたら、\n
-	+ ぼくじょうに あそびに いって\n
-	+ あげてくれ。たのんだよ!
+   1cc	= Thanks for coming and\n
+	+ checking out my Ranch!
+   1cd	= You know?\n
+	+ Having people like you at\n
+	+ my Ranch is really encouraging!
+   1ce	= Hope you don't mind me telling\n
+	+ other members about you!
+   1cf	= When you meet other members\n
+	+ of Club Look-See, please take\n
+	+ the time to visit their Ranches!
    1d0	= あっ、それから!\n
 	+ 「けいじばん」から よんでくれれば\n
 	+ むかえにいくよ。\n
 	+ また いつでも あそびにきてくれ。
-   1d1	= それじゃ、きをつけて かえってね!
-   1d2	= ぼくの ぼくじょう、\n
-	+ みてくれて ありがとう。\n
-	+ どうだい。まんぞくしてくれたかい?
-   1d3	= よかったら きみたちの\n
-	+ ぼくじょうづくりの\n
-	+ さんこうに してくれ。
-   1d4	= これからも 「みてみて☆クラブ」の\n
-	+ メンバーが やってきたら、\n
-	+ ぼくじょうに あそびに いって\n
-	+ あげてくれ。たのんだよ!
+   1d1	= All right, please take care!
+   1d2	= So...how did you like it?\n
+	+ Are you impressed?
+   1d3	= Didn't my Ranch serve as a\n
+	+ good inspiration for your\n
+	+ Ranch?
+   1d4	= When you meet other members\n
+	+ of Club Look-See, please take\n
+	+ some time to visit their\n
+	+ Ranches!
    1d5	= 「けいじばん」から よんでくれれば\n
 	+ むかえにいくよ。\n
 	+ また いつでも あそびにきてくれ。\n
 	+ たのんだよ!
-   1d6	= それじゃ、きをつけて かえってね!
-   1d7	= ワタシの ぼくじょう、\n
-	+ みてくれて ありがとう。\n
-	+ どう? まんぞくしてくれたかな?
-   1d8	= よかったら、あなたたちの\n
-	+ ぼくじょうづくりの\n
-	+ さんこうに してね。
-   1d9	= これからも 「みてみて☆クラブ」の\n
-	+ メンバーが やってきたら、\n
-	+ ぼくじょうに あそびに いって\n
-	+ あげてね。おねがいよ!
+   1d6	= All right, please take care!
+   1d7	= Thanks for visiting my Ranch!\n
+	+ How was it? Did you like it?
+   1d8	= I hope my Ranch served as a\n
+	+ good inspiration for your\n
+	+ Ranch!
+   1d9	= When you meet other members\n
+	+ of Club Look-See, take some\n
+	+ time to visit their Ranches,\n
+	+ will ya?
    1da	= 「けいじばん」から よんでくれれば\n
 	+ むかえにいくわよ。\n
 	+ また いつでも あそびにきてね。\n
 	+ おねがいよ!
-   1db	= それじゃ、きをつけて かえってね!
-   1dc	= ミテ・ミーテ!
-   1dd	= %lsは\n
-	+ %lsまで\n
-	+ ぼくじょうで\n
-	+ あそんでいくようです。
-   1de	= %lsは\n
-	+ %lsまで\n
-	+ ぼくじょうで\n
-	+ あそんでいくようです。
-   1df	= ぼくじょうに おきゃくさまが\n
-	+ きています!
-   1e0	= ぼくじょうに おきゃくさまが\n
-	+ きています!
-   1e1	= %lsを\n
-	+ つれてくると、\n
-	+ %lsと\n
-	+ こうかんしてくれるそうです。
-   1e2	= %lsを\n
-	+ %lsへ おくります!
-   1e3	= バイバイ! %ls!
-   1e4	= %{}を\n
-	+ かわいがってあげてね!
-   1e5	= あれ?\n
-	+ そういえば、%{}って……。\n
-	+ たしか %{}が\n
-	+ ほしがってたんじゃ なかったっけ?
-   1e6	= つれてきた %{}を、\n
-	+ %{}の\n
-	+ %{}と こうかんする?
-   1e7	= %{}の\n
-	+ %{}は、\n
-	+ こんな かんじだよ。
-   1e8	= そっかぁ。じゃあ しょうがないね。\n
-	+ %{}の\n
-	+ %{}も、\n
-	+ なかなか すてきなんだけどなぁ。
-   1e9	= %ls、すっごく\n
-	+ うれしそうに してたよ!\n
-	+ こうかんして よかったね!
-   1ea	= ねぇねぇ、いま きみが\n
-	+ つれてきてくれた\n
-	+ %lsなんだけどさ、\n
-	+ わたしも すっごく ほしいの!
-   1eb	= どう?\n
-	+ わたしの %lsと\n
-	+ こうかんして くれないかな?
-   1ec	= あーっ!\n
-	+ わたしが ほしかった\n
-	+ %lsだぁ!
-   1ed	= ねぇ、その%lsと、\n
-	+ わたしの %lsを、\n
-	+ こうかんしようよ!
-   1ee	= わたしの %lsは\n
-	+ こんなかんじだよ。
-   1ef	= そっかぁ。じゃあ しょうがないね。\n
-	+ %lsとは ぼくじょうで\n
-	+ いっぱい あそんじゃお!
-   1f0	= ところでさ、\n
-	+ わたし いま %lsを\n
-	+ てにいれようと してるんだけど、\n
-	+ なかなか うまくいかないのよね。
-   1f1	= もし きみたちが\n
-	+ %lsを てにいれたなら、\n
-	+ わたしの %lsと\n
-	+ こうかんしてくれないかな?
-   1f2	= どう? わるくない はなしでしょ?\n
-	+ %lsを てにいれたなら、\n
-	+ ぜひ ぼくじょうに つれてきてね!
-   1f3	= こうかんしてくれて ありがと!\n
-	+ %{}を よろしくね!
-   1f4	= ところでさ、わたし、ポケモンを\n
-	+ そだてはじめたころの ワクワクした\n
-	+ きもちを、もういちど\n
-	+ おもいだしたいなって おもってるの。
-   1f5	= それで、いま わたしはね、\n
-	+ どんな ポケモンになるか わからない\n
-	+ タマゴが ほしいの!
-   1f6	= (さくじょ)
-   1f7	= もし きみたちが、なにかの ポケモンの\n
-	+ タマゴを てにいれたなら、\n
-	+ わたしの %lsと\n
-	+ こうかんしてくれないかな?
-   1f8	= どう? わるくない はなしでしょ?\n
-	+ なにかの ポケモンの\n
-	+ タマゴを てにいれたなら、\n
-	+ ぜひ ぼくじょうに つれてきてね!
-   1f9	= ポケモンこうかんを しますか?
-   1fa	= この %{}を\n
-	+ こうかんに だしますか?
-   1fb	= それでは この %{}を\n
-	+ こうかんに だしますか?
-   1fc	= こうかんに だすのは ほんとうに\n
-	+ この %{}で よいですか?
-   1fd	= どうぐを もったままですが\n
-	+ ほんとうに こうかんしますか?
-   1fe	= あれ?\n
-	+ こうかんは やめに するの?
+   1db	= Okay, please take care!
+   1dc	= Look-See ya!
+   1dd	= %ls is staying\n
+	+ at this Ranch until\n
+	+ %ls.。
+   1de	= %ls is staying\n
+	+ at this Ranch until\n
+	+ %ls.
+   1df	= You have a guest visiting the \n
+	+ Ranch!
+   1e0	= You have a guest visiting the \n
+	+ Ranch!
+   1e1	= If you bring %ls,\n
+	+ you can trade it for\n
+	+ %ls.
+   1e2	= Sending %ls\n
+	+ to %ls!
+   1e3	= Bye-bye, %ls!
+   1e4	= Take good care of\n
+	+ %ls!
+   1e5	= Oh? It's %ls.\n
+	+ Isn't this Pokémon what...\n
+	+ %ls was\n
+	+ looking for?
+   1e6	= Trade %ls\n
+	+ for %ls's\n
+	+ %ls?
+   1e7	= %ls's\n
+	+ %ls looks\n
+	+ like this.
+   1e8	= I see. That's okay.\n
+	+ %ls's\n
+	+ %ls looks pretty\n
+	+ nice, you know?
+   1e9	= %ls looked\n
+	+ very happy! Thanks for trading!
+   1ea	= Ah...the %ls you\n
+	+ just brought to the Ranch...\n
+	+ I always wanted one, too!
+   1eb	= Will you trade it in return for\n
+	+ my %ls?
+   1ec	= Oh! %ls!\n
+	+ A Pokémon I've always wanted!
+   1ed	= Hey, why don't you trade your\n
+	+ %ls for\n
+	+ my %ls?
+   1ee	= My %ls\n
+	+ looks like this.
+   1ef	= I see. That's okay.\n
+	+ Just let me play with your\n
+	+ %ls here then!
+   1f0	= By the way, I am trying so hard\n
+	+ to catch %ls,\n
+	+ but with no luck...
+   1f1	= If you happen to catch\n
+	+ %ls, will you\n
+	+ trade it in return for\n
+	+ my %ls?
+   1f2	= See? Not a bad deal, is it?\n
+	+ Please bring %ls\n
+	+ to the Ranch once you catch it!
+   1f3	= Thank you for the trade!\n
+	+ Please take good care of\n
+	+ %ls!
+   1f4	= By the way, I want to regain the\n
+	+ feeling I had when I first\n
+	+ started taking care of Pokémon.
+   1f5	= So, I want an Egg without\n
+	+ knowing what Pokémon\n
+	+ hatches from it!
+   1f6	= 
+   1f7	= If you find an Egg,\n
+	+ will you trade it in return for\n
+	+ my %ls?
+   1f8	= See? Not a bad deal, is it?\n
+	+ Please bring an Egg to the\n
+	+ Ranch when you find one!
+   1f9	= Trade Pokémon?
+   1fa	= Trade this %ls?
+   1fb	= Okay...\n
+	+ Trade this %ls?
+   1fc	= Are you sure you want to trade\n
+	+ this %ls?
+   1fd	= It's holding an item. Do you still\n
+	+ want to trade this Pokémon?
+   1fe	= Oh?\n
+	+ You want to cancel trading?
    1ff	= %ls  %ls  Lv. %d\n
 	+ Name: %ls\n
 	+ OT: %ls\n
@@ -1249,9 +1227,10 @@
 	+ you have...\n
 	+ Seen: %d\n
 	+ Obtained: %d
-   207	= いまの きみの ポケモンずかんは……。\n
-	+ みつけたかず %d%ls\n
-	+ つかまえたかず %d%lsね。
+   207	= According to your Pokédex,\n
+	+ you have...\n
+	+ Seen: %d\n
+	+ Obtained: %d
    208	= How great! You have collected\n
 	+ all the Pokémon in the Pokédex!
    209	= I thought I could help you to\n
@@ -1268,26 +1247,27 @@
 	+ I've been thinking about asking\n
 	+ you to bring some more\n
 	+ Pokémon to the Ranch.
-   20e	= ポケモンずかんを かんせいさせた\n
-	+ きみの うでまえを みこんで、\n
-	+ また おねがいして いいかな?
-   20f	= いまの きみの ポケモンずかんは……。\n
-	+ みつけたかず %dひき\n
-	+ つかまえたかず %dひきね。
-   210	= いまの きみの ポケモンずかんは……。\n
-	+ みつけたかず %d%ls\n
-	+ つかまえたかず %d%lsね。
-   211	= ついに ポケモンずかんの ポケモンを\n
-	+ ぜんぶ つかまえたのね!\n
-	+ すごーい!
-   212	= これからは、ポケモンずかんを\n
-	+ かんせいさせた きみに、\n
-	+ わたしが きになってる ポケモンを\n
-	+ おねがいしちゃおうかな?
-   213	= あっ!\n
-	+ ついに ポケモンずかんの ポケモンを\n
-	+ ぜんぶ みつけたみたいね!\n
-	+ おめでとう!
+   20e	= Knowing you have the skills\n
+	+ to complete your Pokédex,\n
+	+ may I ask you a favor again?
+   20f	= Since last time,\n
+	+ the number has increased by...\n
+	+ Seen: %d\n
+	+ Obtained: %d
+   210	= Since last time,\n
+	+ the number has increased by...\n
+	+ Seen: %d\n
+	+ Obtained: %d
+   211	= You finally completed your\n
+	+ Pokédex! That's awesome!
+   212	= Since you have such skill to\n
+	+ complete the Pokédex, may I\n
+	+ ask for a Pokémon I'm\n
+	+ interested in?
+   213	= Wow!\n
+	+ You've finally seen all the\n
+	+ Pokémon in the Pokédex!\n
+	+ Congratulations!
    214	= この ちょうしで、ポケモンずかんの\n
 	+ ポケモンを ぜんぶ\n
 	+ つかまえよう!
@@ -1299,17 +1279,15 @@
 	+ みつけたかずが %d%ls、\n
 	+ つかまえたかずが %d%ls、\n
 	+ ふえたみたいね。
-   217	= ポケモンずかんが かんせいに\n
-	+ いっぽ ちかづいたね!\n
-	+ おめでとう!
-   218	= きみの ポケモンずかんを かんせい\n
-	+ させるには……えーと、えーと。
-   219	= そうだ!\n
-	+ この ポケモンを つかまえるのが\n
-	+ いいんじゃないかな?
-   21a	= わたしの きになる
-   21b	= %lsは\n
-	+ かえって いきました。
+   217	= You are one step closer to\n
+	+ completing your Pokédex!\n
+	+ Congratulations!
+   218	= To complete your Pokédex...\n
+	+ Let me see..
+   219	= Ah!\n
+	+ How about this Pokémon?
+   21a	= my preferred
+   21b	= %ls has left.
    21c	= %ls has left.
    21d	= BUNEARY, a Pokémon you can\n
 	+ catch in the Eterna Forest.\n
