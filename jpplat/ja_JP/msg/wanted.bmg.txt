@@ -46,312 +46,326 @@
 #
 #------------------------------------------------------------------------------
 
-     0	= %ls\n
-	+ について
-     1	= ばしょ
-     2	= じかん
-     3	= あまいかおりがするきで つかまえる。
-     4	= クロガネたんこうはくぶつかん で\n
-	+ カセキを ふくげんする。
-     5	= パルパーク の\n
-	+ ほかくショー で つかまえる。
-     6	= ノズパスが テンガンざんで\n
-	+ レベルアップすると しんかする。
-     7	= グライガーに するどいキバ をもたせて\n
-	+ レベルアップすると しんかする。
-     8	= イーブイが 217ばんどうろで\n
-	+ レベルアップすると しんかする。
-     9	= タマンタが レベルアップすると\n
-	+ しんかする。
-     a	= ニューラに するどいツメ をもたせて\n
-	+ レベルアップすると しんかする。
-     b	= ヒンバスが レベルアップすると\n
-	+ しんかする。
-     c	= イーブイが ハクタイのもりで\n
-	+ レベルアップすると しんかする。
-     d	= レアコイルが テンガンざんで\n
-	+ レベルアップすると しんかする。
-     e	= トバリシティで もらう。
-     f	= ハクタイシティで シロナからもらえる\n
-	+ ポケモンのタマゴを かえす。
-    10	= てもちに あきがある じょうたいで、\n
-	+ ツチニンを しんかさせる。
-    11	= %ls%lsに どうぐを\n
-	+ つかうと しんかする。
-    12	= %ls%lsが Lv.%d に\n
-	+ レベルアップすると しんかする。
-    13	= じゅうぶんに なついた %ls%lsが\n
-	+ レベルアップすると しんかする。
-    14	= %ls%lsを\n
-	+ つうしんこうかんすると しんかする。
-    15	= %ls%lsに どうぐをもたせて\n
-	+ つうしんこうかんすると しんかする。
-    16	= %ls%lsが わざをおぼえて\n
-	+ レベルアップすると しんかする。
-    17	= ズイタウンの ポケモンそだてやで\n
-	+ タマゴを はっけんして、かえす。
-    18	= つかまえかた ふめい。
+     0	= About\n
+	+ %ls
+     1	= Location
+     2	= Time
+     3	= Catch it at a Honey Tree.
+     4	= Restore a Fossil at the Mining\n
+	+ Museum in Oreburgh City.
+     5	= Catch it at the Capture Show\n
+	+ in Pal Park.
+     6	= Evolve by leveling up NOSEPASS\n
+	+ in Mt. Coronet.
+     7	= Evolve by making GLIGAR hold\n
+	+ the Razor Fang while leveling up.
+     8	= Evolve by leveling up EEVEE\n
+	+ on Route 217.
+     9	= Evolve by leveling up MANTYKE.
+     a	= Evolve by making SNEASEL hold\n
+	+ the Razor Claw while leveling up.
+     b	= Evolve by leveling up FEEBAS.
+     c	= Evolve by leveling up EEVEE\n
+	+ in Eterna Forest.
+     d	= Evolve by leveling up MAGNETON\n
+	+ in Mt. Coronet.
+     e	= Receive it in Veilstone City.
+     f	= Hatch the Egg Cynthia gave you in\n
+	+ Eterna City.
+    10	= Evolve NINCADA with an\n
+	+ empty space in your party.
+    11	= Evolve by giving an item to\n
+	+ %ls%ls.
+    12	= Evolve when %ls%ls\n
+	+ is at Lv. %d.
+    13	= Evolve %ls%ls by\n
+	+ leveling up with high Friendship.
+    14	= Evolve by trading\n
+	+ %ls%ls.
+    15	= Evolve during trade by making\n
+	+ %ls%ls hold an item.
+    16	= Evolve by teaching a move and\n
+	+ leveling up %ls%ls.
+    17	= Obtain an Egg at the Pokémon Day\n
+	+ Care in Solaceon Town and hatch it.
+    18	= How to catch it is unknown.
     19	= ほかの DSばん ポケットモンスターと\n
 	+ つうしんこうかんして てにいれる。
     1a	= シンオウちほうの かくちを とびまわる。
-    1b	= 201ばんどうろ
-    1c	= 202ばんどうろ
-    1d	= 203ばんどうろ
-    1e	= 204ばんどうろ
-    1f	= 205ばんどうろ
-    20	= 205ばんどうろ
-    21	= 205ばんどうろ
-    22	= 206ばんどうろ
-    23	= 207ばんどうろ
-    24	= 208ばんどうろ
-    25	= 209ばんどうろ
-    26	= 210ばんどうろ
-    27	= 210ばんどうろ
-    28	= 211ばんどうろ
-    29	= 211ばんどうろ
-    2a	= 211ばんどうろ
-    2b	= 212ばんどうろ
-    2c	= 212ばんどうろ
-    2d	= 212ばんどうろ
-    2e	= 213ばんどうろ
-    2f	= 214ばんどうろ
-    30	= 215ばんどうろ
-    31	= 216ばんどうろ
-    32	= 217ばんどうろ
-    33	= 218ばんどうろ
-    34	= 219ばんどうろ
-    35	= 220ばんすいどう
-    36	= 221ばんどうろ
-    37	= 222ばんどうろ
-    38	= 223ばんすいどう
-    39	= 224ばんどうろ
-    3a	= 225ばんどうろ
-    3b	= 226ばんすいどう
-    3c	= 227ばんどうろ
-    3d	= 228ばんどうろ
-    3e	= 229ばんどうろ
-    3f	= 230ばんすいどう
-    40	= あまいかおりがするき
-    41	= あれたぬけみち
-    42	= いせきマニアのあな\n
-	+ (マニアトンネル)
-    43	= エイチこ
-    44	= おくりのいずみ
-    45	= カンナギタウン
-    46	= キッサキしんでん
-    47	= キッサキしんでん
-    48	= キッサキしんでん
-    49	= キッサキしんでん
-    4a	= クロガネゲート
-    4b	= クロガネゲート
-    4c	= クロガネゲート
-    4d	= クロガネたんこう
-    4e	= こうてつじま
-    4f	= こうてつじま
-    50	= こうてつじま
-    51	= こうてつじま
-    52	= こうてつじま
-    53	= こうてつじま
-    54	= じまんのうらにわ
-    55	= シンジこ
-    56	= ズイのいせき
-    57	= ノモセだいしつげん
-    58	= ノモセだいしつげん
-    59	= ノモセだいしつげん
-    5a	= ノモセだいしつげん
-    5b	= ノモセだいしつげん
-    5c	= ノモセだいしつげん
-    5d	= ノモセだいしつげん
-    5e	= タタラせいてつじょ
-    5f	= たにまのはつでんしょ
-    60	= チャンピオンロード
-    61	= チャンピオンロード
-    62	= チャンピオンロード
-    63	= チャンピオンロード
-    64	= チャンピオンロード
-    65	= テンガンざん
-    66	= テンガンざん
-    67	= テンガンざん
-    68	= テンガンざん
-    69	= テンガンざん
-    6a	= テンガンざん
-    6b	= テンガンざん
-    6c	= テンガンざん
-    6d	= テンガンざん
-    6e	= テンガンざん
-    6f	= テンガンざん
-    70	= テンガンざん
-    71	= テンガンざん
-    72	= ナギサシティ
-    73	= ノモセシティ
-    74	= ハードマウンテン
-    75	= ハードマウンテン
-    76	= ハクタイシティ
-    77	= ハクタイのもり
-    78	= フタバタウン
-    79	= ポケモンリーグ
-    7a	= まよいのどうくつ
-    7b	= まよいのどうくつ
-    7c	= まよいのどうくつ
-    7d	= ミオシティ
-    7e	= もどりのどうくつ
-    7f	= もりのようかん
-    80	= リゾートエリア
-    81	= リッシこ
-    82	= リッシこのほとり
-    83	= ロストタワー
-    84	= ロストタワー
-    85	= ロストタワー
-    86	= ロストタワー
-    87	= ロストタワー
-    88	= いつでも
-    89	= あさ
-    8a	= あさ・ひる
-    8b	= よる
-    8c	= あさ・よる
-    8d	= ・Lv.%d いじょう
-    8e	= ・あまいかおりがするき
-    8f	= ・ぼうぎょ＞こうげき のとき
-    90	= ・ノモセだいしつげん ひがわり
-    91	= ・デルビルのタマゴ
-    92	= ・ドガースのタマゴ
-    93	= ・ゴニョニョのタマゴ
-    94	= ・イトマルのタマゴ
-    95	= ・カゲボウズのタマゴ
-    96	= ・ポチエナのタマゴ
-    97	= ・レディバのタマゴ
-    98	= ・ソーナノのタマゴ
-    99	= ・スバメのタマゴ
-    9a	= ・タマザラシのタマゴ
-    9b	= ・パウワウのタマゴ
-    9c	= ・エレキッドのタマゴ
-    9d	= ・ブビィのタマゴ
-    9e	= ・つり(ボロのつりざお)
-    9f	= ・つり(いいつりざお)
-    a0	= ・つり(すごいつりざお)
-    a1	= ・どうぐ：アップグレード
-    a2	= ・どうぐ：あやしいパッチ
-    a3	= ・どうぐ：エレキブースター
-    a4	= ・どうぐ：ひかりのいし
-    a5	= ・どうぐ：ほのおのいし
-    a6	= ・どうぐ：かみなりのいし
-    a7	= ・どうぐ：しんかいのキバ
-    a8	= ・どうぐ：マグマブースター
-    a9	= ・どうぐ：メタルコート
-    aa	= ・どうぐ：めざめいし
-    ab	= ・どうぐ：みずのいし
-    ac	= ・どうぐ：おうじゃのしるし
-    ad	= ・どうぐ：プロテクター
-    ae	= ・どうぐ：れいかいのぬの
-    af	= ・どうぐ：リーフのいし
-    b0	= ・どうぐ：りゅうのウロコ
-    b1	= ・どうぐ：するどいキバ
-    b2	= ・どうぐ：するどいツメ
-    b3	= ・どうぐ：たいようのいし
-    b4	= ・どうぐ：つきのいし
-    b5	= ・どうぐ：しんかいのウロコ
-    b6	= ・どうぐ：のんきのおこう
-    b7	= ・どうぐ：やみのいし
-    b8	= ・コケのいわ
-    b9	= ・こおりのいわ
-    ba	= ・カセキ：かいのカセキ
-    bb	= ・カセキ：ひみつのコハク
-    bc	= ・カセキ：こうらのカセキ
-    bd	= ・カセキ：ねっこのカセキ
-    be	= ・カセキ：たてのカセキ
-    bf	= ・カセキ：ツメのカセキ
-    c0	= ・カセキ：ずがいのカセキ
+    1b	= Route 201
+    1c	= Route 202
+    1d	= Route 203
+    1e	= Route 204
+    1f	= Route 205
+    20	= Route 205
+    21	= Route 205
+    22	= Route 206
+    23	= Route 207
+    24	= Route 208
+    25	= Route 209
+    26	= Route 210
+    27	= Route 210
+    28	= Route 211
+    29	= Route 211
+    2a	= Route 211
+    2b	= Route 212
+    2c	= Route 212
+    2d	= Route 212
+    2e	= Route 213
+    2f	= Route 214
+    30	= Route 215
+    31	= Route 216
+    32	= Route 217
+    33	= Route 218
+    34	= Route 219
+    35	= Route 220
+    36	= Route 221
+    37	= Route 222
+    38	= Route 223
+    39	= Route 224
+    3a	= Route 225
+    3b	= Route 226
+    3c	= Route 227
+    3d	= Route 228
+    3e	= Route 229
+    3f	= Route 230
+    40	= Honey Tree
+    41	= Ravaged Path
+    42	= Ruin Maniac Cave\n
+	+ (Maniac Tunnel)
+    43	= Lake Acuity
+    44	= Sendoff Spring
+    45	= Celestic Town
+    46	= Snowpoint Temple
+    47	= Snowpoint Temple
+    48	= Snowpoint Temple
+    49	= Snowpoint Temple
+    4a	= Oreburgh Gate
+    4b	= Oreburgh Gate
+    4c	= Oreburgh Gate
+    4d	= Oreburgh Mine
+    4e	= Iron Island
+    4f	= Iron Island
+    50	= Iron Island
+    51	= Iron Island
+    52	= Iron Island
+    53	= Iron Island
+    54	= Trophy Garden
+    55	= Lake Verity
+    56	= Solaceon Ruins
+    57	= Pastoria Great Marsh
+    58	= Pastoria Great Marsh
+    59	= Pastoria Great Marsh
+    5a	= Pastoria Great Marsh
+    5b	= Pastoria Great Marsh
+    5c	= Pastoria Great Marsh
+    5d	= Pastoria Great Marsh
+    5e	= Fuego Ironworks
+    5f	= Valley Windworks
+    60	= Victory Road
+    61	= Victory Road
+    62	= Victory Road
+    63	= Victory Road
+    64	= Victory Road
+    65	= Mt. Coronet
+    66	= Mt. Coronet
+    67	= Mt. Coronet
+    68	= Mt. Coronet
+    69	= Mt. Coronet
+    6a	= Mt. Coronet
+    6b	= Mt. Coronet
+    6c	= Mt. Coronet
+    6d	= Mt. Coronet
+    6e	= Mt. Coronet
+    6f	= Mt. Coronet
+    70	= Mt. Coronet
+    71	= Mt. Coronet
+    72	= Sunyshore City
+    73	= Pastoria City
+    74	= Stark Mountain
+    75	= Stark Mountain
+    76	= Eterna City
+    77	= Eterna Forest
+    78	= Twinleaf Town
+    79	= Pokémon League
+    7a	= Wayward Cave
+    7b	= Wayward Cave
+    7c	= Wayward Cave
+    7d	= Canalave City
+    7e	= Turnback Cave
+    7f	= Old Chateau
+    80	= Resort Area
+    81	= Lake Valor
+    82	= Valor Lakefront
+    83	= Lost Tower
+    84	= Lost Tower
+    85	= Lost Tower
+    86	= Lost Tower
+    87	= Lost Tower
+    88	= Anytime
+    89	= Morning
+    8a	= Morning/Day
+    8b	= Night
+    8c	= Morning/Night
+    8d	= ・Lv. %d or higher
+    8e	= ・Honey Tree
+    8f	= ・When Defense > Attack
+    90	= ・Pastoria Great Marsh random daily
+    91	= ・HOUNDOUR Egg
+    92	= ・KOFFING Egg
+    93	= ・WHISMUR Egg
+    94	= ・SPINARAK Egg
+    95	= ・SHUPPET Egg
+    96	= ・POOCHYENA Egg
+    97	= ・LEDYBA Egg
+    98	= ・WYNAUT Egg
+    99	= ・TAILLOW Egg
+    9a	= ・SPHEAL Egg
+    9b	= ・SEEL Egg
+    9c	= ・ELEKID Egg
+    9d	= ・MAGBY Egg
+    9e	= ・Fishing: (Old Rod)
+    9f	= ・Fishing: (Good Rod)
+    a0	= ・Fishing: (Super Rod)
+    a1	= ・Item: Up-Grade
+    a2	= ・Item: Dubious Disc
+    a3	= ・Item: Electirizer
+    a4	= ・Item: Shiny Stone
+    a5	= ・Item: Fire Stone
+    a6	= ・Item: Thunderstone
+    a7	= ・Item: DeepSeaTooth
+    a8	= ・Item: Magmarizer
+    a9	= ・Item: Metal Coat
+    aa	= ・Item: Dawn Stone
+    ab	= ・Item: Water Stone
+    ac	= ・Item: King's Rock
+    ad	= ・Item: Protector
+    ae	= ・Item: Reaper Cloth
+    af	= ・Item: Leaf Stone
+    b0	= ・Item: Dragon Scale
+    b1	= ・Item: Razor Fang
+    b2	= ・Item: Razor Claw
+    b3	= ・Item: Sun Stone
+    b4	= ・Item: Moon Stone
+    b5	= ・Item: DeepSeaScale
+    b6	= ・Item: Lax Incense
+    b7	= ・Item: Dusk Stone
+    b8	= ・Damp Rock
+    b9	= ・Icy Rock
+    ba	= ・Fossil: Helix Fossil
+    bb	= ・Fossil: Old Amber
+    bc	= ・Fossil: Dome Fossil
+    bd	= ・Fossil: Root Fossil
+    be	= ・Fossil: Armor Fossil
+    bf	= ・Fossil: Claw Fossil
+    c0	= ・Fossil: Skull Fossil
     c1	= ・トレーナーIDが ぐうすうで ほりだせる
     c2	= ・トレーナーIDが きすうで ほりだせる
-    c3	= ・こうげき＝ぼうぎょ のとき
-    c4	= ・こうげき＞ぼうぎょ のとき
-    c5	= ・みずのうえ(なみのり)
-    c6	= ・ダイヤモンド げんてい
-    c7	= ・パール げんてい
-    c8	= ・パルパーク
-    c9	= ・4かい・たきのあるエリア
-    ca	= ・アンノーンについて
-    cb	= ・ヒンバスについて
-    cc	= ・フワンテについて
-    cd	= ・マネネについて
-    ce	= ・ミカルゲについて
-    cf	= ・ヌケニンについて
-    d0	= ・ウソハチについて
-    d1	= ・あさ、ひるに レベルアップ
-    d2	= ・よるに レベルアップ
-    d3	= ・ポケトレが ひつよう
-    d4	= ・ダイヤモンドでは たまにしか でない
-    d5	= ・パールでは たまにしか でない
-    d6	= ・たいりょうはっせい
-    d7	= ・ダブルアタックを おぼえたじょうたいで
-    d8	= ・げんしのちからを おぼえたじょうたいで
-    d9	= ・ころがるを おぼえたじょうたいで
-    da	= ・ものまねを おぼえたじょうたいで
-    db	= ・ダブルスロット エメラルド
-    dc	= ・ダブルスロット ファイアレッド
-    dd	= ・ダブルスロット リーフグリーン
-    de	= ・ダブルスロット ルビー
-    df	= ・ダブルスロット サファイア
-    e0	= ・ダブルスロット どれでも
-    e1	= ・ぜんこくずかんを てにいれてから
-    e2	= ・じまんのうらにわ
+    c3	= ・When Attack = Defens
+    c4	= ・When Attack > Defense
+    c5	= ・On the water (Surf)
+    c6	= ・Diamond only
+    c7	= ・Pearl only
+    c8	= ・Pal Park
+    c9	= ・4 FL/Waterfall Area
+    ca	= ・About UNOWN
+    cb	= ・About FEEBAS
+    cc	= ・About DRIFLOON
+    cd	= ・About MIME JR.
+    ce	= ・About SPIRITOMB
+    cf	= ・About SHEDINJA
+    d0	= ・About BONSLY
+    d1	= ・Level up between 4 a.m. and 8 p.m.
+    d2	= ・Level up between 8 p.m. and 4 a.m.
+    d3	= ・Poké Radar required
+    d4	= ・Rare in Diamond
+    d5	= ・Rare in Pearl
+    d6	= ・Mass Outbreak
+    d7	= ・While having Double Hit learned
+    d8	= ・While having AncientPower learned
+    d9	= ・While having Rollout learned
+    da	= ・While having Mimic learned
+    db	= ・Dual Slot Emerald
+    dc	= ・Dual Slot FireRed
+    dd	= ・Dual Slot LeafGreen
+    de	= ・Dual Slot Ruby
+    df	= ・Dual Slot Sapphire
+    e0	= ・Dual Slot Any
+    e1	= ・After obtaining National Pokédex
+    e2	= ・Trophy Garden
     e3	= ・ケムッソの しんか
-    e4	= ソノオのはなばたけ で てにはいる あまいミツを\n
-	+ ぬって、はんにちまってから しらべると、ポケモンが\n
-	+ しゅつげんする。\n
-	+ たくさんの きに ミツをぬって まわろう。
-    e5	= ノモセだいしつげんの かくエリアに、1ぴきずつ\n
-	+ ひがわりで ポケモンが ついかされる。\n
-	+ きょう つかまえられる ポケモンは \n
-	+ てんぼうだい2かいの ぼうえんきょうで チェック。
-    e6	= たいりょうはっせいする ばしょ・ポケモンは\n
-	+ まいにち かわる。\n
-	+ じょうほうは マサゴタウンで ヒカリ(コウキ)の\n
-	+ いもうとに おしえてもらおう。
-    e7	= ウラヤマさんの じまんばなしを きいてあげると、\n
-	+ じまんのうらにわ の ポケモンが かわる。\n
-	+ 1にち 1かい じまんばなしを きくことができる。
-    e8	= ヘルガー♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    e9	= マタドガス♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    ea	= ドゴーム♀か バクオング♀と なかのよいポケモンを\nそだてやに
-	+  あずけると はっけんできる。
-    eb	= グラエナ♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    ec	= アリアドス♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    ed	= ジュペッタ♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    ee	= レディアン♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    ef	= ソーナンス♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。\n
-	+ どちらかに のんきのおこうを もたせること。\n
-	+ のんきのおこうは 225ばんどうろで てにはいる。
-    f0	= オオスバメ♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    f1	= トドグラー♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    f2	= ジュゴン♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    f3	= エレブー♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    f4	= ブーバー♀と なかのよいポケモンを そだてやに\n
-	+ あずけると はっけんできる。
-    f5	= アップグレードは ハクタイシティで てにはいる。
-    f6	= あやしいパッチは 225ばんどうろ で てにはいる。
-    f7	= あやしいパッチは ギンガトバリビルで てにはいる。
-    f8	= エレキブースターは、やせいの エレキッドが\n
-	+ ときどき もっている。\n
-	+ エレキッドは たにまのはつでんしょで
-	+  つかまえる。\n
-	+ ダブルスロット：ファイアレッド。
-    f9	= エレキブースターは、やせいの エレブーが\n
-	+ ときどき もっている。\n
-	+ エレブーは 222ばんどうろで つかまえる。
-    fa	= ひかりのいしは、こうてつじま と\n
-	+ 228ばんどうろで てにはいる。
+    e4	= Get some Honey in Floaroma Meadow and\n
+	+ slather it on a Honey Tree, then wait for half\n
+	+ a day. Come back to the tree, and you'll find\n
+	+ a Pokémon. The Pokémon you find varies\n
+	+ with the Honey Tree.
+    e5	= A new Pokémon is available daily in each\n
+	+ area of the Pastoria Great Marsh.\n
+	+ Look through the telescope in the upstairs\n
+	+ observatory to check out all the Pokémon\n
+	+ that are available today.
+    e6	= The Pokémon and location of the\n
+	+ Mass Outbreak change every day.\n
+	+ Speak to a person in Sandgem Town\n
+	+ to find out information about\n
+	+ the Mass Outbreak.
+    e7	= Pokémon seen in the Trophy Garden change\n
+	+ after you have a little chat with Backlot.\n
+	+ You can chat with him only once a day.
+    e8	= You can discover an Egg by leaving\n
+	+ HOUNDOOM♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    e9	= You can discover an Egg by leaving\n
+	+ WEEZING♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    ea	= You can discover an Egg by leaving\n
+	+ LOUDRED♀ or EXPLOUD♀ and a\n
+	+ Pokémon that gets along with it\n
+	+ at the Pokémon Day Care.
+    eb	= You can discover an Egg by leaving\n
+	+ MIGHTYENA♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    ec	= You can discover an Egg by leaving\n
+	+ ARIADOS♀ and a Pokémon that gets along\n
+	+ with it at the Pokémon Day Care.
+    ed	= You can discover an Egg by leaving\n
+	+ BANETTE♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    ee	= You can discover an Egg by leaving\n
+	+ LEDIAN♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    ef	= You can discover an Egg by leaving\n
+	+ WOBBUFFET♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.\n
+	+ Either of the Pokémon has to hold the\n
+	+ Lax Incense.
+    f0	= You can discover an Egg by leaving\n
+	+ SWELLOW♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    f1	= You can discover an Egg by leaving\n
+	+ SEALEO♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    f2	= You can discover an Egg by leaving\n
+	+ DEWGONG♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    f3	= You can discover an Egg by leaving\n
+	+ ELECTABUZZ♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    f4	= You can discover an Egg by leaving\n
+	+ MAGMAR♀ and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
+    f5	= You can get an Up-Grade in Eterna City.
+    f6	= You can get a Dubious Disc on Route 225.
+    f7	= You can get a Dubious Disc in Team Galactic HQ.
+    f8	= Electirizer is an item that wild ELEKID\n
+	+ sometimes have. You can catch\n
+	+ ELEKID at Valley Windworks.\n
+	+ Dual Slot: FireRed
+    f9	= Electirizer is an item that wild ELECTABUZZ\n
+	+ sometimes have. You can catch\n
+	+ ELECTABUZZ at Route 222.\n。
+    fa	= You can get a Shiny Stone on Iron Island\n
+	+ or on Route 228.
     fb	= ほのおのいしは、タタラせいてつじょ で\n
 	+ てにはいる。\n
 	+ ちかつうろで ほりだすこともできる。
@@ -436,9 +450,9 @@
    118	= ポケトレは ぜんこくずかんを てにいれたとき\n
 	+ もらえる。\n
 	+ つかうと くさが ゆれるので、そこへ いどうしよう。
-   119	= エイパムは Lv.32で ダブルアタックを おぼえる。
-   11a	= モンジャラは Lv.33で げんしのちからを おぼえる。
-   11b	= ヤンヤンマは Lv.33で げんしのちからを おぼえる。
+   119	= AIPOM learns Double Hit at Lv. 32.
+   11a	= TANGELA learns AncientPower at Lv. 33.
+   11b	= YANMA learns AncientPower at Lv. 33.
    11c	= ノモセシティの わざマニアに ハートのウロコ を\n
 	+ わたして おぼえさせることが できる。\n
 	+ ハートのウロコは たんけんセットを つかった\n

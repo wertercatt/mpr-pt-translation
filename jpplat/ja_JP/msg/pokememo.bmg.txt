@@ -68,7 +68,7 @@
     13	= I saw the Slow Waltz.
     14	= I saw Do the Wave.
     15	= I saw a Chorus.
-    16	= I saw a Carousel.
+    16	= I saw the Carousel.
     17	= I saw the Clock.
     18	= I saw a Keyboard.
     19	= I saw the Dizzy dance.
@@ -85,7 +85,7 @@
     24	= I saw the Rotom Roulette.
     25	= I saw a Showdown.
     26	= ぼくじょうの みんなに えを かいてもらった。
-    27	= I saw Happy Birthday
+    27	= I saw Happy Birthday.
     28	= ポケモン・ウォンテッドを たっせいした。
     29	= %{}から こうかんで もらった。
     2a	= ぼくじょうが レベル%dに なった。
