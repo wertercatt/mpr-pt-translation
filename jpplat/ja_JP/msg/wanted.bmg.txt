@@ -72,8 +72,8 @@
      e	= Receive it in Veilstone City.
      f	= Hatch the Egg Cynthia gave you in\n
 	+ Eterna City.
-    10	= Evolve NINCADA with an\n
-	+ empty space in your party.
+    10	= Evolve NINCADA with room\n
+	+ in your party.
     11	= Evolve by giving an item to\n
 	+ %ls%ls.
     12	= Evolve when %ls%ls\n
@@ -366,156 +366,163 @@
 	+ ELECTABUZZ at Route 222.
     fa	= You can get a Shiny Stone on Iron Island\n
 	+ or on Route 228.
-    fb	= ほのおのいしは、タタラせいてつじょ で\n
-	+ てにはいる。\n
-	+ ちかつうろで ほりだすこともできる。
-    fc	= かみなりのいしは、ナギサシティ で てにはいる。\n
-	+ ちかつうろで ほりだすこともできる。
-    fd	= しんかいのキバ は、やせいの キバニアが\n
-	+ ときどき もっている。
-    fe	= マグマブースターは、やせいの ブビィが\n
-	+ ときどき もっている。\n
-	+ ブビィは 227ばんどうろで つかまえる。\n
-	+ ダブルスロット：リーフグリーン。
-    ff	= マグマブースターは、やせいの ブーバーが\n
-	+ ときどき もっている。\n
-	+ ブーバーは タタラせいてつじょで つかまえる。
-   100	= メタルコートは、やせいの ドーミラーや
-	+  ハガネールが\n
-	+ ときどき もっている。
-   101	= めざめいし は\n
-	+ テンガンざんや 225ばんどうろで てにはいる。
-   102	= みずのいし は 213ばんどうろ で てにはいる。\n
-	+ ちかつうろで ほりだすことも できる。
-   103	= おうじゃのしるし は、\n
-	+ とくせい「ものひろい」をもつ ポケモンが\n
-	+ ひろってくる ことがある。
-   104	= プロテクター は、 228ばんどうろ で てにはいる。
-   105	= れいかいのぬの は、229ばんどうろ で てにはいる。
-   106	= リーフのいし は、\n
-	+ ソノオのはなばたけ で てにはいる。\n
-	+ ちかつうろで ほりだすことも できる。
-   107	= りゅうのウロコ は、やせいの タッツーや
-	+  シードラが\n
-	+ ときどき もっている。
-   108	= たいようのいし は、ちかつうろで\n
-	+ ほりだす ことができる。\n
-	+ また、やせいの ソルロックが ときどき もっている。
-   109	= つきのいし は、ちかつうろで\n
-	+ ほりだす ことができる。\n
-	+ また、やせいの ルナトーンが ときどき もっている。
-   10a	= しんかいのウロコ は やせいの ジーランスが\n
-	+ ときどき もっている。
-   10b	= やみのいし は ギンガそうこ や\n
-	+ チャンピオンロード で てにはいる。
-   10c	= カセキは たんけんセットを つかって ちかつうろに\n
-	+ はいり、カセキほりをして てにいれる。
-   10d	= パルパークは ぜんこくずかんを てにいれたあと、\n
-	+ 221ばんどうろに かんせいする。\n
-	+ GBAばんの ポケモンを つれてきて\n
-	+ ほかくショー で つかまえることができる。
-   10e	= 26しゅるいの アンノーンを つかまえると、\n
-	+ 214ばんどうろに マニアトンネルが かいつうする。\n
-	+ そこから 「!」「?」のアンノーンが しゅつげんする\n
-	+ へやへ いくことができる。
-   10f	= こうげきが ぼうぎょより たかいと サワムラーに、\n
-	+ ぼうぎょが こうげきより たかいと エビワラーに、\n
-	+ おなじだと カポエラーに しんかする。
-   110	= なみのりで いどうしながら つりをする。\n
-	+ ヒンバスが つれるのは 4かしょだけ。\n
-	+ つれるばしょでは、50％の かくりつで つれる。\n
-	+ つれる ばしょは まいにちかわる。
-   111	= まいしゅう きんようびに\n
-	+ たにまのはつでんしょの まえに あらわれる。
-   112	= パールでも ぜんこくずかんを てにいれたあと\n
-	+ ウラヤマさんと はなしをすることで、\n
-	+ じまんのうらにわに とうじょうする。
-   113	= 1．こわれたいしのとうに かなめいしを はめる。\n
-	+ 2．たんけんセットで ちかつうろへ。\n
-	+ 3．32にんと あいさつ する。\n
-	+ 4．みたまのとうに ミカルゲが しゅつげん。
-   114	= てもちに あきがあり、モンスターボールを\n
-	+ もっている じょうたいで ツチニンが\n
-	+ Lv.20に あがると、テッカニンに しんかし、\n
-	+ てもちに ヌケニンが はいる。
-   115	= ダイヤモンドでも ぜんこくずかんを
-	+  てにいれたあと\n
-	+ ウラヤマさんと はなしをすることで、\n
-	+ じまんのうらにわに とうじょうする。
-   116	= なついたイーブイは レベルアップした\n
-	+ じかんによって エーフィや ブラッキーに\n
-	+ しんかする。
-   117	= パールでも ぜんこくずかんを てにいれたあと \n
-	+ 224ばんどうろ でつかまえることが できる。
-   118	= ポケトレは ぜんこくずかんを てにいれたとき\n
-	+ もらえる。\n
-	+ つかうと くさが ゆれるので、そこへ いどうしよう。
+    fb	= You can get a Fire Stone in Fuego Ironworks.\n
+	+ You can also get it by digging in the\n
+	+ Underground.
+    fc	= You can get a Thunderstone in Sunyshore\n
+	+ City. You can also get it by digging in the\n
+	+ Underground.
+    fd	= DeepSeaTooth is an item that wild\n
+	+ CARVANHA or SHARPEDO sometimes have.
+    fe	= Magmarizer is an item that wild MAGBY\n
+	+ sometimes have. You can catch\n
+	+ MAGBY on Route 227.\n
+	+ Dual Slot: LeafGreen
+    ff	= Magmarizer is an item that wild MAGMAR\n
+	+ sometimes have. You can catch\n
+	+ MAGMAR at Fuego Ironworks.
+   100	= Metal Coat is an item that wild BRONZOR\n
+	+ or STEELIX sometimes have.
+   101	= You can get a Dawn Stone at Mt. Coronet\n
+	+ or on Route 225.
+   102	= You can get a Water Stone on Route 213.\n
+	+ You can also get it by digging in the\n
+	+ Underground.
+   103	= King's Rock is an item that Pokémon with\n
+	+ the Pickup ability sometimes find.
+   104	= You can get a Protector on Route 228.
+   105	= You can get a Reaper Cloth on Route 229.
+   106	= You can get a Leaf Stone in Floaroma\n
+	+ Meadow. You can also get it by digging\n
+	+ in the Underground.
+   107	= Dragon Scale is an item that wild HORSEA\n
+	+ or SEADRA sometimes have.
+   108	= You can get a Sun Stone by digging\n
+	+ in the Underground. Also, wild\n
+	+ SOLROCK sometimes have it.
+   109	= You can get a Moon Stone by digging\n
+	+ in the Underground. Also, wild\n
+	+ LUNATONE sometimes have it.
+   10a	= DeepSeaScale is an item that wild\n
+	+ RELICANTH sometimes have.
+   10b	= You can get a Dusk Stone in the Galactic\n
+	+ Warehouse or on Victory Road.
+   10c	= Dig for Fossils in the Underground using\n
+	+ the Explorer Kit. You'll find more kinds of\n
+	+ Fossils after obtaining the National Pokédex.
+   10d	= Pal Park is available on Route 221\n
+	+ after obtaining the National Pokédex.\n
+	+ You can bring over Pokémon caught in\n
+	+ GBA-series Pokémon games and catch them\n
+	+ at the Capture Show.
+   10e	= Once you catch 26 kinds of UNOWN,\n
+	+ the Maniac Tunnel on Route 214 opens.\n
+	+ From there, you can enter the room where\n
+	+ UNOWN! and UNOWN? can be caught.
+   10f	= If its Attack is higher than its Defense, it\n
+	+ evolves to HITMONLEE. If its Defense is\n
+	+ higher than its Attack, it evolves to\n
+	+ HITMONCHAN. If its Attack and its Defense\n
+	+ are the same, it evolves to HITMONTOP.
+   110	= Fish by using Surf. FEEBAS only appear\n
+	+ in four spots. Once you find the right\n
+	+ spot, FEEBAS will appear 50% of the\n
+	+ time. The locations change every day.
+   111	= It appears in front of Valley Windworks\n
+	+ every Friday.
+   112	= Once you obtain the National Pokédex\n
+	+ in Pearl, it appears in the Trophy Garden\n
+	+ after you have a little chat with Backlot.
+   113	= 1. Put the Odd Keystone in the Broken\n
+	+     Stone Tower.\n
+	+ 2. Go underground using the Explorer Kit.\n
+	+ 3. Greet 32 people in the Underground.\n
+	+ 4. Find SPIRITOMB at the Hallowed Tower.
+   114	= You can get SHEDINJA if you have room\n
+	+ in your party, have a Poké Ball,\n
+	+ and let NINCADA level up to Lv. 20.
+   115	= Once you obtain the National Pokédex\n
+	+ in Diamond, it appears in Trophy Garden\n
+	+ after you have a little chat with Backlot.
+   116	= An EEVEE with high Friendship evolves to\n
+	+ either ESPEON or UMBREON by leveling up\n
+	+ the EEVEE at a certain time.
+   117	= Once you obtain the National Pokédex\n
+	+ in Pearl, you can catch it on Route 224.
+   118	= You get the Poké Radar once you obtain\n
+	+ the National Pokédex. When you use it,\n
+	+ grass nearby will start to rustle,\n
+	+ so head toward it.
    119	= AIPOM learns Double Hit at Lv. 32.
    11a	= TANGELA learns AncientPower at Lv. 33.
    11b	= YANMA learns AncientPower at Lv. 33.
-   11c	= ノモセシティの わざマニアに ハートのウロコ を\n
-	+ わたして おぼえさせることが できる。\n
-	+ ハートのウロコは たんけんセットを つかった\n
-	+ ちかつうろの カセキほりで てにはいる。
-   11d	= ベロリンガは Lv.33で ころがるを おぼえる。
-   11e	= ウソハチは Lv.17で ものまねを おぼえる。
-   11f	= マネネは Lv.18で ものまねを おぼえる。
-   120	= DSのGBAカートリッジさしこみぐちに、\n
-	+ GBAばん ポケットモンスターを さすと\n
-	+ しゅつげんするようになる。
-   121	= するどいツメ は、チャンピオンロード  や\n
-	+ 224ばんどうろ で てにはいる。
-   122	= するどいキバ は、バトルパーク で てにはいる。
-   123	= するどいキバ は、225ばんどうろ で てにはいる。
+   11c	= You can teach it AncientPower by\n
+	+ giving the Move Tutor one Heart Scale.\n
+	+ You can find a Heart Scale by digging\n
+	+ in the Underground.
+   11d	= LICKITUNG learns Rollout at Lv. 33.
+   11e	= BONSLY learns Mimic at Lv. 17.
+   11f	= MIME JR. learns Mimic at Lv. 18.
+   120	= It appears once you insert a GBA-series\n
+	+ Pokémon game into the GBA slot\n
+	+ on your Nintendo DS.
+   121	= You can get a Razor Claw on either\n
+	+ Victory Road or on Route 224.
+   122	= You can get a Razor Fang in the Battle Park.
+   123	= You can get a Razor Fang on Route 225.
    124	= ケムッソは Lv.7に レベルアップしたとき、\n
 	+ カラサリスか マユルドの どちらかに しんかする。
-   125	= シンジこで ナナカマドはかせが わすれた\n
-	+ かばんから えらぶ。
+   125	= Choose from the briefcase that\n
+	+ Prof. Rowan left at Lake Verity.
    126	= ナナカマドはかせから もらう。
-   127	= こうてつじまで ゲンからもらえる\n
-	+ ポケモンのタマゴを かえす。
-   128	= もりのようかんの テレビを\n
-	+ よるにしらべる。
-   129	= エイチこで であうことができる。
-   12a	= シンジこで であったあと、\n
-	+ シンオウちほうの かくちを とびまわる。
-   12b	= リッシこで であうことができる。
-   12c	= テンガンざんの やりのはしらで\n
-	+ であうことができる。
-   12d	= ハードマウンテンで であうことができる。
-   12e	= キッサキしんでんで であうことができる。
-   12f	= もどりのどうくつで であうことができる。
-   130	= やぶれたせかいで であうことができる。
-   131	= まんげつじまで であったあと、\n
-	+ シンオウちほうの かくちを とびまわる。
-   132	= ナエトル ヒコザル ポッチャマ から\n
-	+ すきなポケモンを えらぶことができる。\n
-	+ ちがうポケモンを えらんでいたら\n
-	+ ともだちと こうかんしてもらおう。
-   133	= レジロック、レジアイス、レジスチルを てもちに\n
-	+ くわえていくことで つかまえられるようになる。
-   134	= あさ・よる
-   135	= ヒンバスが レベルアップしたとき\n
-	+ うつくしさが じゅうぶんに たかいこと。
-   136	= タマンタが レベルアップしたとき\n
-	+ てもちに テッポウオも いること。
-   137	= ・マンタインについて
-   138	= ・ミロカロスについて
-   139	= ・ナエトルについて
-   13a	= ・ヒコザルについて
-   13b	= ・ポッチャマについて
-   13c	= ・レジギガスについて
-   13d	= ・ディアルガについて
-   13e	= ・パルキアについて
-   13f	= ・ギラティナについて
-   140	= ・フリーザーについて
-   141	= ・サンダーについて
-   142	= ・ファイヤーについて
-   143	= ズイタウンの ポケモンそだてやで\n
-	+ はっけんする。
-   144	= ・タマゴについて
-   145	= タマゴは ♂と♀の なかのよいポケモンを\n
-	+ ポケモンそだてやに あずけると はっけんできる。
+   127	= Hatch the Egg Riley gave you on\n
+	+ Iron Island.
+   128	= Investigate the TV in the\n
+	+ Old Chateau at night.
+   129	= You can meet it at Lake Acuity.
+   12a	= After you meet it at Lake Verity, it\n
+	+ roams all over the Sinnoh region.
+   12b	= You can meet it at Lake Valor.
+   12c	= You can find it at the Spear Pillar\n
+	+ on Mt. Coronet.
+   12d	= You can meet it in Stark Mountain.
+   12e	= You can meet it in\n
+	+ Snowpoint Temple.
+   12f	= You can meet it in the\n
+	+ Turnback Cave.
+   130	= You can meet it in the\n
+	+ Distortion World.
+   131	= After you find it at Fullmoon Island,\n
+	+ it roams all over the Sinnoh region.
+   132	= You can choose either TURTWIG, PIPLUP,\n
+	+ or CHIMCHAR. If your friend chose a\n
+	+ different Pokémon from yours, have your\n
+	+ friend trade with you.
+   133	= Adding REGIROCK, REGICE, and REGISTEEL\n
+	+ to your party enables you to find it.
+   134	= Morning/Night
+   135	= Have a high Beauty condition when\n
+	+ FEEBAS levels up.
+   136	= Have REMORAID in your party when\n
+	+ MANTYKE levels up.
+   137	= ・About MANTINE
+   138	= ・About MILOTIC
+   139	= ・About TURTWIG
+   13a	= ・About CHIMCHAR
+   13b	= ・About PIPLUP
+   13c	= ・About REGIGIGAS
+   13d	= ・About DIALGA
+   13e	= ・About PALKIA
+   13f	= ・About GIRATINA
+   140	= ・About ARTICUNO
+   141	= ・About ZAPDOS
+   142	= ・About MOLTRES
+   143	= Discover it at the Pokémon Day\n
+	+ Care in Solaceon Town.
+   144	= ・About Eggs
+   145	= You can discover an Egg by leaving a\n
+	+ Pokémon and a Pokémon that gets\n
+	+ along with it at the Pokémon Day Care.
    146	= でんどういり したあと、カンナギタウンの\n
 	+ ちょうろうと はなしを すること。\n
 	+ こんごうだま が ひつよう。

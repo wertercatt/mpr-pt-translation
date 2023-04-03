@@ -1094,8 +1094,8 @@
    2a7	= Connect to DS
    2a8	= Game Card Limit
    2a9	= If you want to deposit Pokémon from a\n
-	+ new Pokémon Game Card for the\n
-	+ Nintendo DS, withdraw all of the Pokémon\n
+	+ new DS-Series Pokémon Game Card\n
+	+ withdraw all of the Pokémon\n
 	+ deposited from any one Game Card.
    2aa	= Connect to DS
    2ab	= No Pokédex was found.
