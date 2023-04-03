@@ -363,7 +363,7 @@
 	+ Dual Slot: FireRed
     f9	= Electirizer is an item that wild ELECTABUZZ\n
 	+ sometimes have. You can catch\n
-	+ ELECTABUZZ at Route 222.\n。
+	+ ELECTABUZZ at Route 222.
     fa	= You can get a Shiny Stone on Iron Island\n
 	+ or on Route 228.
     fb	= ほのおのいしは、タタラせいてつじょ で\n
