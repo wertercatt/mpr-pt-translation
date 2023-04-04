@@ -625,7 +625,7 @@
 	+ Press \x{e042} to return to\n
 	+ the Wii Menu.
    1ad	= Checking the Wii console's\n
-	+ calendar.
+	+ calendar (ja_JP loaded).
    1ae	= Calendar: %ls %ls\n
 	+ Is this correct?
    1af	= Adjust your Wii console's\n
