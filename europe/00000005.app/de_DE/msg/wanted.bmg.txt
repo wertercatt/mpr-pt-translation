@@ -1,0 +1,501 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xc0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= Infos über\n
+	+ %ls
+     1	= Ort
+     2	= Zeit
+     3	= Setze Honig ein, um es aus\n
+	+ seinem Versteck zu locken.
+     4	= Erwecke ein Fossil im Bergbau-\n
+	+ museum von Erzelingen zum Leben.
+     5	= Du kannst es bei der Fangshow im\n
+	+ Park der Freunde fangen.
+     6	= Entwickelt sich bei Levelanstieg von\n
+	+ NASGNET auf dem Kraterberg.
+     7	= Entwickelt sich bei Levelanstieg von\n
+	+ SKORGLA, wenn es Scharfzahn hat.
+     8	= Entwickelt sich bei Levelanstieg von\n
+	+ EVOLI auf Route 217.
+     9	= Entwickelt sich bei Levelanstieg von\n
+	+ MANTIRPS.
+     a	= Entwickelt sich bei Levelanstieg von\n
+	+ SNIEBEL, wenn es Scharfklaue hält.
+     b	= Entwickelt sich bei Levelanstieg von\n
+	+ BARSCHWA.
+     c	= Entwickelt sich bei Levelanstieg von\n
+	+ EVOLI im Ewigwald.
+     d	= Entwickelt sich bei Levelanstieg von\n
+	+ MAGNETON auf dem Kraterberg.
+     e	= Entwickelt sich, wenn du\n
+	+ %ls%ls ein Item gibst.
+     f	= Entwickelt sich auf Level %3$d\n
+	+ aus %1$ls%2$ls.
+    10	= Entwickelt sich, wenn dich\n
+	+ %ls%ls genug mag.
+    11	= Entwickelt sich beim Tausch von\n
+	+ %ls%ls.
+    12	= Hält %ls%ls beim\n
+	+ Tausch ein Item, entwickelt es sich.
+    13	= Entwickelt sich bei Levelanstieg und\n
+	+ durch neue Attacke von %ls%ls.
+    14	= Finde ein Ei i. d. Pokémon-Pension\n
+	+ von Trostu und lass es schlüpfen.
+    15	= Keine Tipps zum Fangen dieses\n
+	+ Pokémon verfügbar.
+    16	= Route 201
+    17	= Route 202
+    18	= Route 203
+    19	= Route 204
+    1a	= Route 205
+    1b	= Route 205
+    1c	= Route 205
+    1d	= Route 206
+    1e	= Route 207
+    1f	= Route 208
+    20	= Route 209
+    21	= Route 210
+    22	= Route 210
+    23	= Route 211
+    24	= Route 211
+    25	= Route 211
+    26	= Route 212
+    27	= Route 212
+    28	= Route 212
+    29	= Route 213
+    2a	= Route 214
+    2b	= Route 215
+    2c	= Route 216
+    2d	= Route 217
+    2e	= Route 218
+    2f	= Route 219
+    30	= Route 220
+    31	= Route 221
+    32	= Route 222
+    33	= Route 223
+    34	= Route 224
+    35	= Route 225
+    36	= Route 226
+    37	= Route 227
+    38	= Route 228
+    39	= Route 229
+    3a	= Route 230
+    3b	= Honigbaum
+    3c	= Verwüsteter Pfad
+    3d	= Ruinenmaniac-Höhle
+    3e	= See der Stärke
+    3f	= Scheidequelle
+    40	= Elyses
+    41	= Blizzach-Tempel
+    42	= Blizzach-Tempel
+    43	= Blizzach-Tempel
+    44	= Blizzach-Tempel
+    45	= Erzelingen-Tor
+    46	= Erzelingen-Tor
+    47	= Erzelingen-Tor
+    48	= Erzelingen-Mine
+    49	= Eiseninsel
+    4a	= Eiseninsel
+    4b	= Eiseninsel
+    4c	= Eiseninsel
+    4d	= Eiseninsel
+    4e	= Eiseninsel
+    4f	= Trophäengarten
+    50	= See der Wahrheit
+    51	= Trostu-Ruinen
+    52	= Weideburg Großmoor
+    53	= Weideburg Großmoor
+    54	= Weideburg Großmoor
+    55	= Weideburg Großmoor
+    56	= Weideburg Großmoor
+    57	= Weideburg Großmoor
+    58	= Weideburg Großmoor
+    59	= Feuriohütte
+    5a	= Windkraftwerk
+    5b	= Siegesstraße
+    5c	= Siegesstraße
+    5d	= Siegesstraße
+    5e	= Siegesstraße
+    5f	= Siegesstraße
+    60	= Kraterberg
+    61	= Kraterberg
+    62	= Kraterberg
+    63	= Kraterberg
+    64	= Kraterberg
+    65	= Kraterberg
+    66	= Kraterberg
+    67	= Kraterberg
+    68	= Kraterberg
+    69	= Kraterberg
+    6a	= Kraterberg
+    6b	= Kraterberg
+    6c	= Kraterberg
+    6d	= Sonnewik
+    6e	= Weideburg
+    6f	= Kahlberg
+    70	= Kahlberg
+    71	= Ewigenau
+    72	= Ewigwald
+    73	= Zweiblattdorf
+    74	= Pokémon Liga
+    75	= Bizarre Höhle
+    76	= Bizarre Höhle
+    77	= Bizarre Höhle
+    78	= Fleetburg
+    79	= Höhle der Umkehr
+    7a	= Alte Villa
+    7b	= Erholungsgebiet
+    7c	= See der Kühnheit
+    7d	= Kühnheitsufer
+    7e	= Duellturm
+    7f	= Duellturm
+    80	= Duellturm
+    81	= Duellturm
+    82	= Duellturm
+    83	= Beliebig
+    84	= Morgens
+    85	= Morgens/nachmittags
+    86	= Nachts
+    87	= ・Lv. %d oder höher
+    88	= ・Honigbaum
+    89	= ・Wenn Vert. > Angriff
+    8a	= ・Zuf., tägl. Pokémon aus Großmoor.
+    8b	= ・HUNDUSTER-Ei
+    8c	= ・SMOGON-Ei
+    8d	= ・FLURMEL-Ei
+    8e	= ・WEBERAK-Ei
+    8f	= ・SHUPPET-Ei
+    90	= ・FIFFYEN-Ei
+    91	= ・LEDYBA-Ei
+    92	= ・ISSO-Ei
+    93	= ・SCHWALBINI-Ei
+    94	= ・Mit Angel
+    95	= ・Mit Profiangel
+    96	= ・Mit Superangel
+    97	= ・Item: Up-Grade
+    98	= ・Item: Dubiosdisc
+    99	= ・Item: Stromisierer
+    9a	= ・Item: Leuchtstein
+    9b	= ・Item: Feuerstein
+    9c	= ・Item: Donnerstein
+    9d	= ・Item: Abysszahn
+    9e	= ・Item: Magmaisierer
+    9f	= ・Item: Metallmantel
+    a0	= ・Item: Funkelstein
+    a1	= ・Item: Wasserstein
+    a2	= ・Item: King-Stein
+    a3	= ・Item: Schützer
+    a4	= ・Item: Düsterumhang
+    a5	= ・Item: Blattstein
+    a6	= ・Item: Drachenhaut
+    a7	= ・Item: Scharfzahn
+    a8	= ・Item: Scharfklaue
+    a9	= ・Item: Sonnenstein
+    aa	= ・Item: Mondstein
+    ab	= ・Item: Abyssplatte
+    ac	= ・Item: Finsterstein
+    ad	= ・Nassbrocken
+    ae	= ・Eisbrocken
+    af	= ・Fossil: Helixfossil
+    b0	= ・Fossil: Altbernstein
+    b1	= ・Fossil: Domfossil
+    b2	= ・Fossil: Wurzelfossil
+    b3	= ・Fossil: Panzerfossil
+    b4	= ・Fossil: Klauenfossil
+    b5	= ・Fossil: Kopffossil
+    b6	= ・Wenn Angriff = Vert.
+    b7	= ・Wenn Angriff > Vert.
+    b8	= ・Auf Wasser (mit Surfer)
+    b9	= ・Nur in Pokémon Diamant-Edition
+    ba	= ・Nur in Pokémon Perl-Edition
+    bb	= ・Park der Freunde
+    bc	= ・Vierstufiger Wasserfall
+    bd	= ・Infos über ICOGNITO
+    be	= ・Infos über BARSCHWA
+    bf	= ・Infos über DRIFTLON
+    c0	= ・Infos über PANTIMIMI
+    c1	= ・Infos über KRYPPUK
+    c2	= ・Infos über NINJATOM
+    c3	= ・Infos über MOBAI
+    c4	= ・Levelanstieg zw. 4 und 20 Uhr
+    c5	= ・Levelanstieg zw. 20 und 4 Uhr
+    c6	= ・Pokéradar erforderlich
+    c7	= ・Pokémon Diamant-Edition - selten
+    c8	= ・Pokémon Perl-Edition - selten
+    c9	= ・Massenh. Erscheinen von Pokémon
+    ca	= ・Nach Erlernen von Doppelschlag
+    cb	= ・Nach Erlernen von Antik-Kraft
+    cc	= ・Nach Erlernen von Walzer
+    cd	= ・Dual-Modus: Smaragd
+    ce	= ・Dual-Modus: Feuerrot
+    cf	= ・Dual-Modus: Blattgrün
+    d0	= ・Dual-Modus: Rubin
+    d1	= ・Dual-Modus: Saphir
+    d2	= ・Nach Erhalt des Nat. Pokédex
+    d3	= ・Trophäengarten
+    d4	= Schmiere Honig, den du in den Auen von\n
+	+ Flori bekommst, auf einen Baum und warte\n
+	+ einen halben Tag, bis ein Pokémon erscheint!\n
+	+ Welches das ist, hängt von der Art des\n
+	+ Baums ab.
+    d5	= Jeden Tag und in jedem Bereich des\n
+	+ Großmoors Weideburg kannst du neue\n
+	+ Pokémon fangen. Mit dem Teleskop auf der\n
+	+ ersten Ebene der Aussichtsplattform kannst\n
+	+ du schauen, welche heute unterwegs sind.
+    d6	= Ort und Typ der Pokémon-Erscheinungen\n
+	+ ändern sich täglich. Suche nach jemandem\n
+	+ in Sandgemme, der dir vielleicht nützliche\n
+	+ Informationen darüber geben kann.
+    d7	= Hör dir die Geschichten von Herrn Reichedel\n
+	+ gut an. Sie verraten dir, welche Pokémon du\n
+	+ im Trophäengarten fangen kannst. Jeden\n
+	+ Tag hat er eine Geschichte auf Lager.
+    d8	= Schick ein HUNDEMON♀ und ein Pokémon,\n
+	+ das es mag, in die Pokémon-Pension, dann\n
+	+ bekommst du dieses Ei. Hinweis:\n
+	+ HUNDEMON erscheint nur in Perl-Edition.
+    d9	= Dieses Ei bekommst du, wenn du\n
+	+ SMOGMOG♀ und ein Pokémon, das es mag,\n
+	+ in die Pokémon-Pension schickst.
+    da	= Schick ein KRAKEELO♀ oder KRAWUMMS♀\n
+	+ und ein Pokémon, das es mag, in die\n
+	+ Pokémon-Pension, um dieses Ei zu erhalten.
+    db	= Wenn du ein MAGNAYEN♀ und ein\n
+	+ Pokémon, das es mag, in die Pokémon-\n
+	+ Pension schickst, bekommst du dieses Ei.\n
+	+ MAGNAYEN erscheint nur in Diamant-\n
+	+ Edition.
+    dc	= Dieses Ei kannst du bekommen, wenn du ein\n
+	+ ARIADOS♀ und ein Pokémon, das es mag,\n
+	+ in die Pokémon-Pension schickst.
+    dd	= Dieses Ei erhältst du, wenn du ein\n
+	+ BANETTE♀ und ein Pokémon, das es mag,\n
+	+ in die Pokémon-Pension schickst.
+    de	= Schick ein LEDIAN♀ und ein Pokémon,\n
+	+ das es mag, in die Pokémon-Pension,\n
+	+ um dieses Ei zu erhalten.
+    df	= Schick ein WOINGENAU♀ und ein Pokémon,\n
+	+ das es mag, in die Pokémon-Pension, um\n
+	+ dieses Ei zu erhalten. Vergewissere dich\n
+	+ aber, dass eines von beiden Laxrauch\n
+	+ bei sich trägt!
+    e0	= Wenn du ein SCHWALBOSS♀ und ein\n
+	+ Pokémon, das es mag, in die Pokémon-\n
+	+ Pension schickst, kannst du dieses Ei\n
+	+ erhalten.
+    e1	= Du bekommst ein Up-Grade in Ewigenau.
+    e2	= Du bekommst eine Dubiosdisc auf\n
+	+ Route 225.
+    e3	= Du wirst feststellen, dass ein wildes ELEKID\n
+	+ manchmal einen Stromisierer bei sich hat.\n
+	+ Ein ELEKID findest du am Windkraftwerk.\n
+	+ Dual-Modus: Feuerrot.
+    e4	= Du findest einen Leuchtstein entweder auf\n
+	+ der Eiseninsel oder auf Route 228.
+    e5	= Einen Feuerstein findest du in der\n
+	+ Feuriohütte. Manchmal kann man sie\n
+	+ auch im Untergrund ausgraben.
+    e6	= Du findest einen Donnerstein in Sonnewik.\n
+	+ Manchmal kannst du einen auch im\n
+	+ Untergrund ausgraben.
+    e7	= Ein Abysszahn wird manchmal von einem\n
+	+ KANIVANHA oder einem TOHAIDO gehalten.
+    e8	= MAGBY hält manchmal einen Magmaisierer\n
+	+ bei sich. Einem MAGBY begegnest du auf\n
+	+ Route 227.\n
+	+ Dual-Modus: Blattgrün
+    e9	= Metallmäntel werden manchmal von\n
+	+ BRONZEL oder STAHLOS getragen.
+    ea	= Einen Funkelstein findest du entweder auf\n
+	+ dem Kraterberg oder auf Route 225.
+    eb	= Du findest einen Wasserstein auf Route 213.\n
+	+ Manchmal kannst du auch einen im\n
+	+ Untergrund ausgraben.
+    ec	= Ein King-Stein kann manchmal von einem\n
+	+ Pokémon mit der Fähigkeit Mitnahme\n
+	+ ergattert werden.
+    ed	= Einen Schützer findest du auf Route 228.
+    ee	= Du findest einen Düsterumhang\n
+	+ auf Route 229.
+    ef	= Du findest einen Blattstein in den\n
+	+ Auen von Flori oder manchmal auch,\n
+	+ wenn du im Untergrund danach gräbst.
+    f0	= Manchmal findest du eine Drachenhaut im\n
+	+ Besitz von SEEPER oder SEEMON.
+    f1	= Du findest manchmal einen Sonnenstein,\n
+	+ wenn du im Untergrund danach gräbst.\n
+	+ Manchmal hält ihn auch ein SONNFEL.
+    f2	= Mondsteine können zuweilen im Untergrund\n
+	+ ausgegraben werden. Sie werden manchmal\n
+	+ aber auch von LUNASTEIN gehalten.
+    f3	= Manchmal begegnet man einem wilden\n
+	+ RELICANTH, das eine Abyssplatte hält.
+    f4	= Gelegentlich findet man einen Finsterstein\n
+	+ im Galaktik-Gebäude oder auf der\n
+	+ Siegesstraße.
+    f5	= Nur mit dem Forschersack kommst du dahin.\n
+	+ Wenn du dich unter der Erde befindest,\n
+	+ grabe nach Fossilen. Sobald du den\n
+	+ Nationalen Pokédex erhalten hast, findest\n
+	+ du mehrere Fossilarten.
+    f6	= Route 221 zum Park der Freunde wird fertig\n
+	+ gestellt, wenn du den Nationalen Pokédex\n
+	+ erhältst. Dort kannst du Pokémon aus\n
+	+ GBA-Spielen mitbringen und bei der\n
+	+ Fangshow einfangen.
+    f7	= Wenn du alle Arten von ICOGNITO fängst,\n
+	+ öffnet sich Route 214 zum Maniac-Tunnel.\n
+	+ Dort erreichst du einen Raum, in dem du\n
+	+ "!"- und "?"-ICOGNITO begegnest.
+    f8	= Wenn Angriff höher als Verteidigung ist,\n
+	+ erhältst du ein KICKLEE, andersrum ein\n
+	+ NOCKCHAN. Wenn sich diese Werte\n
+	+ gleichen, erhältst du ein KAPOERA.
+    f9	= Angle, während du surfst. BARSCHWA sind\n
+	+ an vier Orten zu finden. Dort hast du eine\n
+	+ 50 %-Chance, dass sie anbeißen. Sie\n
+	+ erscheinen aber jeden Tag an einem anderen\n
+	+ Ort.
+    fa	= Es erscheint jede Woche am Freitag\n
+	+ vor dem Windkraftwerk.
+    fb	= Sobald du den Nationalen Pokédex in Perl-\n
+	+ Edition bekommen hast, erscheint es im\n
+	+ Trophäengarten, nachdem du dir Herrn\n
+	+ Reichedels Geschichten angehört hast.
+    fc	= 1. Lege den Spiritkern in die Ruine des\n
+	+ Steinturms.\n
+	+ 2. Geh m. d. Forschersack zum Untergrund.\n
+	+ 3. Sprich mit 32 Personen.\n
+	+ 4. KRYPPUK erscheint am Geweihten Turm.
+    fd	= Wenn dein NINCADA Level 20 erreicht und\n
+	+ du eine Pokéball-Box frei hast, entwickelt es\n
+	+ sich zu NINJASK. Außerdem erhältst du ein\n
+	+ NINJATOM in deiner leeren Pokéball-Box!
+    fe	= Sobald du den Nationalen Pokédex auch in\n
+	+ Diamant-Edition erhalten hast, erscheint es\n
+	+ im Trophäengarten, nachdem du dir Herrn\n
+	+ Reichedels Geschichten angehört hast.
+    ff	= Wenn dich EVOLI ausreichend mag und sein\n
+	+ Level steigt, entwickelt es sich abhängig von\n
+	+ der Uhrzeit zu einem PSIANA oder einem\n
+	+ NACHTARA.
+   100	= Nachdem du den Nationalen Pokédex auch\n
+	+ in Pokémon Perl-Edition erhalten hast,\n
+	+ kannst du es auf Route 224 fangen.
+   101	= Du bekommst das Pokéradar, wenn du den\n
+	+ Nationalen Pokédex hast. Wenn du es\n
+	+ einsetzt, erkennst du zitternde Grasflächen.\n
+	+ Die solltest du genauer untersuchen!
+   102	= GRIFFEL lernt Doppelschlag mit Level 32.
+   103	= TANGELA lernt Antik-Kraft mit Level 33.
+   104	= Yanma lernt Antik-Kraft mit Level 33.
+   105	= Es kann Antik-Kraft erlernen, wenn\n
+	+ du dem Attacken-Helfer eine\n
+	+ Herzschuppe gibst. Diese findest\n
+	+ du durch Graben im Untergrund.
+   106	= Wenn SCHLURP Level 32 erreicht,\n
+	+ lernt es Walzer.
+   107	= Erscheint, wenn du ein Game Boy Advance-\n
+	+ Pokémon-Spiel in den GBA-Modulschacht\n
+	+ des Nintendo DS steckst.
+   108	= Eine Scharfklaue findest du entweder auf der\n
+	+ Siegesstraße oder auf Route 224.
+   109	= Du findest einen Scharfzahn im Duellpark.
+   10a	= Nimm Prof. Eibes Aktentasche am\n
+	+ See der Wahrheit an dich.
+   10b	= Bringe das Ei zum Schlüpfen, das\n
+	+ dir Hordeo auf der Eiseninsel gab.
+   10c	= Überprüfe nachts den Fernseher\n
+	+ in der Alten Villa.
+   10d	= Du begegnest diesem Pokémon\n
+	+ am See der Stärke.
+   10e	= Nach eurer Begegnung am See der\n
+	+ Wahrheit fliegt es in Sinnoh umher.
+   10f	= Du begegnest diesem Pokémon\n
+	+ am See der Kühnheit.
+   110	= Du begegnest diesem Pokémon an\n
+	+ der Speersäule des Kraterbergs.
+   111	= Dieses Pokémon findest du am\n
+	+ Kahlberg.
+   112	= Du begegnest diesem Pokémon\n
+	+ im Blizzach-Tempel.
+   113	= Dieses Pokémon sollte unweit der\n
+	+ Höhle der Umkehr zu finden sein.
+   114	= Es fliegt nach eurer Begegnung auf\n
+	+ der Vollmond-Insel in Sinnoh\n
+	+ herum.
+   115	= Du kannst dann zwischen CHELAST,\n
+	+ PANFLAM oder PLINFA wählen. Wenn sich\n
+	+ dein Freund für ein unterschiedliches\n
+	+ Pokémon entschieden hat, kannst du die\n
+	+ Pokémon mit ihm tauschen.
+   116	= Du kannst dieses Pokémon fangen, wenn\n
+	+ sich REGIROCK, REGICE und REGISTEEL in\n
+	+ deiner Gruppe befinden.
+   117	= Morgens/abends
+   118	= Sorge dafür, dass die Schönheit eines\n
+	+ BARSCHWA ausreichend hoch ist, wenn\n
+	+ der Level dieses Pokémon steigt.
+   119	= Sorge dafür, dass der Level von MANTIRPS\n
+	+ steigt, während sich REMORAID in deiner\n
+	+ Gruppe befindet.
+   11a	= ・Infos über MANTIRPS
+   11b	= ・Infos über MILOTIC
+   11c	= ・Infos über CHELAST
+   11d	= ・Infos über PANFLAM
+   11e	= ・Infos über PLINFA
+   11f	= ・Infos über REGIGIGAS
+   120	= Dieses Ei findest du in der\n
+	+ Pokémon-Pension von Trostu.
+   121	= ・Infos über Eier
+   122	= Schick ♂ und ♀ Pokémon, die sich mögen,\n
+	+ in die Pokémon-Pension, um ein Ei zu\n
+	+ erhalten.
+   123	= NEU!
+

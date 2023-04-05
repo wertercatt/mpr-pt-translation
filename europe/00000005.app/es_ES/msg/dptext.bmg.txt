@@ -1,0 +1,353 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xd0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Encontrado Nv. $3$.
+     1	= $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Aparentemente\n
+	+ encontrado Nv. $3$.
+     2	= $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Llegado Nv. $3$.
+     3	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo obtenido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo eclosionado.
+     4	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo obtenido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo aparent. abierto.
+     5	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo recibido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo eclosionado.
+     6	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo recibido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo aparent. abierto.
+     7	= $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Encuentro fatídico\n
+	+ Nv. $3$.
+     8	= $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Aparentemente\n
+	+ encuentro fatídico\n
+	+ Nv. $3$.
+     9	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo obtenido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo eclosionado.\n
+	+ Encuentro fatídico.
+     a	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo obtenido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo aparent. abierto.\n
+	+ Encuentro fatídico.
+     b	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ El huevo ha llegado.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo eclosionado.\n
+	+ Encuentro fatídico.
+     c	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ El huevo ha llegado.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo aparent. abierto.\n
+	+ Encuentro fatídico.
+     d	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo obtenido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo eclosionado.\n
+	+ Encuentro fatídico.
+     e	= $7$/$6$/20$5$\n
+	+ $8$\n
+	+ Huevo obtenido.\n
+	+ $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Huevo aparent. abierto.\n
+	+ Encuentro fatídico.
+     f	= $2$/$1$/20$0$\n
+	+ $4$\n
+	+ Llegado Nv. $3$.
+    10	= $7$/$6$/20$5$\n
+	+ ¡Misterioso huevo de\n
+	+ Pokémon recibido de\n
+	+ $8$!
+    11	= $7$/$6$/20$5$\n
+	+ ¡Misterioso huevo de\n
+	+ Pokémon obtenido\n
+	+ en $8$!
+    12	= $7$/$6$/20$5$\n
+	+ ¡Huevo de Pokémon muy\n
+	+ misterioso obtenido\n
+	+ en $8$!
+    13	= $7$/$6$/20$5$\n
+	+ ¡Huevo de Pokémon muy\n
+	+ misterioso procedente\n
+	+ de $8$!
+    14	= Zona Misteriosa
+    15	= Pueblo Hojaverde
+    16	= Pueblo Arena
+    17	= Pueblo Aromaflor
+    18	= Pueblo Sosiego
+    19	= Pueblo Caelestis
+    1a	= Ciudad Jubileo
+    1b	= Ciudad Canal
+    1c	= Ciudad Pirita
+    1d	= Ciudad Vetusta
+    1e	= Ciudad Corazón
+    1f	= Ciudad Pradera
+    20	= Ciudad Rocavelo
+    21	= Ciudad Marina
+    22	= Ciudad Puntaneva
+    23	= Liga Pokémon
+    24	= Ruta 201
+    25	= Ruta 202
+    26	= Ruta 203
+    27	= Ruta 204
+    28	= Ruta 205
+    29	= Ruta 206
+    2a	= Ruta 207
+    2b	= Ruta 208
+    2c	= Ruta 209
+    2d	= Ruta 210
+    2e	= Ruta 211
+    2f	= Ruta 212
+    30	= Ruta 213
+    31	= Ruta 214
+    32	= Ruta 215
+    33	= Ruta 216
+    34	= Ruta 217
+    35	= Ruta 218
+    36	= Ruta 219
+    37	= Ruta 220
+    38	= Ruta 221
+    39	= Ruta 222
+    3a	= Ruta 223
+    3b	= Ruta 224
+    3c	= Ruta 225
+    3d	= Ruta 226
+    3e	= Ruta 227
+    3f	= Ruta 228
+    40	= Ruta 229
+    41	= Ruta 230
+    42	= Mina Pirita
+    43	= Valle Eólico
+    44	= Bosque Vetusto
+    45	= Forja Fuego
+    46	= Monte Corona
+    47	= Columna Lanza
+    48	= Gran Pantano
+    49	= Ruinas Sosiego
+    4a	= Calle Victoria
+    4b	= Parque Compi
+    4c	= Plaza Amistad
+    4d	= Senda Desolada
+    4e	= Prado Aromaflor
+    4f	= Puerta Pirita
+    50	= Isla Plenilunio
+    51	= Fuente Despedida
+    52	= Cueva Retorno
+    53	= Paraíso Floral
+    54	= Templo Puntaneva
+    55	= Cueva Extravío
+    56	= Mina Ruinamaníaco
+    57	= Túnel Maníaco
+    58	= Jardín Trofeo
+    59	= Isla Hierro
+    5a	= Vieja Mansión
+    5b	= Base Galaxia
+    5c	= Orilla Veraz
+    5d	= Orilla Valor
+    5e	= Orilla Agudeza
+    5f	= Vía Manantial
+    60	= Lago Veraz
+    61	= Lago Valor
+    62	= Lago Agudeza
+    63	= Isla Lunanueva
+    64	= Torre Batalla
+    65	= Zona de Combate
+    66	= Zona Sobrevivir
+    67	= Zona Descanso
+    68	= Montaña Dura
+    69	= Vía Costera
+    6a	= Sala del Origen
+    6b	= Caverna Veraz
+    6c	= Caverna Valor
+    6d	= Caverna Agudeza
+    6e	= Jubileo TV
+    6f	= Poké-reloj S.A.
+    70	= GTS
+    71	= Dojo PKMN
+    72	= Museo Minero
+    73	= Floristería
+    74	= Tienda de Bicis
+    75	= Auditorio
+    76	= Pokochería
+    77	= Templo
+    78	= Guardería PKMN
+    79	= C. C. Rocavelo
+    7a	= Casino
+    7b	= Biblioteca Canal
+    7c	= Faro Visión
+    7d	= Mercado Marino
+    7e	= Mansión Pokémon
+    7f	= Casa Huellas
+    80	= Cafetería
+    81	= Gran Lago
+    82	= Restaurante
+    83	= Parque Batalla
+    84	= Lugar encantador
+    85	= Pokémon Ranger
+    86	= Lugar lejano
+    87	= Película Pokémon
+    88	= Película PKMN 06
+    89	= Película PKMN 07
+    8a	= Película PKMN 08
+    8b	= Película PKMN 09
+    8c	= Película PKMN 10
+    8d	= Película PKMN 11
+    8e	= Película PKMN 12
+    8f	= Película PKMN 13
+    90	= Película PKMN 14
+    91	= Película PKMN 15
+    92	= Película PKMN 16
+    93	= Animación PKMN
+    94	= Space World
+    95	= Space World 06
+    96	= Space World 07
+    97	= Space World 08
+    98	= Space World 09
+    99	= Space World 10
+    9a	= Space World 11
+    9b	= Space World 12
+    9c	= Space World 13
+    9d	= Space World 14
+    9e	= Space World 15
+    9f	= Space World 16
+    a0	= Pokémon Festa
+    a1	= Pokémon Festa 06
+    a2	= Pokémon Festa 07
+    a3	= Pokémon Festa 08
+    a4	= Pokémon Festa 09
+    a5	= Pokémon Festa 10
+    a6	= Pokémon Festa 11
+    a7	= Pokémon Festa 12
+    a8	= Pokémon Festa 13
+    a9	= Pokémon Festa 14
+    aa	= Pokémon Festa 15
+    ab	= Pokémon Festa 16
+    ac	= POKéPARK
+    ad	= POKéPARK 06
+    ae	= POKéPARK 07
+    af	= POKéPARK 08
+    b0	= POKéPARK 09
+    b1	= POKéPARK 10
+    b2	= POKéPARK 11
+    b3	= POKéPARK 12
+    b4	= POKéPARK 13
+    b5	= POKéPARK 14
+    b6	= POKéPARK 15
+    b7	= POKéPARK 16
+    b8	= Pokémon Center
+    b9	= PC Tokio
+    ba	= PC Osaka
+    bb	= PC Fukuoka
+    bc	= PC Nagoya
+    bd	= PC Sapporo
+    be	= PC Yokohama
+    bf	= Nintendo World
+    c0	= Evento PKMN
+    c1	= Evento PKMN 06
+    c2	= Evento PKMN 07
+    c3	= Evento PKMN 08
+    c4	= Evento PKMN 09
+    c5	= Evento PKMN 10
+    c6	= Evento PKMN 11
+    c7	= Evento PKMN 12
+    c8	= Evento PKMN 13
+    c9	= Evento PKMN 14
+    ca	= Evento PKMN 15
+    cb	= Evento PKMN 16
+    cc	= Evento Wi-Fi
+    cd	= Regalo Wi-Fi
+    ce	= Club Fans PKMN
+    cf	= Sitio Evento
+    d0	= Concierto Evento
+    d1	= Pareja guardería
+    d2	= Intercambio
+    d3	= Intercambio
+    d4	= Kanto
+    d5	= Johto
+    d6	= Hoenn
+    d7	= Sinnoh
+    d8	= ----------
+    d9	= Tierra lejana
+    da	= Viajero
+    db	= Quinoa
+
