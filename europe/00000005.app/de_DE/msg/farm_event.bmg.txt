@@ -1,0 +1,1336 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xa0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= 
+     1	= Willkommen zu\n
+	+ "My Pokémon Ranch"!
+     2	= Ich bin Eukalia, die Leiterin von\n
+	+ "My Pokémon Ranch"! Es ist\n
+	+ schön, dich kennen zu lernen.
+     3	= Eine Pokémon-Ranch ist ein Ort\n
+	+ der gemeinsamen Entspannung\n
+	+ und Freude für Menschen und\n
+	+ Pokémon.
+     4	= Am besten schaust du dich um,\n
+	+ dann bleiben dir lange\n
+	+ Erklärungen erspart.
+     5	= Sieh als Erstes genau hin,\n
+	+ wie ich zur Ranch gelange.
+     6	= Bist du bereit?
+     7	= 3...
+     8	= 2...
+     9	= 1...
+     a	= Und los!
+     b	= ...Da sind wir also!\n
+	+ Was du hier hinter mir siehst,\n
+	+ ist eine Pokémon-Ranch!
+     c	= So sehen Menschen und\n
+	+ Pokémon auf der Pokémon-\n
+	+ Ranch aus. Niedlich, findest du\n
+	+ nicht auch?
+     d	= Die Pokémon-Ranch ist ein Ort,\n
+	+ an dem wir jede Menge\n
+	+ Pokémon betreuen.
+     e	= Ähm, um ehrlich zu sein, tun wir\n
+	+ mehr, als sie nur zu betreuen...
+     f	= Wir können sie nämlich auch\n
+	+ bei ihren täglichen Lebens-\n
+	+ gewohnheiten beobachten.
+    10	= Am liebsten aber sorge ich\n
+	+ dafür, dass es auf der Ranch\n
+	+ vor Pokémon nur so wimmelt!
+    11	= So lange ich zurückdenken\n
+	+ kann, hatte ich schon immer\n
+	+ den Traum, von ihnen umgeben\n
+	+ zu sein...
+    12	= Ach... Eine Ranch voller\n
+	+ Pokémon... Herz, was\n
+	+ willst du mehr?
+    13	= !!!
+    14	= Hoppla. Ich bin wieder ins\n
+	+ Schwärmen geraten...
+    15	= Das hier sind vorerst alle\n
+	+ Pokémon, die ich mitgebracht\n
+	+ habe.
+    16	= Dagegen werden wir aber\n
+	+ schnell etwas unternehmen.
+    17	= Ähm, da ich's gerade erwähne...\n
+	+ Es gibt da etwas, was ich dich\n
+	+ fragen wollte.
+    18	= Würdest du mir helfen, diese\n
+	+ Ranch mit Pokémon zu füllen?
+    19	= Das würdest du, nicht wahr?
+    1a	= ...Hm? Ähm...\n
+	+ Das habe ich nicht ganz\n
+	+ verstanden... Also frage ich am\n
+	+ besten gleich noch einmal!
+    1b	= Fantastisch! Wusste ich's doch,\n
+	+ dass du da gleich Feuer und\n
+	+ Flamme bist!
+    1c	= Alles klar! Doch eins nach dem\n
+	+ anderen. Als Erstes möchte ich,\n
+	+ dass du dich gleich zur Ranch\n
+	+ begibst!
+    1d	= Wähle, welche Miis du mit auf\n
+	+ die Ranch nehmen willst! Wenn\n
+	+ du mich fragst... je mehr, desto\n
+	+ besser.
+    1e	= Okay, jetzt erkläre ich dir mal,\n
+	+ wie wir diese Ranch mit\n
+	+ Pokémon füllen wollen.
+    1f	= Von heute an werde ich jeden\n
+	+ Tag, an dem wir uns treffen, ein\n
+	+ neues Pokémon hierher bringen.
+    20	= Ich möchte, dass du auf die\n
+	+ Pokémon aufpasst, wenn ich\n
+	+ sie dir gebracht habe!
+    21	= Im Klartext heißt das: Für jeden\n
+	+ Tag, an dem du die Ranch\n
+	+ besuchst, bekommst du ein\n
+	+ neues Pokémon von mir!
+    22	= Zusammen können wir die\n
+	+ Population der Pokémon, die\n
+	+ wir hier halten, nach oben\n
+	+ schrauben.
+    23	= Wenn du Pokémon in Pokémon\n
+	+ Diamant- oder Perl-Edition\n
+	+ gefangen hast, kannst du sie\n
+	+ auch hierher bringen.
+    24	= So erhöhen wir die Anzahl\n
+	+ noch schneller!
+    25	= Also, hier noch mal kurz\n
+	+ zusammengefasst: Wenn du\n
+	+ irgendwelche Pokémon hast,\n
+	+ bring sie mit!
+    26	= Sag mal, hast du Pokémon\n
+	+ Diamant- oder Perl-Edition?
+    27	= Ja? Fantastisch! Das heißt, du\n
+	+ kannst alle deine Pokémon aus\n
+	+ diesen Spielen auf die Ranch\n
+	+ mitbringen!
+    28	= Das lässt die Population der\n
+	+ Pokémon in die Höhe schnellen!
+    29	= Wenn du also irgendwelche\n
+	+ Pokémon hast, bring sie\n
+	+ bitte mit!
+    2a	= Oh... Das ist echt schade, da\n
+	+ das eine tolle Möglichkeit ist,\n
+	+ die Zahl der Pokémon auf der\n
+	+ Ranch zu erhöhen.
+    2b	= Es ist aber auch nicht so\n
+	+ schlimm. Dann bringe ich\n
+	+ einfach jeden Tag ein neues\n
+	+ Pokémon mit!
+    2c	= Also, weißt du jetzt, wie wir die\n
+	+ Zahl der Pokémon erhöhen?
+    2d	= Heute ist ein besonderer Tag,\n
+	+ da du zum ersten Mal hier bist.\n
+	+ Deshalb habe ich ganze sechs\n
+	+ Pokémon mitgebracht.
+    2e	= Lass uns die Ranch mit diesen\n
+	+ sechs Pokémon eröffnen!
+    2f	= Ab morgen, dem %ls,\n
+	+ bringe ich jeden Tag neue\n
+	+ Pokémon mit. Bestimmt freust\n
+	+ du dich schon darauf!
+    30	= Wenn du Näheres darüber\n
+	+ erfahren willst, wähle "?" unten\n
+	+ links auf dem Bildschirm.
+    31	= Je höher die Zahl der\n
+	+ Pokémon, desto mehr ist\n
+	+ auf der Ranch auch los!
+    32	= Viel Spaß beim Beobachten all\n
+	+ der wunderschönen Pokémon\n
+	+ auf der Ranch!
+    33	= Nochmals danke, dass du\n
+	+ mitmachst! Lass uns alles\n
+	+ versuchen, um dieser Ranch\n
+	+ etwas Leben einzuhauchen!
+    34	= Gehst du schon? Na dann...\n
+	+ Vielen Dank für deinen Besuch!
+    35	= Bevor du gehst, möchte ich dich\n
+	+ aber noch etwas fragen...
+    36	= Welche Art von Pokémon soll\n
+	+ ich denn am %ls\n
+	+ mitbringen?
+    37	= Hättest du morgen gerne ein\n
+	+ %ls Pokémon?
+    38	= Wie wäre es morgen mit einem\n
+	+ roten Pokémon?
+    39	= Wie wäre es morgen mit einem\n
+	+ blauen Pokémon?
+    3a	= Wie wäre es morgen mit einem\n
+	+ gelben Pokémon?
+    3b	= Wie wäre es morgen mit einem\n
+	+ grünen Pokémon?
+    3c	= Wie wäre es morgen mit einem\n
+	+ schwarzen Pokémon?
+    3d	= Wie wäre es morgen mit einem\n
+	+ braunen Pokémon?
+    3e	= Wie wäre es morgen mit einem\n
+	+ lila Pokémon?
+    3f	= Wie wäre es morgen mit einem\n
+	+ grauen Pokémon?
+    40	= Wie wäre es morgen mit einem\n
+	+ weißen Pokémon?
+    41	= Wie wäre es morgen mit einem\n
+	+ pinkfarbenen Pokémon?
+    42	= Wie wäre es morgen mit einem\n
+	+ kleinen Pokémon?
+    43	= Wie wäre es morgen mit einem\n
+	+ großen Pokémon?
+    44	= Wie wäre es morgen mit einem\n
+	+ leichten Pokémon?
+    45	= Wie wäre es morgen mit einem\n
+	+ schweren Pokémon?
+    46	= Wie wäre es morgen mit einem\n
+	+ heißen Pokémon?
+    47	= Wie wäre es morgen mit einem\n
+	+ kalten Pokémon?
+    48	= Wie wäre es morgen mit einem\n
+	+ beängstigenden Pokémon?
+    49	= Wie wäre es morgen mit einem\n
+	+ flotten Pokémon?
+    4a	= Wie wäre es morgen mit einem\n
+	+ runden Pokémon?
+    4b	= Wie wäre es morgen mit einem\n
+	+ fliegenden Pokémon?
+    4c	= Wie wäre es morgen mit einem\n
+	+ stämmigen Pokémon?
+    4d	= Wie wäre es morgen mit einem\n
+	+ beherzten Pokémon?
+    4e	= Wie wäre es morgen mit einem\n
+	+ paralysierenden Pokémon?
+    4f	= Wie wäre es morgen mit einem\n
+	+ coolen Pokémon?
+    50	= Wie wäre es morgen mit einem\n
+	+ verwirrten Pokémon?
+    51	= Wie wäre es morgen mit einem\n
+	+ muffigen Pokémon?
+    52	= Wie wäre es morgen mit einem\n
+	+ singenden Pokémon?
+    53	= Wie wäre es morgen mit einem\n
+	+ süßlich riechenden Pokémon?
+    54	= Okay, dann vielleicht ein\n
+	+ %ls \n
+	+ Pokémon?
+    55	= Okay, dann vielleicht ein\n
+	+ rotes Pokémon?
+    56	= Okay, dann vielleicht ein\n
+	+ blaues Pokémon?
+    57	= Okay, dann vielleicht ein\n
+	+ gelbes Pokémon?
+    58	= Okay, dann vielleicht ein\n
+	+ grünes Pokémon?
+    59	= Okay, dann vielleicht ein\n
+	+ schwarzes Pokémon?
+    5a	= Okay, dann vielleicht ein\n
+	+ braunes Pokémon?
+    5b	= Okay, dann vielleicht ein\n
+	+ lila Pokémon?
+    5c	= Okay, dann vielleicht ein\n
+	+ graues Pokémon?
+    5d	= Okay, dann vielleicht ein\n
+	+ weißes Pokémon?
+    5e	= Okay, dann vielleicht ein\n
+	+ pinkfarbenes Pokémon?
+    5f	= Okay, dann vielleicht ein\n
+	+ kleines Pokémon?
+    60	= Okay, dann vielleicht ein\n
+	+ großes Pokémon?
+    61	= Okay, dann vielleicht ein\n
+	+ leichtes Pokémon?
+    62	= Okay, dann vielleicht ein\n
+	+ schweres Pokémon?
+    63	= Okay, dann vielleicht ein\n
+	+ heißes Pokémon?
+    64	= Okay, dann vielleicht ein\n
+	+ kaltes Pokémon?
+    65	= Okay, dann vielleicht ein\n
+	+ beängstigendes Pokémon?
+    66	= Okay, dann vielleicht ein\n
+	+ flottes Pokémon?
+    67	= Okay, dann vielleicht ein\n
+	+ rundes Pokémon?
+    68	= Okay, dann vielleicht ein\n
+	+ fliegendes Pokémon?
+    69	= Okay, dann vielleicht ein\n
+	+ stämmiges Pokémon?
+    6a	= Okay, dann vielleicht ein\n
+	+ beherztes Pokémon?
+    6b	= Okay, dann vielleicht ein\n
+	+ paralysierendes Pokémon?
+    6c	= Okay, dann vielleicht ein\n
+	+ cooles Pokémon?
+    6d	= Okay, dann vielleicht ein\n
+	+ verwirrtes Pokémon?
+    6e	= Okay, dann vielleicht ein\n
+	+ muffiges Pokémon?
+    6f	= Okay, dann vielleicht ein\n
+	+ singendes Pokémon?
+    70	= Okay, dann vielleicht ein\n
+	+ süßlich riechendes Pokémon?
+    71	= Also gut, dann entscheide ich!\n
+	+ Morgen bringe ich dir ein\n
+	+ %ls Pokémon!
+    72	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ rotes Pokémon mit!
+    73	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ blaues Pokémon mit!
+    74	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ gelbes Pokémon mit!
+    75	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ grünes Pokémon mit!
+    76	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ schwarzes Pokémon mit!
+    77	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ braunes Pokémon mit!
+    78	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ lila Pokémon mit!
+    79	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ graues Pokémon mit!
+    7a	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ weißes Pokémon mit!
+    7b	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ pinkfarbenes Pokémon mit!
+    7c	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ kleines Pokémon mit!
+    7d	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ großes Pokémon mit!
+    7e	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ leichtes Pokémon mit!
+    7f	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ schweres Pokémon mit!
+    80	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ heißes Pokémon mit!
+    81	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ kaltes Pokémon mit!
+    82	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ beängstigendes Pokémon mit!
+    83	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ flottes Pokémon mit!
+    84	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ rundes Pokémon mit!
+    85	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ fliegendes Pokémon mit!
+    86	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ stämmiges Pokémon mit!
+    87	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ beherztes Pokémon mit!
+    88	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ paralysierendes Pokémon mit!
+    89	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ cooles Pokémon mit!
+    8a	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ verwirrtes Pokémon mit!
+    8b	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ muffiges Pokémon mit!
+    8c	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ singendes Pokémon mit!
+    8d	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich ein\n
+	+ süßlich riechendes Pokémon\n
+	+ mit!
+    8e	= Gut, überlass die Entscheidung\n
+	+ mir! Morgen bringe ich einen\n
+	+ meiner Favoriten mit!
+    8f	= ...Genau! Ich weiß schon,\n
+	+ welches Pokémon da in Frage\n
+	+ kommt...
+    90	= Ich wette, du kannst es schon\n
+	+ kaum erwarten zu sehen,\n
+	+ welches Pokémon ich beim\n
+	+ nächsten Mal mitbringe.
+    91	= Also dann! Bis bald!
+    92	= Wow! Wir betreuen jetzt\n
+	+ %ls Pokémon auf der\n
+	+ Ranch!
+    93	= 
+    94	= Okay, dann lass uns die Ranch\n
+	+ vergrößern! Morgen, am\n
+	+ %ls, wird der\n
+	+ Bau fertiggestellt.
+    95	= Wow, offenbar leben schon\n
+	+ %ls Pokémon auf\n
+	+ unserer Ranch!
+    96	= 
+    97	= Es bleibt uns nichts anderes\n
+	+ übrig, als die Ranch noch weiter\n
+	+ auszubauen!
+    98	= Die Baumaßnahmen sollten am\n
+	+ %ls enden.\n
+	+ Das wird eine Freude!
+    99	= Es wird ein bisschen eng auf\n
+	+ der Ranch. Ab dem\n
+	+ %ls wird aber\n
+	+ alles besser!
+    9a	= Heute habe ich dir wieder ein\n
+	+ neues Pokémon mitgebracht!
+    9b	= Zur Feier des Ausbaus unserer\n
+	+ Ranch habe ich mehr Pokémon\n
+	+ als sonst mitgebracht!
+    9c	= Leider habe ich heute kein\n
+	+ Pokémon mitgebracht.
+    9d	= Ich habe nämlich bereits\n
+	+ %ls Pokémon mitgebracht.
+    9e	= 
+    9f	= Diese Pokémon liegen mir sehr\n
+	+ am Herzen. Pass bitte gut auf\n
+	+ sie auf, ja?
+    a0	= Dieses Pokémon bedeutet mir\n
+	+ wirklich sehr viel. Sei so nett\n
+	+ und pass gut darauf auf, ja?
+    a1	= Wir können die Ranch leider\n
+	+ nicht weiter ausbauen...
+    a2	= Die Pokémon und ich verlassen\n
+	+ uns aber trotzdem auf dich!
+    a3	= Sobald wir %ls Pokémon\n
+	+ beisammen haben, lass uns\n
+	+ die Ranch ausbauen!
+    a4	= 
+    a5	= Lass uns die Ranch mit noch\n
+	+ mehr Pokémon füllen!
+    a6	= Lass uns immer mehr Pokémon\n
+	+ herbringen und die Ranch\n
+	+ ausbauen!
+    a7	= Wenn wir %ls Pokémon\n
+	+ beisammen haben, lass uns die\n
+	+ Ranch noch weiter ausbauen!
+    a8	= 
+    a9	= ...Hmmm...
+    aa	= Du scheinst das Leben auf der\n
+	+ Ranch richtig zu genießen.
+    ab	= Probiere mal den Freien Modus\n
+	+ aus. Damit kannst du die Ranch\n
+	+ genau unter die Lupe nehmen.\n
+	+ Er ist sehr nützlich!
+    ac	= Du kannst nun den\n
+	+ Freien Modus auswählen!
+    ad	= Außerdem wird von nun an\n
+	+ jeden Tag eine Spaßkiste an\n
+	+ die Ranch geliefert!
+    ae	= In jeder Spaßkiste befindet sich\n
+	+ ein Spielzeug, mit dem die\n
+	+ Pokémon spielen können.
+    af	= Es macht Spaß sie zu öffnen!\n
+	+ Sie werden irgendwo auf der\n
+	+ Ranch abgestellt. Im Freien\n
+	+ Modus findest du sie leicht.
+    b0	= Was? Du kannst sie nicht\n
+	+ öffnen? Hm... Leider weiß ich\n
+	+ auch nicht, wie man sie\n
+	+ aufbekommt...
+    b1	= Warum experimentierst du nicht\n
+	+ ein wenig herum, während du\n
+	+ dich im Freien Modus\n
+	+ befindest?
+    b2	= Die Anzahl der Pokémon auf der\n
+	+ Ranch hat ganz schön zuge-\n
+	+ nommen, findest du nicht auch?
+    b3	= Es wird nicht einfach, alle\n
+	+ Pokémon im Auge zu behalten,\n
+	+ wenn sie hier überall\n
+	+ herumschwirren!
+    b4	= Vergiss nicht, auch mal die\n
+	+ Funktion 'Favorit'\n
+	+ auszuprobieren.
+    b5	= Du kannst nun die Funktion\n
+	+ 'Favorit' auswählen!
+    b6	= Außerdem werden von nun an\n
+	+ jeden Tag zwei Spaßkisten\n
+	+ an die Ranch geliefert!
+    b7	= Na, das verspricht ja viel Spaß!
+    b8	= Du wirst es vielleicht nicht\n
+	+ glauben, aber du kannst jetzt\n
+	+ bis zu 20 Miis auf die Ranch\n
+	+ mitbringen!
+    b9	= Damit ist das Maximum der\n
+	+ Mii-Besucher erreicht, aber\n
+	+ mit 20 Leuten kann man auch\n
+	+ viel Spaß haben!
+    ba	= Nur zu, erstelle viele Miis und\n
+	+ bring sie mit auf die Ranch!
+    bb	= 
+    bc	= Außerdem erhalten wir von nun\n
+	+ an drei Spaßkisten - und\n
+	+ das jeden Tag!
+    bd	= Überlege mal, wie viel Spaß da\n
+	+ auf dich wartet!
+    be	= Und gerade als du dachtest,\n
+	+ der Tag könnte schöner nicht\n
+	+ sein, habe ich dir ein seltenes\n
+	+ Pokémon mitgebracht!
+    bf	= PHIONE ist ein seltenes\n
+	+ Pokémon. Es schlüpfte aus\n
+	+ einem Ei von MANAPHY und\n
+	+ einem Pokémon, das es mag.
+    c0	= 
+    c1	= Ich glaube, ich lass es auf der\n
+	+ Ranch. Du musst mir aber\n
+	+ versprechen, dass du gut\n
+	+ darauf aufpasst, okay?
+    c2	= Ah, fast hätte ich's vergessen...\n
+	+ Von heute an kannst du dich\n
+	+ auf vier Spaßkisten täglich\n
+	+ freuen!
+    c3	= Etwas Schöneres gibt's\n
+	+ wohl kaum, oder?
+    c4	= Glaubt man so was?\n
+	+ Jetzt kannst du bis zu sage und\n
+	+ schreibe 1 000 Pokémon auf\n
+	+ der Ranch halten!
+    c5	= Glückwunsch!
+    c6	= Die Ranch wächst dann aber\n
+	+ weiter, wenn ihr Level steigt.
+    c7	= Jetzt musst du sie nur noch mit\n
+	+ 1 000 Pokémon füllen!
+    c8	= Ah, eins noch...\n
+	+ Von heute an werden täglich\n
+	+ fünf Spaßkisten an die Ranch\n
+	+ geliefert. Wie aufregend!
+    c9	= Doch nicht nur das: Die\n
+	+ Auswahl an Spielzeugen darin\n
+	+ ist auch besser!
+    ca	= Angeblich soll sich in dieser\n
+	+ Auswahl auch ein mysteriöses\n
+	+ Spielzeug befinden, mit dem\n
+	+ Pokémon zeichnen können!
+    cb	= Ich glaube, ich setze mich lieber\n
+	+ hin. Vor lauter Aufregung wird\n
+	+ mir noch schwindelig!
+    cc	= Ach so, die Ställe wurden\n
+	+ umgebaut, damit die Pokémon\n
+	+ es darin schön gemütlich\n
+	+ haben.
+    cd	= Wenn die Ranch ihre\n
+	+ Kapazitätsgrenzen erreicht,\n
+	+ bringe ich meine Pokémon\n
+	+ im Stall unter.
+    ce	= Du kannst nun bis zu 1 000\n
+	+ Pokémon halten - Wahnsinn!
+    cf	= Mach dir über meine Pokémon\n
+	+ keine Sorgen, bring einfach\n
+	+ mehr von deinen mit.
+    d0	= Fantastisch!\n
+	+ Die Ranch hat ihren höchsten\n
+	+ Level erreicht! Glückwunsch!
+    d1	= Ich hatte mal einen Traum...\n
+	+ von einer riesigen Ranch voll\n
+	+ mit Pokémon...
+    d2	= Ich glaub's einfach nicht, die\n
+	+ Pokémon-Ranch aus meinen\n
+	+ Träumen steht doch tatsächlich\n
+	+ vor mir!
+    d3	= Ich wusste, ich kann mich\n
+	+ beim Bau dieser Ranch auf\n
+	+ dich verlassen!
+    d4	= So lange ich von den Leuten\n
+	+ und Pokémon hier umgeben bin,\n
+	+ werde ich tolle Dinge erleben.
+    d5	= Zusammen mit allen\n
+	+ Ranchbewohnern, auf immer\n
+	+ und ewig...
+    d6	= Das hört sich doch gut an!
+    d7	= Da heute so ein besonderer\n
+	+ Tag ist, habe ich auch ein\n
+	+ besonders seltenes Pokémon\n
+	+ mitgebracht!
+    d8	= MEW ist ein traumhaftes\n
+	+ Pokémon, das angeblich den\n
+	+ genetischen Code aller\n
+	+ Pokémon in sich trägt.
+    d9	= 
+    da	= Ich glaube, ich lasse es auf der\n
+	+ Ranch. Sei so nett und gib gut\n
+	+ darauf Acht, okay?
+    db	= Ach ja, von heute an kannst du\n
+	+ dich auf sechs Spaßkisten\n
+	+ täglich freuen! Wundervoll!
+    dc	= Ich bin so aufgeregt!
+    dd	= Oh, habe ich schon erwähnt,\n
+	+ dass die Bauarbeiten beendet\n
+	+ sind? Jetzt ist unsere Ranch so\n
+	+ groß wie noch nie!
+    de	= Jetzt müssen wir uns nicht\n
+	+ mehr so viele Sorgen um\n
+	+ die Anzahl der Pokémon\n
+	+ machen!
+    df	= Die Ranch hat Level\n
+	+ %d erreicht!
+    e0	= Die Ranch ist aufgrund der\n
+	+ vielen Pokémon, die hier leben,\n
+	+ von Level %d auf Level %d\n
+	+ gestiegen!
+    e1	= Jetzt bietet unsere Ranch noch\n
+	+ mehr Platz!
+    e2	= Die Anzahl der Pokémon, die\n
+	+ du halten kannst, ist von\n
+	+ %ls auf %ls gestiegen!
+    e3	= 
+    e4	= Die Anzahl der Miis, die du auf\n
+	+ die Ranch mitnehmen kannst,\n
+	+ ist von %d auf %d gestiegen!
+    e5	= Hey! Toll gemacht!
+    e6	= Jetzt erwacht die Ranch zum\n
+	+ Leben! Hab vielen Dank!
+    e7	= Neues Gesuchtes Pokémon:\n
+	+ %ls
+    e8	= Neue Gesuchte Pokémon:\n
+	+ %ls\n
+	+ %ls
+    e9	= Neue Gesuchte Pokémon:\n
+	+ %ls\n
+	+ %ls\n
+	+ %ls
+    ea	= Wenn du das nächste Mal ein\n
+	+ Pokémon auf die Ranch bringst,\n
+	+ überprüfe ich, ob es ein\n
+	+ Gesuchtes Pokémon ist.
+    eb	= Auf dem Schwarzen Brett\n
+	+ findest du mehr über die Sache\n
+	+ heraus. Wirf ab und zu einen\n
+	+ Blick drauf, ja?
+    ec	= Wenn du ein Gesuchtes\n
+	+ Pokémon fängst, musst du es\n
+	+ auf jeden Fall hierherbringen.
+    ed	= Ich vertraue darauf, dass du\n
+	+ Gesuchte Pokémon auf die\n
+	+ Ranch bringst!
+    ee	= Sobald du ein Gesuchtes\n
+	+ Pokémon gefangen hast,\n
+	+ bringst du es auf die Ranch\n
+	+ mit, okay?
+    ef	= Wenn ich's mir genau überlege,\n
+	+ glaube ich, du hast bereits ein\n
+	+ %{} gefangen,\n
+	+ stimmt das?
+    f0	= %ls wollte\n
+	+ auch so eins fangen, glaube ich.
+    f1	= %ls wollte\n
+	+ genau so ein Exemplar fangen.
+    f2	= Warum tauscht ihr nicht ein\n
+	+ paar Tipps und Tricks aus, wie\n
+	+ man sie fängt?
+    f3	= Warum tauscht ihr nicht ein\n
+	+ paar Tipps und Tricks aus, wie\n
+	+ man sie fängt?
+    f4	= Pokémon, die schwer zu fangen\n
+	+ sind, kannst du auch in der\n
+	+ Globalen Tauschstation finden.
+    f5	= Okay, dann noch viel Glück!
+    f6	= Auf dem Schwarzen Brett\n
+	+ findest du mehr über die Sache\n
+	+ heraus. Wirf ab und zu einen\n
+	+ Blick drauf, ja?
+    f7	= Hast du in letzter Zeit\n
+	+ eigentlich irgendwelche\n
+	+ Pokémon gefangen?
+    f8	= Ich würde gerne sehen, wie weit\n
+	+ du mit deinem Pokédex bist.\n
+	+ Sei so nett und schließ dein\n
+	+ Nintendo DS-System an.
+    f9	= Okay, lass dich nicht stressen.\n
+	+ Man sieht sich!
+    fa	= Alles klar, ich sehe dich dann\n
+	+ auf der Ranch!
+    fb	= Lange nicht gesehen! Wie viele\n
+	+ Jahre ist das jetzt her? %d?
+    fc	= Lange nicht gesehen! Ist das\n
+	+ nun wirklich schon ein ganzes\n
+	+ Jahr her?
+    fd	= Die Pokémon haben dich\n
+	+ schrecklich vermisst!
+    fe	= Lange nicht gesehen! Wie viele\n
+	+ Monate ist das jetzt her? %d?
+    ff	= Lange nicht gesehen! Ist das\n
+	+ nun wirklich schon einen ganzen\n
+	+ Monat her?
+   100	= Die Pokémon haben dich\n
+	+ schrecklich vermisst!
+   101	= Lange nicht gesehen! Wie viele\n
+	+ Wochen ist das jetzt her? %d?
+   102	= Lange nicht gesehen! Ist das\n
+	+ nun wirklich schon eine ganze\n
+	+ Woche her?
+   103	= Die Pokémon freuen sich,\n
+	+ dich wiederzusehen!
+   104	= Hallo!\n
+	+ Danke, dass du der Ranch\n
+	+ heute einen Besuch abstattest!
+   105	= Hallo!\n
+	+ Du bist auch heute gekommen!\n
+	+ Das freut mich unheimlich!
+   106	= Hallöchen!\n
+	+ Viel Spaß auf der Ranch!
+   107	= Wir sind auf der\n
+	+ %2$ls-Ranch\n
+	+ von %1$ls\n
+	+ angekommen!
+   108	= Ich wünsche dir viel Spaß auf\n
+	+ der %ls-Ranch!
+   109	= Wenn du wieder nach Hause\n
+	+ willst, zeige einfach auf die Tür\n
+	+ oben links und drücke \x{e042}.
+   10a	= Also gut, viel Vergnügen!
+   10b	= Viel Spaß auf der\n
+	+ %ls-Ranch!
+   10c	= Wenn du wieder nach Hause\n
+	+ willst, zeige einfach auf die Tür\n
+	+ oben links und drücke \x{e042}.
+   10d	= So, dann noch viel Spaß!
+   10e	= Dies ist meine Ranch - sie ist\n
+	+ mein ganzer Stolz. Sieh dich\n
+	+ ruhig überall um.
+   10f	= Wenn du wieder nach Hause\n
+	+ willst, zeige einfach auf die Tür\n
+	+ oben links und drücke \x{e042}.
+   110	= Dann noch viel Spaß!
+   111	= Das hier ist meine Ranch. Ich\n
+	+ bin sehr stolz auf meine Arbeit!\n
+	+ Nimm dir Zeit, dich umzusehen.\n
+	+ Viel Vergnügen!
+   112	= Wenn du wieder nach Hause\n
+	+ willst, zeige einfach auf die Tür\n
+	+ oben links und drücke \x{e042}.
+   113	= Also, am besten lasse ich dich\n
+	+ jetzt in Ruhe!
+   114	= %2$ls von der\n
+	+ %1$ls-Ranch ist\n
+	+ zu Besuch gekommen!
+   115	= Hallo! Ich habe dir ein\n
+	+ Foto von der\n
+	+ %ls-Ranch\n
+	+ mitgebracht!
+   116	= Hi! Ich bin %2$ls\n
+	+ von der %1$ls-\n
+	+ Ranch.
+   117	= Hallo! Ich habe dir ein\n
+	+ Foto von der\n
+	+ %ls-Ranch\n
+	+ mitgebracht!
+   118	= Hi! Ich bin %2$ls\n
+	+ von der %1$ls-\n
+	+ Ranch.
+   119	= Wenn du gerade Zeit hast,\n
+	+ warum stattest du der\n
+	+ %ls-Ranch\n
+	+ nicht einen Besuch ab?
+   11a	= Alles klar, dann lass uns gleich\n
+	+ zur %ls-Ranch\n
+	+ aufbrechen!
+   11b	= Oh, na gut. Wenn du das\n
+	+ nächste Mal die Möglichkeit\n
+	+ hast, komm einfach vorbei, ja?
+   11c	= Hoffentlich sehen wir uns bald\n
+	+ wieder! Tschüss!
+   11d	= Warum kommst du nicht mal\n
+	+ für eine Weile auf die\n
+	+ %ls-Ranch,\n
+	+ wenn du Zeit hast?
+   11e	= Alles klar, dann lass uns zur\n
+	+ %ls-Ranch\n
+	+ gehen!
+   11f	= Oh, na gut. Wenn du das\n
+	+ nächste Mal die Möglichkeit\n
+	+ hast, komm einfach vorbei, ja?
+   120	= Das sollten wir beizeiten mal\n
+	+ wiederholen! Tschüss!
+   121	= Willst du die Ranch besuchen?
+   122	= Vielen Dank für deinen\n
+	+ Besuch auf der\n
+	+ %ls-Ranch!
+   123	= Ich komme wieder und lade dich\n
+	+ nochmal ein. Ich hoffe, du hast\n
+	+ dann genauso viel Spaß wie\n
+	+ heute!
+   124	= Also, alles Gute und komm gut\n
+	+ nach Hause!
+   125	= Vielen Dank, dass du der\n
+	+ %ls-Ranch\n
+	+ einen Besuch abgestattet hast!
+   126	= Ich werde dich ganz sicher\n
+	+ wieder einladen. Ich freue\n
+	+ mich jetzt schon drauf!
+   127	= Na dann, gute Reise und\n
+	+ bis bald!
+   128	= Es ist mir eine Freude,\n
+	+ dich kennen zu lernen!
+   129	= Diese Ranch gehört also dir und\n
+	+ Eukalia. Ich muss schon sagen,\n
+	+ ein ganz schön nettes\n
+	+ Plätzchen habt ihr hier!
+   12a	= Ich heiße %2$ls\n
+	+ und bin Mitglied Nr. %1$d\n
+	+ des Pokéschau-Clubs.
+   12b	= Es gibt zwei Dinge, die du über\n
+	+ den Pokéschau-Club wissen\n
+	+ solltest:
+   12c	= Regel Nr. 1!\n
+	+ Wenn du eine Ranch aufbaust,\n
+	+ ist ein Hang zur Perfektion\n
+	+ stets von Vorteil!
+   12d	= Regel Nr. 2!\n
+	+ Du musst bereit sein, deine\n
+	+ Ranch anderen zu zeigen!
+   12e	= ...Genau, das sind die\n
+	+ Grundregeln unseres Clubs.
+   12f	= Jetzt würde ich dir gerne meine\n
+	+ Ranch zeigen. Sie bedeutet mir\n
+	+ sehr viel!
+   130	= Und, magst du mal\n
+	+ vorbeikommen?
+   131	= Na, hätte nicht gedacht,\n
+	+ dass du so schüchtern bist.
+   132	= Ich muss dir wirklich die\n
+	+ Vorteile des Pokéschau-Clubs\n
+	+ demonstrieren!
+   133	= Toll! Ich wusste, du würdest\n
+	+ zustimmen! Alles klar, dann\n
+	+ brechen wir am besten gleich\n
+	+ zu meiner Ranch auf!
+   134	= Diese Ranch gehört also dir und\n
+	+ Eukalia. Ich habe schon von\n
+	+ Leuten gehört, die von diesem\n
+	+ Ort geschwärmt haben. Wow!
+   135	= Ich bin Mitglied Nr. %1$d\n
+	+ des Pokéschau-Clubs.\n
+	+ Du kannst mich\n
+	+ %2$ls nennen!
+   136	= Hehehe.\n
+	+ Ich nehme nicht an, dass du\n
+	+ weißt, auf welche Pokémon\n
+	+ ich stehe?
+   137	= Möchtest du auf meine Ranch,\n
+	+ um es herauszufinden?
+   138	= Hahaaa! Ich wusste, du bist\n
+	+ interessiert! Also gut, brechen\n
+	+ wir zu meiner Ranch auf!
+   139	= Verstehe...\n
+	+ Ich hatte wirklich gehofft, dass\n
+	+ du vorbeikommst. Schade...
+   13a	= Na gut, dann komm ich ein\n
+	+ anderes Mal wieder und lade\n
+	+ dich erneut ein. Dann musst\n
+	+ du aber Ja sagen.
+   13b	= Alles Gute!\n
+	+ \n
+	+ Poké... SCHAUUU!
+   13c	= Diese Ranch gehört dir und\n
+	+ Eukalia, stimmt's? Dann sind\n
+	+ die Gerüchte also wahr! Sie ist\n
+	+ einfach wundervoll!
+   13d	= Ich bin Mitglied Nr. %1$d\n
+	+ des Pokéschau-Clubs.\n
+	+ Nenne mich einfach\n
+	+ %2$ls!
+   13e	= Phihihi!\n
+	+ Rate mal, welches Pokémon\n
+	+ mir einfach nicht aus dem\n
+	+ Kopf geht?
+   13f	= Möchtest du auf meine Ranch, \n
+	+ um es herauszufinden?
+   140	= Fantastisch! Ich freue mich\n
+	+ schon! Also gut, gehen wir!
+   141	= Oh, wenn du meinst...\n
+	+ Zu gerne hätte ich sie dir\n
+	+ gezeigt. Jammerschade.
+   142	= Dann komme ich ein anderes\n
+	+ Mal vorbei und lade dich ein.\n
+	+ Vielleicht hast du ja dann Zeit.
+   143	= Mach's gut!\n
+	+ \n
+	+ Poké... SCHAUUU!
+   144	= Schön, dass du mich auf meiner\n
+	+ Ranch besucht hast!
+   145	= Genial. Ich bin so glücklich,\n
+	+ dass du dir die Zeit genommen\n
+	+ hast, mich hier zu besuchen.
+   146	= Jaaa! Ich kann's kaum\n
+	+ erwarten, allen anderen\n
+	+ Club-Mitgliedern von dir\n
+	+ zu erzählen!
+   147	= Wenn dich andere Mitglieder\n
+	+ des Pokéschau-Clubs\n
+	+ besuchen, solltest du dir ihre\n
+	+ Ranch auch anschauen!
+   148	= Komm gut nach Hause!
+   149	= Danke, dass du mich besucht\n
+	+ und dir meine Ranch angesehen\n
+	+ hast. Und? Was denkst du? Bist\n
+	+ du beeindruckt?
+   14a	= Konntest du dir von meiner\n
+	+ Ranch Anregungen für deine\n
+	+ holen?
+   14b	= Wenn andere Mitglieder des\n
+	+ Pokéschau-Clubs deine Ranch\n
+	+ besuchen, solltest du ihnen\n
+	+ den Gefallen erwidern!
+   14c	= Nun gut, pass auf dich auf und\n
+	+ komm gut nach Hause!
+   14d	= Danke, dass du mich auf\n
+	+ meiner Ranch besucht hast.\n
+	+ Was hältst du von ihr? Hat es\n
+	+ dir hier gefallen?
+   14e	= Wenn du etwas wissen willst,\n
+	+ frag einfach. Bestimmt kann ich\n
+	+ dir ein paar Tipps über den\n
+	+ Aufbau einer Ranch geben.
+   14f	= Wenn du Besuch von anderen\n
+	+ Mitgliedern des Pokéschau-\n
+	+ Clubs bekommst, sieh dir ihre\n
+	+ Ranch an. Das kommt gut an!
+   150	= Okay, gib auf dich Acht!\n
+	+ Bis bald!
+   151	= Poké... SCHAUUU!
+   152	= %ls besucht\n
+	+ diese Ranch bis zum\n
+	+ %ls.
+   153	= %ls besuchen\n
+	+ diese Ranch bis zum\n
+	+ %ls.
+   154	= Wir haben einen Gast auf\n
+	+ unserer Ranch!
+   155	= Wir haben Gäste auf unserer\n
+	+ Ranch!
+   156	= Wenn du ein\n
+	+ %ls mitbringst,\n
+	+ kannst du es gegen ein\n
+	+ %ls tauschen.
+   157	= %ls wird zu\n
+	+ %ls geschickt!
+   158	= Tschüss, %ls!
+   159	= Sorge dafür, dass\n
+	+ %{} sich\n
+	+ wie zu Hause fühlt, ja?
+   15a	= Hm? Sag mal... Ich könnte\n
+	+ schwören, %2${}\n
+	+ sucht nach einem\n
+	+ %1${}.
+   15b	= Soll %1${}\n
+	+ gegen das %3${}\n
+	+ von %2${}\n
+	+ getauscht werden?
+   15c	= Das %2${}\n
+	+ von %1${}\n
+	+ ähnelt ihm ein bisschen.
+   15d	= Verstehe... Das macht nichts.\n
+	+ Das %2${} von\n
+	+ %1${} ist\n
+	+ aber echt niedlich, nicht wahr?
+   15e	= Offenbar hast du\n
+	+ %ls richtig\n
+	+ glücklich gemacht! Dieser\n
+	+ Tausch ist dir gelungen!
+   15f	= Hey, ich will unbedingt ein\n
+	+ %ls haben.\n
+	+ Genauso eins wie das, das du\n
+	+ mitgebracht hast.
+   160	= Und?\n
+	+ Würdest du es gegen mein\n
+	+ %ls tauschen?
+   161	= Oh! Genau, wonach ich\n
+	+ gesucht habe!\n
+	+ Ein %ls!
+   162	= Lass uns dein\n
+	+ %ls gegen\n
+	+ mein %ls\n
+	+ tauschen!
+   163	= Mein %ls\n
+	+ sieht so aus.
+   164	= Hm, verstehe. Dann werde ich\n
+	+ stattdessen wohl mit\n
+	+ %ls auf der\n
+	+ Ranch spielen!
+   165	= Eigentlich wollte ich mir selbst\n
+	+ ein %ls fangen.\n
+	+ Aber irgendwie klappt es nicht\n
+	+ so gut.
+   166	= Solltest du also ein\n
+	+ %ls fangen,\n
+	+ würdest du es gegen mein\n
+	+ %ls tauschen?
+   167	= Hm? Ist kein schlechter\n
+	+ Vorschlag, was? Wenn du ein\n
+	+ %ls fängst,\n
+	+ bring es auf die Ranch mit!
+   168	= Danke für den Tausch!\n
+	+ Pass bitte gut auf mein\n
+	+ %{} auf, ja?
+   169	= Ich täte nichts lieber als wieder\n
+	+ mal ein Pokémon von Anfang an\n
+	+ großzuziehen. Es ist eine\n
+	+ unbeschreibliche Erfahrung!
+   16a	= Was ich jetzt am liebsten hätte,\n
+	+ wäre ein Ei, ohne zu wissen,\n
+	+ welches Pokémon daraus\n
+	+ schlüpft! Diese Spannung!
+   16b	= 
+   16c	= Wenn du ein Pokémon-Ei\n
+	+ findest, würde ich es\n
+	+ gerne gegen mein\n
+	+ %ls tauschen.
+   16d	= Und? Ist doch ein faires\n
+	+ Geschäft, oder? Wenn du eins\n
+	+ findest, bring es zur Ranch!
+   16e	= Pokémon tauschen?
+   16f	= Dieses %{}\n
+	+ tauschen?
+   170	= Hm, dieses %{}\n
+	+ tauschen?
+   171	= %{}\n
+	+ tauschen. Einversanden?
+   172	= Das Pokémon hält noch ein\n
+	+ Item. Wirklich tauschen?
+   173	= Hm? Soll der Tausch\n
+	+ abgebrochen werden?
+   174	= %ls  %ls  Lv. %d\n
+	+ Name: %ls\n
+	+ Ursprung: %ls\n
+	+ Trainer: %ls\n
+	+ Markierung: %ls
+   175	= %ls  %ls  Lv. %d\n
+	+ Name: %ls\n
+	+ Ursprung: %ls
+   176	= Ei\n
+	+ Erhalten am: %ls\n
+	+ Trainer: %ls\n
+	+ Markierung: %ls
+   177	= Vielen Dank, dass du deine\n
+	+ Pokémon mitgebracht hast!
+   178	= Dank dir herrscht schon viel\n
+	+ mehr Betrieb auf dieser Ranch!
+   179	= Es wäre schön, wenn du weiter\n
+	+ Pokémon fangen und sie hierher\n
+	+ bringen könntest...
+   17a	= Wenn du aber Pokémon fängst,\n
+	+ sollten es am besten die sein,\n
+	+ die du noch nicht in deinem\n
+	+ Pokédex aufgezeichnet hast.
+   17b	= Sehen wir uns mal deinen\n
+	+ Pokédex an...\n
+	+ Gesehen: %d\n
+	+ Gefangen: %d
+   17c	= 
+   17d	= Unglaublich! Du hast jedes\n
+	+ einzelne Pokémon aus dem\n
+	+ Pokédex gefangen!
+   17e	= Ich wollte dir helfen, deinen\n
+	+ Pokédex zu vervollständigen,\n
+	+ aber du bist hervorragend\n
+	+ selbst zurechtgekommen!
+   17f	= Du bist ein guter Trainer!\n
+	+ Hm... Vielleicht sollte ich dich\n
+	+ bitten, einige Pokémon zu\n
+	+ fangen. Zum Beispiel...
+   180	= Okay, um dir mit deinem\n
+	+ Pokédex zu helfen... ähm...\n
+	+ benötigen wir...
+   181	= Ich weiß!\n
+	+ Warum versuchst du nicht mal,\n
+	+ dieses Pokémon zu fangen?
+   182	= ...Alles klar. Ich dachte mir,\n
+	+ es wäre echt toll, wenn du die\n
+	+ Ranch mit ein paar Pokémon\n
+	+ versorgen könntest.
+   183	= Du hast deinen Pokédex\n
+	+ vervollständigt. Könnte ich\n
+	+ dich trotzdem um einen\n
+	+ Gefallen bitten?
+   184	= Also, ein Blick auf deinen\n
+	+ Pokédex verrät Folgendes...\n
+	+ Gefunden: %d\n
+	+ Gefangen: %d
+   185	= 
+   186	= Das war's! Du hast deinen\n
+	+ Pokédex vervollständigt!\n
+	+ Einfach fantastisch!
+   187	= Hm, ich werde dich wohl bitten,\n
+	+ für mich interessante Pokémon\n
+	+ zu fangen, da dein Pokédex\n
+	+ schon vervollständigt ist.
+   188	= Wow!\n
+	+ Du hast tatsächlich deinen\n
+	+ Pokédex vervollständigt!\n
+	+ Meinen Glückwunsch!
+   189	= Lass uns so weitermachen, bis\n
+	+ du jedes einzelne Pokémon aus\n
+	+ dem Pokédex gefangen hast!
+   18a	= Seit unserem letzten Treffen\n
+	+ hat sich viel geändert...\n
+	+ Gesehen: %d\n
+	+ Gefangen: %d
+   18b	= 
+   18c	= Du bist einem vollständigen\n
+	+ Pokédex wieder einen Schritt\n
+	+ nähergekommen!\n
+	+ Glückwunsch!
+   18d	= Hm, wie können wir dir helfen,\n
+	+ deinen Pokédex zu\n
+	+ vervollständigen? Lass\n
+	+ mich mal überlegen...
+   18e	= Ich hab's!\n
+	+ Wie wäre es, wenn du dieses\n
+	+ Pokémon fangen würdest?
+   18f	= rotes
+   190	= blaues
+   191	= gelbes
+   192	= grünes
+   193	= schwarzes
+   194	= braunes
+   195	= lilafarbenes
+   196	= graues
+   197	= weißes
+   198	= pinkfarbenes
+   199	= kleines
+   19a	= großes
+   19b	= leichtes
+   19c	= schweres
+   19d	= heißes
+   19e	= kaltes
+   19f	= beängstigendes
+   1a0	= flottes
+   1a1	= rundes
+   1a2	= fliegendes
+   1a3	= stämmiges
+   1a4	= beherztes
+   1a5	= paralysierendes
+   1a6	= cooles
+   1a7	= verwirrtes
+   1a8	= muffiges
+   1a9	= singendes
+   1aa	= süßlich riechendes
+   1ab	= mein bevorzugtes
+   1ac	= %ls ist\n
+	+ nach Hause gegangen.
+   1ad	= %ls sind\n
+	+ nach Hause gegangen.
+   1ae	= Du findest HASPIROR\n
+	+ im Ewigwald.\n
+	+ \fEs handelt sich um ein\n
+	+ flauschiges und wirklich\n
+	+ niedliches Pokémon.\n
+	+ \fVersteht sich HASPIROR mit\n
+	+ dem Trainer gut, entwickelt es\n
+	+ sich zu einem anderen\n
+	+ Pokémon.\n
+	+ \fVersuch doch mal, dich mit\n
+	+ HASPIROR anzufreunden, ja?
+   1af	= Dieses STARAVIA hat sich aus\n
+	+ einem STARALILI entwickelt,\n
+	+ das ich aufgezogen habe.\n
+	+ \fEs ist sehr kampftauglich und\n
+	+ kann sogar die Fähigkeit Fliegen\n
+	+ erlernen!\n
+	+ \fÜberlege mal, wie viel Zeit man\n
+	+ sich sparen kann, wenn man\n
+	+ einfach von Ort zu Ort fliegt!
+   1b0	= Ein KNILZ findest du im\n
+	+ Großmoor von Weideburg.\n
+	+ \fEs beherrscht Attacken, die\n
+	+ beim Fangen anderer Pokémon\n
+	+ sehr nützlich sein können.\n
+	+ \fIch habe es selbst aufgezogen.\n
+	+ Mit ihm an deiner Seite fängst\n
+	+ du viele, viele Pokémon!
+   1b1	= Mit einer Profiangel habe ich\n
+	+ dieses FINNEON auf Route 205\n
+	+ an Land gezogen.\n
+	+ \fWenn es sich entwickelt, wird\n
+	+ es ein noch netteres Pokémon!
+   1b2	= Dieses PACHIRISU habe ich auf\n
+	+ Route 205 gefangen.\n
+	+ \fEs hat einen wuschigen\n
+	+ Schwanz und süße kleine\n
+	+ Zähne, die ein bisschen\n
+	+ vorstehen. Wie niedlich!
+   1b3	= Dieses PONITA ist mir auf\n
+	+ Route 211 begegnet.\n
+	+ \fSein feuerroter Schwanz und\n
+	+ die gleichfarbige Mähne\n
+	+ machen es zur perfekten\n
+	+ Ergänzung der Ranch!
+   1b4	= Dieses SCHALELLOS habe ich\n
+	+ auf Route 213 gefangen.\n
+	+ \fAbhängig von seiner\n
+	+ Umgebung, ändert es\n
+	+ seine Farbe.\n
+	+ \fAuf Route 205 scheint es rosa\n
+	+ Schalellos zu geben. Warum\n
+	+ suchst du nicht mal dort?
+   1b5	= Ich habe dieses GLIBUNKEL\n
+	+ im Großmoor von Weideburg\n
+	+ gefangen.\n
+	+ \fEs ist sehr frech, hat aber\n
+	+ ein niedliches Gesicht, das man\n
+	+ einfach lieben muss.\n
+	+ \fAußerdem kann es verschiedene\n
+	+ Attacken erlernen, ist also\n
+	+ durchaus auch kampftauglich!
+   1b6	= Ich habe dieses SHNEBEDECK\n
+	+ auf Route 216 gefangen. Es ist\n
+	+ ein umgängliches Pokémon.\n
+	+ \fSeine Aufzucht soll sich lohnen\n
+	+ - angeblich entwickelt es sich\n
+	+ zu einem mächtigen Pokémon.
+   1b7	= Ich habe mir dieses PIKACHU\n
+	+ im Garten hinter dem\n
+	+ Pokémon-Landgut geschnappt.\n
+	+ \fDieses Pokémon steckt nicht\n
+	+ nur voller Charme, es ist\n
+	+ niedlich wie kein zweites!\n
+	+ \fWenn dich PIKACHU in\n
+	+ Herzhofen begleitet, kannst du\n
+	+ den Platz der Treue aufsuchen.
+   1b8	= Dieses WAILMER habe ich mit\n
+	+ einer Superangel auf\n
+	+ Route 223 gefangen.\n
+	+ \fIch habe gehört, bei der\n
+	+ nächsten Entwicklung wird es\n
+	+ zu einem riesigen Pokémon!
+   1b9	= Du kannst ein MILTANK mithilfe\n
+	+ des Pokéradars auf Route 209\n
+	+ fangen.\n
+	+ \fFindest du nicht auch, dass\n
+	+ MILTANK perfekt auf die\n
+	+ Ranch passen würde?
+   1ba	= Begib dich in das Großmoor von\n
+	+ Weideburg, um dieses YANMA\n
+	+ zu fangen.\n
+	+ \fAuf höheren Leveln kann es\n
+	+ Antik-Kraft lernen und so zu\n
+	+ einem mächtigen Pokémon\n
+	+ werden.
+   1bb	= Ich habe dieses SCHLURP in\n
+	+ einem Schwarm seiner\n
+	+ Artgenossen am See der\n
+	+ Kühnheit gefangen.\n
+	+ \fEs streckt seine Zunge\n
+	+ ziemlich weit aus, ist aber\n
+	+ dennoch sehr charmant!
+   1bc	= Seit es geschlüpft ist, begleitet\n
+	+ mich dieses ISSO auf meinen\n
+	+ Reisen.\n
+	+ \fEs ist ein niedliches Pokémon,\n
+	+ das beim bloßen Anblick ein\n
+	+ Gefühl der Freude auslöst.\n
+	+ \fWenn es sich entwickelt,\n
+	+ verwandelt es sich in ein echt\n
+	+ witziges Pokémon!
+   1bd	= Ich habe dieses EVOLI im\n
+	+ Garten hinter dem Pokémon-\n
+	+ Landgut gefangen.\n
+	+ \fEs ist ein seltenes Pokémon,\n
+	+ das einige Entwicklungs-\n
+	+ möglichkeiten besitzt.
+   1be	= Dieses AERODACTYL habe ich\n
+	+ im Untergrund aus Altbernstein\n
+	+ wieder zum Leben erweckt.\n
+	+ \fDieses Pokémon trägt eine\n
+	+ prähistorische Aura in sich!
+   1bf	= Diesem VULPIX bin ich auf\n
+	+ Route 209 begegnet.\n
+	+ \fDieses Pokémon zeigt sich nicht\n
+	+ so oft. Wenn du eins hast,\n
+	+ kannst du also hervorragend\n
+	+ damit angeben!
+   1c0	= Ich habe dieses TANGELA\n
+	+ am Park der Freunde gefangen.\n
+	+ \fEs ist ein mysteriöses\n
+	+ Pokémon, dessen gesamter\n
+	+ Körper mit Ranken überwuchert\n
+	+ ist!
+   1c1	= WADRIBIE liebt süßliche Düfte,\n
+	+ also habe ich es mit Honig\n
+	+ angelockt.\n
+	+ \fNur weibliche WADRIBIE\n
+	+ können sich entwickeln, aber\n
+	+ sie kommen recht selten vor!
+   1c2	= PHIONE ist ein seltenes\n
+	+ Pokémon, das aus einem Ei\n
+	+ geschlüpft ist.\n
+	+ \fDas Ei wird von MANAPHY\n
+	+ und einem Pokémon, das es\n
+	+ mag, gelegt.\n
+	+ \fWarum nimmst du PHIONE\n
+	+ nicht mal mit und stellst es\n
+	+ deinen Freunden vor?
+   1c3	= MEW ist ein traumhaftes\n
+	+ Pokémon, das angeblich den\n
+	+ genetischen Code aller\n
+	+ Pokémon in sich trägt.\n
+	+ \fDeine Freunde werden ganz\n
+	+ schön staunen, wenn du MEW\n
+	+ in einem Kampf einsetzt!
+
