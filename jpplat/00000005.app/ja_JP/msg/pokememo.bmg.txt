@@ -47,14 +47,14 @@
 #------------------------------------------------------------------------------
 
      0	= 
-     1	= ユカリが つれてきた。
-     2	= ユカリが つれてきた。
-     3	= 10pcs gathered.
-     4	= 100pcs gathered.
-     5	= 1000pcs gathered.
-     6	= %{}と いっしょに あそびにきた。
-     7	= %{}と いっしょに あそびにきた。
-     8	= %{}が ぼくじょうに あずけた。
+     1	= Hayley brought someone along.
+     2	= Hayley brought someone along.
+     3	= I gathered 10 Pokémon.
+     4	= I gathered 100 Pokémon.
+     5	= I gathered 1,000 Pokémon.
+     6	= I came here to meet %{}.
+     7	= I came here to meet %{}.
+     8	= %{} was left in charge of the Ranch.
      9	= I saw Attention.
      a	= I saw the ZigZag Parade.
      b	= I saw the Dash.
@@ -84,17 +84,17 @@
     23	= I saw a Surfing Jump.
     24	= I saw the Rotom Roulette.
     25	= I saw a Showdown.
-    26	= ぼくじょうの みんなに えを かいてもらった。
+    26	= I took a group picture.
     27	= I saw Happy Birthday.
-    28	= ポケモン・ウォンテッドを たっせいした。
-    29	= %{}から こうかんで もらった。
-    2a	= ぼくじょうが レベル%dに なった。
-    2b	= ぼくじょうに やってきた。
-    2c	= ぼくじょうで %dじかん すごした。
+    28	= I completed Wanted Pokemon.
+    29	= I received a trade from %{}.
+    2a	= The ranch reached level %d.
+    2b	= I came to the Ranch.
+    2c	= I spent %d hours at the Ranch.
     2d	= I took a picture.
-    2e	= つまんだ。
-    2f	= じっくり ながめた。
-    30	= ぼくじょうで あそんだ。
+    2e	= I picked it up.
+    2f	= I watched cafefully.
+    30	= I played at the Ranch.
     31	= I watched the Parade.
-    32	= %{}が %{}を ぼくじょうに あずけた。 
+    32	= %{} left %{} at the Ranch.
 
