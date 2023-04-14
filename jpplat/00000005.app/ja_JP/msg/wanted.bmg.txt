@@ -89,9 +89,10 @@
     17	= Obtain an Egg at the Pokémon Day\n
 	+ Care in Solaceon Town and hatch it.
     18	= How to catch it is unknown.
-    19	= ほかの DSばん ポケットモンスターと\n
-	+ つうしんこうかんして てにいれる。
-    1a	= シンオウちほうの かくちを とびまわる。
+    19	= You can get it by trading\n
+	+ with other DS Pokémon games.
+    1a	= You can find it roaming\n 
+	+ around the Sinnoh region.
     1b	= Route 201
     1c	= Route 202
     1d	= Route 203
@@ -259,9 +260,9 @@
     be	= ・Fossil: Armor Fossil
     bf	= ・Fossil: Claw Fossil
     c0	= ・Fossil: Skull Fossil
-    c1	= ・トレーナーIDが ぐうすうで ほりだせる
-    c2	= ・トレーナーIDが きすうで ほりだせる
-    c3	= ・When Attack = Defens
+    c1	= ・Dug up with an even Trainer ID number.
+    c2	= ・Dug up with an odd Trainer ID number.
+    c3	= ・When Attack = Defense
     c4	= ・When Attack > Defense
     c5	= ・On the water (Surf)
     c6	= ・Diamond only
@@ -293,7 +294,7 @@
     e0	= ・Dual Slot Any
     e1	= ・After obtaining National Pokédex
     e2	= ・Trophy Garden
-    e3	= ・ケムッソの しんか
+    e3	= ・WURMPLE Evolution
     e4	= Get some Honey in Floaroma Meadow and\n
 	+ slather it on a Honey Tree, then wait for half\n
 	+ a day. Come back to the tree, and you'll find\n
@@ -470,11 +471,11 @@
 	+ Victory Road or on Route 224.
    122	= You can get a Razor Fang in the Battle Park.
    123	= You can get a Razor Fang on Route 225.
-   124	= ケムッソは Lv.7に レベルアップしたとき、\n
-	+ カラサリスか マユルドの どちらかに しんかする。
+   124	= When WURMPLE reaches level 7,\n 
+	+ it evolves into SILCOON or CASCOON.
    125	= Choose from the briefcase that\n
 	+ Prof. Rowan left at Lake Verity.
-   126	= ナナカマドはかせから もらう。
+   126	= Receive it from Prof. Rowan.
    127	= Hatch the Egg Riley gave you on\n
 	+ Iron Island.
    128	= Investigate the TV in the\n
@@ -523,15 +524,15 @@
    145	= You can discover an Egg by leaving a\n
 	+ Pokémon and a Pokémon that gets\n
 	+ along with it at the Pokémon Day Care.
-   146	= でんどういり したあと、カンナギタウンの\n
-	+ ちょうろうと はなしを すること。\n
-	+ こんごうだま が ひつよう。
-   147	= でんどういり したあと、カンナギタウンの\n
-	+ ちょうろうと はなしを すること。\n
-	+ しらたま が ひつよう。
-   148	= ぜんこくずかんを てにいれてから
-	+  ハクタイシティで\n
-	+ オーキドはかせに あうこと。
+   146	= After entering the Hall of Fame,\n
+	+ talk to the elder of Celestic Town.\n
+	+ Requires an Adamant Orb.
+   147	= After entering the Hall of Fame,\n
+	+ talk to the elder of Celestic Town.\n
+	+ Requires a Lustrous Orb.
+   148	= After obtaining the National Dex,
+	+  go to Eterna City and\n
+	+ see Prof. Oak.
    149	= 
    14a	= New!
 
