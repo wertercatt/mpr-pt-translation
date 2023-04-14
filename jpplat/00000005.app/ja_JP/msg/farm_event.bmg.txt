@@ -389,13 +389,13 @@
 	+ Pokémon I bring here tomorrow!
     91	= See ya!
     92	= The number of Pokémon at the\n
-	+ Ranch has become %d!
+	+ Ranch has become %ls!
     93	= 
     94	= Okay. Let's expand the Ranch!\n
 	+ Its construction is expected to\n
 	+ be done on %ls!
     95	= Oh? The number of Pokémon at\n
-	+ the Ranch is already %d!
+	+ the Ranch is already %ls!
     96	= 
     97	= Okay.\n
 	+ Let's expand the Ranch again!
@@ -411,7 +411,7 @@
     9c	= I did not bring any Pokémon to\n
 	+ the Ranch today.
     9d	= So far, I have brought\n
-	+ %d Pokémon.
+	+ %ls Pokémon.
     9e	= 
     9f	= Here are my precious Pokémon.\n
 	+ Please take good care of them!
@@ -422,7 +422,7 @@
     a2	= Please look after the Pokémon\n
 	+ and the Ranch!
     a3	= Once the number of Pokémon\n
-	+ becomes %d, let's expand\n
+	+ becomes %ls, let's expand\n
 	+ the Ranch!
     a4	= 
     a5	= Let's keep adding Pokémon to\n
@@ -430,7 +430,7 @@
     a6	= Let's expand the Ranch by\n
 	+ adding more Pokémon!
     a7	= Once the number of Pokémon\n
-	+ becomes %d, let's expand\n
+	+ becomes %ls, let's expand\n
 	+ the Ranch!
     a8	= 
     a9	= ...Oh!?
@@ -602,7 +602,7 @@
     ee	= Bring the Wanted Pokémon\n
 	+ to the Ranch once you catch it.
     ef	= Oh, you know what?\n
-	+ The %ls you\n
+	+ The %{} you\n
 	+ just brought to the Ranch...
     f0	= %ls was looking\n
 	+ for it.
@@ -1133,20 +1133,20 @@
 	+ to %ls!
    1e3	= Bye-bye, %ls!
    1e4	= Take good care of\n
-	+ %ls!
-   1e5	= Oh? It's %ls.\n
+	+ %{}!
+   1e5	= Oh? It's %{}.\n
 	+ Isn't this Pokémon what...\n
-	+ %ls was\n
+	+ %{} was\n
 	+ looking for?
-   1e6	= Trade %ls\n
-	+ for %ls's\n
-	+ %ls?
-   1e7	= %ls's\n
-	+ %ls looks\n
+   1e6	= Trade %{}\n
+	+ for %{}'s\n
+	+ %{}?
+   1e7	= %{}'s\n
+	+ %{} looks\n
 	+ like this.
    1e8	= I see. That's okay.\n
-	+ %ls's\n
-	+ %ls looks pretty\n
+	+ %{}'s\n
+	+ %{} looks pretty\n
 	+ nice, you know?
    1e9	= %ls looked\n
 	+ very happy! Thanks for trading!
@@ -1177,7 +1177,7 @@
 	+ to the Ranch once you catch it!
    1f3	= Thank you for the trade!\n
 	+ Please take good care of\n
-	+ %ls!
+	+ %{}!
    1f4	= By the way, I want to regain the\n
 	+ feeling I had when I first\n
 	+ started taking care of Pokémon.
@@ -1192,11 +1192,11 @@
 	+ Please bring an Egg to the\n
 	+ Ranch when you find one!
    1f9	= Trade Pokémon?
-   1fa	= Trade this %ls?
+   1fa	= Trade this %{}?
    1fb	= Okay...\n
-	+ Trade this %ls?
+	+ Trade this %{}?
    1fc	= Are you sure you want to trade\n
-	+ this %ls?
+	+ this %{}?
    1fd	= It's holding an item. Do you still\n
 	+ want to trade this Pokémon?
    1fe	= Oh?\n
@@ -1229,8 +1229,8 @@
 	+ Obtained: %d
    207	= According to your Pokédex,\n
 	+ you have...\n
-	+ Seen: %d\n
-	+ Obtained: %d
+	+ Seen: %d%ls\n
+	+ Obtained: %d%ls
    208	= How great! You have collected\n
 	+ all the Pokémon in the Pokédex!
    209	= I thought I could help you to\n
@@ -1256,8 +1256,8 @@
 	+ Obtained: %d
    210	= Since last time,\n
 	+ the number has increased by...\n
-	+ Seen: %d\n
-	+ Obtained: %d
+	+ Seen: %d%ls\n
+	+ Obtained: %d%ls
    211	= You finally completed your\n
 	+ Pokédex! That's awesome!
    212	= Since you have such skill to\n
