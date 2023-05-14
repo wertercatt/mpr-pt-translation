@@ -1,4 +1,10 @@
-cd ..\usplat\00000005.app
+cd ..\usplat\00000004.app
+del savedata_ja.arc
+del savedata_ja.arc.ash
+wszst CREATE savedata_ja -a -v -d savedata_ja.arc
+ashcompress savedata_ja.arc
+del savedata_ja.arc
+cd ..\00000005.app
 for /d %%i in (.\*) do (
     cd %%~nxi
     del l10n_ui.arc
