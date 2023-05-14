@@ -925,7 +925,7 @@
 	+ posting to see information\n
 	+ on the Wanted Pokémon and\n
 	+ how to catch it.\n
-   24b	= Change Version
+   24b	= Switch Versions
    24c	= Press the button to switch\n
 	+ between viewing Pokémon Platinum,\n
 	+ Diamond or Pearl.
