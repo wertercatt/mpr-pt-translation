@@ -1,0 +1,59 @@
+var usw2button,usw2disp,usw2state=0,usw2time,usw2timerstart,usw2timerstop,usw2aim;
+
+usw2aim=1;
+usw2state=0;
+usw2time=0;
+usw2button='START';
+usw2disp='ぴったり '+usw2aim+' 秒 で\n止められるかな？';
+
+function usw2judge(){
+	if(usw2state==0){
+		usw2timerstart=new Date();
+		usw2state=1;
+		document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi4.gif';
+		document.usw2form.usw2disp.value = '・・・・・';
+		document.usw2form.usw2but.value = 'STOP';
+	}
+	else if(usw2state==1){
+		usw2timerstop=new Date();
+		usw2time = usw2timerstop.getTime() - usw2timerstart.getTime();
+		usw2time= Math.floor(usw2time/10)/100;
+		usw2state=2;
+
+		if(usw2time==usw2aim){
+			document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi3.gif';
+			document.usw2form.usw2disp.value = usw2time+' 秒 ジャスト!!\nおおーっ！！';
+		}
+		else if(usw2time>usw2aim*0.97&&usw2time<usw2aim*1.03){
+			document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi2.gif';
+			document.usw2form.usw2disp.value = usw2time+' 秒 \nおしーいっ！！';
+		}
+		else if(usw2time>usw2aim*0.90&&usw2time<usw2aim*1.10){
+			document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi2.gif';
+			document.usw2form.usw2disp.value = usw2time+' 秒 \nまだ甘い！';
+		}
+		else{
+			document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi2.gif';
+			document.usw2form.usw2disp.value = usw2time+' 秒\nざーんねん♪';
+		}
+		document.usw2form.usw2but.value = 'もう一度';
+	}
+	else if(usw2state==2){
+		usw2state=0;
+		document.usw2form.usw2disp.value = usw2disp;
+		document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi1.gif';
+		document.usw2form.usw2but.value = 'START';
+	}
+}
+
+
+document.write('<div style=" padding: 8px 0px 0px 0px; background-image: url(http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi_fukidashi.gif); background-repeat: no-repeat; background-position: center top;">');
+document.write('<form name="usw2form" style="margin: 5px 0px 14px 0px; padding: 0px;">');
+document.write('<input type="button" name="usw2disp" value="'+usw2disp+'" readonly style="font-size: 16px; font-family: Verdana,Osaka,sans-serif; width: 126px; height: 50px; text-align: center; margin: 5px 0px 22px 0px; padding: 0; color: #333366; background-color: #ffffff; border: 0px solid #ffffff; background-image: none;"><br><img src="http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi1.gif" alt="" name="usw2usagi" style="margin: 0px; padding: 0px; border: none;"><br><input type="button" name="usw2but" value="'+usw2button+'" onclick="usw2judge()" style="font-size: 15px; font-weight: bold; font-family: Verdana,Osaka,sans-serif; width: 140px; height: 28px; text-align: center; margin: 0px; padding: 0px; color: #665533; background-color: #ffffee; background-image: none;"><br>');
+document.write('</form>');
+document.write('</div>');
+
+document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi2.gif';
+document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi3.gif';
+document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi4.gif';
+document.images["usw2usagi"].src='http://blog-imgs-41.fc2.com/e/w/a/ewalk2/chakin_tokeiusagi1.gif';

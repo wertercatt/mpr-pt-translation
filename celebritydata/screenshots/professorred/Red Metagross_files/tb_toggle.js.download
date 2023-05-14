@@ -1,0 +1,11 @@
+/**
+ * tb_url toggle
+ * created: 2013/12/17
+ * Author: FC2.inc
+ */
+$(function() {
+	$('#tb_url').click(function() {
+		var clsName = 'tb_url_selected';
+		$(this).find('div').toggle($(this).find('h1').toggleClass(clsName).hasClass(clsName));
+	});
+});

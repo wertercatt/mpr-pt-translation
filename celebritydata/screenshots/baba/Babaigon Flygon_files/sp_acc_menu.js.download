@@ -1,0 +1,14 @@
+/**
+ * acc menu
+ * 2011/09/08
+ * updated: 2013/12/17
+ */
+$(function() {
+	var $ad_header = $('#ad_header');
+	var $plugin_menu = $('#plugin_menu');
+	$('#header_menu').click(function() {
+		var visible = $(this).toggleClass('selected').hasClass('selected')? 'hidden' : 'visible';
+		$ad_header.css('visibility', visible);
+		$plugin_menu.slideToggle('fast');
+	});
+});

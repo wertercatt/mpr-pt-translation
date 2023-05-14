@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0065)https://clap.blogcms.jp/livedoor/minaduki_2006/50954597/button_pc -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja"><link type="text/css" id="dark-mode" rel="stylesheet" href="https://clap.blogcms.jp/livedoor/minaduki_2006/50954597/button_pc"><style type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>拍手</title>
+<style>
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+#button {
+  height: 100%;
+  background-color: #fff;
+  background-image: url('/img/clap_icon.svg');
+  background-position: 6px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 30px;
+  padding-right: 6px;
+  border: 1px solid #c9c9c9;
+  border-radius: 4px;
+  white-space: nowrap;
+  user-select: none;
+  font-size: 10px;
+  font-family: Meiryo,HiraKakuProN-W3,"Arial Unicode MS",Arial,sans-serif,"Apple SD Gothic Neo";
+  line-height: 1;
+  color: #565656;
+  font-weight: bold;
+  outline: 0;
+}
+#clap-count {
+  margin-left: 6px;
+  font-weight: normal;
+}
+#button:hover,
+#button:focus {
+  background-color: #f5f5f5;
+  border-color: #b2b2b2;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<button type="button" id="button">拍手<span id="clap-count">0</span></button>
+<script type="text/javascript" src="./jquery-1.11.1.min.js.download"></script>
+<script>
+(function($) {
+  var $clapCount   = $('#clap-count');
+  var $button      = $('#button');
+  var articleId    = '50954597';
+  var currentCount = 0;
+  $.ajax({
+    url: './',
+    method: 'GET',
+    cache: false,
+    dataType: 'json',
+  }).done(function(data) {
+    var count = data.count || 0;
+    currentCount = data.count || 0;
+    $clapCount.html(count.toString().replace(/(\d)(?=(\d{3})+$)/g , '$1,'));
+    var width = $button.outerWidth(true) + 1;
+    window.parent.postMessage([articleId, width].join(':'), "*");
+  });
+  var num = 0;
+  var post = function() {
+    $.ajax({
+      url: './',
+      method: 'POST',
+      dataType: 'json',
+      data: {
+        num: num,
+      },
+    }).done(function(data) {
+      num = 0;
+      var count = data.count || 0;
+      currentCount = data.count || 0;
+      $clapCount.html(count.toString().replace(/(\d)(?=(\d{3})+$)/g , '$1,'));
+      var width = $button.outerWidth(true) + 1;
+      window.parent.postMessage([articleId, width].join(':'), "*");
+    });
+  };
+  var interval = 500;
+  var tid = null;
+  var countUp = (function() {
+    var lastTime = new Date().getTime() - interval
+    return function() {
+      if (tid) clearTimeout(tid);
+      num++;
+      if ((lastTime + interval) <= new Date().getTime()) {
+        lastTime = new Date().getTime();
+        post();
+      } else {
+        currentCount++;
+        $clapCount.html(currentCount.toString().replace(/(\d)(?=(\d{3})+$)/g , '$1,'));
+        var width = $button.outerWidth(true) + 1;
+        window.parent.postMessage([articleId, width].join(':'), "*");
+        tid = setTimeout(post, interval);
+      }
+    };
+  })();
+  $button.on('click', countUp);
+})(jQuery);
+</script>
+
+
+</body></html>
