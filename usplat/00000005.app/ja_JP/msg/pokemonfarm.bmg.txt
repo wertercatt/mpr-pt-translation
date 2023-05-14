@@ -430,7 +430,7 @@
 	+ A mysterious Egg was received\n
 	+ from $8$.\n
 	+ \n
-    f0	= No. of Pokémon cared for: %d
+    f0	= No. of Pokémon cared for: %ls
     f1	= Lv. %d
     f2	= ★ Number of Ribbons obtained: %d
     f3	= New!
