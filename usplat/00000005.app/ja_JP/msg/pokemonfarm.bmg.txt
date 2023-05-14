@@ -367,14 +367,14 @@
 	+ No. of Pokémon\n
 	+ Next Level
     be	= %d\n
+	+ %ls\n
 	+ %d\n
-	+ %d\n
-	+ %d\n
+	+ %ls\n
 	+ %d
     bf	= %d\n
+	+ %ls\n
 	+ %d\n
-	+ %d\n
-	+ %d\n
+	+ %ls\n
 	+ ----
     c0	= 
     c1	= 
