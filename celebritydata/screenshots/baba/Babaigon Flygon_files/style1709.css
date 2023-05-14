@@ -1,0 +1,1334 @@
+@charset "utf-8";
+
+/*============================================================
+  -Index-
+  Reset
+  Basic
+  Header
+    Header Menu List
+    Blog Introduction
+  Main Contents
+    Layout
+    Page title
+    Entry List
+    Entry (個別記事表示)
+    Comment List, Trackback List
+    Comment Form
+    Plugin Contents
+    Contents Footer Links
+    Profile (index mode)
+  Ad
+  Pager
+  Page Navigation
+  Blog Footer
+============================================================*/
+
+
+/*============================================================
+  Reset
+============================================================*/
+html,body,div, dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,th,td,p{margin:0;padding:0;}
+ul, ol, li, dl, dt, dd{list-style:none;}
+img {border:none;}
+
+/*============================================================
+  Basic
+============================================================*/
+body {
+  background: #FFF;
+  font-family: Helvetica, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3";
+  font-size:16px;
+  color:#222;
+  word-break: break-all;
+	  -webkit-text-size-adjust: none;
+}
+a {
+  text-decoration:none;
+	  -webkit-tap-highlight-color:rgba(42,42,42,0.5);
+}
+a:link,a:visited { color:#2d7ac8; }
+a:focus,a:hover,a:active { color:#2d7ac8; }
+h1{font-size:20px;}
+h2{font-size:18px;}
+h3{font-size:17px;}
+h4,h5,h6{font-size:16px;}
+input,textarea,select { font-size:16px; }
+.system_message { padding:10px;color:#FF0000; }
+
+.space01 { margin-left: 4px; }
+.space02{ margin-left: 8px; }
+.space03{ margin-left: 12px; }
+.space04{ margin-left: 16px; }
+.space05{ margin: 0 8px; }
+
+/*============================================================
+  Header
+============================================================*/
+#header {
+	position:relative;
+	margin:0 0 10px;
+	height: 50px;
+	line-height: 50px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #dbdbdb;
+}
+
+#header h1 a {
+	display: block;
+	padding: 0 20px 0 40px;
+	*padding: 0 60px 0 40px;/*IE7*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color:#222222;
+	font-size:16px;	
+	text-align: center;
+}
+
+/* Header Menu Button
+---------------------------------------------- */
+#header #header_menu {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width: 50px;
+	height: 50px;
+	cursor:pointer;
+}
+#header #header_menu span {
+	display: block;
+	width: 31px;
+	height: 27px;
+	margin: 13px 0px 0px 10px;
+	line-height: 17px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -1px -1px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/nav_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/nav_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+#header #header_menu.selected {
+	background: #EFEFEF;
+	/*border-right: 1px solid #dbdbdb;*/
+}
+#header #header_menu.selected span {
+}
+
+/*============================================================
+  Header Menu List
+============================================================*/
+
+#plugin_menu {
+	position:absolute;
+	top:51px;
+	left:0;
+	width:100%;
+	background-color:#FFF;
+	z-index:999;
+	box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 1px 6px rgba(0,0,0,0.3);
+}
+
+#plugin_menu .balloon {
+	position: absolute;
+	top: -11px;
+	left: 16px;
+	width: 16px;
+	height: 16px;
+	z-index: 9999;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -130px -1px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+#plugin_menu #main_menu{
+	display: block;
+	background-color:#FFF;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+#plugin_menu #main_menu ul{
+	margin: 0 auto;
+	width: 98%;
+	text-align: center;
+}
+
+#plugin_menu #main_menu li{
+	display: inline-block;
+	*display: inline;/*IE7*/
+	*zoom:1;/*IE7*/
+	width: 31%;
+	height: 50px;
+}
+
+#plugin_menu #main_menu li:first-child{
+	margin-left: 0;
+}
+#plugin_menu #main_menu li.last a {
+	margin-right: 0;
+	border-right: 0px;
+}
+
+#plugin_menu #main_menu li a{
+	display: block;
+	width: 100%;
+	font-size:12px;
+	font-weight:bold;
+	color: #222;
+	text-align:center;
+	border-right: 1px solid #e5e5e5;
+}
+
+#home span{
+	padding: 5px 0 3px 22px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") left -79px no-repeat;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/home_icon_small_2013120412075214a.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/home_icon_small_2013120412075214a.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background-position: 0px -79px\9;
+	*background-position: 3px 3px;/*IE7*/
+}
+#pc span{
+	padding: 5px 0 3px 22px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") left -101px no-repeat;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/pc_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/pc_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background-position: 0px -101px\9;
+	*background-position: 5px 5px;/*IE7*/
+}
+#album span{
+	padding: 5px 0 3px 22px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") left -123px no-repeat;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/album_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/album_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background-position: 0px -123px\9;
+	*background-position: 4px 4px;/*IE7*/
+}
+
+#plugin_menu #blog_menu {
+	overflow:hidden;
+}
+#plugin_menu #blog_menu li {
+	position:relative;
+	margin:-1px 0 0;
+}
+#plugin_menu #blog_menu li a {
+	overflow: hidden;
+	display: block;
+	padding:10px 30px 10px 10px;
+	color:#222;
+	font-size: 14px;
+	font-weight: bold;
+	background: url(//templates.blog.fc2.com/template/sphone/basic_black/chevron.png) no-repeat right center;
+	background-color: #FFF;
+	border-top: 1px solid #e5e5e5;
+}
+#plugin_menu #blog_menu li a:focus,
+#plugin_menu #blog_menu li a:hover,
+#plugin_menu #blog_menu li a:active {
+	background-color:#f9f9f9;
+}
+#plugin_menu .blog_menu li a span {
+	position:absolute;
+	top:6px;
+	right:5px;
+	color:#FFFFFF;
+	font-family: AppleGothic,sans-serif;
+}
+
+/*============================================================
+  Layout
+============================================================*/
+#main_contents {
+	margin: 0 3%;
+}
+
+#main_contents .wrapper {
+	display: block;
+	margin:10px auto 0;
+	border: 1px solid #eaeaea;
+	background-color:#FFF;
+	border-radius:4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+}
+
+/*============================================================
+  Page title
+============================================================*/
+/* 記事の見出し */
+.entry_title {
+	border-bottom:1px solid #eaeaea;
+}
+/* 記事以外の見出し */
+.page_title {
+	font-size: 16px;
+	padding: 12px;
+	border-bottom:1px solid #eaeaea;
+}
+/* 見出しの文字色 */
+.page_title h1,
+.entry_title h1,
+.page_title h1 a,
+.entry_title h1 a {
+	padding:14px 12px;
+	color:#333;
+	line-height:1.3;
+}
+
+.entry_title h1,
+.entry_title h1 a {
+	font-size: 16px;
+}
+
+.page_title h1,
+.page_title h1 a{
+	font-size: 18px;
+}
+/* カテゴリ一覧見出し */
+.category_title,
+.date_archive_title {
+	margin:10px 0 0;
+	padding:10px;
+	background-color:#FFFFFF;
+	border: 1px solid #eaeaea;
+	font-size: 18px;
+	text-align:center;
+	border-radius:4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+}
+
+/* NEWアイコン */
+.new_label {
+	position: absolute;
+	margin-top: -2px;
+	margin-left: -2px;
+		margin-top: -8px\9;
+		margin-left: -4px\9;
+		*margin-left: -8px;
+	display: block;
+	width: 40px;
+		width: 45px\9;
+		*width: 45px;
+	height: 40px;
+		height: 45px\9;
+		*height: 45px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -7px -34px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/new_label_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/new_label_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background-position: -6px -29px\9;
+	*background-position: 4px 4px;/*IE7*/
+}
+
+/*============================================================
+  Entry List (個別記事ページ以外の一覧表示)
+============================================================*/
+.entry_list a{
+	display: block;
+	padding: 14px 10px 14px 20px;
+	*display: block;/*IE7*/
+	*width: 93%;/*IE7*/
+	width: 92%\9;/*IE8*/
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	.entry_list a{
+		/*width: 100%;/*--chorome&safari--*/
+	}
+}
+
+.entry_list .tmb {
+	display:table-cell;
+	vertical-align: middle;
+	*display: block;/*IE7*/
+	*float: left;/*IE7*/
+	padding-right: 7px;
+}
+
+.entry_list .tmb img {
+	width: 60px;
+	height: 60px;
+}
+
+.entry_list .tmb dl {
+	margin: 2px auto 0;
+	width: 64px;
+	height: 64px;
+	border-radius: 4px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+}
+
+.entry_list .entry {
+	display:table-cell;
+	*display: block;/*IE7*/
+	*width: 70%;/*IE7*/
+	*float: left;/*IE7*/
+	vertical-align: top;
+}
+.entry_list h1 {
+	margin-bottom: 5px;
+	font-size:15px;
+	line-height: 1.3;
+	white-space: normal;
+	*width: 120%;/*IE7*/
+	width: 120%\9;/*IE8*/
+}
+
+.entry_list .posted{
+	font-size: 11px;
+	color: #666666;
+	line-height:1.4;
+}
+
+.entry_list .topentry_info {
+	padding: 7px 10px;
+	background: #f9f9f9;
+	border-bottom: 1px solid #eaeaea;
+}
+
+.entry_list .topentry_category {
+	padding: 5px 0px 5px 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -168px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/category_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/category_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	*background-position: 5px 5px;/*IE7*/
+}
+
+.entry_list .topentry_comment {
+	padding: 5px 0px 5px 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -191px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/comment_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/comment_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;	
+	*background-position: 5px 5px;/*IE7*/
+}
+.entry_list .topentry_trackback {
+	padding: 5px 0px 5px 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -214px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/trackback_icon_small.png") no-repeat\9;
+	*background: url("//blog-imgs-44.fc2.com/t/e/m/templates/trackback_icon_small.png") no-repeat;/*IE7*/
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	*background-position: 5px 5px;/*IE7*/
+}
+
+
+/*============================================================
+  Entry (個別記事表示)
+============================================================*/
+/* 記事投稿情報
+---------------------------------------------- */
+.entry_title .posted {
+	font-size:12px;
+	line-height:1.6;
+	color:#666666;
+}
+.entry_title .entry_category {
+	display: block;
+	width: 95%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+		-webkit-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+	padding-left: 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -170px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+.entry_title .entry_time {
+	padding: 5px 0px 5px 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -143px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+.entry_title .entry_comment {
+	padding: 5px 0px 5px 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -190px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+.entry_title .entry_trackback {
+	padding: 5px 0px 5px 20px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -3px -213px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.entry_title .entry {
+	/*display:table;*/
+	padding: 7px 10px 5px 10px;
+	background: #f9f9f9;
+}
+.entry_title .tmb {
+	display:table-cell;
+	width: 72px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.entry_title .tmb img {
+	width: 68px;
+	height: 68px;
+	padding: 1px;
+	border: 1px solid #CCC;
+}
+
+.entry_title ul {
+	display:table-cell;
+	vertical-align: top;
+}
+
+/* 記事本文・追記
+---------------------------------------------- */
+.entry_body{
+	font-size: 14px;
+	padding:14px 12px 0;
+	line-height:1.6;
+}
+.entry_body blockquote {
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #EAEAEA;
+	padding: 5px;
+}
+
+.entry_more{
+	font-size: 14px;
+	margin-top: 20px;
+	padding:0 12px;
+	max-width:100%;
+}
+
+.entry_body img, .entry_more img {
+	max-width:100%;
+	height:auto;
+}
+
+.fc2_footer {
+	margin-top: 14px;
+}
+
+.entry_body ul li,
+.entry_more ul li{
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+.entry_body ol li,
+.entry_more ol li {
+	list-style-type: decimal;
+	list-style-position: inside;
+}
+
+.entry_body table {
+	border: solid 1px #B9BDC0;
+	border-collapse: collapse;
+}
+.entry_body table tr {
+	border-color: #B9BDC0;
+}
+.entry_body table td {
+	padding: 0.3em 0.5em;
+	border-color: #B9BDC0;
+}
+
+
+/* トラバリンク（個別記事表示）
+---------------------------------------------- */
+#tb_url {
+	display:block;
+	margin:0 3%;
+	padding: 10px 0px 10px 12px;
+	font-size:12px;
+	-webkit-tap-highlight-color:rgba(42,42,42,0.5);
+}
+
+#tb_url h1 {
+	font-size:14px;
+	font-weight:bold;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/tri_gray_under_20120912180746.png") no-repeat right center;
+	background-size: 24px 9px;
+		-webkit-background-size: 24px 9px;
+		-moz-background-size: 24px 9px;
+		-o-background-size: 24px 9px
+}
+
+#tb_url h1.tb_url_selected {
+		background: url("//blog-imgs-50.fc2.com/t/e/m/templates/tri_gray_over_20120912180842.png") no-repeat right center;
+	background-size: 24px 9px;
+		-webkit-background-size: 24px 9px;
+		-moz-background-size: 24px 9px;
+		-o-background-size: 24px 9px
+}
+
+#tb_url div {
+	display: none;
+	margin-top: 2px;
+}
+
+/*============================================================
+  Comment List, Trackback List
+============================================================*/
+#comment .list dt,
+#trackback .list dt {
+	line-height:1.3;
+	font-size: 15px;
+	font-weight:bold;
+	border-top:1px solid #eaeaea;
+}
+
+#comment .list dt:first-child,
+#trackback .list dt:first-child {
+	border:none;
+}
+
+#comment .list dt strong {
+	display:block;
+}
+
+#comment .list dd,
+#trackback .list dd {
+	padding: 12px 12px 14px;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+#comment .list dd .posted,
+#trackback .list dd .posted {
+	margin:8px 0 0;
+	text-align:right;
+	font-size:12px;
+	line-height: 1.3;
+}
+
+comment .list dd
+
+
+#comment article,
+#trackback article {}
+
+#comment h1.comment_name,
+#trackback h1.trackback_title {
+	padding: 12px 12px 12px 34px;
+	font-size: 14px;
+	border-bottom: 1px solid #eaeaea;
+}
+#comment h1.comment_name {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -55px -740px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background-color: #f9f9f9;
+}
+#trackback h1.trackback_title {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 10px -774px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background-color: #f9f9f9;
+}
+
+#comment h2,
+#trackback h2 {
+	padding: 10px 12px 0px 12px;
+	font-size: 14px;
+}
+
+
+/*============================================================
+  Comment Form
+============================================================*/
+#comment_post .form {
+	background: #fff;
+	padding: 0;
+	margin:14px 12px;
+}
+#comment_post .form dd{
+	margin:3px 0 10px;
+}
+
+#comment_post .form dt{
+	color:#333;
+	margin:10px 0 0;
+	font-weight:bold;
+	font-size: 14px;
+}
+
+#comment_post input[type="text"],
+#comment_post input[type="email"],
+#comment_post input[type="url"],
+#comment_post input[type="password"],
+#comment_post textarea,
+#comment_post select {
+	width: 98%;
+	padding:5px 1%;
+	border:1px solid #eaeaea;
+	color: #333;
+	border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-appearance: none;
+}
+
+#comment_post textarea {
+	height: 120px;
+	padding: 5px 1%;
+}
+
+#comment_post select {
+	width: 100%;
+	padding: 5px 10px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/tri_gray_under_20120912180746.png") no-repeat right center;
+	background-size: 24px 9px;
+		-webkit-background-size: 24px 9px;
+		-moz-background-size: 24px 9px;
+		-o-background-size: 24px 9px;
+		-webkit-appearance: textfield;
+}
+
+/* Submit button
+---------------------------------------------- */
+#comment_post .submit_btn {
+	padding:10px 12px;
+	text-align:center;
+}
+#comment_post .submit_btn a {
+	display:inline-block;
+	width:100%;
+	margin:0 auto;
+	padding:10px 0;
+	border: none;
+	border-radius:2px;
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+	color:#FFF;
+	font-size: 14px;
+	text-overflow: ellipsis;
+	background: #2d7ac8;
+}
+
+#comment_post .submit_btn input[type="submit"] {
+	display: inline-block;
+	width: 48%;
+	padding:10px 0;
+	border: none;
+	border-radius:2px;
+		-webkit-border-radius:2px;
+		-moz-border-radius:2px;
+		-webkit-appearance: none;
+	color:#FFF;
+	font-size: 14px;
+}
+#comment_post .submit_btn input[type="submit"]#reload {
+	background: #2d7ac8;
+}
+#comment_post .submit_btn input[type="submit"]#delete {
+	background: #ef4343;
+}
+
+
+/* new_entry,new_comment,new_tb
+---------------------------------------------- */
+.plugin_body {
+	padding: 5px 10px;
+	font-size: 13px;
+}
+
+.plugin_body .plugin_list li {
+	border-top:1px solid #eaeaea;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/tri_blue_left_201312171008358ef.png") no-repeat right center;
+	background-size: 9px 13px;
+		-webkit-background-size: 9px 13px;
+		-moz-background-size: 9px 13px;
+		-o-background-size: 9px 13px;
+}
+.plugin_body .plugin_list li:first-child {
+	border:none;
+}
+.plugin_body .plugin_list li a{
+	display: block;
+	overflow: hidden;
+	padding:10px 30px 10px 10px;
+}
+.plugin_body .plugin_list li em {
+	padding:0 0 3px;
+	font-style: normal;
+	font-weight: bold;
+	font-size:16px;
+}
+.plugin_body .plugin_list li span{
+	color:#333;
+	font-size:13px;
+}
+
+.plugin_body .plugin_profile {
+	padding: 14px 12px;
+}
+
+
+/*============================================================
+  Contents Footer Links
+============================================================*/
+.contents_footer {
+	display: box;
+	display:-webkit-box;
+	display:-moz-box;
+	margin-top: 14px;
+	/*overflow:hidden;*/
+	width:100%;
+	border-top: 1px solid #eaeaea;
+	border-bottom-right-radius: 5px;
+		-webkit-border-bottom-right-radius: 5px;
+		-moz-border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+		-webkit-border-bottom-left-radius: 5px;
+		-moz-border-bottom-left-radius: 5px;
+}
+.contents_footer li {
+	display: block;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	box-flex:1;
+		-webkit-box-flex:1;
+		-moz-box-flex: 1;
+	width: 33%;
+	font-size:10px;
+	line-height: 1.2;
+	font-weight: bold;
+	text-align:center;
+	background: #f9f9f9;
+}
+
+.contents_footer li a  {
+	display:block;
+	color:#4D4D4D;
+}
+
+.comment_write {}
+
+.comment_list {
+	border-left: 1px solid #eaeaea;
+	border-right: 1px solid #eaeaea;
+}
+
+.tb_list {}
+
+.comment_write a span {
+	display: inline-block;
+	text-align:left;
+	padding: 9px 0 0 28px;
+	height: 36px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -121px -325px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.comment_list a span{
+	display: inline-block;
+	text-align: left;
+	padding: 9px 0 0 30px;
+	height: 36px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -1px -362px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.tb_list a span {
+	display: inline-block;
+	text-align:left;
+	padding: 9px 0 0 26px;
+	height: 36px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -124px -400px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.back_entry {
+	width: 50% !important;
+	font-size:12px !important;
+	/*border-right: 1px solid #eaeaea;*/
+}
+
+.comment_write_large {
+		-webkit-box-flex:1; box-flex:1;
+	width: 50% !important;
+	font-size:12px !important;
+	border-left: 1px solid #eaeaea;
+}
+
+.comment_write_large a span{
+	display: inline-block;
+	padding: 15px 0 0 26px;
+	height: 30px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -121px -326px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.back_entry a span {
+	display: inline-block;
+	padding: 15px 0 0 26px;
+	height: 30px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -4px -428px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.back_entry_large {
+	display: block !important;
+	width: 100% !important;
+}
+
+.back_entry_large a{
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	padding: 14px 0;
+}
+
+.back_entry_large a span {
+	padding: 2px 0 2px 30px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -1px -439px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.contents_footer li a:focus,
+.contents_footer li a:hover,
+.contents_footer li a:active,
+.form_footer li a:focus,
+.form_footer li a:hover,
+.form_footer li a:active {
+  background-color:#EFEFEF;
+}
+
+/* コメント・トラバ非表示の場合（共通）
+---------------------------------------------- */
+.contents_footer li > span {
+	display:inline-block;
+	text-align:left;
+	color: #999;
+}
+
+.comment_write > span{
+	padding: 9px 0 0 28px;
+	height: 36px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -121px -473px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.comment_list > span {
+	padding: 9px 0 0 30px;
+	height: 36px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -1px -509px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+.tb_list > span {
+	padding: 9px 0 0 26px;
+	height: 36px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -124px -547px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+/*============================================================
+  Pager
+============================================================*/
+.page_num {
+	margin: 10px 0 0 0;
+	text-align: center;
+	font-size: 12px;
+}
+
+#main_contents .pager {
+	display:table;
+	margin: 10px auto 0;
+	width: 100%;
+	*width:295px;/*IE7*/
+	*zoom:1;/*IE7*/
+	text-align:center;
+	border:1px solid #eaeaea;
+	background-color:#f9f9f9;
+	border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+}
+
+#main_contents .pager li {
+	display: table-cell;
+	*float:left;/*IE7*/
+	font-size: 13px;
+	vertical-align: middle;
+	border-left: 1px #eaeaea solid;
+	color:#CCC;
+}
+
+#main_contents .pager li:first-child {
+	border-left: none;
+}
+
+#main_contents .pager li a{
+	display: block;
+		-webkit-tap-highlight-color:rgba(42,42,42,0.5);
+}
+
+#main_contents .pager .first_page,
+#main_contents .pager .last_page {
+	width: 36px;
+	text-indent:-9999px;
+	overflow:hidden;
+}
+
+#main_contents .pager .prev_page,
+#main_contents .pager .next_page{
+	*width: 110px;/*IE7*/
+}
+
+
+#main_contents .pager .first_page a,
+#main_contents .pager .last_page a,
+#main_contents .pager .prev_page a,
+#main_contents .pager .next_page a ,
+#main_contents .pager .prev_entry a,
+#main_contents .pager .next_entry a 
+ {
+	height: 45px;
+	line-height: 45px;
+}
+
+#main_contents .pager .prev_page span,
+#main_contents .pager .next_page span 
+ {
+	*display: block;/*IE7*/
+	*height: 45px;/*IE7*/
+	*line-height: 45px;/*IE7*/
+}
+
+#main_contents .pager .first_page span,
+#main_contents .pager .last_page span {
+	display: block;
+	width: 36px;
+	height: 45px;
+}
+
+#main_contents .pager .first_page span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 6px -624px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_first_page_small.png") center 16px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_first_page_small.png") center 16px no-repeat;/*IE7*/
+}
+
+#main_contents .pager .first_page a span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 6px -624px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/first_page_small_20120912173439.png") center 16px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/first_page_small_20120912173439.png") center 16px no-repeat;/*IE7*/
+}
+
+#main_contents .pager .last_page span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -119px -701px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_last_page_small.png") center 16px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_last_page_small.png") center 16px no-repeat;/*IE7*/
+}
+
+#main_contents .pager .last_page a span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -119px -701px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/last_page_small_20120912173645.png") center 16px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/last_page_small_20120912173645.png") center 16px no-repeat;/*IE7*/
+}
+
+#main_contents .pager .prev_page a span,
+#main_contents .pager .prev_entry a span{
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -136px -664px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/prev_page_small_20120912173809.png") 0 3px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/prev_page_small_20120912173809.png") 15px center no-repeat;/*IE7*/
+}
+ 
+#main_contents .pager .prev_page span,
+#main_contents .pager .prev_entry span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -136px -815px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_prev_page_small.png") 0 3px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_prev_page_small.png") 15px center no-repeat;/*IE7*/
+}
+
+#main_contents .pager .prev_page a span,
+#main_contents .pager .prev_entry a span,
+#main_contents .pager .prev_page span,
+#main_contents .pager .prev_entry span{
+	padding: 0 0 0 16px;
+	padding: 3px 0 3px 16px\9;/*IE8*/
+	*padding: 0 0 0 16px;/*IE7*/
+}
+
+#main_contents .pager .next_entry a span{
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 54px -690px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/next_page_small_20120912174005.png") right 3px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/next_page_small_20120912174005.png") 90px center no-repeat;/*IE7*/
+}
+#main_contents .pager .next_entry span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 54px -841px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_next_page_small.png") right 3px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_next_page_small.png") 90px center no-repeat;/*IE7*/
+}
+
+
+#main_contents .pager .next_page a span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 66px -690px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/next_page_small_20120912174005.png") right 3px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/next_page_small_20120912174005.png") 90px center no-repeat;/*IE7*/
+}
+
+#main_contents .pager .next_page span {
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat 66px -690px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_next_page_small.png") right 3px no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates/no_next_page_small.png") 90px center no-repeat;/*IE7*/
+}
+ 
+#main_contents .pager .next_page a span,
+#main_contents .pager .next_entry a span,
+#main_contents .pager .next_page span,
+#main_contents .pager .next_entry span  {
+	padding: 0 16px 0 0;
+	padding: 3px 16px 3px 0\9;/*IE8*/
+	*padding: 0 16px 0 0;/*IE7*/
+}
+
+.goto_home {
+	width: 60px;
+	height: 45px;
+	line-height: 45px;
+	background: #edefef;
+}
+
+.goto_home a {
+	padding: 18px 0 0 0;
+	width: 60px;
+	height: 27px;
+	line-height: 27px;
+	font-size: 10px;
+	background: url("//blog-imgs-44.fc2.com/t/e/m/templates/default_temp_201312.png") no-repeat -107px -252px;
+	background-size: 150px 1000px;
+		-webkit-background-size: 150px 1000px;
+		-moz-background-size: 150px 1000px;
+		-o-background-size: 150px 1000px;
+}
+
+/*============================================================
+  Page Navigation
+============================================================*/
+.page_top {
+	margin: 10px auto 0 !important;
+	width:295px\9;
+	*width:295px;
+	font-size:13px;
+	text-align: right !important;
+}
+
+.page_top a {
+	display: inline-block;
+	*zoom:1;/*IE7*/
+	padding: 4px 30px 4px 0;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates/top_page_20120912175818.png") right center no-repeat;
+	background: url("//blog-imgs-50.fc2.com/t/e/m/templates//top_page_small_20120912175917.png") right top no-repeat\9;/*IE8*/
+	*background: url("//blog-imgs-50.fc2.com/t/e/m/templates//top_page_small_20120912175917.png") right center no-repeat;/*IE7*/
+	background-size: 25px 21px;
+		-webkit-background-size: 25px 21px;
+		-moz-background-size: 25px 21px;
+		-o-background-size: 25px 21px;
+}
+
+
+#entry_num_box {
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
+
+
+
+#loadMoreBtn {
+	margin: 5px auto 0;
+	padding: 14px 0px;
+	width: 100%;
+	*width: 120%;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #2d7ac8;
+	position: relative;
+	border: 1px solid #eaeaea;
+	background:#edefef;
+	border-radius:4px;
+		-webkit-border-radius:4px;
+		-moz-border-radius:4px;
+	box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+	cursor: pointer;
+}
+
+#loadMoreBtn span {
+	display: none;
+	width: 18px;
+	height: 18px;
+	background: url(//blog-imgs-44.fc2.com/t/e/m/templates/loading_transparent.gif) no-repeat 0 0;
+	background: url(//blog-imgs-44.fc2.com/t/e/m/templates/loading_transparent_ie.gif) no-repeat 0 0\9;/*IE8*/
+	*background: url(//blog-imgs-44.fc2.com/t/e/m/templates/loading_transparent_ie.gif) no-repeat 0 0;/*IE7*/
+	background-size: 16px 16px;
+		-webkit-background-size: 16px 16px;
+		-moz-background-size: 16px 16px;
+		-o-background-size: 16px 16px;
+	position: absolute;
+	top: 32%;
+	left: 50px;
+}
+
+
+
+/*============================================================
+  Ad
+============================================================*/
+.ad_header{
+  text-align:center;
+}
+
+.ad_footer{
+	text-align:center;
+	margin:10px 0 0;
+}
+
+/*============================================================
+  Blog Footer
+============================================================*/
+footer{
+	display: block;
+	text-align:center;
+	font-size:13px;
+}
+
+footer #footer_menu{
+	display: inline-block;
+	margin:15px 0 0;
+}
+
+footer #address {
+	margin: 15px 0 0;
+	padding:10px 5px 50px;
+	background: #e5e5e5;
+	border-top: 1px solid #bfbfbf;
+	text-align:center;
+	color:#222;
+	font-style: normal;
+}
+
+footer #address a {
+	text-decoration:underline;
+}
+
+footer #copyright {
+	margin:0 0 5px;
+}

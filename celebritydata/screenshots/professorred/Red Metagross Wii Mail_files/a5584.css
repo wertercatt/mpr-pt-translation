@@ -1,0 +1,655 @@
+@charset "EUC-JP";
+
+/*
+
+ダウンロードしていただき、ありがとうございます。
+
+プラグイン・全記事対応になっています。
+
+下記内容に該当するブログでのご使用はご遠慮ください。
+
+猟奇的なコンテンツ
+違法な内容を扱うもの
+宗教的なコンテンツ
+差別的な内容を扱うもの
+
+アダルトコンテンツに関しましては、個人の趣味の範囲であればOKです★
+
+下記エントリーにてテンプレートの利用規約がありますので、
+目を通していただけるとありがたいです。
+テンプレートの修正・更新内容もこちらです。
+  
+http://cloudyvanilla.blog26.fc2.com/
+
+ */
+
+/* ブラウザのデフォルトに依存しないように全てのマージンとパディングを0にしています */
+* {
+   margin: 0;
+   padding: 0;
+   word-break:break-all;
+}
+
+<!-->
+/* html（スクロールバーの色設定が反映されるのはIEのみ） */
+html {
+        scrollbar-face-color: #ffffff; /* バーの色 */
+        scrollbar-3dlight-color: #ffffff; /* 左上外側ライン */
+        scrollbar-highlight-color: #dcdcdc; /* 左上内側ライン */
+        scrollbar-shadow-color: #ffffff; /* 右下内側ライン */
+        scrollbar-darkshadow-color: #d3d3d3; /* 右下外側ライン */
+        scrollbar-arrow-color: #b0c4de; /* 矢印 */
+        scrollbar-track-color: #f5f5f5; /* トラック部分 */
+}
+-->
+
+/*---------------------------------------------------------
+ブログ全体の外枠部分
+---------------------------------------------------------*/
+#container {
+	position:relative;
+	width: 1000px;
+                text-align:left;
+	margin:0 auto;                
+	background: url() no-repeat;
+}
+
+
+/*　全体の設定　--------------------------------------------*/
+
+ body{
+           text-align:center; /* IEのバグを利用して中央に配置 */
+          /* サイト内の文字の設定をしています */
+           text-align: left; /* 文字を左に設定 */
+           line-height: 1.6; /* 文字間隔 */
+           font-size: 12px; /* 文字サイズ */
+           font-family:arial unicode ms; /* 文字種類 */
+           color: #999999; /* 文字色 */
+       /* 背景を設定しています。画像を変更する場合は、backgroundのurl()内の画像の参照先を変更してください */
+            background:url(http://blog-imgs-40-origin.fc2.com/c/l/o/cloudyvanilla/darksky.jpg) ;         
+                    background-color: #000000; 
+            background-attachment:fixed; 
+            background-position:center ;/*配置 */
+            margin:0;
+            padding:0;
+}
+
+/* リンク文字 ---------------------------*/
+
+a {
+        text-decoration: none; /* 下線無し */
+        color: #eeeeee; /* 文字色 */
+}
+
+/* カーソルを置いたときのリンク文字 */
+a:hover {
+        text-decoration: none; /* 下線 */
+        color: #666666; /* 文字色 */
+}
+
+/* イメージにリンクを貼ったときの設定 */
+a img {
+       border : none; /* 線無し */
+}
+
+/* 入力領域の設定 -----------------------*/
+
+input,textarea,select,button,submit {
+        color:silver;/* 文字色 */
+        background-color: #000000; 
+        border: 1px solid  #666666;
+}
+
+
+/* 絵文字 ------------------------------*/
+
+img.emoji {
+        vertical-align: middle; /* 上寄せ */
+        border: 0; /* 線無し */
+}
+
+
+/* テーブルセル全般の文字設定 ------------*/
+
+th,td {
+        vertical-align: top; /* 上寄せ */
+}
+
+
+/*　ツリー化　---------------------------*/
+
+ul {
+       padding:0px;
+       margin:0px;
+       list-style-type:none;
+}
+
+
+ul li {
+      margin:0px;
+      padding: 0px 0px 1px 21px;
+      background: url(http://blog-imgs-24-origin.fc2.com/c/l/o/cloudyvanilla/cloudy-vanilla-tree.gif) no-repeat;
+}
+/* ページ移動 ------------------------------*/
+
+.entry_navi {font-size: 12px; /* 文字サイズ */
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 0px;
+}
+
+
+.page_navi {
+       margin: 10px; /* 上下左右に間隔を取っています */
+       text-align: center; /* 文字中央寄せ */
+}
+
+
+
+/*レイアウト設定 ----------------------------------------------*/
+
+
+/* 記事部分と左カラムの設定   */
+
+#wrapper {
+           float:left;
+           width : 793px;
+           margin-left:auto;
+           margin-right:auto;
+           padding-left : auto;
+           padding-right : auto;              
+}
+
+
+/* メインの設定 */
+
+#main{ 
+         float:right;
+         width : 580px;  
+        /* 枠線を描いています */
+         border: 2px solid #666666;
+         background-color : ;
+         margin-left:auto;
+         margin-right:auto;
+         padding-left : auto;
+         padding-right : auto;
+}
+
+
+
+/* ヘッダー部分 */
+
+#header {
+        width :800px; /* ヘッダー部分の幅 */
+        height: 150px; /* 高さを設定します */
+        background: url(http://blog-imgs-26-origin.fc2.com/c/l/o/cloudyvanilla/wing-bl.gif) ;
+        background-repeat:no-repeat; /* 背景を繰り返さない */
+        background-position:left top ; /* 配置 */
+        margin-top:20px;
+        margin-left:auto;
+        margin-right:auto;
+        padding-left : auto;
+        padding-right : auto;
+}
+
+/* 左カラムの設定 */
+
+#left{
+        float:left;    
+        width:200px;
+        margin:0 auto; /* 左右マージンを自動算出してセンタリング */
+        padding :0 auto;
+}
+
+
+/* 右カラムの設定 */
+
+#right{ 
+        float:right;       
+        width:200px;
+        margin:0 auto; /* 左右マージンを自動算出してセンタリング */
+        padding :0 auto;
+}
+
+
+/*　フッターの設定　*/
+
+#footer { 
+        width: 580px;
+        height: 75px;
+        clear: both;
+        text-align:center;
+        background-position:center;        
+        padding: 15px 0px 0px 0px;/* 内側余白調整 上右下左 */
+        margin-left:auto;
+        margin-right:auto;
+        margin-bottom:10px;
+        margin-top :10px;
+}
+
+
+
+/*　エントリー部分の設定　*/
+
+#entry_top {
+       width:500px;   
+        overflow: hidden;
+       background: url(http://blog-imgs-40-origin.fc2.com/c/l/o/cloudyvanilla/wing-blk.gif) ;
+       background-repeat:no-repeat; /* 背景を繰り返さない */
+       background-position:left; /* 配置 */       
+       margin:0 10px 0 10px;
+        padding: 0px 0px 0px 50px;/* 内側余白調整 上右下左 */
+}
+
+
+.entry_body {
+        width: 560px;
+         overflow: hidden;
+      /* アイコン画像を入れる場合は、backgroundのurl()内の画像の参照先を変更してください */
+
+       background: url(http://blog-imgs-40-origin.fc2.com/c/l/o/cloudyvanilla/feather-dark00.gif) no-repeat;  
+ 　　　background-repeat:no-repeat; /* 背景を繰り返さない */
+        background-position:center; /* 配置 */
+        margin: 0 0px 0 10px; /* 上下左右に間隔を取っています */
+        padding-left : auto;
+        padding-right : auto;
+}
+#entry_bottom {        
+        margin: 10px; /* 上下左右に間隔を取っています */
+        padding-left : auto;
+        padding-right : auto;
+}
+
+/*　各部のテキスト設定　----------------------------*/
+
+.top_title {
+        width :750px; 
+        font-size: 26px; 
+        font-weight: bold;
+        text-align: center;
+        margin: 10px;
+        padding: 50px 0px 0px 10px;
+}
+
+/* 通常・訪問済みリンクカラー */
+.top_title a:link { color: silver;
+                   text-decoration : none;}
+
+/* マウスを上に重ねた時リンクカラー */
+.top_title a:hover{ color: #666666; /* 文字色 */
+                   text-decoration : none;}
+
+
+.site_info {text-align:center;
+        margin: 10px;
+        padding: 0px 0px 0px 20px;
+        font-size: 15px;
+}
+
+.entry_title {
+        font-size: 18px;
+        color:#FF99FF;
+        text-align :left;
+        font-weight: bold;
+        border-bottom:1px solid #eeeeee;   /* ラインを書いています */
+        margin:0 auto; /* 左右マージンを自動算出してセンタリング */
+        padding: 35px 0px 0px 20px;
+}
+
+.entry_title a {
+        text-decoration: none; /* 下線無し */
+        color: #666666; /* 文字色 */
+}
+
+.entry_title a:hover {
+        text-decoration: none; /* 下線 */
+        color: silver; /* 文字色 */
+}
+
+.entry_text {
+        font-family:arial unicode ms; /* 文字種類 */
+        font-size:12px;
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        margin:0 ; 
+        padding: 0px 10px 30px 10px;/* 内側余白調整 上右下左 */
+}
+
+
+.entry_date {
+       font-family: Georgia;
+       font-size:20px;
+       text-align : right;
+       overflow:hidden; /* はみ出した部分を隠す */
+       padding: 0px;
+       margin-bottom:15px ;
+ }
+
+.entry_date a {
+        text-decoration: none; /* 下線無し */
+        color: silver; /* 文字色 */
+}
+
+.entry_date a:hover {
+        text-decoration: none; /* 下線 */
+        color: #666666; /* 文字色 */
+}
+
+
+
+/* ステータス */
+
+.entry_state {
+        font-family:arial unicode ms; /* 文字種類 */
+        text-align: right; /* 文字右寄せ */
+        font-size: 12px; 
+        padding: 0px;
+        margin:0 ; 
+}
+
+
+/*トラックバック  -----------------------------------*/
+
+.trackback_url {
+margin:5px 0 5px 0px;
+padding :10px;
+}
+
+.trackback_textarea {
+display:block;
+width:370px;
+height:16px;
+margin:1px 0;
+border:1px solid #666666;
+background:#000000;
+}
+
+.trackback_referer {
+font-weight:700;
+margin:5px 0 10px 0px;
+padding :10px;
+}
+
+.trackback_body {
+margin:5px 0 5px 0px;
+padding:0;
+}
+
+.trackback_state {
+border-top:solid 1px #666666;
+text-align:right;
+margin:5px 0 10px 0px;
+padding :10px;
+}
+
+
+
+
+/*コメントエリア  ----------------------------------*/
+.comment_title {
+width:500px;
+background: url(http://blog-imgs-40-origin.fc2.com/c/l/o/cloudyvanilla/wing-blk.gif) ;
+background-repeat:no-repeat; /* 背景を繰り返さない */
+background-position:left; /* 配置 */
+border-bottom:1px solid #666666;   /* 下にラインを書いています */
+margin:0 0 0 10px;
+padding:0;
+}
+
+.comment_body {
+margin:10px 5px 15px 10px;
+padding: 10px 20px 10px 10px;
+}
+
+.comment_state {
+width:500px; 
+text-align:right;
+border-bottom:1px solid #666666;   /* 下にラインを書いています */
+margin:5px 10px 10px 10px;
+}
+
+.comment_form {
+margin:0 0 0 10px;
+padding :10px 10px;
+background:transparent;
+}
+
+.form_text,.form_text2 {
+display:block;
+width:150px;
+height:16px;
+border:1px solid #666666;
+background:;
+}
+.form_text2 {
+width:250px;
+}
+.form_textarea {
+display:block;
+width:350px;
+border:1px solid #666666;
+background-color: #000000; 
+background: url() no-repeat right bottom;
+}
+
+.form_button {
+color: #666666; /* 文字色 */
+border:1px solid #666666;
+background:;
+margin:5px 0;
+}
+
+.form_button2 {width:500px; 
+color: #666666; /* 文字色 */
+border:1px solid #666666;
+background:;
+}
+
+form label {
+display:block;
+}
+
+form label.secret {
+display:block;
+margin-bottom:5px;
+}
+
+/* コメントリストの設定  ----------------------------*/
+
+.sidehide{display:none;}
+
+.topentry_comment_body{
+       width:500px; 
+       font-size: 12px;
+       border-bottom:1px solid #666666;   /* ラインを書いています */
+       padding:10px 10px 15px 10px;
+       margin:0px 0px 0px 10px;
+}
+
+.comment_title {
+        width:500px; 
+        height: 50px; /* 高さを設定します */
+        font-size: 12px;
+        color: silver; /* 文字色 */
+        text-align: left;
+        font-weight: bold;
+        margin:0px 0px 15px 10px;
+        padding:15px 0px 0px 70px;
+}
+
+.come-list {
+        width:580px; 
+        font-size: 15px;
+        font-weight: bold;
+        color: #666666; /* 文字色 */
+        text-align: center;
+        margin: 0px;
+        background: url() no-repeat;
+        background-position : center;
+}
+
+
+
+/*　メニューの詳細設定　---------------------------------*/
+
+.sidemenu_block { 
+        font-size: 12px;
+        /* 枠線を描いています */
+         border: 2px solid #666666;
+        margin:0 0 10px;
+        padding: 5px 5px 0px 5px;/* 内側余白調整 上右下左 */
+        overflow:hidden; /* はみ出した部分を隠す */
+        background-color: ;   
+}
+
+.sidemenu_block1 { 
+        font-size: 12px;
+        /* 枠線を描いています */
+         border: 2px solid #666666;
+        margin:0 0 10px;
+        padding: 5px 5px 0px 5px;/* 内側余白調整 上右下左 */
+        overflow:hidden; /* はみ出した部分を隠す */
+        background-color: ;   
+}
+.sidemenu_title {
+         text-align :center;
+         font-weight: bold;
+         font-size: 13px;
+         color: silver; /* 文字色 */
+         height: 20px;
+         background: url() no-repeat;
+         overflow:hidden; /* はみ出した部分を隠す */
+         margin-right: 5px;
+         margin-rleft:5px;
+         padding: 15px 0px 10px 10px ;
+}
+
+
+.sidemenu_area {
+        text-align: left;
+        margin-top : 10px;
+}
+
+
+
+/* プラグインのカレンダーの設定 */
+
+/* カレンダー設定---------------------------*/
+.calender{
+	width:150px;
+	margin:0 0px 0 5px;
+}
+
+.calender caption{
+}
+
+.calender th{
+	text-align:center;
+}
+
+.calender td{
+	text-align:center;
+}
+
+.calender td a{
+	text-decoration:underline;
+}
+
+.ads{
+	color:#2124A5;
+}
+
+.categories td{
+	width:22px;
+}
+
+
+
+
+
+/* 横カレンダーの設定 -------------------------------*/
+
+.line_calendar { 
+      font-size : 11px;  
+      color: #666666; /* 文字色 */
+      text-align:center; 
+      font-family : Georgia;
+      margin: 20px 30px 5px 20px;
+      padding-top : 5px;
+} 
+
+.line_cal_day { 
+      margin-left:3px; 
+      margin-right:3px;
+}
+
+.line_calendar a {
+      text-decoration: none; /* 下線無し */
+      color: silver; /* 文字色 */
+}
+
+.line_calendar a:hover {
+      text-decoration: none; /* 下線 */
+      color: #666666; /* 文字色 */
+}
+
+
+
+/*パンくずリスト-------------------------------------*/
+
+.pankuzu {
+      font-size:12px; 
+      text-align:left; 
+      margin:5px 0px 10px 10px;
+} 
+.pankuzu a {
+      text-decoration: none; /* 下線無し */
+      color: silver; /* 文字色 */
+}
+.pankuzu a:hover {
+      text-decoration: none; /* 下線 */
+      color: #666666; /* 文字色 */
+}
+
+.code {
+      font-size: 12px;
+      font-weight:bold;
+      overflow:scroll;
+      color: #4a4a4a;
+      margin: 3px 3px;
+      padding: 3px;
+      border: 1px dotted #ffdfdf;
+      background: url()
+}
+
+
+
+/* 引用文枠 -------------------------------------*/
+
+blockquote {
+               width : 480px;
+               clear: both;
+               font-size:11px;
+               /* 枠線を描いています */
+               border: 1px solid  #666666;               
+               padding: 20px;
+              margin:0 auto; /* 左右マージンを自動算出してセンタリング */
+}
+
+
+
+.day_interval{
+ padding: 2px;
+}
+
+
+/* MAC・IEバグ回避 */
+textarea,input,select {
+font-family : "\30D2\30E9\30AE\30CE\20Pro\20W3","Osaka","Verdana","Helvetica","Arial","\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF",sans-serif;
+}
+
+/* IE改行バグ回避 */
+br {
+letter-spacing:normal;
+}

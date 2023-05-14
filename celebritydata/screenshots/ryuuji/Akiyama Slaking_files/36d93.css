@@ -1,0 +1,422 @@
+/* ------- ■全体設定------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+HTML {
+	scrollbar-3dlight-color:#F0F0E0;
+	scrollbar-arrow-color:#402000;
+	scrollbar-darkshadow-color:#F0F0E0;
+	scrollbar-face-color:#ffffff;
+	scrollbar-highlight-color:#402000;
+	scrollbar-shadow-color:#402000;
+	scrollbar-track-color:#ffffff;
+}
+
+body {
+	font-size: 12px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/ji.gif);
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	color: #666666;
+}
+
+BR{letter-spacing:normal;}
+
+input, textarea {
+	border: 1px solid #999999;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+
+.btn {
+	background-color:#666666;
+	color:#fff
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* ------- ■リンクの色 ------- */
+a:link 		{
+	color: #CC6699;
+}
+a:visited 	{
+	color: #CC6699;
+}
+a:hover 	{
+	color: #A42023;
+	height: 100%;
+	width: 100%;
+	position: static;
+}
+
+
+/* ------- ■全体のくくり------- */
+#all {
+	MARGIN-LEFT: auto;
+	MARGIN-RIGHT: auto;
+	width: 770px;
+	border: 0px solid;
+	background-repeat: repeat;
+	background-color: #FFFFFF;
+}
+
+
+/* ------- ■タイトル部分 ------- */
+#banner {
+	background-repeat: no-repeat;
+	width: 770px;
+	height: 240px;
+	padding: 0px;
+	clear: both;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/background.gif);
+}
+
+#banner_l {
+	text-align: left;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 15px;
+}
+
+h1 {
+	font-size: 26px;
+	margin: 0px;
+	font-weight: 900;
+}
+
+h2 {
+	font-size: 13px;
+	margin: 0px;
+}
+
+.site_title {
+	padding: 50px 0px 0px 30px;
+}
+
+.site_title a,
+.site_title a:link,
+.site_title a:visited,
+.site_title a:active,
+.site_title a:hover {
+	color: #402000;
+	text-decoration: none;
+}
+
+.description {
+	font-weight: normal;
+	color: #402000;
+	margin: 5px 0px 0px 30px;
+}
+
+
+/* ------- ■左メニュー部分 ------- */
+#side_left {
+	float: left;
+	OVERFLOW: hidden;
+	width: 240px;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: 0px none;
+	border-left: 0px none;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/* ------- ■記事カラム部分 ------- */
+#main {
+	float: right;
+	OVERFLOW: hidden;
+	width: 530px;
+}
+
+/* ------- ■記事の枠部分 ------- */
+.entryBodyset {
+	width: 530px;
+	margin: 0px;
+	text-align: left;
+	padding: 0px;
+	border: none;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/entry_body-bg.gif);
+	background-repeat: repeat;
+}
+
+.entry_date {
+	color: #402000;
+	font-size: 10px;
+	letter-spacing : 1px;
+	text-align: right;
+	padding-bottom: 20px;
+}
+
+.entry_title {
+	color: #402000;
+	font-size: 13px;
+	padding: 15px 20px 10px;
+	margin: 0px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/entry_title-bg.gif);
+	background-repeat: repeat;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.entry_title2 {
+	color: #402000;
+	font-size: 13px;
+	padding: 15px 15px 10px;
+	margin: 0px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/entry_body-bg.gif);
+	background-repeat: repeat-y;
+	letter-spacing: 1px;
+}
+
+.entry_title3 {
+	padding: 20px 15px 0px;
+	margin: 0px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/entry_title-bg.gif);
+	background-repeat: no-repeat;
+}
+
+.entry_title a, .entry_title a:link, .entry_title a:visited, .entry_title a:active, .entry_title a:hover {
+	text-decoration: none;
+}
+
+.entry_body {
+	font-size: 12px;
+	line-height: 150%;
+	font-family: "Verdana", "\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF", "Osaka";
+	margin: 0px;
+	padding: 0px 20px;
+	color: #7D5762;
+}
+
+.entry_state {
+	font-size: 12px;
+	color: #402000;
+	font-family: "Verdana", "\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF", "Osaka";
+	text-align: center;
+	margin: 0;
+	clear: both;
+	padding: 20px 0px 0px;
+}
+
+.entry_state2 {
+	font-size: 12px;
+	color: #402000;
+	font-family: "Verdana", "\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF", "Osaka";
+	text-align: center;
+	margin: 0;
+	clear: both;
+	padding: 20px 0px 0px;
+}
+
+.entry_under {
+	color: #402000;
+	font-size: 13px;
+	padding: 10px 10px 20px;
+	font-weight: normal;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: none #CCCCCC;
+	border-left: 0px none;
+	margin: 0px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/entry_under-bg.gif);
+	background-repeat: no-repeat;
+	letter-spacing: 1px;
+	background-position: bottom;
+}
+
+.entry_under2 {
+	padding: 10px;
+	border-top: 0px none;
+	border-right: 0px none;
+	border-bottom: none #CCCCCC;
+	border-left: 0px none;
+	margin: 0px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/entry_under-bg.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+
+blockquote {
+	font-size: 12px;
+	padding: 5px;
+	margin: 5px;
+	background-color:#f0f0f0;
+	border-left: 3px solid #cdcdcd;
+}
+
+/* 記事内の画像 */
+.entry_body img {
+	border: 1px solid #000000;
+	margin: 3px;
+}
+
+
+/* ------- ■メニューの小分け部分 ------- */
+.sideSet {
+	text-align: left;
+	border: 0px none;
+}
+
+.sideSet p{
+	font-size: 12px;
+	margin: 0.4em;
+}
+
+.linktitle {
+	font-family: "Verdana", "\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF", "Osaka";
+	font-size: 12px;
+	color: #788F76;
+	text-align: left;
+	padding: 0px 10px 10px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/side_title-bg.gif);
+	background-repeat: no-repeat;
+	font-weight: bold;
+	border: 0px none;
+}
+
+.linktitle2 {
+	font-family: "Verdana", "\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF", "Osaka";
+	font-size: 12px;
+	color: #788F76;
+	text-align: left;
+	padding: 15px 10px 10px;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/side_body-bg.gif);
+	background-repeat: repeat;
+	font-weight: bold;
+	border: 0px none;
+}
+
+.linktext {
+	padding: 7px 20px 8px;
+	font-size: 12px;
+	color: #333;
+	line-height: 140%;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/side_body-bg.gif);
+	background-repeat: repeat;
+}
+
+.linkunder {
+	padding: 20px 0px 0px;
+	border: 0px none;
+	background-image: url(https://templates.blog.fc2.com/template/mountain/side_under-bg.gif);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+
+.linktext ul {
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.linktext ul li {
+	background-image: url(https://templates.blog.fc2.com/template/mountain/side_list.gif);
+	background-position: left top;
+	background-repeat: no-repeat;
+	color: #666;
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+
+/* 自己紹介画像 */
+.pay {
+	text-align: center;
+	border: 0px none #000000;
+	padding: 5px;
+}
+
+/* ------- ■ページトップ ------- */
+.pagetop {
+	color: #FFFFFF;
+	font-size: 11px;
+	text-align: left;
+	margin: 0px 0px 20px;
+	padding-top: 20px;
+}
+
+/* ------- ■検索ボックス ------- */
+.search {
+	font-size: 12px;
+}
+
+.search input {
+	border: 1px solid #666;
+}
+
+/* ------- ■カレンダー部分 ------- */
+#calendar {
+	width: 100%;
+	font-size: 10px;
+	color: #402000;
+	text-align:center;
+}
+
+.calender{
+	width:95%;
+}
+
+.hi {
+	color: #402000;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: center;
+}
+
+.hi_sun {
+	color: #c00;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: center;
+}
+.hi_sun0 {
+	color: #402000;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: center;
+}
+
+.hi_sat {
+	color: #5982b2;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: center;
+}
+.hi_sat0 {
+	color: #402000;
+	font-size: 10px;
+	font-family: Verdana;
+	text-align: center;
+}
+
+/* ------- ■フッダー部分 ------- */
+#footer {
+	clear: both;
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing : 1px;
+	margin: 30px 0px 0px 0px;
+	padding: 3px 0px 3px 0px;
+	color: #BDA8A8;
+}
+
+
+textarea,input,select {
+	font-family : "\30D2\30E9\30AE\30CE\20Pro\20W3","Osaka","Verdana","Helvetica","Arial","\FF2D\FF33\20\FF30\30B4\30B7\30C3\30AF",sans-serif;
+}
+
+img.emoji{
+	vertical-align:middle;
+	border:0;
+}
