@@ -1,4 +1,4 @@
-cd 00000005
+cd ..\usplat\00000005.app
 for /d %%i in (.\*) do (
     cd %%~nxi
     del l10n_ui.arc
