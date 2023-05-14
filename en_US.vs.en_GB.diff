@@ -1,0 +1,4009 @@
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/anim/esrborn_default.brlan" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/anim/esrborn_default.brlan"
+deleted file mode 100644
+index 980a8f5..0000000
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/anim/esrborn_default.brlan" and /dev/null differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/blyt/esrborn.brlyt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/blyt/esrborn.brlyt"
+deleted file mode 100644
+index 5aea972..0000000
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/blyt/esrborn.brlyt" and /dev/null differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/timg/esrborn.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/timg/esrborn.tpl"
+deleted file mode 100644
+index d3392e9..0000000
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/timg/esrborn.tpl" and /dev/null differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/timg/esrborn.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/timg/esrborn.tpl.png"
+deleted file mode 100644
+index 75849c2..0000000
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/arc/timg/esrborn.tpl.png" and /dev/null differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/wszst-setup.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/wszst-setup.txt"
+deleted file mode 100644
+index 0cdbfd5..0000000
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/esrborn/wszst-setup.txt"
++++ /dev/null
+@@ -1,183 +0,0 @@
+-
+-###############################################################################
+-#
+-# wszst settings:
+-# ---------------
+-#
+-# This is the settings file for wszst (tool of "Wiimms SZS Tools"). It
+-# was created by the EXTRACT command and is needed by the CREATE command
+-# to rebuild the original source archive with or without modifications.
+-# You can edit it, if you know what you do.
+-#
+-###############################################################################
+-
+-# The first part contains some general settings:
+-
+-# The internal archive format (U8, WU8, BRRES, BREFF or BREFT):
+-archive-format = U8
+-
+-# The file format (YAZ0, YAZ1 or BZ for a compressed archive, other ignored):
+-file-format = U8
+-
+-# An archive format related version number (-1: unknown or not relevant)
+-version = -1
+-
+-# For U8+WU8 archives: Is there a special '.' base directory:
+-have-pt-dir = 0
+-
+-# The minimum and maximum file data positions:
+-min-data-offset = 0x0
+-max-data-offset = 0xbc60
+-
+-# The calculated alignment of all files:
+-data-align = 0x20
+-
+-###############################################################################
+-#
+-# Some general rules for the next sections:
+-#   All paths are relative to the current base directory (directory that
+-#   contains the file wszst-setup.txt). Prefix at least paths that starts
+-#   not with a letter, digit, point, star or underscore with "./".
+-#
+-#------------------------------------------------------------------------------
+-
+-[include-pattern]
+-
+-# All files and directories start with a . are hidden (unix like) and excluded
+-# automatically. But filenames in one of the include sections are included
+-# independent of this point. Also the include sections takes precedence over
+-# the exclude sections.
+-
+-# This section expects file patterns with wildcards.
+-
+-#------------------------------------------------------------------------------
+-
+-[include]
+-
+-# This second include section accpepts only complete file names and none of
+-# characters have any special meaning.
+-
+-
+-#------------------------------------------------------------------------------
+-
+-[exclude-pattern]
+-
+-# Files and directories in this section are ignored by the CREATE command.
+-# The include sections takes precedence over the exclude sections.
+-
+-# This section expects file patterns with wildcards.
+-# Here we exclude all original, backup and temp files:
+-
+-*.orig
+-*.bak
+-*.tmp
+-*.temp
+-
+-# Exclude all *.d directories. To enable it, remove "# " at the beginning.
+-# *.d
+-
+-# Exclude all PNG files. The intention is to allow the creation of new PNG
+-# images and mipmap files without any need to edit this setup file. All
+-# extracted PNG files are automatically listed in the [exclude] section.
+-# So the exclusion of all PNG is not really needed, but may help. The second
+-# (disabled) line is an alternative to exclude all mipmap PNG files.
+-
+-*.png
+-# *.mm#.png
+-
+-#------------------------------------------------------------------------------
+-
+-[exclude]
+-
+-# Files and directories in this section are ignored by the CREATE command.
+-# This second exclude section accepts only complete file names and none of
+-# characters have any special meaning.
+-
+-./arc/timg/esrborn.tpl.d
+-./arc/timg/esrborn.tpl.png
+-./course.kcl.d
+-./course.kcl.flag
+-./course.kcl.mtl
+-./course.kcl.obj
+-./course.kmp.d
+-./course.kmp.txt
+-./course.lex.txt
+-./wszst-setup.txt
+-
+-#------------------------------------------------------------------------------
+-
+-[encode]
+-
+-# Encode (and overwrite without notice) the listed files before adding them
+-# to the new archive. The source is searched under the same filename with the
+-# correct source extension added or, if this failed, a replaced extension.
+-#   Example: For "message.bmg" search files "message.bmg.txt" or "message.txt"
+-# The source file itself is set on the exclude list and will not stored into
+-# the new archive.
+-#
+-# The syntax of this file section is a little bit different as the other file
+-# sections. Each line begins with a comma separated list of keywords followed
+-# by an equal sign.
+-#   Syntax:  COMMA_SEPARATED_FORMAT_LIST = relative_filename
+-#   Example: BREFT,IA8,3 = ./files/rk_steam
+-# The first keyword is the file format. The following keywords describe sub
+-# formats. An additonal integer is a file type specific information:
+-#  -> For image files it is the number of images (main image + mipmaps).
+-#     A value of 0 means: Use the tools default (see option --n-mipmaps).
+-#
+-# A file is only encoded if the destination does not exist or if the source
+-# is younger than the destination. Encoding can be controlled by options
+-# --no-encode, --encode-img and --encode-all (short: --noenc --eimg --eall).
+-
+-TPL,I4,1	= ./arc/timg/esrborn.tpl
+-KCL		= ./course.kcl
+-KMP		= ./course.kmp
+-LEX		= ./course.lex
+-
+-#------------------------------------------------------------------------------
+-
+-[create]
+-
+-# Create (and overwrite without notice) the listed files before adding them to
+-# the new archive. The source directory is searched under the same filename
+-# with an appended ".d" or, if this fails, with an extension replaced by ".d".
+-# If a source directory does not exist, the job is ignored silently.
+-#   Example: For "my.brres" search directories "my.brres.d" or "my.d"
+-# The source directory itself is set on the exclude list and will not stored
+-# into the new archive. Creating can be controlled by the options:
+-#   --no-recurse  : Do not create archives recursively.
+-#   --no-encode   : Do not encode files before creating an archive.
+-#   --encode-img  : Encode all image files (TEX,TPL,BREFT/sub), overrides --no-encode.
+-#   --encode-all  : Encode all files and ignore timestamps.
+-#   --pt-dir      : Set `point directory' mode.
+-#   --u8          : Create an U8 archive.
+-#   --brres       : Create an BRRES archive.
+-#   --breff       : Create an BREFF archive.
+-#   --breft       : Create an BREFT archive.
+-#   --no-compress : Create an uncompressed file (U8 instead of SZS).
+-#   ...
+-
+-
+-#------------------------------------------------------------------------------
+-
+-[order]
+-
+-# This list contains all extracted files in the order of the original archive.
+-# If creating archives (but not U8) this list will be used to sort the found
+-# files. For archives with directory support (all but not PACK) it is very
+-# important, that the directories are listed before the files that resides in
+-# the directories.
+-#
+-# The value before the equal sign is the file offset in the original archive
+-# and is ignored for sorting.
+-
+-		= ./arc/
+-		= ./arc/anim/
+-      0xe0	= ./arc/anim/esrborn_default.brlan
+-		= ./arc/blyt/
+-     0x2a0	= ./arc/blyt/esrborn.brlyt
+-		= ./arc/timg/
+-     0x460	= ./arc/timg/esrborn.tpl
+-
+-#------------------------------------------------------------------------------
+-
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_basis_02_00.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_basis_02_00.tpl"
+index 98e947d..e0f2225 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_basis_02_00.tpl" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_basis_02_00.tpl" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_basis_02_00.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_basis_02_00.tpl.png"
+index 38c0003..1f4b259 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_basis_02_00.tpl.png" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_basis_02_00.tpl.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_00_00.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_00_00.tpl"
+index c827da8..4dc20c7 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_00_00.tpl" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_00_00.tpl" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_00_00.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_00_00.tpl.png"
+index 2749e02..88b4390 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_00_00.tpl.png" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_00_00.tpl.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_02_00.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_02_00.tpl"
+index 0c26e23..db0b445 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_02_00.tpl" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_02_00.tpl" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_02_00.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_02_00.tpl.png"
+index d177f90..fa063dd 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_board_02_00.tpl.png" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_board_02_00.tpl.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_option_00_00.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_option_00_00.tpl"
+index f5788c6..0d83f78 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_option_00_00.tpl" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_option_00_00.tpl" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_option_00_00.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_option_00_00.tpl.png"
+index d18b88f..b08c187 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_option_00_00.tpl.png" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_option_00_00.tpl.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_uchiwake_01_00.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_uchiwake_01_00.tpl"
+index 08da7e9..dd92726 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_uchiwake_01_00.tpl" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_uchiwake_01_00.tpl" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_uchiwake_01_00.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_uchiwake_01_00.tpl.png"
+index 1826f92..a51a3d5 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/arc/timg/help_uchiwake_01_00.tpl.png" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/help_uchiwake_01_00.tpl.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/wanted.tpl" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/wanted.tpl"
+new file mode 100644
+index 0000000..1043280
+Binary files /dev/null and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/wanted.tpl" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/wanted.tpl.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/wanted.tpl.png"
+new file mode 100644
+index 0000000..bb9cc6a
+Binary files /dev/null and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/arc/timg/wanted.tpl.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/wszst-setup.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/wszst-setup.txt"
+index ee5fac7..2310c4c 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/l10n_ui/wszst-setup.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/l10n_ui/wszst-setup.txt"
+@@ -27,10 +27,10 @@ have-pt-dir = 0
+ 
+ # The minimum and maximum file data positions:
+ min-data-offset = 0x0
+-max-data-offset = 0xd480
++max-data-offset = 0xfb60
+ 
+ # The calculated alignment of all files:
+-data-align = 0x20
++data-align = 0x40
+ 
+ ###############################################################################
+ #
+@@ -103,6 +103,8 @@ data-align = 0x20
+ ./arc/timg/help_option_00_00.tpl.png
+ ./arc/timg/help_uchiwake_01_00.tpl.d
+ ./arc/timg/help_uchiwake_01_00.tpl.png
++./arc/timg/wanted.tpl.d
++./arc/timg/wanted.tpl.png
+ ./arc/timg/wii_setuzoku.tpl.d
+ ./arc/timg/wii_setuzoku.tpl.png
+ ./course.kcl.d
+@@ -144,6 +146,7 @@ TPL,CMPR,1	= ./arc/timg/help_board_00_00.tpl
+ TPL,CMPR,1	= ./arc/timg/help_board_02_00.tpl
+ TPL,CMPR,1	= ./arc/timg/help_option_00_00.tpl
+ TPL,CMPR,1	= ./arc/timg/help_uchiwake_01_00.tpl
++TPL,I4,1	= ./arc/timg/wanted.tpl
+ TPL,C8,P-RGB565,1	= ./arc/timg/wii_setuzoku.tpl
+ KCL		= ./course.kcl
+ KMP		= ./course.kmp
+@@ -188,12 +191,13 @@ LEX		= ./course.lex
+ 
+ 		= ./arc/
+ 		= ./arc/timg/
+-     0x120	= ./arc/timg/help_basis_02_00.tpl
+-    0x1760	= ./arc/timg/help_board_00_00.tpl
+-    0x2da0	= ./arc/timg/help_board_02_00.tpl
+-    0x43e0	= ./arc/timg/help_option_00_00.tpl
+-    0x5a20	= ./arc/timg/help_uchiwake_01_00.tpl
+-    0x7060	= ./arc/timg/wii_setuzoku.tpl
++     0x140	= ./arc/timg/help_basis_02_00.tpl
++    0x1780	= ./arc/timg/help_board_00_00.tpl
++    0x2dc0	= ./arc/timg/help_board_02_00.tpl
++    0x4400	= ./arc/timg/help_option_00_00.tpl
++    0x5a40	= ./arc/timg/help_uchiwake_01_00.tpl
++    0x7080	= ./arc/timg/wanted.tpl
++    0x9740	= ./arc/timg/wii_setuzoku.tpl
+ 
+ #------------------------------------------------------------------------------
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/man/Textures(NW4R)/man" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/man/Textures(NW4R)/man"
+index 514e163..95444d7 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/man/Textures(NW4R)/man" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/man/Textures(NW4R)/man" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/man/Textures(NW4R)/man.png" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/man/Textures(NW4R)/man.png"
+index fc7cad4..314f220 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/man/Textures(NW4R)/man.png" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/man/Textures(NW4R)/man.png" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/chr.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/chr.bmg"
+index 2ec7d24..4835e73 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/chr.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/chr.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/chr.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/chr.bmg.txt"
+index ab531d5..d5a1d11 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/chr.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/chr.bmg.txt"
+@@ -25,10 +25,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/debug.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/debug.bmg"
+index 0e70c4d..c9f5ed3 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/debug.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/debug.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/debug.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/debug.bmg.txt"
+index 0820dd4..cdbda9c 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/debug.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/debug.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -39,7 +39,7 @@
+ #------------------------------------------------------------------------------
+ 
+ # This part defines values for unknown parameters of section headers.
+-@UNKNOWN-INF32-0C =    0xf0000	# 32 bit value of section INF1 offset 0x0c
++@UNKNOWN-INF32-0C =   0x100000	# 32 bit value of section INF1 offset 0x0c
+ @UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+ @UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+ 
+@@ -505,104 +505,106 @@
+    1bb	= Remove all
+    1bc	= Add
+    1bd	= Add rare
+-   1be	= Add Pokémon to trade
+-   1bf	= Celebrity's Pokémon
+-   1c0	= Motions
+-   1c1	= Select
+-   1c2	= Stage
+-   1c3	= Change Level
+-   1c4	= Time
+-   1c5	= Rainbow
+-   1c6	= Show path
+-   1c7	= No change to the Time
+-   1c8	= Approve
+-   1c9	= Add by set
+-   1ca	= Eyes
+-   1cb	= Angry
+-   1cc	= Close
+-   1cd	= Glad
+-   1ce	= Normal
+-   1cf	= Motions
+-   1d0	= (Stop)
+-   1d1	= Look this way
+-   1d2	= Face this way
+-   1d3	= Activity
+-   1d4	= Activity type
+-   1d5	= DEBUG:\n
++   1be	=  Flying
++   1bf	=  Headband
++   1c0	= Add Pokémon to trade
++   1c1	= Celebrity's Pokémon
++   1c2	= Motions
++   1c3	= Select
++   1c4	= Stage
++   1c5	= Change Level
++   1c6	= Time
++   1c7	= Rainbow
++   1c8	= Show path
++   1c9	= No change to the Time
++   1ca	= Approve
++   1cb	= Add by set
++   1cc	= Eyes
++   1cd	= Angry
++   1ce	= Close
++   1cf	= Glad
++   1d0	= Normal
++   1d1	= Motions
++   1d2	= (Stop)
++   1d3	= Look this way
++   1d4	= Face this way
++   1d5	= Activity
++   1d6	= Activity type
++   1d7	= DEBUG:\n
+ 	+ Ignoring the Mii Celebrity data\n
+ 	+ because it is restricted by\n
+ 	+ Parental Controls settings.
+-   1d6	= DEBUG:\n
++   1d8	= DEBUG:\n
+ 	+ Ignoring the Mii Celebrity data\n
+ 	+ because it is not its distibution\n
+ 	+ period yet.
+-   1d7	= DEBUG:\n
++   1d9	= DEBUG:\n
+ 	+ Ignoring the Celebrity Mii data\n
+ 	+ because the received data\n
+ 	+ contains illegal settings.
+-   1d8	= DEBUG:\n
++   1da	= DEBUG:\n
+ 	+ Ignoring the Celebrity Mii data\n
+ 	+ because of a wrong region\n
+ 	+ code.
+-   1d9	= DEBUG:\n
++   1db	= DEBUG:\n
+ 	+ Ignoring the Celebrity Mii data\n
+ 	+ because of a wrong language\n
+ 	+ settings.
+-   1da	= DEBUG:\n
++   1dc	= DEBUG:\n
+ 	+ Ignoring the Celebrity Mii data\n
+ 	+ because forced exit flag is on.
+-   1db	= DEBUG:\n
++   1dd	= DEBUG:\n
+ 	+ Ignoring the Celebrity Mii data\n
+ 	+ because the distibution period\n
+ 	+ has expired.
+-   1dc	= DEBUG:\n
++   1de	= DEBUG:\n
+ 	+ Ignoring the Celebrity Mii data\n
+ 	+ because their distibution date\n
+ 	+ is identical.
+-   1dd	= DEBUG:\n
++   1df	= DEBUG:\n
+ 	+ You cannot send any more\n
+ 	+ invitations today.
+-   1de	= DEBUG:\n
++   1e0	= DEBUG:\n
+ 	+ Not sending any data\n
+ 	+ because the interaction\n
+ 	+ setting is turned off.
+-   1df	= DEBUG:\n
++   1e1	= DEBUG:\n
+ 	+ Not sending any data\n
+ 	+ because WiiConnect24 is\n
+ 	+ temporarily unavailable.
+-   1e0	= DEBUG:\n
++   1e2	= DEBUG:\n
+ 	+ Not sending any data\n
+ 	+ because WiiConnect24 is\n
+ 	+ unavailable.
+-   1e1	= DEBUG:\n
++   1e3	= DEBUG:\n
+ 	+ Not sending any data\n
+ 	+ because the WiiConnect24\n
+ 	+ Message function is disabled.
+-   1e2	= DEBUG:\n
++   1e4	= DEBUG:\n
+ 	+ Not sending any data\n
+ 	+ because no Wii Friends\n
+ 	+ were found.
+-   1e3	= DEBUG:\n
++   1e5	= DEBUG:\n
+ 	+ Not sending any data\n
+ 	+ because no picture was\n
+ 	+ found.
+-   1e4	= DEBUG:\n
++   1e6	= DEBUG:\n
+ 	+ You could not select\n
+ 	+ Mii and Pii to send.
+-   1e5	= DEBUG:\n
++   1e7	= DEBUG:\n
+ 	+ You could not select a recipient\n
+ 	+ or pictures.
+-   1e6	= DEBUG:\n
++   1e8	= DEBUG:\n
+ 	+ You could not serialize My\n
+ 	+ Pokémon Ranch data.
+-   1e7	= DEBUG:\n
++   1e9	= DEBUG:\n
+ 	+ You could not send an\n
+ 	+ invitation.
+-   1e8	= DEBUG:\n
++   1ea	= DEBUG:\n
+ 	+ You sent an invitation.
+-   1e9	= %ls\n
++   1eb	= %ls\n
+ 	+ Sending to: %04d %04d %04d %04d
+-   1ea	= %ls\n
++   1ec	= %ls\n
+ 	+ Sending to: %04d %04d %04d %04d\n
+ 	+ (%ls)
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/dptext.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/dptext.bmg"
+index 1a3428e..756555e 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/dptext.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/dptext.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/dptext.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/dptext.bmg.txt"
+index 24f93ff..b158fd6 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/dptext.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/dptext.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -137,19 +137,19 @@
+     10	= $6$ $7$, 20$5$\n
+ 	+ A mysterious Pokémon\n
+ 	+ Egg received from\n
+-	+ $8$.\n
++	+ $8$.
+     11	= $6$ $7$, 20$5$\n
+ 	+ A mysterious Pokémon\n
+ 	+ Egg obtained in\n
+-	+ $8$.\n
++	+ $8$.
+     12	= $6$ $7$, 20$5$\n
+ 	+ A very mysterious\n
+ 	+ Pokémon Egg obtained\n
+-	+ at $8$.\n
++	+ at $8$.
+     13	= $6$ $7$, 20$5$\n
+ 	+ A very mysterious Pokémon\n
+ 	+ Egg that came from\n
+-	+ $8$.\n
++	+ $8$.
+     14	= Mystery Zone
+     15	= Twinleaf Town
+     16	= Sandgem Town
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/farm_event.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_event.bmg"
+index 13c75ee..7455ddd 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/farm_event.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_event.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/farm_event.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_event.bmg.txt"
+index b841147..242c899 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/farm_event.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_event.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -75,14 +75,14 @@
+ 	+ place where you can keep\n
+ 	+ lots of Pokémon.
+      e	= Not only do you keep the\n
+-	+ Pokémon there...
++	+ Pokémon here...
+      f	= You can watch Pokémon live\n
+ 	+ out their daily lives!
+-    10	= I've been thinking about making\n
+-	+ this Ranch full of Pokémon.
++    10	= I've been thinking about filling\n
++	+ this ranch with Pokémon.
+     11	= A life surrounded by lots\n
+ 	+ of Pokémon has been my\n
+-	+ long-cherished dream...\n
++	+ long-cherished dream...
+     12	= Ah...\n
+ 	+ A Ranch filled with Pokémon...\n
+ 	+ It's fantastic... It's fabulous...\n
+@@ -104,8 +104,8 @@
+ 	+ Hmm, I didn't quite catch that.\n
+ 	+ Let me ask you one more time.
+     1b	= That's great! I knew it!
+-    1c	= I'll take you to the Ranch\n
+-	+ right away!
++    1c	= Okay then, come on over and\n
++	+ join me here at the Ranch!
+     1d	= Select the Miis you want to\n
+ 	+ take to the Ranch.\n
+ 	+ The more you take, the more\n
+@@ -119,7 +119,7 @@
+ 	+ care of them!
+     21	= When you visit the Ranch, every\n
+ 	+ day you'll find one new\n
+-	+ Pokémon added to the Ranch!\n
++	+ Pokémon added to the Ranch!
+     22	= Let's work together to fill this\n
+ 	+ Ranch with Pokémon\n
+ 	+ little by little!
+@@ -146,8 +146,8 @@
+     2b	= Oh, well. That's okay.\n
+ 	+ I'll bring a Pokémon every day!\n
+ 	+ Let's start from there!
+-    2c	= You know how Pokémon are\n
+-	+ added to the Ranch now, right?
++    2c	= Now you know how Pokemon\n
++	+ are added to the Ranch, right?
+     2d	= As today's the first and a very\n
+ 	+ special day, I brought six\n
+ 	+ Pokémon to add to the Ranch!
+@@ -197,7 +197,7 @@
+ 	+ okay for tomorrow?
+     41	= Is a pink Pokémon\n
+ 	+ okay for tomorrow?
+-    42	= Is a short Pokémon\n
++    42	= Is a small Pokémon\n
+ 	+ okay for tomorrow?
+     43	= Is a tall Pokémon\n
+ 	+ okay for tomorrow?
+@@ -257,7 +257,7 @@
+     5e	= Okay, perhaps a\n
+ 	+ pink Pokémon?
+     5f	= Okay, perhaps a\n
+-	+ short Pokémon?
++	+ small Pokémon?
+     60	= Okay, perhaps a\n
+ 	+ tall Pokémon?
+     61	= Okay, perhaps a\n
+@@ -328,7 +328,7 @@
+ 	+ pink Pokémon tomorrow!
+     7c	= All right. Leave it to me!\n
+ 	+ I will bring a\n
+-	+ short Pokémon tomorrow!
++	+ small Pokémon tomorrow!
+     7d	= All right. Leave it to me!\n
+ 	+ I will bring a\n
+ 	+ tall Pokémon tomorrow!
+@@ -389,13 +389,13 @@
+ 	+ Pokémon I bring here tomorrow!
+     91	= See ya!
+     92	= The number of Pokémon at the\n
+-	+ Ranch has become %d!
++	+ Ranch has become %ls!
+     93	= 
+     94	= Okay. Let's expand the Ranch!\n
+ 	+ Its construction is expected to\n
+ 	+ be done on %ls!
+     95	= Oh? The number of Pokémon at\n
+-	+ the Ranch is already %d!
++	+ the Ranch is already %ls!
+     96	= 
+     97	= Okay.\n
+ 	+ Let's expand the Ranch again!
+@@ -411,7 +411,7 @@
+     9c	= I did not bring any Pokémon to\n
+ 	+ the Ranch today.
+     9d	= So far, I have brought\n
+-	+ %d Pokémon.
++	+ %ls Pokémon.
+     9e	= 
+     9f	= Here are my precious Pokémon.\n
+ 	+ Please take good care of them!
+@@ -421,16 +421,16 @@
+ 	+ get any bigger...
+     a2	= Please look after the Pokémon\n
+ 	+ and the Ranch!
+-    a3	= Once the number of Pokémon\n
+-	+ becomes %d, let's expand\n
++    a3	= Once we get %ls\n
++	+ Pokémon, let's expand\n
+ 	+ the Ranch!
+     a4	= 
+     a5	= Let's keep adding Pokémon to\n
+ 	+ the Ranch!
+     a6	= Let's expand the Ranch by\n
+ 	+ adding more Pokémon!
+-    a7	= Once the number of Pokémon\n
+-	+ becomes %d, let's expand\n
++    a7	= Once we get %ls\n
++	+ Pokémon, let's expand\n
+ 	+ the Ranch!
+     a8	= 
+     a9	= ...Oh!?
+@@ -439,14 +439,14 @@
+     ab	= From now on, you should use\n
+ 	+ Free Mode to watch the Ranch.\n
+ 	+ It's so handy!
+-    ac	= Free Mode is added to\n
+-	+ the menu!
++    ac	= The Free Mode function has\n
++	+ been added to the menu!
+     ad	= Great news!\n
+ 	+ A Toy Box will be delivered to\n
+ 	+ the Ranch every day starting\n
+ 	+ today!
+     ae	= A toy that Pokémon can play\n
+-	+ with is stored in the Toy Box.\n
++	+ with is stored in the Toy Box.
+     af	= It's like a treasure box!\n
+ 	+ You'll find it somewhere on\n
+ 	+ the Ranch. Look for it\n
+@@ -463,7 +463,8 @@
+ 	+ favorite Pokémon.
+     b4	= From now on, you should use\n
+ 	+ Favorites to organize Pokémon.
+-    b5	= Favorites is added to the menu!
++    b5	= The Favourites function has\n
++	+ been added to the menu!
+     b6	= More great news!\n
+ 	+ Two Toy Boxes will be delivered\n
+ 	+ to the Ranch every day starting\n
+@@ -569,7 +570,7 @@
+     e1	= The Ranch has expanded!
+     e2	= The number of Pokémon you\n
+ 	+ can keep has increased from\n
+-	+ %d to %d!
++	+ %ls to %ls!
+     e3	= 
+     e4	= The number of Miis you can\n
+ 	+ bring has increased from\n
+@@ -602,7 +603,7 @@
+     ee	= Bring the Wanted Pokémon\n
+ 	+ to the Ranch once you catch it.
+     ef	= Oh, you know what?\n
+-	+ The %ls you\n
++	+ The %{} you\n
+ 	+ just brought to the Ranch...
+     f0	= %ls was looking\n
+ 	+ for it.
+@@ -630,36 +631,38 @@
+ 	+ See ya!
+     fb	= Long time no see!\n
+ 	+ I haven't seen you for\n
+-	+ %d year(s)!
+-    fc	= The Pokémon missed you \n
++	+ %d years!
++    fc	= Long time no see!\n
++	+ It's been about a year\n
++	+ since I've seen you!
++    fd	= The Pokémon missed you \n
+ 	+ so much!
+-    fd	= Long time no see!\n
++    fe	= Long time no see!\n
++	+ I haven't seen you for\n
++	+ %d months!
++    ff	= Long time no see!\n
+ 	+ I haven't seen you for\n
+-	+ %d month(s)!
+-    fe	= I bet the Pokémon missed you\n
++	+ 1 month!
++   100	= I bet the Pokémon missed you\n
+ 	+ so much!
+-    ff	= Well, hello there!\n
++   101	= Well, hello there!\n
++	+ I haven't seen you for\n
++	+ %d weeks!
++   102	= Well, hello there!\n
+ 	+ I haven't seen you for\n
+-	+ %d week(s)!
+-   100	= The Pokémon look very happy\n
++	+ 1 week!
++   103	= The Pokémon look very happy\n
+ 	+ to see you!
+-   101	= Hello!\n
++   104	= Hello!\n
+ 	+ Thanks for coming back to the\n
+ 	+ Ranch today!
+-   102	= Hello!\n
++   105	= Hello!\n
+ 	+ I am so glad to see you again!
+-   103	= Hello!\n
++   106	= Hello!\n
+ 	+ Enjoy your time at the Ranch!
+-   104	= You have arrived at\n
++   107	= You have arrived at\n
+ 	+ %ls's\n
+ 	+ %ls Ranch!
+-   105	= Please enjoy\n
+-	+ %ls Ranch!
+-   106	= To leave this Ranch, move the\n
+-	+ cursor onto the door located at\n
+-	+ the top left of the screen and\n
+-	+ press \x{e042}.
+-   107	= Enjoy!
+    108	= Please enjoy\n
+ 	+ %ls Ranch!
+    109	= To leave this Ranch, move the\n
+@@ -667,8 +670,8 @@
+ 	+ the top left of the screen and\n
+ 	+ press \x{e042}.
+    10a	= Enjoy!
+-   10b	= I'm very proud of this Ranch!\n
+-	+ Check out every corner of it!
++   10b	= Please enjoy\n
++	+ %ls Ranch!
+    10c	= To leave this Ranch, move the\n
+ 	+ cursor onto the door located at\n
+ 	+ the top left of the screen and\n
+@@ -681,346 +684,359 @@
+ 	+ the top left of the screen and\n
+ 	+ press \x{e042}.
+    110	= Enjoy!
+-   111	= %2$ls has arrived\n
++   111	= I'm very proud of this Ranch!\n
++	+ Check out every corner of it!
++   112	= To leave this Ranch, move the\n
++	+ cursor onto the door located at\n
++	+ the top left of the screen and\n
++	+ press \x{e042}.
++   113	= Enjoy!
++   114	= %2$ls has arrived\n
+ 	+ from %1$ls\n
+ 	+ Ranch.
+-   112	= Hello!\n
++   115	= Hello!\n
+ 	+ I brought a picture of\n
+ 	+ %ls Ranch.
+-   113	= Hello!\n
+-	+ I'm %2$ls\n
+-	+ from %1$ls Ranch!
+-   114	= Hello!\n
++   116	= Hello!\n
++	+ I'm %2$ls from \n
++	+ %1$ls Ranch!
++   117	= Hello!\n
+ 	+ I brought a picture of\n
+ 	+ %ls Ranch.
+-   115	= Hello!\n
+-	+ I'm %2$ls\n
+-	+ from %1$ls Ranch.
+-   116	= Why don't you come to\n
++   118	= Hello!\n
++	+ I'm %2$ls from \n
++	+ %1$ls Ranch!
++   119	= Why don't you come to\n
+ 	+ %ls Ranch?
+-   117	= Okay!\n
++   11a	= Okay!\n
+ 	+ Let's go to\n
+ 	+ %ls Ranch!
+-   118	= Okay. Maybe next time.
+-   119	= Hope to see you again!\n
++   11b	= Okay. Maybe next time.
++   11c	= Hope to see you again!\n
+ 	+ Good-bye!
+-   11a	= Would you like to come to\n
++   11d	= Would you like to come to\n
+ 	+ %ls Ranch?
+-   11b	= Okay!\n
++   11e	= Okay!\n
+ 	+ Let's go to\n
+ 	+ %ls Ranch!
+-   11c	= Okay. Maybe next time.
+-   11d	= Hope to see you again!\n
++   11f	= Okay. Maybe next time.
++   120	= Hope to see you again!\n
+ 	+ Good-bye!
+-   11e	= Do you want to go?
+-   11f	= Thanks for visiting\n
+-	+ %ls Ranch!
+-   120	= I will visit again and invite you\n
+-	+ to my Ranch. See you then!
+-   121	= Thanks again, and take care!
++   121	= Do you want to go?
+    122	= Thanks for visiting\n
+ 	+ %ls Ranch!
+    123	= I will visit again and invite you\n
+ 	+ to my Ranch. See you then!
+    124	= Thanks again, and take care!
+-   125	= How do you do?
+-   126	= So... This is your and Hayley's\n
++   125	= Thanks for visiting\n
++	+ %ls Ranch!
++   126	= I will visit again and invite you\n
++	+ to my Ranch. See you then!
++   127	= Thanks again, and take care!
++   128	= How do you do?
++   129	= So... This is your and Hayley's\n
+ 	+ Ranch? Looks nice!
+-   127	= My name is %2$ls, \n
++   12a	= My name is %2$ls, \n
+ 	+ a member of Club Look-See.\n
+ 	+ My Member No. is %1$d!
+-   128	= The mottos of Club Look-See\n
++   12b	= The mottos of Club Look-See\n
+ 	+ are...
+-   129	= Ranch!\n
++   12c	= Ranch!\n
+ 	+ That's something you should be\n
+ 	+ picky about!
+-   12a	= Ranch!\n
++   12d	= Ranch!\n
+ 	+ That's something you should\n
+ 	+ show off to as many people as\n
+ 	+ you can!
+-   12b	= These are mottos of the Club!
+-   12c	= Now, I want to show you my\n
++   12e	= These are mottos of the Club!
++   12f	= Now, I want to show you my\n
+ 	+ Ranch! The one I really care\n
+ 	+ about.
+-   12d	= Will you come to my Ranch?
+-   12e	= Come on! Don't be shy!
+-   12f	= I want you to know how great\n
++   130	= Will you come to my Ranch?
++   131	= Come on! Don't be shy!
++   132	= I want you to know how great\n
+ 	+ Club Look-See can be!
+-   130	= All right! That's the way!\n
++   133	= All right! That's the way!\n
+ 	+ Okay, let's go to my Ranch!
+-   131	= So... This is your and Hayley's\n
++   134	= So... This is your and Hayley's\n
+ 	+ Ranch? I heard a great deal\n
+ 	+ about it!
+-   132	= My name is %2$ls,\n
++   135	= My name is %2$ls,\n
+ 	+ a member of Club Look-See.\n
+ 	+ My Member No. is %1$d!
+-   133	= Haha!\n
++   136	= Haha!\n
+ 	+ Do you know what my favorite\n
+ 	+ Pokémon is?
+-   134	= Visit my Ranch to find out!
+-   135	= All right! That's the way!\n
++   137	= Visit my Ranch to find out!
++   138	= All right! That's the way!\n
+ 	+ Okay, let's go to my Ranch!
+-   136	= I see...\n
++   139	= I see...\n
+ 	+ That's too bad. I really wanted\n
+ 	+ to show you my Ranch.
+-   137	= I will come back and invite you\n
++   13a	= I will come back and invite you\n
+ 	+ to my Ranch again, so until\n
+ 	+ next time!
+-   138	= So long!\n
++   13b	= So long!\n
+ 	+ \n
+ 	+ Look-See ya!
+-   139	= So... This is your and Hayley's\n
++   13c	= So... This is your and Hayley's\n
+ 	+ Ranch? I heard so much\n
+ 	+ about it!
+-   13a	= My name is %2$ls,\n
++   13d	= My name is %2$ls,\n
+ 	+ a member of Club Look-See.\n
+ 	+ My Member No. is %1$d!
+-   13b	= Hehe.\n
++   13e	= Hehe.\n
+ 	+ Do you want to take a guess\n
+ 	+ which Pokémon I love?
+-   13c	= Would you like to come to my\n
++   13f	= Would you like to come to my\n
+ 	+ Ranch to find out?
+-   13d	= Yes? Cool!\n
++   140	= Yes? Cool!\n
+ 	+ Okay, let's go to my Ranch!
+-   13e	= I see...\n
++   141	= I see...\n
+ 	+ I wanted to show you my Ranch,\n
+ 	+ but... Too bad!
+-   13f	= Maybe next time?\n
++   142	= Maybe next time?\n
+ 	+ I will come back and invite you\n
+ 	+ to my Ranch again!
+-   140	= So long!\n
++   143	= So long!\n
+ 	+ \n
+ 	+ Look-See ya!
+-   141	= Thanks for coming and\n
++   144	= Thanks for coming and\n
+ 	+ checking out my Ranch!
+-   142	= You know?\n
++   145	= You know?\n
+ 	+ Having people like you at\n
+ 	+ my Ranch is really encouraging!
+-   143	= Hope you don't mind me telling\n
++   146	= Hope you don't mind me telling\n
+ 	+ other members about you!
+-   144	= When you meet other members\n
++   147	= When you meet other members\n
+ 	+ of Club Look-See, please take\n
+ 	+ the time to visit their Ranches!
+-   145	= All right, please take care!
+-   146	= So...how did you like it?\n
++   148	= All right, please take care!
++   149	= So...how did you like it?\n
+ 	+ Are you impressed?
+-   147	= Didn't my Ranch serve as a\n
++   14a	= Didn't my Ranch serve as a\n
+ 	+ good inspiration for your\n
+ 	+ Ranch?
+-   148	= When you meet other members\n
++   14b	= When you meet other members\n
+ 	+ of Club Look-See, please take\n
+ 	+ some time to visit their\n
+ 	+ Ranches!
+-   149	= All right, please take care!
+-   14a	= Thanks for visiting my Ranch!\n
++   14c	= All right, please take care!
++   14d	= Thanks for visiting my Ranch!\n
+ 	+ How was it? Did you like it?
+-   14b	= I hope my Ranch served as a\n
++   14e	= I hope my Ranch served as a\n
+ 	+ good inspiration for your\n
+ 	+ Ranch!
+-   14c	= When you meet other members\n
++   14f	= When you meet other members\n
+ 	+ of Club Look-See, take some\n
+ 	+ time to visit their Ranches,\n
+ 	+ will ya?
+-   14d	= Okay, please take care!
+-   14e	= Look-See ya!
+-   14f	= %ls is staying\n
++   150	= Okay, please take care!
++   151	= Look-See ya!
++   152	= %ls is staying\n
++	+ at this Ranch until\n
++	+ %ls.
++   153	= %ls are staying\n
+ 	+ at this Ranch until\n
+ 	+ %ls.
+-   150	= You have a guest visiting the \n
++   154	= You have a guest visiting the \n
+ 	+ Ranch!
+-   151	= If you bring %ls,\n
++   155	= You have guests visiting the \n
++	+ Ranch!
++   156	= If you bring %ls,\n
+ 	+ you can trade it for\n
+ 	+ %ls.
+-   152	= Sending %ls\n
++   157	= Sending %ls\n
+ 	+ to %ls!
+-   153	= Bye-bye, %ls!
+-   154	= Take good care of\n
+-	+ %ls!
+-   155	= Oh? It's %ls.\n
++   158	= Bye-bye, %ls!
++   159	= Take good care of\n
++	+ %{}!
++   15a	= Oh? It's %{}.\n
+ 	+ Isn't this Pokémon what...\n
+-	+ %ls was\n
++	+ %{} was\n
+ 	+ looking for?
+-   156	= Trade %ls\n
+-	+ for %ls's\n
+-	+ %ls?
+-   157	= %ls's\n
+-	+ %ls looks\n
++   15b	= Trade %{}\n
++	+ for %{}'s\n
++	+ %{}?
++   15c	= %{}'s\n
++	+ %{} looks\n
+ 	+ like this.
+-   158	= I see. That's okay.\n
+-	+ %ls's\n
+-	+ %ls looks pretty\n
++   15d	= I see. That's okay.\n
++	+ %{}'s\n
++	+ %{} looks pretty\n
+ 	+ nice, you know?
+-   159	= %ls looked\n
++   15e	= %ls looked\n
+ 	+ very happy! Thanks for trading!
+-   15a	= Ah...the %ls you\n
++   15f	= Ah.. the %ls you\n
+ 	+ just brought to the Ranch...\n
+-	+ I always wanted one, too!
+-   15b	= Will you trade it in return for\n
++	+ I always wanted one too!
++   160	= Will you trade it in return for\n
+ 	+ my %ls?
+-   15c	= Oh! %ls!\n
++   161	= Oh! %ls!\n
+ 	+ A Pokémon I've always wanted!
+-   15d	= Hey, why don't you trade your\n
++   162	= Hey, why don't you trade your\n
+ 	+ %ls for\n
+ 	+ my %ls?
+-   15e	= My %ls\n
++   163	= My %ls\n
+ 	+ looks like this.
+-   15f	= I see. That's okay.\n
++   164	= I see. That's okay.\n
+ 	+ Just let me play with your\n
+ 	+ %ls here then!
+-   160	= By the way, I am trying so hard\n
++   165	= By the way, I am trying so hard\n
+ 	+ to catch %ls,\n
+ 	+ but with no luck...
+-   161	= If you happen to catch\n
++   166	= If you happen to catch\n
+ 	+ %ls, will you\n
+ 	+ trade it in return for\n
+ 	+ my %ls?
+-   162	= See? Not a bad deal, is it?\n
++   167	= See? Not a bad deal, is it?\n
+ 	+ Please bring %ls\n
+ 	+ to the Ranch once you catch it!
+-   163	= Thank you for the trade!\n
++   168	= Thank you for the trade!\n
+ 	+ Please take good care of\n
+-	+ %ls!
+-   164	= By the way, I want to regain the\n
++	+ %{}!
++   169	= By the way, I want to regain the\n
+ 	+ feeling I had when I first\n
+ 	+ started taking care of Pokémon.
+-   165	= So, I want an Egg without\n
++   16a	= So, I want an Egg without\n
+ 	+ knowing what Pokémon\n
+ 	+ hatches from it!
+-   166	= 
+-   167	= If you find an Egg,\n
++   16b	= 
++   16c	= If you find an Egg,\n
+ 	+ will you trade it in return for\n
+ 	+ my %ls?
+-   168	= See? Not a bad deal, is it?\n
++   16d	= See? Not a bad deal, is it?\n
+ 	+ Please bring an Egg to the\n
+ 	+ Ranch when you find one!
+-   169	= Trade Pokémon?
+-   16a	= Trade this %ls?
+-   16b	= Okay...\n
+-	+ Trade this %ls?
+-   16c	= Are you sure you want to trade\n
+-	+ this %ls?
+-   16d	= It's holding an item. Do you still\n
++   16e	= Trade Pokémon?
++   16f	= Trade this %{}?
++   170	= Okay...\n
++	+ Trade this %{}?
++   171	= Are you sure you want to trade\n
++	+ this %{}?
++   172	= It's holding an item. Do you still\n
+ 	+ want to trade this Pokémon?
+-   16e	= Oh?\n
++   173	= Oh?\n
+ 	+ You want to cancel trading?
+-   16f	= %ls  %ls  Lv. %d\n
++   174	= %ls  %ls  Lv. %d\n
+ 	+ Name: %ls\n
+ 	+ OT: %ls\n
+ 	+ Trainer: %ls\n
+ 	+ Mark: %ls
+-   170	= %ls  %ls  Lv. %d\n
++   175	= %ls  %ls  Lv. %d\n
+ 	+ Name: %ls\n
+ 	+ OT: %ls
+-   171	= Egg\n
++   176	= Egg\n
+ 	+ Obtained: %ls\n
+ 	+ Trainer: %ls\n
+ 	+ Mark: %ls
+-   172	= Thank you for bringing your\n
++   177	= Thank you for bringing your\n
+ 	+ Pokémon to the Ranch!
+-   173	= This will make the Ranch more\n
++   178	= This will make the Ranch more\n
+ 	+ fun and lively!
+-   174	= I'd like for you to keep bringing\n
++   179	= I'd like for you to keep bringing\n
+ 	+ Pokémon to the Ranch, but...
+-   175	= If you're going to catch\n
++   17a	= If you're going to catch\n
+ 	+ Pokémon anyway, why don't\n
+ 	+ you try to catch Pokémon not\n
+ 	+ found in your Pokédex?
+-   176	= According to your Pokédex,\n
++   17b	= According to your Pokédex,\n
+ 	+ you have...\n
+ 	+ Seen: %d\n
+ 	+ Obtained: %d
+-   177	= 
+-   178	= How great! You have collected\n
++   17c	= 
++   17d	= How great! You have collected\n
+ 	+ all the Pokémon in the Pokédex!
+-   179	= I thought I could help you to\n
++   17e	= I thought I could help you to\n
+ 	+ complete your Pokédex, but\n
+ 	+ I guess there is no need for it.
+-   17a	= You've got skills!\n
++   17f	= You've got skills!\n
+ 	+ Maybe I can ask you for a\n
+ 	+ Pokémon I am interested in?
+-   17b	= To complete your Pokédex...\n
++   180	= To complete your Pokédex...\n
+ 	+ Let me see...
+-   17c	= Ah!\n
++   181	= Ah!\n
+ 	+ How about this Pokémon?
+-   17d	= Okay.\n
++   182	= Okay.\n
+ 	+ I've been thinking about asking\n
+ 	+ you to bring some more\n
+ 	+ Pokémon to the Ranch.
+-   17e	= Knowing you have the skills\n
++   183	= Knowing you have the skills\n
+ 	+ to complete your Pokédex,\n
+ 	+ may I ask you a favor again?
+-   17f	= According to your Pokédex,\n
++   184	= According to your Pokédex,\n
+ 	+ you have...\n
+ 	+ Seen: %d\n
+ 	+ Obtained: %d
+-   180	= 
+-   181	= You finally completed your\n
++   185	= 
++   186	= You finally completed your\n
+ 	+ Pokédex! That's awesome!
+-   182	= Since you have such skill to\n
++   187	= Since you have such skill to\n
+ 	+ complete the Pokédex, may I\n
+ 	+ ask for a Pokémon I'm\n
+ 	+ interested in?
+-   183	= Wow!\n
++   188	= Wow!\n
+ 	+ You've finally seen all the\n
+ 	+ Pokémon in the Pokédex!\n
+ 	+ Congratulations!
+-   184	= Let's keep up the good work\n
++   189	= Let's keep up the good work\n
+ 	+ and complete your Pokédex!
+-   185	= Since last time,\n
++   18a	= Since last time,\n
+ 	+ the number has increased by...\n
+ 	+ Seen: %d\n
+ 	+ Obtained: %d
+-   186	= 
+-   187	= You are one step closer to\n
++   18b	= 
++   18c	= You are one step closer to\n
+ 	+ completing your Pokédex!\n
+ 	+ Congratulations!
+-   188	= To complete your Pokédex...\n
++   18d	= To complete your Pokédex...\n
+ 	+ Let me see...
+-   189	= Ah!\n
++   18e	= Ah!\n
+ 	+ How about this Pokémon?
+-   18a	= red
+-   18b	= blue
+-   18c	= yellow
+-   18d	= green
+-   18e	= black
+-   18f	= brown
+-   190	= purple
+-   191	= gray
+-   192	= white
+-   193	= pink
+-   194	= short
+-   195	= tall
+-   196	= light
+-   197	= heavy
+-   198	= fiery
+-   199	= cold
+-   19a	= scary
+-   19b	= fast
+-   19c	= round
+-   19d	= flying
+-   19e	= sturdy
+-   19f	= focused
+-   1a0	= paralyzing
+-   1a1	= calm
+-   1a2	= oblivious
+-   1a3	= stinky
+-   1a4	= singing
+-   1a5	= sweet-smelling
+-   1a6	= my preferred
+-   1a7	= %ls has left.
+-   1a8	= BUNEARY, a Pokémon you can\n
++   18f	= red
++   190	= blue
++   191	= yellow
++   192	= green
++   193	= black
++   194	= brown
++   195	= purple
++   196	= gray
++   197	= white
++   198	= pink
++   199	= short
++   19a	= tall
++   19b	= light
++   19c	= heavy
++   19d	= fiery
++   19e	= cold
++   19f	= scary
++   1a0	= fast
++   1a1	= round
++   1a2	= flying
++   1a3	= sturdy
++   1a4	= focused
++   1a5	= paralyzing
++   1a6	= calm
++   1a7	= oblivious
++   1a8	= stinky
++   1a9	= singing
++   1aa	= sweet-smelling
++   1ab	= my preferred
++   1ac	= %ls has left.
++   1ad	= %ls have left.
++   1ae	= BUNEARY, a Pokémon you can\n
+ 	+ catch in the Eterna Forest.\n
+ 	+ \fA cute, fluffy Pokémon, isn't it?\n
+ 	+ \fA BUNEARY with a high\n
+ 	+ Friendship level evolves into a\n
+-	+ new Pokémon. How about you\n
+-	+ treat it well and make it happy?
+-   1a9	= This STARAVIA evolved from a\n
++	+ new Pokémon. Why not treat\n
++	+ it well and make it happy?
++   1af	= This STARAVIA evolved from a\n
+ 	+ STARLY I was taking care of.\n
+ 	+ \fIt will take you anywhere once\n
+ 	+ it learns Fly, and you can count\n
+ 	+ on it during battle, too!
+-   1aa	= SHROOMISH, a Pokémon you\n
++   1b0	= SHROOMISH, a Pokémon you\n
+ 	+ can catch in the Pastoria\n
+ 	+ Great Marsh.\n
+ 	+ \fIt learns moves that are\n
+@@ -1028,106 +1044,106 @@
+ 	+ \fMaybe you can catch more\n
+ 	+ Pokémon when you have it in\n
+ 	+ your party?
+-   1ab	= FINNEON, a Pokémon I caught\n
++   1b1	= FINNEON, a Pokémon I caught\n
+ 	+ on Route 205 using the\n
+ 	+ Good Rod.\n
+ 	+ \fOnce it evolves, it may become\n
+ 	+ a more attractive Pokémon!
+-   1ac	= I caught this PACHIRISU on\n
++   1b2	= I caught this PACHIRISU on\n
+ 	+ Route 205.\n
+ 	+ \fIt has a fluffy tail. A very cute\n
+ 	+ Pokémon, isn't it?\n
+ 	+ Its bucktoothed smile is also\n
+ 	+ very charming!
+-   1ad	= PONYTA, a Pokémon you can\n
++   1b3	= PONYTA, a Pokémon you can\n
+ 	+ catch on Route 211.\n
+ 	+ \fWith a red fiery tail and a\n
+ 	+ cool mane, it's the perfect\n
+ 	+ Pokémon to have on the Ranch!
+-   1ae	= SHELLOS, a Pokémon I caught\n
++   1b4	= SHELLOS, a Pokémon I caught\n
+ 	+ on Route 213.\n
+ 	+ \fIts colors differ from region\n
+ 	+ to region.\n
+ 	+ \fMaybe you can look for a pink\n
+ 	+ SHELLOS on Route 205?
+-   1af	= I caught a CROAGUNK in the\n
++   1b5	= I caught a CROAGUNK in the\n
+ 	+ Pastoria Great Marsh.\n
+ 	+ \fIt may be feisty, but it's hard to\n
+ 	+ hate that face!\n
+ 	+ \fIt learns several useful moves\n
+-	+ for battle.\n
+-   1b0	= SNOVER, a Pokémon I caught\n
++	+ for battle.
++   1b6	= SNOVER, a Pokémon I caught\n
+ 	+ on Route 216.\n
+ 	+ \fIt's a very friendly Pokémon.\n
+ 	+ \fOnce it evolves, it becomes a\n
+ 	+ powerful Pokémon.
+-   1b1	= PIKACHU, a Pokémon I caught\n
++   1b7	= PIKACHU, a Pokémon I caught\n
+ 	+ in the Trophy Garden.\n
+ 	+ \fIt's a lovely Pokémon, isn't it?\n
+ 	+ When you have a PIKACHU in\n
+ 	+ your party, you can enter into\n
+ 	+ Amity Square.
+-   1b2	= WAILMER, a Pokémon I caught\n
++   1b8	= WAILMER, a Pokémon I caught\n
+ 	+ on Route 223 using the\n
+ 	+ Super Rod.\n
+ 	+ \fI heard it evolves into a huge\n
+ 	+ Pokémon!
+-   1b3	= MILTANK, a Pokémon you can\n
++   1b9	= MILTANK, a Pokémon you can\n
+ 	+ catch on Route 209 using\n
+ 	+ the Poké Radar.\n
+ 	+ \fDon't you think MILTANK\n
+ 	+ is a Pokémon that matches\n
+ 	+ the image of the Ranch well?
+-   1b4	= YANMA, a Pokémon you can\n
++   1ba	= YANMA, a Pokémon you can\n
+ 	+ catch in the Pastoria Great\n
+ 	+ Marsh.\n
+ 	+ \fIt evolves into a powerful\n
+ 	+ Pokémon by leveling it up once\n
+ 	+ it's learned the move\n
+ 	+ AncientPower.
+-   1b5	= LICKITUNG, a Pokémon I caught\n
++   1bb	= LICKITUNG, a Pokémon I caught\n
+ 	+ near Lake Valor during a\n
+ 	+ Mass Outbreak.\n
+ 	+ \fIt's a cute Pokémon with its\n
+ 	+ tongue sticking out!
+-   1b6	= WYNAUT, a Pokémon that\n
++   1bc	= WYNAUT, a Pokémon that\n
+ 	+ hatched from an Egg.\n
+ 	+ \fI get delighted just by looking\n
+ 	+ at it.\n
+ 	+ \fI heard it evolves into an\n
+ 	+ interesting Pokémon.
+-   1b7	= EEVEE, a Pokémon I caught\n
++   1bd	= EEVEE, a Pokémon I caught\n
+ 	+ in the Trophy Garden.\n
+ 	+ \fIt's a rare Pokémon that has\n
+ 	+ several evolutionary forms.
+-   1b8	= AERODACTYL, it was restored\n
++   1be	= AERODACTYL, it was restored\n
+ 	+ from an Old Amber obtained in\n
+ 	+ the Underground.\n
+ 	+ \fIt's a Pokémon that makes you\n
+ 	+ believe there was a so-called\n
+ 	+ "ancient era," isn't it?
+-   1b9	= VULPIX, a Pokémon you can\n
++   1bf	= VULPIX, a Pokémon you can\n
+ 	+ catch on Route 209.\n
+ 	+ \fBecause so few have seen it,\n
+ 	+ you should show it off to your\n
+ 	+ friends!
+-   1ba	= TANGELA, a Pokémon you\n
++   1c0	= TANGELA, a Pokémon you\n
+ 	+ can catch in the Pal Park.\n
+ 	+ \fIt is shrouded by vines...\n
+ 	+ Such a mysterious Pokémon!
+-   1bb	= COMBEE, a Pokémon I caught\n
++   1c1	= COMBEE, a Pokémon I caught\n
+ 	+ by putting Honey on a\n
+ 	+ Honey Tree.\n
+ 	+ \fOnly female COMBEE evolve,\n
+ 	+ and they're very hard to find!
+-   1bc	= PHIONE, a special Pokémon\n
++   1c2	= PHIONE, a special Pokémon\n
+ 	+ that hatched from an Egg found\n
+ 	+ with MANAPHY and a Pokémon\n
+ 	+ that gets along with it.\n
+ 	+ \fWhat about introducing it to\n
+ 	+ your friends by having it in your\n
+ 	+ party?
+-   1bd	= MEW, a very rare Pokémon that\n
++   1c3	= MEW, a very rare Pokémon that\n
+ 	+ is said to possess the genes\n
+ 	+ of all Pokémon!\n
+ 	+ \fNo doubt it is useful for\n
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_items.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_items.bmg"
+new file mode 100644
+index 0000000..d045d18
+Binary files /dev/null and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_items.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_items.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_items.bmg.txt"
+new file mode 100644
+index 0000000..010d03a
+--- /dev/null
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/farm_items.bmg.txt"
+@@ -0,0 +1,101 @@
++#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
++#     <<<  Don't remove them!
++#
++# Details about BMG text files are available in the Web:
++#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
++#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
++#
++#
++#------------------------------------------------------------------------------
++
++# The endianness of binary files: 0=big endian (default), 1=little endian.
++# Little endian is only tested for encoding UTF-8 (need examples of analysis).
++@ENDIAN = 0
++
++# If 1, then enable legacy (GameCube) mode for old binary BMG files.
++# If enabled, ENCODING is always CP1252.
++@LEGACY = 0
++
++# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
++@ENCODING = 2
++
++# Create »MID1« section: 0=off, 1=on
++@BMG-MID = 0
++
++# Size of each element of section 'INF1' (MKW=8).
++# This setting has impact to attributes and MKW features.
++@INF-SIZE = 0x08
++
++# Default attribute values for this BMG (MKW=[1])
++@DEFAULT-ATTRIBS = [2,2,,1]
++
++# Use MKW specific color names: 0=off, 1=auto, 2=on
++@COLOR-NAMES = 1
++
++# Use MKW messages and track names: 0=off, 1=auto, 2=on
++@MKW-MESSAGES = 1
++
++#
++#------------------------------------------------------------------------------
++
++# This part defines values for unknown parameters of section headers.
++@UNKNOWN-INF32-0C =    0xf0000	# 32 bit value of section INF1 offset 0x0c
++@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
++@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
++
++#
++#------------------------------------------------------------------------------
++
++     0	= Spring Stand
++     1	= Spring Stand
++     2	= Poké Bell
++     3	= Poké Bell
++     4	= Parade Drum
++     5	= Parade Drum
++     6	= Slippery Peel
++     7	= Slippery Peel
++     8	= Bounce-Back Ball
++     9	= Bounce-Back Ball
++     a	= Poké Rocket
++     b	= Poké Rocket
++     c	= Poké Cushion
++     d	= Poké Cushion
++     e	= Bonfire
++     f	= Bonfire
++    10	= Leader Flag
++    11	= Leader Flag
++    12	= Fountain
++    13	= Fountain
++    14 [2,3,,1] = Ice Block
++    15 [2,3,,1] = Ice Block
++    16	= Poké Microphone
++    17	= Poké Microphone
++    18	= Burst Ball
++    19	= Burst Ball
++    1a	= Poké Palette
++    1b	= Poké Palette
++    1c	= Poké Pendulum
++    1d	= Poké Pendulum
++    1e	= Pitfall
++    1f	= Pitfall
++    20	= Training Bag
++    21	= Training Bag
++    22	= Stinky Ball
++    23	= Stinky Ball
++    24	= Snowman
++    25	= Snowman
++    26	= Round Rock
++    27	= Round Rock
++    28	= Spin Ride
++    29	= Spin Ride
++    2a [2,3,,1] = Attractor
++    2b [2,3,,1] = Attractor
++    2c	= Challenger
++    2d	= Challenger
++    2e	= Toy Box
++    2f	= Toy Box
++    30	= Poké Ball
++    31	= Poké Ball
++    32 [2,,,2] = Poké Balloons
++    33 [2,,,2] = Poké Balloons
++
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/localedef.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/localedef.bmg"
+index 92ee188..f58d12f 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/localedef.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/localedef.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/localedef.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/localedef.bmg.txt"
+index 15b1e41..be5cc69 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/localedef.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/localedef.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -93,24 +93,26 @@
+     2c	= Sat
+     2d	= .
+     2e	= ,
+-    2f	= 0
+-    30	= /
+-    31	= %d/%d/%d
+-    32	= %d/%d
+-    33	= %ls %d %d
+-    34	= %ls %d
+-    35	= 0
+-    36	= 1
+-    37	= :
+-    38	= %d:%02d:%02d
+-    39	= %d:%02d
+-    3a	= AM
+-    3b	= PM
+-    3c	= 12
+-    3d	= %d:%02d.%02d
+-    3e	= 1
+-    3f	= %d:%02d:%02d
+-    40	= %d:%02d
+-    41	= 1
+-    42	= 1
++    2f	= 
++    30	= 0
++    31	= /
++    32	= %3$02d/%2$02d/%1$d
++    33	= %2$02d/%1$02d
++    34	= %3$d %2$ls %1$d
++    35	= %2$d %1$ls
++    36	= 0
++    37	= 2
++    38	= 
++    39	= :
++    3a	= %d:%02d:%02d
++    3b	= %d:%02d
++    3c	= AM
++    3d	= PM
++    3e	= 24
++    3f	= %d:%02d.%02d
++    40	= 1
++    41	= %d:%02d:%02d
++    42	= %d:%02d
++    43	= 1
++    44	= 0
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon.bmg"
+index a0e1210..930b886 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon.bmg.txt"
+index 1e9b17a..19fe1f3 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [2,2]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -47,7 +47,7 @@
+ #------------------------------------------------------------------------------
+ 
+      0	= BULBASAUR
+-     1	= IVYSAUR
++     1 [2,3] = IVYSAUR
+      2	= VENUSAUR
+      3	= CHARMANDER
+      4	= CHARMELEON
+@@ -68,8 +68,8 @@
+     13	= RATICATE
+     14	= SPEAROW
+     15	= FEAROW
+-    16	= EKANS
+-    17	= ARBOK
++    16 [2,3] = EKANS
++    17 [2,3] = ARBOK
+     18	= PIKACHU
+     19	= RAICHU
+     1a	= SANDSHREW
+@@ -88,7 +88,7 @@
+     27	= WIGGLYTUFF
+     28	= ZUBAT
+     29	= GOLBAT
+-    2a	= ODDISH
++    2a [2,3] = ODDISH
+     2b	= GLOOM
+     2c	= VILEPLUME
+     2d	= PARAS
+@@ -104,13 +104,13 @@
+     37	= MANKEY
+     38	= PRIMEAPE
+     39	= GROWLITHE
+-    3a	= ARCANINE
++    3a [2,3] = ARCANINE
+     3b	= POLIWAG
+     3c	= POLIWHIRL
+     3d	= POLIWRATH
+-    3e	= ABRA
++    3e [2,3] = ABRA
+     3f	= KADABRA
+-    40	= ALAKAZAM
++    40 [2,3] = ALAKAZAM
+     41	= MACHOP
+     42	= MACHOKE
+     43	= MACHAMP
+@@ -140,15 +140,15 @@
+     5b	= GASTLY
+     5c	= HAUNTER
+     5d	= GENGAR
+-    5e	= ONIX
++    5e [2,3] = ONIX
+     5f	= DROWZEE
+     60	= HYPNO
+     61	= KRABBY
+     62	= KINGLER
+     63	= VOLTORB
+-    64	= ELECTRODE
+-    65	= EXEGGCUTE
+-    66	= EXEGGUTOR
++    64 [2,3] = ELECTRODE
++    65 [2,3] = EXEGGCUTE
++    66 [2,3] = EXEGGUTOR
+     67	= CUBONE
+     68	= MAROWAK
+     69	= HITMONLEE
+@@ -170,7 +170,7 @@
+     79	= MR. MIME
+     7a	= SCYTHER
+     7b	= JYNX
+-    7c	= ELECTABUZZ
++    7c [2,3] = ELECTABUZZ
+     7d	= MAGMAR
+     7e	= PINSIR
+     7f	= TAUROS
+@@ -178,18 +178,18 @@
+     81	= GYARADOS
+     82	= LAPRAS
+     83	= DITTO
+-    84	= EEVEE
++    84 [2,3] = EEVEE
+     85	= VAPOREON
+     86	= JOLTEON
+     87	= FLAREON
+     88	= PORYGON
+-    89	= OMANYTE
+-    8a	= OMASTAR
++    89 [2,3] = OMANYTE
++    8a [2,3] = OMASTAR
+     8b	= KABUTO
+     8c	= KABUTOPS
+-    8d	= AERODACTYL
++    8d [2,3] = AERODACTYL
+     8e	= SNORLAX
+-    8f	= ARTICUNO
++    8f [2,3] = ARTICUNO
+     90	= ZAPDOS
+     91	= MOLTRES
+     92	= DRATINI
+@@ -213,40 +213,40 @@
+     a4	= LEDYBA
+     a5	= LEDIAN
+     a6	= SPINARAK
+-    a7	= ARIADOS
++    a7 [2,3] = ARIADOS
+     a8	= CROBAT
+     a9	= CHINCHOU
+     aa	= LANTURN
+     ab	= PICHU
+     ac	= CLEFFA
+-    ad	= IGGLYBUFF
++    ad [2,3] = IGGLYBUFF
+     ae	= TOGEPI
+     af	= TOGETIC
+     b0	= NATU
+     b1	= XATU
+     b2	= MAREEP
+     b3	= FLAAFFY
+-    b4	= AMPHAROS
++    b4 [2,3] = AMPHAROS
+     b5	= BELLOSSOM
+     b6	= MARILL
+-    b7	= AZUMARILL
++    b7 [2,3] = AZUMARILL
+     b8	= SUDOWOODO
+     b9	= POLITOED
+     ba	= HOPPIP
+     bb	= SKIPLOOM
+     bc	= JUMPLUFF
+-    bd	= AIPOM
++    bd [2,3] = AIPOM
+     be	= SUNKERN
+     bf	= SUNFLORA
+     c0	= YANMA
+     c1	= WOOPER
+     c2	= QUAGSIRE
+     c3	= ESPEON
+-    c4	= UMBREON
++    c4 [2,3] = UMBREON
+     c5	= MURKROW
+     c6	= SLOWKING
+     c7	= MISDREAVUS
+-    c8	= UNOWN
++    c8 [2,3] = UNOWN
+     c9	= WOBBUFFET
+     ca	= GIRAFARIG
+     cb	= PINECO
+@@ -269,7 +269,7 @@
+     dc	= PILOSWINE
+     dd	= CORSOLA
+     de	= REMORAID
+-    df	= OCTILLERY
++    df [2,3] = OCTILLERY
+     e0	= DELIBIRD
+     e1	= MANTINE
+     e2	= SKARMORY
+@@ -284,12 +284,12 @@
+     eb	= TYROGUE
+     ec	= HITMONTOP
+     ed	= SMOOCHUM
+-    ee	= ELEKID
++    ee [2,3] = ELEKID
+     ef	= MAGBY
+     f0	= MILTANK
+     f1	= BLISSEY
+     f2	= RAIKOU
+-    f3	= ENTEI
++    f3 [2,3] = ENTEI
+     f4	= SUICUNE
+     f5	= LARVITAR
+     f6	= PUPITAR
+@@ -340,26 +340,26 @@
+    123	= SHEDINJA
+    124	= WHISMUR
+    125	= LOUDRED
+-   126	= EXPLOUD
++   126 [2,3] = EXPLOUD
+    127	= MAKUHITA
+    128	= HARIYAMA
+-   129	= AZURILL
++   129 [2,3] = AZURILL
+    12a	= NOSEPASS
+    12b	= SKITTY
+    12c	= DELCATTY
+    12d	= SABLEYE
+    12e	= MAWILE
+-   12f	= ARON
++   12f [2,3] = ARON
+    130	= LAIRON
+-   131	= AGGRON
++   131 [2,3] = AGGRON
+    132	= MEDITITE
+    133	= MEDICHAM
+-   134	= ELECTRIKE
++   134 [2,3] = ELECTRIKE
+    135	= MANECTRIC
+    136	= PLUSLE
+    137	= MINUN
+    138	= VOLBEAT
+-   139	= ILLUMISE
++   139 [2,3] = ILLUMISE
+    13a	= ROSELIA
+    13b	= GULPIN
+    13c	= SWALOT
+@@ -379,7 +379,7 @@
+    14a	= CACNEA
+    14b	= CACTURNE
+    14c	= SWABLU
+-   14d	= ALTARIA
++   14d [2,3] = ALTARIA
+    14e	= ZANGOOSE
+    14f	= SEVIPER
+    150	= LUNATONE
+@@ -392,8 +392,8 @@
+    157	= CLAYDOL
+    158	= LILEEP
+    159	= CRADILY
+-   15a	= ANORITH
+-   15b	= ARMALDO
++   15a [2,3] = ANORITH
++   15b [2,3] = ARMALDO
+    15c	= FEEBAS
+    15d	= MILOTIC
+    15e	= CASTFORM
+@@ -404,7 +404,7 @@
+    163	= DUSCLOPS
+    164	= TROPIUS
+    165	= CHIMECHO
+-   166	= ABSOL
++   166 [2,3] = ABSOL
+    167	= WYNAUT
+    168	= SNORUNT
+    169	= GLALIE
+@@ -437,10 +437,10 @@
+    184	= TORTERRA
+    185	= CHIMCHAR
+    186	= MONFERNO
+-   187	= INFERNAPE
++   187 [2,3] = INFERNAPE
+    188	= PIPLUP
+    189	= PRINPLUP
+-   18a	= EMPOLEON
++   18a [2,3] = EMPOLEON
+    18b	= STARLY
+    18c	= STARAVIA
+    18d	= STARAPTOR
+@@ -469,7 +469,7 @@
+    1a4	= CHERRIM
+    1a5	= SHELLOS
+    1a6	= GASTRODON
+-   1a7	= AMBIPOM
++   1a7 [2,3] = AMBIPOM
+    1a8	= DRIFLOON
+    1a9	= DRIFBLIM
+    1aa	= BUNEARY
+@@ -505,13 +505,13 @@
+    1c8	= LUMINEON
+    1c9	= MANTYKE
+    1ca	= SNOVER
+-   1cb	= ABOMASNOW
++   1cb [2,3] = ABOMASNOW
+    1cc	= WEAVILE
+    1cd	= MAGNEZONE
+    1ce	= LICKILICKY
+    1cf	= RHYPERIOR
+    1d0	= TANGROWTH
+-   1d1	= ELECTIVIRE
++   1d1 [2,3] = ELECTIVIRE
+    1d2	= MAGMORTAR
+    1d3	= TOGEKISS
+    1d4	= YANMEGA
+@@ -527,7 +527,7 @@
+    1de	= ROTOM
+    1df	= UXIE
+    1e0	= MESPRIT
+-   1e1	= AZELF
++   1e1 [2,3] = AZELF
+    1e2	= DIALGA
+    1e3	= PALKIA
+    1e4	= HEATRAN
+@@ -538,8 +538,8 @@
+    1e9	= MANAPHY
+    1ea	= DARKRAI
+    1eb	= SHAYMIN
+-   1ec	= ARCEUS
+-   1ed	= Egg
++   1ec [2,3] = ARCEUS
++   1ed [2,3] = Egg
+    1ee	= Bad Egg
+    1ef	= NIDORAN
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon_type.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon_type.bmg"
+index f2d493b..52c21bc 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon_type.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon_type.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon_type.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon_type.bmg.txt"
+index 493010e..21a73c8 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemon_type.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemon_type.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemonfarm.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemonfarm.bmg"
+index c61acdf..d7d0206 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemonfarm.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemonfarm.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemonfarm.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemonfarm.bmg.txt"
+index 9ae5c41..6d9a2da 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/pokemonfarm.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/pokemonfarm.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -87,7 +87,7 @@
+     1b	= %ls has joined.
+     1c	= Connected with Trainer\n
+ 	+ %ls.
+-    1d	= Connected with: %ls
++    1d	= Connected to: %ls
+     1e	= You have stopped connecting.
+     1f	= %ls has left.
+     20	= \n
+@@ -111,8 +111,8 @@
+     29	= 1 Pokémon left.
+     2a	= 
+     2b	= Failed to complete the\n
+-	+ connection to the DS.\f\n
+-	+ Please restart My Pokémon\n
++	+ connection to the DS.\n
++	+ \fPlease restart My Pokémon\n
+ 	+ Ranch and try again.
+     2c	= 
+     2d	= Waiting for the DS's response...
+@@ -156,59 +156,62 @@
+     52	= Deposit\n
+ 	+ Details
+     53	= Okay and Return
+-    54	= Bring Mii
+-    55	= Look at My Ranch!
+-    56	= Guest
+-    57	= Options
+-    58	= Next Picture
+-    59	= Previous Picture
+-    5a	= Delete
+-    5b	= Post on the Wii Message Board
+-    5c	= At %ls Ranch
+-    5d	= %2d/%2d
+-    5e	= Post this picture on\n
++    54	= Free Mode
++    55	= Bring Mii
++    56	= Look at My Ranch!
++    57	= Guest
++    58	= Options
++    59	= Next Picture
++    5a	= Previous Picture
++    5b	= Delete
++    5c	= Post on the Wii Message Board
++    5d	= At %ls Ranch
++    5e	= %2d/%2d
++    5f	= Post this picture on\n
+ 	+ the Wii Message Board?
+-    5f	= The picture is now posted on\n
++    60	= The picture is now posted on\n
+ 	+ the Wii Message Board.
+-    60	= Is it okay to delete this picture?
+-    61	= The picture was deleted.
+-    62	= Save to SD Card
+-    63	= Is it okay to save this picture\n
++    61	= Is it okay to delete this picture?
++    62	= The picture was deleted.
++    63	= Save to SD Card
++    64	= Is it okay to save this picture\n
+ 	+ to an SD Card?
+-    64	= Saved the picture as\n
++    65	= Saved the picture as\n
+ 	+ %2$.4s%3$04d.JPG\n
+ 	+ to folder \\DCIM\\%1$03dNIN01\n
+ 	+ in the SD Card.
+-    65	= Ranch News
+-    66	= Delete all pictures on\n
++    66	= Ranch News
++    67	= Delete all pictures on\n
+ 	+ SD Card
+-    67	= This will delete all of the\n
++    68	= This will delete all of the\n
+ 	+ pictures of My Pokémon Ranch\n
+ 	+ saved on the SD Card.
+-    68	= Is it okay to delete all of the\n
++    69	= Is it okay to delete all of the\n
+ 	+ pictures?
+-    69	= It is okay to delete\n
+-	+ %d picture(s)?
+-    6a	= Are you sure you want to\n
++    6a	= It is okay to delete\n
++	+ %d pictures?
++    6b	= It is okay to delete\n
++	+ 1 picture?
++    6c	= Are you sure you want to\n
+ 	+ delete all of the pictures?
+-    6b	= Checking the pictures on\n
++    6d	= Checking the pictures on\n
+ 	+ the SD Card...
+-    6c	= No pictures from My\n
++    6e	= No pictures from My\n
+ 	+ Pokémon Ranch were\n
+ 	+ found on the SD Card.
+-    6d	= Deleting all of the My\n
++    6f	= Deleting all of the My\n
+ 	+ Pokémon Ranch pictures\n
+ 	+ saved on the SD Card...
+-    6e	= Deleting all of the My\n
++    70	= Deleting all of the My\n
+ 	+ Pokémon Ranch pictures\n
+ 	+ saved on the SD Card...\n
+ 	+ %d/%d
+-    6f	= All of the My Pokémon Ranch\n
++    71	= All of the My Pokémon Ranch\n
+ 	+ pictures on the SD Card were\n
+ 	+ deleted.
+-    70	= Some pictures on the SD Card\n
++    72	= Some pictures on the SD Card\n
+ 	+ could not be deleted.
+-    71	= -Alert-\n
++    73	= -Alert-\n
+ 	+ Picture files are large, and the\n
+ 	+ message board data fills easily\n
+ 	+ if you post a number of them.\n
+@@ -217,446 +220,434 @@
+ 	+ automatically be deleted.\n
+ 	+ \fRefer to the Wii Operations\n
+ 	+ Manual for details.
+-    72	= Secure
+-    73	= Cancel Secure
+-    74	= You can secure up to 19\n
++    74	= Secure
++    75	= Cancel Secure
++    76	= You can secure up to 19\n
+ 	+ pictures.
+-    75	= The corrupted pictures\n
++    77	= The corrupted pictures\n
+ 	+ were deleted.
+-    76	= Data was corrupted, and all of\n
++    78	= The corrupted picture\n
++	+ was deleted.
++    79	= Data was corrupted, and all of\n
+ 	+ the pictures were deleted.
+-    77	= Could not load the picture data.
+-    78	= An SD Card is not inserted.
+-    79	= Cannot write data to an\n
++    7a	= Could not load the picture data.
++    7b	= An SD Card is not inserted.
++    7c	= Cannot write data to an\n
+ 	+ SD Card. Check the\n
+ 	+ write-protection switch.
+-    7a	= An unrecognized card is\n
++    7d	= An unrecognized card is\n
+ 	+ inserted into the SD Card slot.
+-    7b	= The SD Card is corrupted.\n
++    7e	= The SD Card is corrupted.\n
+ 	+ Would you like to format it?
+-    7c	= An unrecognized card is\n
++    7f	= An unrecognized card is\n
+ 	+ inserted into the SD Card slot.
+-    7d	= There is not enough available\n
++    80	= There is not enough available\n
+ 	+ space on the SD Card.\n
+-	+ Create %d block(s) of free\n
++	+ Create %d blocks of free\n
+ 	+ space to save the data.
+-    7e	= An SD Card error has occurred.
+-    7f	= The SD Card could not be read.
+-    80	= Saving to the SD Card...\n
++    81	= There is not enough available\n
++	+ space on the SD Card.\n
++	+ Create 1 block of free\n
++	+ space to save the data.
++    82	= An SD Card error has occurred.
++    83	= The SD Card could not be read.
++    84	= Saving to the SD Card...\n
+ 	+ Do not remove the SD Card\n
+ 	+ or turn off the power.
+-    81	= Could not save the data to\n
++    85	= Could not save the data to\n
+ 	+ the SD Card.
+-    82	= You cannot save any more\n
++    86	= You cannot save any more\n
+ 	+ pictures to this SD Card.
+-    83	= Formatting the SD Card...\n
++    87	= Formatting the SD Card...\n
+ 	+ Do not remove the SD card\n
+ 	+ or turn off the power.
+-    84	= The SD Card was formatted.
+-    85	= Could not format the SD Card.
+-    86	= Formatting was canceled since\n
++    88	= The SD Card was formatted.
++    89	= Could not format the SD Card.
++    8a	= Formatting was canceled since\n
+ 	+ the SD Card was removed.
+-    87	= Deleting was canceled because\n
++    8b	= Deleting was canceled because\n
+ 	+ the SD Card was removed.
+-    88	= Formatting was canceled\n
++    8c	= Formatting was canceled\n
+ 	+ because the SD Card was\n
+ 	+ removed.
+-    89	= Deleting was canceled because\n
++    8d	= Deleting was canceled because\n
+ 	+ the SD Card was removed.
+-    8a	= Saving was canceled because\n
++    8e	= Saving was canceled because\n
+ 	+ the SD Card was removed.
+-    8b	= An SD Card read error has\n
++    8f	= An SD Card read error has\n
+ 	+ occurred.\n
+ 	+ Press RESET and try again.
+-    8c	= Select a Mii to take to the Ranch.
+-    8d	= Now: %d You can choose %d more.
+-    8e	= Previous Page
+-    8f	= Next Page
+-    90	= Select a Mii to take care of\n
+-	+ Pokémon this Trainer deposited.
+-    91	= Select from\n
++    90	= Select a Mii to take to the Ranch.
++    91	= Now: %d You can choose %d more.
++    92	= Previous Page
++    93	= Next Page
++    94	= Select a Mii to take care of\n
++	+ this Trainer's Pokémon.
++    95	= Select from\n
+ 	+ the Ranch
+-    92	= Select a\n
++    96	= Select a\n
+ 	+ different Mii
+-    93	= The Mii you had at the Ranch\n
++    97	= The Mii you had at the Ranch\n
+ 	+ was erased from the Mii\n
+ 	+ Channel.
+-    94	= The Caretaker Mii was erased\n
++    98	= The Miis you had at the Ranch\n
++	+ were erased from the Mii\n
++	+ Channel.
++    99	= The Caretaker Mii was erased\n
+ 	+ from the Mii Channel.
+-    95	= Hayley
+-    96	= Hayley
+-    97	= Owner
+-    98	= Randall
+-    99	= Chantel
+-    9a	= Hayley
+-    9b	= An error has occurred.\n
++    9a	= The Caretaker Miis were erased\n
++	+ from the Mii Channel.
++    9b	= Hayley
++    9c	= Hayley
++    9d	= Owner
++    9e	= Randall
++    9f	= Chantel
++    a0	= Hayley
++    a1	= An error has occurred.\n
+ 	+ Save the data, RESET,\n
+ 	+ and try again.
+-    9c	= ERROR CODE: %06d
+-    9d	= Please wait...
+-    9e	= Please wait...
+-    9f	= ON
+-    a0	= OFF
+-    a1	= When this setting is turned on,\n
++    a2	= ERROR CODE: %06d
++    a3	= Please wait...
++    a4	= Please wait...
++    a5	= ON
++    a6	= OFF
++    a7	= When this setting is turned on,\n
+ 	+ pictures or Ranch-status\n
+ 	+ information will be exchanged\n
+ 	+ with your Wii Friends.
+-    a2	= When this setting is turned on,\n
++    a8	= When this setting is turned on,\n
+ 	+ maybe an unexpected guest will\n
+ 	+ visit your Ranch through\n
+ 	+ WiiConnect24?
+-    a3	= When the setting is turned on,\n
++    a9	= When the setting is turned on,\n
+ 	+ maybe an unexpected guest\n
+ 	+ will visit your Ranch through\n
+ 	+ WiiConnect24?\n
+ 	+ (Guests won't visit the Ranch\n
+ 	+ after a certain period.)
+-    a4	= Use of network features have\n
++    aa	= Use of network features have\n
+ 	+ been restricted. Check the\n
+ 	+ settings of the Parental Controls.
+-    a5	= The WiiConnect24 setting\n
++    ab	= The WiiConnect24 setting\n
+ 	+ is not turned on.\n
+ 	+ Please check the setting\n
+ 	+ under Wii Options.
+-    a6	= No Wii Friends are registered.\n
++    ac	= No Wii Friends are registered.\n
+ 	+ \fRegister a Wii Friend under\n
+ 	+ the Wii Message Board menu.
+-    a7	= This service may be terminated\n
++    ad	= This service may be terminated\n
+ 	+ without notice.
+-    a8	= Pokémon Wanted
+-    a9	= ～Full of %ls～
+-    aa	= Ranch Level\n
++    ae	= Pokémon Wanted
++    af	= ～Full of %{}～
++    b0	= ～Full of Eggs～
++    b1	= Ranch Level\n
+ 	+ Max No. of Pkmn\n
+ 	+ Max No. of Miis\n
+ 	+ No. of Pokémon\n
+ 	+ Next Level
+-    ab	= %d\n
+-	+ %d\n
+-	+ %d\n
++    b2	= %d\n
++	+ %ls\n
+ 	+ %d\n
++	+ %ls\n
+ 	+ %d
+-    ac	= %d\n
+-	+ %d\n
+-	+ %d\n
++    b3	= %d\n
++	+ %ls\n
+ 	+ %d\n
++	+ %ls\n
+ 	+ ----
+-    ad	= 
+-    ae	= 
+-    af	= Ranch Info
+-    b0	= BBS
+-    b1	= History
+-    b2	= Details
+-    b3	= Anyone
+-    b4	= %ls\n
++    b4	= 
++    b5	= 
++    b6	= Ranch Info
++    b7	= BBS
++    b8	= History
++    b9	= Details
++    ba	= Anyone
++    bb	= %ls\n
+ 	+ succeeded!
+-    b5	= By %ls
+-    b6	= until %ls
+-    b7	= Trade with %ls!
+-    b8	= Tomorrow...
+-    b9	= The Ranch's expanding!
+-    ba	= ...is coming!
+-    bb	= Focus Lock
+-    bc	= Help
+-    bd	= Introduction
+-    be	= Operations
+-    bf	= Pictures
+-    c0	= Connect to DS
+-    c1	= Details
+-    c2	= BBS
+-    c3	= Options
+-    c4	= FAQ
+-    c5	= %d/%d
+-    c6	= $1$ $2$, 20$0$\n
++    bc	= By %ls
++    bd	= until %ls
++    be	= Trade for %ls!
++    bf	= Tomorrow...
++    c0	= The Ranch's expanding!
++    c1	= ...is coming!
++    c2	= Focus Lock
++    c3	= Help
++    c4	= Introduction
++    c5	= Operations
++    c6	= Pictures
++    c7	= Connect to DS
++    c8	= Details
++    c9	= BBS
++    ca	= Options
++    cb	= FAQ
++    cc	= %d/%d
++    cd	= $1$ $2$, 20$0$\n
+ 	+ Brought by Hayley.
+-    c7	= $6$ $7$, 20$5$\n
++    ce	= $6$ $7$, 20$5$\n
+ 	+ A mysterious Egg was received\n
+-	+ from $8$.\n
+-	+ \n
+-    c8	= No. of Pokémon cared for: %d
+-    c9	= Lv. %d
+-    ca	= ★ Number of Ribbons obtained: %d
+-    cb	= New!
+-    cc	= ♂ Lv. %d
+-    cd	= ♀ Lv. %d
+-    ce	= Lv. %d
+-    cf	= ♂
+-    d0	= ♀
+-    d1	= Friends at the Ranch
+-    d2	= Pokémon on the Ranch
+-    d3	= All
+-    d4	= Favorites
+-    d5	= Previous Page
+-    d6	= Next Page
+-    d7	= Return
+-    d8	= Cancel
+-    d9	= Go to a Parade
+-    da	= Trainer
+-    db	= Deposited
+-    dc	= Caretaker
+-    dd	= Parade
+-    de	= 
+-    df	= Ranch Activity
+-    e0	= Attention
+-    e1	= Zigzag Parade
+-    e2	= Dash
+-    e3	= Sky Parade
+-    e4	= Totem Pole
+-    e5	= Hop-Hop Dance
+-    e6	= Pikachu Party
+-    e7	= Circle Dance
+-    e8	= Ring Dance
+-    e9	= Zigzag Dance
+-    ea	= Slow Waltz
+-    eb	= Do the Wave
+-    ec	= Chorus
+-    ed	= Carousel
+-    ee	= Clock
+-    ef	= Keyboard
+-    f0	= Exit
+-    f1	= Leah
+-    f2	= Deanna
+-    f3	= Magnes
+-    f4	= Webb
+-    f5	= Barbara
+-    f6	= Marita
+-    f7	= Kristy
+-    f8	= Abella
+-    f9	= Jules
+-    fa	= Pattie
+-    fb	= Raby
+-    fc	= Cherry
+-    fd	= Penny
+-    fe	= Troy
+-    ff	= Pamela
+-   100	= Spencer
+-   101	= Maggie
+-   102	= Sammie
+-   103	= Wanda
+-   104	= Bobbie
+-   105	= Pikabo
+-   106	= Robert
+-   107	= Todd
+-   108	= Douglas
+-   109	= Martha
+-   10a	= Sunny
+-   10b	= Crofton
+-   10c	= Grace
+-   10d	= Dugan
+-   10e	= Nathan
+-   10f	= Mason
+-   110	= Tanner
+-   111	= Maribel
+-   112	= Mirabel
+-   113	= Nita
+-   114	= Trevor
+-   115	= Lucius
+-   116	= Flower
+-   117	= Water
+-   118	= Fire
+-   119	= Dark
+-   11a	= Psychic
+-   11b	= Battle
+-   11c	= Bug
+-   11d	= Fluffy
+-   11e	= Electric
+-   11f	= Amity
+-   120	= Trophy
+-   121	= Small
+-   122	= Egg
+-   123	= Ancient
+-   124	= Sweet Scent
+-   125	= Mass Outbreak
+-   126	= Magnemite
+-   127	= Rosy
+-   128	= Wobbuffet
+-   129	= Bidoof
+-   12a	= Pikachu
+-   12b	= Rock
+-   12c	= Polibog
+-   12d	= Horror
+-   12e	= Burmy
+-   12f	= Tropical
+-   130	= Toxic Mouth
+-   131	= Evolution
+-   132	= Underground
+-   133	= Mystic
+-   134	= Snow Land
+-   135	= Wild Bull
+-   136	= Wool
+-   137	= Milk Cow
+-   138	= Dragon
+-   139	= Ground
+-   13a	= Big Sky
+-   13b	= © Pokémon/Nintendo.
+-   13c	= %ls Ranch
+-   13d	= %ls\n
++	+ from $8$.
++    cf	= No. of Pokémon cared for: %ls
++    d0	= Lv. %d
++    d1	= ★ Number of Ribbons obtained: %d
++    d2	= New!
++    d3	= ♂ Lv. %d
++    d4	= ♀ Lv. %d
++    d5	= Lv. %d
++    d6	= ♂
++    d7	= ♀
++    d8	= Friends at the Ranch
++    d9	= Pokémon on the Ranch
++    da	= All
++    db	= Favorites
++    dc	= Previous Page
++    dd	= Next Page
++    de	= Back
++    df	= Cancel
++    e0	= Go to a Parade
++    e1	= Trainer
++    e2	= Deposited
++    e3	= Caretaker
++    e4	= Parade
++    e5	= 
++    e6	= Ranch Activity
++    e7	= %02d:%ls
++    e8	= Attention
++    e9	= Zigzag Parade
++    ea	= Dash
++    eb	= Sky Parade
++    ec	= Totem Pole
++    ed	= Hop-Hop Dance
++    ee	= Pikachu Party
++    ef	= Circle Dance
++    f0	= Ring Dance
++    f1	= Zigzag Dance
++    f2	= Slow Waltz
++    f3	= Do the Wave
++    f4	= Chorus
++    f5	= Carousel
++    f6	= Clock
++    f7	= Keyboard
++    f8	= Exit
++    f9	= Leah
++    fa	= Deanna
++    fb	= Magnes
++    fc	= Webb
++    fd	= Barbara
++    fe	= Marita
++    ff	= Kristy
++   100	= Abella
++   101	= Jules
++   102	= Pattie
++   103	= Raby
++   104	= Cherry
++   105	= Penny
++   106	= Troy
++   107	= Pamela
++   108	= Spencer
++   109	= Maggie
++   10a	= Sammie
++   10b	= Wanda
++   10c	= Bobbie
++   10d	= Pikabo
++   10e	= Robert
++   10f	= Todd
++   110	= Douglas
++   111	= Martha
++   112	= Sunny
++   113	= Crofton
++   114	= Grace
++   115	= Dugan
++   116	= Nathan
++   117	= Mason
++   118	= Tanner
++   119	= Maribel
++   11a	= Mirabel
++   11b	= Nita
++   11c	= Trevor
++   11d	= Lucius
++   11e	= Flower
++   11f	= Water
++   120	= Fire
++   121	= Dark
++   122	= Psychic
++   123	= Battle
++   124	= Bug
++   125	= Fluffy
++   126	= Electric
++   127	= Amity
++   128	= Trophy
++   129	= Small
++   12a	= Egg
++   12b	= Ancient
++   12c	= Sweet Scent
++   12d	= Mass Outbreak
++   12e	= Magnemite
++   12f	= Rosy
++   130	= Wobbuffet
++   131	= Bidoof
++   132	= Pikachu
++   133	= Rock
++   134	= Polibog
++   135	= Horror
++   136	= Burmy
++   137	= Tropical
++   138	= Toxic Mouth
++   139	= Evolution
++   13a	= Underground
++   13b	= Mystic
++   13c	= Snow Land
++   13d	= Wild Bull
++   13e	= Wool
++   13f	= Milk Cow
++   140	= Dragon
++   141	= Ground
++   142	= Big Sky
++   143	= © Pokémon/Nintendo.
++   144	= %ls Ranch
++   145	= %ls\n
+ 	+ Ranch
+-   13e	= Saving...
+-   13f	= Spring Stand
+-   140	= Poké Bell
+-   141	= Parade Drum
+-   142	= Slippery Peel
+-   143	= Bounce-Back Ball
+-   144	= Poké Rocket
+-   145	= Poké Cushion
+-   146	= Bonfire
+-   147	= Leader Flag
+-   148	= Fountain
+-   149	= Ice Block
+-   14a	= Poké Microphone
+-   14b	= Burst Ball
+-   14c	= Poké Palette
+-   14d	= Poké Pendulum
+-   14e	= Pitfall
+-   14f	= Training Bag
+-   150	= Stinky Ball
+-   151	= Snowman
+-   152	= Round Rock
+-   153	= Spin Ride
+-   154	= Attractor
+-   155	= Challenger
+-   156	= Toy Box
+-   157	= Poké Ball
+-   158	= Poké Balloons
+-   159	= ●
+-   15a	= ▲
+-   15b	= ■
+-   15c	= ♥
+-   15d	= ★
+-   15e	= ◆
+-   15f	= In My Pokémon Ranch,\n
++   146	= Saving...
++   147	= ●
++   148	= ▲
++   149	= ■
++   14a	= ♥
++   14b	= ★
++   14c	= ◆
++   14d	= In My Pokémon Ranch,\n
+ 	+ Miis created in the Mii\n
+ 	+ Channel are used.
+-   160	= Create a Mii by selecting the\n
++   14e	= Create a Mii by selecting the\n
+ 	+ Mii Channel from the Wii Menu.\n
+ 	+ Press \x{e042} to return to\n
+ 	+ the Wii Menu.
+-   161	= Checking the Wii console's\n
++   14f	= Checking the Wii console's\n
+ 	+ calendar.
+-   162	= Calendar: %ls %ls\n
++   150	= Calendar: %ls %ls\n
+ 	+ Is this correct?
+-   163	= Adjust your Wii console's\n
++   151	= Adjust your Wii console's\n
+ 	+ calendar settings.\n
+ 	+ Press \x{e042} to go to the\n
+ 	+ Wii System Settings.
+-   164	= The calendar has been set\n
++   152	= The calendar has been set\n
+ 	+ back.
+-   165	= Please note: when the time is\n
++   153	= Please note: when the time is\n
+ 	+ set back, it could affect the\n
+ 	+ game.
+-   166	= Would you like to continue?
+-   167	= 【Music Off】\n
++   154	= Would you like to continue?
++   155	= 【Music Off】\n
+ 	+ \x{e043} and \x{e041}↓ have been pushed.\n
+ 	+ Starting the game without\n
+ 	+ music.
+-   168	= Press \x{e042} to go to the\n
+-	+ Data Management screen.
+-   169	= Would you like to return to\n
++   156	= Press \x{e042} to go to the\n
++	+ Wii Menu.
++   157	= Press \x{e042} to go to the\n
++	+ Data Management Screen.
++   158	= Would you like to return to\n
+ 	+ the Wii Menu?
+-   16a	= My Pokémon Ranch
+-   16b	= Ranch (DVD)
+-   16c	= Erasing deletes stored Pokémon.
+-   16d	= Basic Operations (1)
+-   16e	= Move the cursor
+-   16f	= Use the Wii Remote to move\n
++   159	= My Pokémon Ranch
++   15a	= Ranch (DVD)
++   15b	= Erasing deletes stored Pokémon.
++   15c	= Basic Operations (1)
++   15d	= Move the cursor
++   15e	= Use the Wii Remote to move\n
+ 	+ the cursor.
+-   170	= Focus
+-   171	= Point at the object you want\n
++   15f	= Focus
++   160	= Point at the object you want\n
+ 	+ to look at and press \x{e042}.
+-   172	= Basic Operations (2)
+-   173	= Take Picture (or press \x{e047})
+-   174	= You can take a picture.\n
++   161	= Basic Operations (2)
++   162	= Take Picture (or press \x{e047})
++   163	= You can take a picture.\n
+ 	+ The number shows how many\n
+ 	+ pictures are remaining.
+-   175	= Look This Way (or press \x{e048})
+-   176	= Pokémon and Miis direct their\n
++   164	= Look This Way (or press \x{e048})
++   165	= Pokémon and Miis direct their\n
+ 	+ attention to you.
+-   177	= Save
+-   178	= Save
+-   179	= Game data will automatically\n
++   166	= Save
++   167	= Save
++   168	= Game data will automatically\n
+ 	+ be saved.\n
+ 	+ \n
+ 	+ Don't turn off the power or\n
+ 	+ press RESET when you see\n
+ 	+ "Saving..." on the screen.
+-   17a	= 
+-   17b	= 
+-   17c	= How do I quit?
+-   17d	= Return to the Wii Menu
+-   17e	= Press this to quit the game.
+-   17f	= 
+-   180	= 
+-   181	= Introduction
+-   182	= My Pokémon Ranch
+-   183	= My Pokémon Ranch is a place\n
++   169	= 
++   16a	= 
++   16b	= How do I quit?
++   16c	= Return to the Wii Menu
++   16d	= Press this to quit the game.
++   16e	= 
++   16f	= 
++   170	= Introduction
++   171	= My Pokémon Ranch
++   172	= My Pokémon Ranch is a place\n
+ 	+ where Pokémon and Miis\n
+ 	+ can interact with each other.\n
+ 	+ \n
+ 	+ Let's make the Ranch lively by visiting\n
+ 	+ it every day or migrating Pokémon\n
+-	+ from Pokémon Diamond and Pearl!\n
+-   184	= 
+-   185	= 
+-   186	= Operation Index
+-   187	= Focus
+-   188	= Find
+-   189	= Take Picture
+-   18a	= Look This Way
+-   18b	= HOME Menu
+-   18c	= Grab
+-   18d	= Scroll
+-   18e	= Zoom In
+-   18f	= Zoom Out
+-   190	= When you can use Free Mode
+-   191	= Find
+-   192	= Find from the list using the \x{e041}
+-   193	= You can find Pokémon, Miis,\n
++	+ from Pokémon Diamond and Pearl!
++   173	= 
++   174	= 
++   175	= Operation Index
++   176	= Focus
++   177	= Find
++   178	= Take Picture
++   179	= Look This Way
++   17a	= HOME Menu
++   17b	= Grab
++   17c	= Scroll
++   17d	= Zoom In
++   17e	= Zoom Out
++   17f	= When you can use Free Mode
++   180	= Find
++   181	= Find from the list using the \x{e041}
++   182	= You can find Pokémon, Miis,\n
+ 	+ and Toys using the \x{e041}.\n
+ 	+ \n
+ 	+ ↑↓: One by One\n
+ 	+ ←→: Previous or Next
+-   194	= 
+-   195	= 
+-   196	= Focus Lock
+-   197	= Focus Lock
+-   198	= By pressing \x{e042} on a\n
++   183	= 
++   184	= 
++   185	= Focus Lock
++   186	= Focus Lock
++   187	= By pressing \x{e042} on a\n
+ 	+ Pokémon or Mii, you can\n
+ 	+ set the Focus Lock.\n
+ 	+ \n
+ 	+ When the Focus Lock is on\n
+ 	+ a Pokémon or Mii, your\n
+ 	+ view is locked on it.
+-   199	= 
+-   19a	= 
+-   19b	= Modes
+-   19c	= Free Mode
+-   19d	= This mode allows you to view the\n
++   188	= 
++   189	= 
++   18a	= Modes
++   18b	= Free Mode
++   18c	= This mode allows you to view the\n
+ 	+ Ranch freely. It becomes available\n
+ 	+ by reaching a certain Ranch level.
+-   19e	= Auto Mode
+-   19f	= This mode automatically\n
++   18d	= Auto Mode
++   18e	= This mode automatically\n
+ 	+ changes which Pokémon\n
+ 	+ or Mii is focused on.
+-   1a0	= Free Mode
+-   1a1	= Free Mode enables you to...
+-   1a2	= \x{e042} + \x{e043} : Grab\n
++   18f	= Free Mode
++   190	= Free Mode enables you to...
++   191	= \x{e042} + \x{e043} : Grab\n
+ 	+ \x{e043} + \x{e058} : Scroll\n
+ 	+ \x{e045} : Zoom In\n
+ 	+ \x{e046} : Zoom Out
+-   1a3	= 
+-   1a4	= 
+-   1a5	= Nunchuk Controller
+-   1a6	= In Free Mode...
+-   1a7	= By using the Nunchuk in Free Mode,\n
++   192	= 
++   193	= 
++   194	= Nunchuk Controller
++   195	= In Free Mode...
++   196	= By using the Nunchuk in Free Mode,\n
+ 	+ you can more freely view the\n
+ 	+ Ranch.
+-   1a8	= How to use the Nunchuk
+-   1a9	= \x{e049} : Change the Camera Angle\n
++   197	= How to use the Nunchuk
++   198	= \x{e049} : Change the Camera Angle\n
+ 	+ \x{e04a} : Take Picture\n
+ 	+ \x{e04b} + \x{e049} : Smooth Zoom
+-   1aa	= Take Picture
+-   1ab	= Take Picture (or press \x{e047})
+-   1ac	= This number represents the number of\n
++   199	= Take Picture
++   19a	= Take Picture (or press \x{e047})
++   19b	= This number represents the number of\n
+ 	+ pictures remaining. When it reaches\n
+ 	+ zero and you take a picture, the\n
+ 	+ oldest picture will automatically be\n
+@@ -664,93 +655,93 @@
+ 	+ Any pictures you do not wish to have\n
+ 	+ deleted should be secured on the\n
+ 	+ Album menu.
+-   1ad	= 
+-   1ae	= 
+-   1af	= Album (1)
+-   1b0	= Album
+-   1b1	= You can view all of the pictures you\n
++   19c	= 
++   19d	= 
++   19e	= Album (1)
++   19f	= Album
++   1a0	= You can view all of the pictures you\n
+ 	+ have taken.
+-   1b2	= 
+-   1b3	= 
+-   1b4	= Album (2)
+-   1b5	= Delete
+-   1b6	= You can delete the picture that \n
++   1a1	= 
++   1a2	= 
++   1a3	= Album (2)
++   1a4	= Delete
++   1a5	= You can delete the picture that \n
+ 	+ is currently displayed.
+-   1b7	= Secure
+-   1b8	= You can secure a picture\n
++   1a6	= Secure
++   1a7	= You can secure a picture\n
+ 	+ from being deleted.
+-   1b9	= Album (3)
+-   1ba	= Post on the Wii Message\n
++   1a8	= Album (3)
++   1a9	= Post on the Wii Message\n
+ 	+ Board
+-   1bb	= You can post pictures on the\n
++   1aa	= You can post pictures on the\n
+ 	+ Wii Message Board and send\n
+ 	+ those pictures to your Wii\n
+ 	+ Friends or view them in\n
+ 	+ the Photo Channel.\n
+ 	+ When this space fills, the\n
+ 	+ oldest files will be deleted.
+-   1bc	= 
+-   1bd	= 
+-   1be	= Album (4)
+-   1bf	= Save to SD Card
+-   1c0	= You can save pictures to an\n
++   1ab	= 
++   1ac	= 
++   1ad	= Album (4)
++   1ae	= Save to SD Card
++   1af	= You can save pictures to an\n
+ 	+ SD Card inserted into the\n
+ 	+ SD Card slot.
+-   1c1	= Delete all of the pictures \n
++   1b0	= Delete all of the pictures \n
+ 	+ on the SD Card
+-   1c2	= You can delete all of the My Pokémon\n
++   1b1	= You can delete all of the My Pokémon\n
+ 	+ Ranch pictures on your SD Card.
+-   1c3	= 
+-   1c4	= 
+-   1c5	= Connect to DS (1)
+-   1c6	= Connect to DS
+-   1c7	= You can deposit Pokémon to and\n
++   1b2	= 
++   1b3	= 
++   1b4	= Connect to DS (1)
++   1b5	= Connect to DS
++   1b6	= You can deposit Pokémon to and\n
+ 	+ withdraw Pokémon from the Ranch by\n
+ 	+ connecting with Pokémon Diamond\n
+ 	+ and Pearl.
+-   1c8	= Cancel Connection
+-   1c9	= Press this to end the connection.
+-   1ca	= Connect to DS (2)
+-   1cb	= Warning!
+-   1cc	= You can only withdraw Pokémon that\n
+-	+ you deposited into the Ranch from a DS\n
+-	+ Game Card to that same Game Card.\n
++   1b7	= Cancel Connection
++   1b8	= Press this to end the connection.
++   1b9	= Connect to DS (2)
++   1ba	= Warning!
++   1bb	= You can only withdraw Pokémon\n
++	+ using the same DS Game Card\n
++	+ you used to deposit them.\n
+ 	+ \n
+ 	+ -Alert-\n
+ 	+ You cannot withdraw Pokémon when\n
+ 	+ you restart the game or delete the save\n
+ 	+ data of that Game Card.
+-   1cd	= 
+-   1ce	= 
+-   1cf	= Deposit Details (1)
+-   1d0	= Friends at the Ranch
+-   1d1	= You can check who has deposited\n
++   1bc	= 
++   1bd	= 
++   1be	= Deposit Details (1)
++   1bf	= Friends at the Ranch
++   1c0	= You can check who has deposited\n
+ 	+ Pokémon and how many Pokémon\n
+ 	+ they have deposited.\n
+ 	+ \n
+ 	+ Also, you can change the Caretaker of\n
+ 	+ the Pokémon that were deposited from\n
+ 	+ the Nintendo DS.
+-   1d2	= 
+-   1d3	= 
+-   1d4	= Deposit Details (2)
+-   1d5	= Pokémon on the Ranch
+-   1d6	= Select whose Pokémon to\n
++   1c1	= 
++   1c2	= 
++   1c3	= Deposit Details (2)
++   1c4	= Pokémon on the Ranch
++   1c5	= Select whose Pokémon to\n
+ 	+ release to the Ranch.
+-   1d7	= Caretaker
+-   1d8	= You can change the\n
++   1c6	= Caretaker
++   1c7	= You can change the\n
+ 	+ Caretaker by selecting the\n
+ 	+ Mii and pressing \x{e042}.
+-   1d9	= Deposit Details (3)
+-   1da	= Parade
+-   1db	= Pokémon selected from Pokémon\n
++   1c8	= Deposit Details (3)
++   1c9	= Parade
++   1ca	= Pokémon selected from Pokémon\n
+ 	+ on the Ranch and their Caretakers\n
+ 	+ march in a parade.
+-   1dc	= 
+-   1dd	= 
+-   1de	= Favorites (1)
+-   1df	= Favorites
+-   1e0	= You can mark your favorite Pokémon.\n
++   1cb	= 
++   1cc	= 
++   1cd	= Favorites (1)
++   1ce	= Favorites
++   1cf	= You can mark your favorite Pokémon.\n
+ 	+ To bring only those Pokémon to the\n
+ 	+ Ranch, select Favorites from\n
+ 	+ Pokémon on the Ranch under the\n
+@@ -758,28 +749,28 @@
+ 	+ \n
+ 	+ This feature becomes available when\n
+ 	+ your Ranch reaches a certain level.
+-   1e1	= 
+-   1e2	= 
+-   1e3	= Favorites (2)
+-   1e4	= Add to Favorites
+-   1e5	= Point at this and press \x{e042}\n
++   1d0	= 
++   1d1	= 
++   1d2	= Favorites (2)
++   1d3	= Add to Favorites
++   1d4	= Point at this and press \x{e042}\n
+ 	+ to add the Pokémon to\n
+ 	+ Favorites.
+-   1e6	= Remove from Favorites
+-   1e7	= Press \x{e042} again to remove\n
++   1d5	= Remove from Favorites
++   1d6	= Press \x{e042} again to remove\n
+ 	+ it from Favorites.
+-   1e8	= BBS
+-   1e9	= BBS
+-   1ea	= You can check the Pokémon\n
++   1d7	= BBS
++   1d8	= BBS
++   1d9	= You can check the Pokémon\n
+ 	+ Wanted.\n
+ 	+ \n
+ 	+ You can also see the Ranch\n
+ 	+ Info.
+-   1eb	= 
+-   1ec	= 
+-   1ed	= Pokémon Wanted (1)
+-   1ee	= Pokémon Wanted
+-   1ef	= Hayley often gives advice on how\n
++   1da	= 
++   1db	= 
++   1dc	= Pokémon Wanted (1)
++   1dd	= Pokémon Wanted
++   1de	= Hayley often gives advice on how\n
+ 	+ to complete your Pokédex in\n
+ 	+ Pokémon Diamond and Pearl.\n
+ 	+ It's done by catching the Wanted\n
+@@ -788,119 +779,119 @@
+ 	+ \n
+ 	+ If you succeed, maybe something\n
+ 	+ good will happen.
+-   1f0	= 
+-   1f1	= 
+-   1f2	= Pokémon Wanted (2)
+-   1f3	= How to catch the Pokémon
+-   1f4	= Press \x{e042} on the billboard\n
++   1df	= 
++   1e0	= 
++   1e1	= Pokémon Wanted (2)
++   1e2	= How to catch the Pokémon
++   1e3	= Press \x{e042} on the billboard\n
+ 	+ posting to see information\n
+ 	+ on the Wanted Pokémon and\n
+-	+ how to catch it.\n
+-   1f5	= 
+-   1f6	= 
+-   1f7	= Ranch Info
+-   1f8	= Ranch Info
+-   1f9	= You can check the current status\n
++	+ how to catch it.
++   1e4	= 
++   1e5	= 
++   1e6	= Ranch Info
++   1e7	= Ranch Info
++   1e8	= You can check the current status\n
+ 	+ of the Ranch.
+-   1fa	= 
+-   1fb	= 
+-   1fc	= Options
+-   1fd	= Options
+-   1fe	= You can select the Miis to\n
++   1e9	= 
++   1ea	= 
++   1eb	= Options
++   1ec	= Options
++   1ed	= You can select the Miis to\n
+ 	+ bring to the Ranch, change\n
+ 	+ the WiiConnect24 settings,\n
+ 	+ etc.
+-   1ff	= 
+-   200	= 
+-   201	= Bring Mii
+-   202	= Mii Number
+-   203	= The initial maximum number of Miis\n
++   1ee	= 
++   1ef	= 
++   1f0	= Bring Mii
++   1f1	= Mii Number
++   1f2	= The initial maximum number of Miis\n
+ 	+ you can bring to the Ranch is five.\n
+ 	+ As the Ranch's level gets higher,\n
+ 	+ this number increases.
+-   204	= Warning!
+-   205	= If you erase a Mii from the Mii Channel,\n
++   1f3	= Warning!
++   1f4	= If you erase a Mii from the Mii Channel,\n
+ 	+ that Mii disappears from the Ranch.
+-   206	= Look at My Ranch!
+-   207	= When this setting is on...
+-   208	= You can exchange pictures or Ranch-\n
++   1f5	= Look at My Ranch!
++   1f6	= When this setting is on...
++   1f7	= You can exchange pictures or Ranch-\n
+ 	+ status info with your Wii Friends.\n
+ 	+ Maybe you'll get invited to your\n
+ 	+ Wii Friends' Ranches?
+-   209	= Let's set this to ON!
+-   20a	= The initial setting is OFF.\n
++   1f8	= Let's set this to ON!
++   1f9	= The initial setting is OFF.\n
+ 	+ Your Ranch data will only be sent to\n
+ 	+ your Wii Friends when this setting\n
+ 	+ is on.
+-   20b	= Guest
+-   20c	= When this setting is on...
+-   20d	= Maybe an unexpected guest will show\n
++   1fa	= Guest
++   1fb	= When this setting is on...
++   1fc	= Maybe an unexpected guest will show\n
+ 	+ up at the Ranch? You never know!
+-   20e	= Let's set this to ON!
+-   20f	= The initial setting is OFF.\n
++   1fd	= Let's set this to ON!
++   1fe	= The initial setting is OFF.\n
+ 	+ Your Ranch data will not be sent\n
+ 	+ without your knowledge, even\n
+ 	+ when this setting is turned on.
+-   210	= FAQ (1)
+-   211	= Question
+-   212	= Can I withdraw Pokémon that I\n
++   1ff	= FAQ (1)
++   200	= Question
++   201	= Can I withdraw Pokémon that I\n
+ 	+ deposited from Pokémon Diamond\n
+ 	+ into Pokémon Pearl?
+-   213	= Answer
+-   214	= No, you cannot.\n
++   202	= Answer
++   203	= No, you cannot.\n
+ 	+ You can withdraw Pokémon only to the\n
+ 	+ Game Card from which you deposited\n
+ 	+ the Pokémon.
+-   215	= FAQ (2)
+-   216	= Question
+-   217	= Can I withdraw Pokémon that my friend\n
++   204	= FAQ (2)
++   205	= Question
++   206	= Can I withdraw Pokémon that my friend\n
+ 	+ deposited to the Ranch to my Pokémon\n
+-	+ Diamond or Pearl?\n
+-   218	= Answer
+-   219	= No, you cannot.\n
++	+ Diamond or Pearl?
++   207	= Answer
++   208	= No, you cannot.\n
+ 	+ You can withdraw Pokémon only to the\n
+ 	+ Game Card from which you deposited\n
+ 	+ the Pokémon.
+-   21a	= FAQ (3)
+-   21b	= Question
+-   21c	= I deposited Pokémon to the Ranch and\n
++   209	= FAQ (3)
++   20a	= Question
++   20b	= I deposited Pokémon to the Ranch and\n
+ 	+ started a new game on the Nintendo\n
+ 	+ DS Pokémon game. Can I withdraw the\n
+ 	+ Pokémon to that Game Card?
+-   21d	= Answer
+-   21e	= No, you cannot.\n
++   20c	= Answer
++   20d	= No, you cannot.\n
+ 	+ Once the save data on the Nintendo DS\n
+ 	+ Pokémon game is erased, you cannot\n
+ 	+ withdraw the deposited Pokémon.
+-   21f	= FAQ (4)
+-   220	= Question
+-   221	= What happens to my Pokémon if I erase\n
++   20e	= FAQ (4)
++   20f	= Question
++   210	= What happens to my Pokémon if I erase\n
+ 	+ the My Pokémon Ranch save data?
+-   222	= Answer
+-   223	= All of the Pokémon will be erased. Make\n
++   211	= Answer
++   212	= All of the Pokémon will be erased. Make\n
+ 	+ sure you withdraw all deposited\n
+ 	+ Pokémon before you erase the My\n
+ 	+ Pokémon Ranch save data.
+-   224	= FAQ (5)
+-   225	= Question
+-   226	= How can I find out how many more\n
++   213	= FAQ (5)
++   214	= Question
++   215	= How can I find out how many more\n
+ 	+ Pokémon I need for my Ranch to reach\n
+ 	+ the next level?
+-   227	= Answer
+-   228	= Select Ranch Info under the BBS\n
++   216	= Answer
++   217	= Select Ranch Info under the BBS\n
+ 	+ menu. There you can check the\n
+ 	+ current status of the Ranch.
+-   229	= FAQ (6)
+-   22a	= Question
+-   22b	= How do I play without music?
+-   22c	= Answer
+-   22d	= Hold down \x{e043} and \x{e041}↓\n
++   218	= FAQ (6)
++   219	= Question
++   21a	= How do I play without music?
++   21b	= Answer
++   21c	= Hold down \x{e043} and \x{e041}↓\n
+ 	+ when you start the game.\n
+ 	+ Then you can play the game without\n
+ 	+ music.
+-   22e	= Miis at the Ranch (1)
+-   22f	= Select a Mii
+-   230	= You can bring a Mii to the Ranch by\n
++   21d	= Miis at the Ranch (1)
++   21e	= Select a Mii
++   21f	= You can bring a Mii to the Ranch by\n
+ 	+ selecting it with \x{e042}.\n
+ 	+ \n
+ 	+ If you select the Mii with \x{e042}\n
+@@ -909,80 +900,80 @@
+ 	+ To exit, point at the door\n
+ 	+ located on the top left of the screen\n
+ 	+ and press \x{e042}.
+-   231	= 
+-   232	= 
+-   233	= Miis at the Ranch (2)
+-   234	= You can select Miis anytime
+-   235	= You can select Miis under the Options\n
++   220	= 
++   221	= 
++   222	= Miis at the Ranch (2)
++   223	= You can select Miis anytime
++   224	= You can select Miis under the Options\n
+ 	+ menu at any time.
+-   236	= Warning!
+-   237	= If you erase a Mii in the Mii Channel,\n
++   225	= Warning!
++   226	= If you erase a Mii in the Mii Channel,\n
+ 	+ that Mii will disappear from the Ranch.
+-   238	= Connect to DS
+-   239	= Warning!
+-   23a	= You can only withdraw Pokémon that\n
+-	+ you deposited into the Ranch from a DS\n
+-	+ Game Card to that same Game Card.\n
++   227	= Connect to DS
++   228	= Warning!
++   229	= You can only withdraw Pokémon\n
++	+ using the same DS Game Card\n
++	+ you used to deposit them.\n
+ 	+ \n
+ 	+ -Alert-\n
+ 	+ You cannot withdraw Pokémon when\n
+ 	+ you restart the game or delete the save\n
+ 	+ data of that Game Card.
+-   23b	= Connect to DS
+-   23c	= Saving...
+-   23d	= Saving...\n
++   22a	= Connect to DS
++   22b	= Saving...
++   22c	= Saving...\n
+ 	+ Don't turn off the power or\n
+ 	+ press RESET.\n
+ 	+ \n
+ 	+ -Alert-\n
+ 	+ You will not be able to withdraw\n
+ 	+ Pokémon if the save data is erased.
+-   23e	= Connect to DS
+-   23f	= 
+-   240	= The previous Ranch data will be loaded\n
+-	+ because you closed the connection with\n
+-	+ the Nintendo DS without saving.
+-   241	= Connect to DS
+-   242	= Game Card Limit
+-   243	= You can deposit Pokémon from eight\n
++   22d	= Connect to DS
++   22e	= 
++   22f	= The previous Ranch data will be\n
++	+ loaded because the connection to the\n
++	+ Nintendo DS was lost prior to saving.
++   230	= Connect to DS
++   231	= Game Card Limit
++   232	= You can deposit Pokémon from eight\n
+ 	+ different Game Cards at most.
+-   244	= Connect to DS
+-   245	= Game Card Limit
+-   246	= If you want to deposit Pokémon from a\n
++   233	= Connect to DS
++   234	= Game Card Limit
++   235	= If you want to deposit Pokémon from a\n
+ 	+ new Pokémon Diamond or Pearl Game\n
+ 	+ Card, withdraw all of the Pokémon\n
+ 	+ deposited from any one Game Card.
+-   247	= Connect to DS
+-   248	= No Pokédex was found.
+-   249	= A Pokédex is required to deposit\n
++   236	= Connect to DS
++   237	= No Pokédex was found.
++   238	= A Pokédex is required to deposit\n
+ 	+ Pokémon to the Ranch.
+-   24a	= 
+-   24b	= 
+-   24c	= 
+-   24d	= 
+-   24e	= 
+-   24f	= 
+-   250	= 
+-   251	= 
+-   252	= 
+-   253	= 
+-   254	= 
+-   255	= 
+-   256	= In order to use this save data,\n
++   239	= 
++   23a	= 
++   23b	= 
++   23c	= 
++   23d	= 
++   23e	= 
++   23f	= 
++   240	= 
++   241	= 
++   242	= 
++   243	= 
++   244	= 
++   245	= In order to use this save data,\n
+ 	+ you must set your Wii console\n
+ 	+ language to English.
+-   257	= In order to use this save data,\n
++   246	= In order to use this save data,\n
+ 	+ you must set your Wii console\n
+ 	+ language to German.
+-   258	= In order to use this save data,\n
++   247	= In order to use this save data,\n
+ 	+ you must set your Wii console\n
+ 	+ language to French.
+-   259	= In order to use this save data,\n
++   248	= In order to use this save data,\n
+ 	+ you must set your Wii console\n
+ 	+ language to Spanish.
+-   25a	= In order to use this save data,\n
++   249	= In order to use this save data,\n
+ 	+ you must set your Wii console\n
+ 	+ language to Italian.
+-   25b	= Would you like to return\n
++   24a	= Would you like to return\n
+ 	+ to your Ranch?
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/tokusei.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/tokusei.bmg"
+index a8d88e7..a16fe27 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/tokusei.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/tokusei.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/tokusei.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/tokusei.bmg.txt"
+index 5856895..19da66f 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/tokusei.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/tokusei.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wanted.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wanted.bmg"
+index 2a24e30..7f428a6 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wanted.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wanted.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wanted.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wanted.bmg.txt"
+index 8fdd22c..b4d417c 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wanted.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wanted.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -388,7 +388,7 @@
+ 	+ higher than its Attack, it evolves to\n
+ 	+ HITMONCHAN. If its Attack and its Defense\n
+ 	+ are the same, it evolves to HITMONTOP.
+-    f9	= Fish by using Surf. FEEBAS only appear\n
++    f9	= Fish while using Surf. FEEBAS only appear\n
+ 	+ in four spots. Once you find the right\n
+ 	+ spot, FEEBAS will appear 50% of the\n
+ 	+ time. The locations change every day.
+@@ -473,4 +473,5 @@
+    122	= You can discover an Egg by leaving a\n
+ 	+ Pokémon and a Pokémon that gets\n
+ 	+ along with it at the Pokémon Day Care.
++   123	= New!
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wazaname.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wazaname.bmg"
+index 17ac171..686ab6f 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wazaname.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wazaname.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wazaname.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wazaname.bmg.txt"
+index 362db66..ae13263 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wazaname.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wazaname.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wszst-setup.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wszst-setup.txt"
+index 0994fc3..7e73166 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/wszst-setup.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/wszst-setup.txt"
+@@ -27,7 +27,7 @@ have-pt-dir = 0
+ 
+ # The minimum and maximum file data positions:
+ min-data-offset = 0x0
+-max-data-offset = 0x5caa0
++max-data-offset = 0x622a0
+ 
+ # The calculated alignment of all files:
+ data-align = 0x20
+@@ -108,6 +108,8 @@ data-align = 0x20
+ ./dptext.bmg.txt
+ ./farm_event.bmg.d
+ ./farm_event.bmg.txt
++./farm_items.bmg.d
++./farm_items.bmg.txt
+ ./localedef.bmg.d
+ ./localedef.bmg.txt
+ ./pokemon.bmg.d
+@@ -164,6 +166,7 @@ LEX		= ./course.lex
+ BMG		= ./debug.bmg
+ BMG		= ./dptext.bmg
+ BMG		= ./farm_event.bmg
++BMG		= ./farm_items.bmg
+ BMG		= ./localedef.bmg
+ BMG		= ./pokemon.bmg
+ BMG		= ./pokemon_type.bmg
+@@ -213,21 +216,22 @@ BMG		= ./zkn_type.bmg
+ # The value before the equal sign is the file offset in the original archive
+ # and is ignored for sorting.
+ 
+-     0x1c0	= ./chr.bmg
+-     0x3c0	= ./debug.bmg
+-    0x5400	= ./dptext.bmg
+-    0x7720	= ./farm_event.bmg
+-   0x12ea0	= ./localedef.bmg
+-   0x132e0	= ./pokemon.bmg
+-   0x15b00	= ./pokemon_type.bmg
+-   0x15d80	= ./pokemonfarm.bmg
+-   0x1e660	= ./tokusei.bmg
+-   0x1f260	= ./wanted.bmg
+-   0x247a0	= ./wazaname.bmg
+-   0x27400	= ./xa.bmg
+-   0x2a220	= ./zkn_comment.bmg
+-   0x41280	= ./zkn_comment_pearl.bmg
+-   0x583e0	= ./zkn_type.bmg
++     0x1e0	= ./chr.bmg
++     0x440	= ./debug.bmg
++    0x5c60	= ./dptext.bmg
++    0x82e0	= ./farm_event.bmg
++   0x143a0	= ./farm_items.bmg
++   0x14a40	= ./localedef.bmg
++   0x14fe0	= ./pokemon.bmg
++   0x17fc0	= ./pokemon_type.bmg
++   0x182e0	= ./pokemonfarm.bmg
++   0x214a0	= ./tokusei.bmg
++   0x222a0	= ./wanted.bmg
++   0x27c80	= ./wazaname.bmg
++   0x2b040	= ./xa.bmg
++   0x2e340	= ./zkn_comment.bmg
++   0x45b40	= ./zkn_comment_pearl.bmg
++   0x5d440	= ./zkn_type.bmg
+ 
+ #------------------------------------------------------------------------------
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/xa.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/xa.bmg"
+index d7479e3..67437ae 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/xa.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/xa.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/xa.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/xa.bmg.txt"
+index e024fb8..a2588ed 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/xa.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/xa.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+@@ -46,209 +46,212 @@
+ #
+ #------------------------------------------------------------------------------
+ 
+-     0	= %ls is communicating with %ls.
+-     1	= %ls is communicating with %ls.
+-     2	= %ls is communicating with %ls.
+-     3	= Is %ls talking to someone?
+-     4	= Is %ls talking to someone?
+-     5	= Is %ls talking to someone?
+-     6	= %ls looks hungry.
+-     7	= %ls gave %ls some snacks.
+-     8	= %ls gave %ls some snacks.
+-     9	= %ls looks happy.
+-     a	= %ls looks happy.
+-     b	= %ls looks happy.
+-     c	= %ls is popular.
+-     d	= %ls is popular.
+-     e	= Is %ls chasing %ls?
+-     f	= Is %ls chasing %ls?
+-    10	= Is %ls chasing %ls?
+-    11	= %ls is chasing someone.
+-    12	= %ls is chasing someone.
+-    13	= %ls is chasing someone.
+-    14	= Is %ls running from %ls?
+-    15	= Is %ls running from %ls?
+-    16	= Is %ls running from %ls?
+-    17	= %ls is running from someone.
+-    18	= %ls is running from someone.
+-    19	= %ls is running from someone.
+-    1a	= %ls is petting %ls.
+-    1b	= %ls is petting %ls.
+-    1c	= %ls is carrying %ls.
+-    1d	= Can %ls lift %ls?
++     0	= %{} is communicating with %(12)%{}.
++     1	= %{} is communicating with %(12)%{}.
++     2	= %{} is communicating with %(12)%{}.
++     3	= Is %{} talking to someone?
++     4	= Is %{} talking to someone?
++     5	= Is %{} talking to someone?
++     6	= %{} looks hungry.
++     7	= %{} gave %{} some snacks.
++     8	= %{} gave %{} some snacks.
++     9	= %{} looks happy.
++     a	= %{} looks happy.
++     b	= %{} looks happy.
++     c	= %{} is popular.
++     d	= %{} is popular.
++     e	= Is %{} chasing %(12)%{}?
++     f	= Is %{} chasing %(12)%{}?
++    10	= Is %{} chasing %(12)%{}?
++    11	= %{} is chasing someone.
++    12	= %{} is chasing someone.
++    13	= %{} is chasing someone.
++    14	= Is %{} running from %(12)%{}?
++    15	= Is %{} running from %(12)%{}?
++    16	= Is %{} running from %(12)%{}?
++    17	= %{} is running from someone.
++    18	= %{} is running from someone.
++    19	= %{} is running from someone.
++    1a	= %{} is petting %{}.
++    1b	= %{} is petting %{}.
++    1c	= %{} is carrying %(12)%{}.
++    1d	= Can %{} lift %(12)%{}?
+     1e	= Oh!?
+-    1f	= Did %ls give up on carrying?
+-    20	= %ls is joyful.
+-    21	= %ls is joyful.
+-    22	= %ls is joyful.
+-    23	= %ls is in a good mood.
+-    24	= %ls is in a good mood.
+-    25	= %ls is enjoying riding on %ls.
+-    26	= %ls is enjoying riding on %ls.
+-    27	= %ls is enjoying riding on %ls.
+-    28	= %ls looks relaxed.
+-    29	= %ls looks relaxed.
+-    2a	= %ls tripped over %ls.
+-    2b	= %ls tripped over %ls.
+-    2c	= %ls is sleeping.
+-    2d	= %ls is sleeping.
+-    2e	= %ls is sleeping.
+-    2f	= %ls is napping with %ls.
+-    30	= %ls is playing with %ls.
++    1f	= Did %{} give up on carrying?
++    20	= %{} is joyful.
++    21	= %{} is joyful.
++    22	= %{} is joyful.
++    23	= %{} is in a good mood.
++    24	= %{} is in a good mood.
++    25	= %{} is enjoying riding on %(12)%{}.
++    26	= %{} is enjoying riding on %(12)%{}.
++    27	= %{} is enjoying riding on %(12)%{}.
++    28	= %{} looks relaxed.
++    29	= %{} looks relaxed.
++    2a	= %{} tripped over %{}.
++    2b	= %{} tripped over %{}.
++    2c	= %{} is sleeping.
++    2d	= %{} is sleeping.
++    2e	= %{} is sleeping.
++    2f	= %{} is napping with %(12)%{}.
++    30	= %{} is playing with %(12)%{}.
+     31	= What?
+-    32	= %ls is running with %ls.
+-    33	= %ls is running with %ls.
+-    34	= %ls looks delighted.
+-    35	= %ls looks delighted.
+-    36	= %ls is in a really good mood.
+-    37	= %ls is in a really good mood.
+-    38	= %ls is repairing a fence.
+-    39	= %ls is repairing a fence.
+-    3a	= %ls picked up the %ls.
+-    3b	= %ls picked up the %ls.
+-    3c	= %ls is enjoying marching with everyone.
+-    3d	= %ls is enjoying marching with everyone.
+-    3e	= %ls is enjoying marching with everyone.
+-    3f	= %ls is marching.
+-    40	= %ls is marching.
+-    41	= %ls is marching.
+-    42	= %ls put %ls up high.
+-    43	= %ls put %ls up high.
+-    44	= %ls looks disappointed.
+-    45	= %ls looks disappointed.
+-    46	= %ls is putting %ls up high.
+-    47	= %ls is putting %ls up high.
+-    48	= Is %ls interested in %ls?
+-    49	= Is %ls interested in %ls?
+-    4a	= Is %ls interested in %ls?
+-    4b	= %ls looks interested in something.
+-    4c	= %ls looks interested in something.
+-    4d	= %ls looks interested in something.
+-    4e	= Is %ls curious about %ls?
+-    4f	= Is %ls curious about %ls?
+-    50	= Is %ls curious about %ls?
+-    51	= %ls looks curious about something.
+-    52	= %ls looks curious about something.
+-    53	= %ls looks curious about something.
+-    54	= %ls is spacing out.
+-    55	= %ls is spacing out.
+-    56	= %ls is spacing out.
+-    57	= %ls looks interested in its friends.
+-    58	= %ls looks interested in joining.
+-    59	= %ls looks interested in joining.
+-    5a	= %ls looks interested in joining.
+-    5b	= %ls looks sleepy.
+-    5c	= %ls looks sleepy.
+-    5d	= %ls looks sleepy.
+-    5e	= %ls is taking a break.
+-    5f	= %ls is taking a break.
+-    60	= %ls looks like it wants to run wild.
+-    61	= %ls looks friendly.
+-    62	= %ls is not getting along with the %ls type.
+-    63	= %ls seems more energetic at night.
+-    64	= %ls is taking a stroll.
+-    65	= %ls likes to stay close to its friends.
+-    66	= Does %ls want to stay close to its friends?
+-    67	= %ls really enjoys staying close to %ls.
+-    68	= Does %ls want to stay close to %ls?
+-    69	= %ls is having a good time.
+-    6a	= %ls is having a good time.
+-    6b	= %ls is having a good time.
+-    6c	= %ls ran away.
+-    6d	= %ls ran away.
+-    6e	= %ls ran away.
+-    6f	= %ls enjoyed the %ls challenge.
+-    70	= %ls dodged well.
+-    71	= %ls is spinning around.
+-    72	= %ls is spinning around.
+-    73	= %ls is spinning around.
+-    74	= %ls jumped really high.
+-    75	= %ls jumped really high.
+-    76	= %ls jumped really high.
+-    77	= %ls challenged the %ls.
+-    78	= %ls challenged the %ls.
+-    79	= %ls challenged the %ls.
++    32	= %{} is running with %(12)%{}.
++    33	= %{} is running with %(12)%{}.
++    34	= %{} looks delighted.
++    35	= %{} looks delighted.
++    36	= %{} is in a really good mood.
++    37	= %{} is in a really good mood.
++    38	= %{} is repairing a fence.
++    39	= %{} is repairing a fence.
++    3a	= %{} picked up the %{}.
++    3b	= %{} picked up the %{}.
++    3c	= %{} is enjoying marching with everyone.
++    3d	= %{} is enjoying marching with everyone.
++    3e	= %{} is enjoying marching with everyone.
++    3f	= %{} is marching.
++    40	= %{} is marching.
++    41	= %{} is marching.
++    42	= %{} put %{} up high.
++    43	= %{} put %{} up high.
++    44	= %{} looks disappointed.
++    45	= %{} looks disappointed.
++    46	= %{} is putting %{} up high.
++    47	= %{} is putting %{} up high.
++    48	= Is %{} interested in %(12)%{}?
++    49	= Is %{} interested in %(12)%{}?
++    4a	= Is %{} interested in %(12)%{}?
++    4b	= %{} looks interested in something.
++    4c	= %{} looks interested in something.
++    4d	= %{} looks interested in something.
++    4e	= Is %{} curious about %(12)%{}?
++    4f	= Is %{} curious about %(12)%{}?
++    50	= Is %{} curious about %(12)%{}?
++    51	= %{} looks curious about something.
++    52	= %{} looks curious about something.
++    53	= %{} looks curious about something.
++    54	= %{} is spacing out.
++    55	= %{} is spacing out.
++    56	= %{} is spacing out.
++    57	= %{} looks interested in its friends.
++    58	= %{} looks interested in joining.
++    59	= %{} looks interested in joining.
++    5a	= %{} looks interested in joining.
++    5b	= %{} looks sleepy.
++    5c	= %{} looks sleepy.
++    5d	= %{} looks sleepy.
++    5e	= %{} is taking a break.
++    5f	= %{} is taking a break.
++    60	= %{} looks like it wants to run wild.
++    61	= %{} looks friendly.
++    62	= %{} is not getting along with the %ls type.
++    63	= %{} seems more energetic at night.
++    64	= %{} is taking a stroll.
++    65	= %{} likes to stay close to its friends.
++    66	= Does %{} want to stay close to its friends?
++    67	= %{} really enjoys staying close to %{}.
++    68	= Does %{} want to stay close to %{}?
++    69	= %{} is having a good time.
++    6a	= %{} is having a good time.
++    6b	= %{} is having a good time.
++    6c	= %{} ran away.
++    6d	= %{} ran away.
++    6e	= %{} ran away.
++    6f	= %{} enjoyed the %{} challenge.
++    70	= %{} dodged well.
++    71	= %{} is spinning around.
++    72	= %{} is spinning around.
++    73	= %{} is spinning around.
++    74	= %{} jumped really high.
++    75	= %{} jumped really high.
++    76	= %{} jumped really high.
++    77	= %{} challenged the %{}.
++    78	= %{} challenged the %{}.
++    79	= %{} challenged the %{}.
+     7a	= The challenge was a success!
+     7b	= It's too big to fit in a Pitfall.
+-    7c	= %ls dived into the %ls.
+-    7d	= %ls fell into the %ls.
+-    7e	= %ls fell into the %ls.
+-    7f	= %ls is surprised by the %ls.
+-    80	= %ls is surprised by the %ls.
+-    81	= %ls is staring at the %ls.
+-    82	= %ls is staring at the %ls.
+-    83	= %ls is staring at the %ls.
+-    84	= Is %ls taking a stroll in the sky?
+-    85	= Is %ls taking a stroll in the sky?
+-    86	= Is %ls taking a stroll in the sky?
+-    87	= %ls picked up something unusual!
+-    88	= %ls picked up something unusual!
+-    89	= Does %ls want more attention?
+-    8a	= Does %ls want more attention?
+-    8b	= %ls might want to attract attention...
+-    8c	= %ls might want to attract attention...
++    7c	= %{} dived into the %{}.
++    7d	= %{} fell into the %{}.
++    7e	= %{} fell into the %{}.
++    7f	= %{} is surprised by the %{}.
++    80	= %{} is surprised by the %{}.
++    81	= %{} is staring at the %{}.
++    82	= %{} is staring at the %{}.
++    83	= %{} is staring at the %{}.
++    84	= Is %{} taking a stroll in the sky?
++    85	= Is %{} taking a stroll in the sky?
++    86	= Is %{} taking a stroll in the sky?
++    87	= %{} picked up something unusual!
++    88	= %{} picked up something unusual!
++    89	= Does %{} want more attention?
++    8a	= Does %{} want more attention?
++    8b	= %{} might want to attract attention...
++    8c	= %{} might want to attract attention...
+     8d	= The challenge was a failure!
+-    8e	= Is %ls trying to blast off to somewhere?
+-    8f	= Is %ls trying to blast off to somewhere?
+-    90	= Is %ls trying to blast off to somewhere?
+-    91	= %ls came out.
+-    92	= %ls came out.
+-    93	= %ls came out.
+-    94	= Is %ls pleased?
+-    95	= Is %ls mimicking %ls?
+-    96	= %ls looks like it's singing a song.
+-    97	= %ls looks lonely.
+-    98	= Does %ls have a headache?
+-    99	= %ls is acting strangely.
+-    9a	= %ls is carried by %ls.
+-    9b	= %ls is carried by %ls.
+-    9c	= %ls is carried by %ls.
+-    9d	= %ls looks content.
+-    9e	= %ls seems to be chasing %ls.
+-    9f	= %ls is running wild.
+-    a0	= Is %ls chasing its own tail?
+-    a1	= %ls is walking backward.
+-    a2	= There are so many Pokémon I want to bring to this Ranch...
+-    a3	= It would be so great living here with lots of Pokémon.
+-    a4	= Maybe I can place toys Pokémon can play with.
+-    a5	= Spending some time with Pokémon can be relaxing...
+-    a6	= Hold that pose! Taking pictures with Pokémon would be so cool!
+-    a7	= It's like a dream, spending time with Pokémon like that every day...
+-    a8	= %ls woke up.
+-    a9	= %ls woke up.
+-    aa	= %ls woke up.
+-    ab	= %ls seems to be heading somewhere.
+-    ac	= %ls seems to be heading somewhere.
+-    ad	= %ls seems to be heading somewhere.
+-    ae	= %ls wants to know more about its friends.
+-    af	= Does %ls want to know more about its friends?
+-    b0	= %ls looks interested in %ls.
+-    b1	= %ls looks interested in %ls.
+-    b2	= %ls looks interested in %ls.
+-    b3	= Is %ls scared of %ls?
+-    b4	= Is %ls scared of %ls?
+-    b5	= Is %ls scared of %ls?
+-    b6	= %ls looks scared of something.
+-    b7	= %ls looks scared of something.
+-    b8	= %ls looks scared of something.
+-    b9	= Is %ls not good with %ls?
+-    ba	= Is %ls not good with %ls?
+-    bb	= Is %ls not good with %ls?
+-    bc	= %ls fell down.
+-    bd	= %ls fell down.
+-    be	= %ls fell down.
+-    bf	= This is %ls %ls.
+-    c0	= This is %ls.
+-    c1	= This is %ls.
+-    c2	= %ls is practicing a move.
+-    c3	= %ls seems to be calling everybody.
+-    c4	= This is %ls's %ls.
+-    c5	= This is %ls's %ls. Its nickname is %ls.
+-    c6	= %ls is enjoying the %ls.
+-    c7	= %ls is enjoying the %ls.
+-    c8	= %ls is enjoying the %ls.
+-    c9	= %ls came too close to the %ls.
+-    ca	= %ls came too close to the %ls.
+-    cb	= %ls came too close to the %ls.
+-    cc	= KA-BOOM!
++    8e	= Is %{} trying to blast off to somewhere?
++    8f	= Is %{} trying to blast off to somewhere?
++    90	= Is %{} trying to blast off to somewhere?
++    91	= %(23)%{} came out.
++    92	= %(23)%{} came out.
++    93	= %(23)%{} came out.
++    94	= %{} came out.
++    95	= %{} came out.
++    96	= %{} came out.
++    97	= Is %{} pleased?
++    98	= Is %{} mimicking %{}?
++    99	= %{} looks like it's singing a song.
++    9a	= %{} looks lonely.
++    9b	= Does %{} have a headache?
++    9c	= %{} is acting strangely.
++    9d	= %{} is carried by %{}.
++    9e	= %{} is carried by %{}.
++    9f	= %{} is carried by %{}.
++    a0	= %{} looks content.
++    a1	= %{} seems to be chasing %{}.
++    a2	= %{} is running wild.
++    a3	= Is %{} chasing its own tail?
++    a4	= %{} is walking backward.
++    a5	= There are so many Pokémon I want to bring to this Ranch...
++    a6	= It would be so great living here with lots of Pokémon.
++    a7	= Maybe I can place toys Pokémon can play with.
++    a8	= Spending some time with Pokémon can be relaxing...
++    a9	= Hold that pose! Taking pictures with Pokémon would be so cool!
++    aa	= It's like a dream, spending time with Pokémon like that every day...
++    ab	= %{} woke up.
++    ac	= %{} woke up.
++    ad	= %{} woke up.
++    ae	= %{} seems to be heading somewhere.
++    af	= %{} seems to be heading somewhere.
++    b0	= %{} seems to be heading somewhere.
++    b1	= %{} wants to know more about its friends.
++    b2	= Does %{} want to know more about its friends?
++    b3	= %{} looks interested in %(12)%{}.
++    b4	= %{} looks interested in %(12)%{}.
++    b5	= %{} looks interested in %(12)%{}.
++    b6	= Is %{} scared of %(12)%{}?
++    b7	= Is %{} scared of %(12)%{}?
++    b8	= Is %{} scared of %(12)%{}?
++    b9	= %{} looks scared of something.
++    ba	= %{} looks scared of something.
++    bb	= %{} looks scared of something.
++    bc	= Is %{} not good with %(12)%{}?
++    bd	= Is %{} not good with %(12)%{}?
++    be	= Is %{} not good with %(12)%{}?
++    bf	= %{} fell down.
++    c0	= %{} fell down.
++    c1	= %{} fell down.
++    c2	= This is %ls %ls.
++    c3	= This is %{}.
++    c4	= This is %{}.
++    c5	= %{} is practicing a move.
++    c6	= %{} seems to be calling everybody.
++    c7	= This is %{}'s %ls.
++    c8	= This is %{}'s %ls. Its nickname is %{}.
++    c9	= %{} is enjoying the %{}.
++    ca	= %{} is enjoying the %{}.
++    cb	= %{} is enjoying the %{}.
++    cc	= %{} came too close to the %{}.
++    cd	= %{} came too close to the %{}.
++    ce	= %{} came too close to the %{}.
++    cf	= KA-BOOM!
+ 
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment.bmg"
+index b6f6543..a1b2f2e 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment.bmg.txt"
+index eb8e27e..71b577a 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment_pearl.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment_pearl.bmg"
+index 28fb28b..0d9456b 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment_pearl.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment_pearl.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment_pearl.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment_pearl.bmg.txt"
+index f3b70ab..cc9591a 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_comment_pearl.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_comment_pearl.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_type.bmg" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_type.bmg"
+index 6b969b8..ae4b92f 100644
+Binary files "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_type.bmg" and "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_type.bmg" differ
+diff --git "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_type.bmg.txt" "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_type.bmg.txt"
+index fa94950..135abb1 100644
+--- "a/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\usupdate\\00000005.app\\en_US/msg/zkn_type.bmg.txt"
++++ "b/C:\\Users\\wertc\\OneDrive\\Desktop\\EmuDev\\MyPokemonRanch-Hacking\\mpr-pt-translation\\europe\\00000005.app\\en_GB/msg/zkn_type.bmg.txt"
+@@ -24,10 +24,10 @@
+ 
+ # Size of each element of section 'INF1' (MKW=8).
+ # This setting has impact to attributes and MKW features.
+-@INF-SIZE = 0x04
++@INF-SIZE = 0x08
+ 
+ # Default attribute values for this BMG (MKW=[1])
+-@DEFAULT-ATTRIBS = []
++@DEFAULT-ATTRIBS = [0]
+ 
+ # Use MKW specific color names: 0=off, 1=auto, 2=on
+ @COLOR-NAMES = 1

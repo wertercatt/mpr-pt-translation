@@ -66,149 +66,164 @@
     11	/
     12	/
     13	/
-    14	= The Wii Remote battery power\n
-	+ is running low.
+    14	= Wiiリモコンの でんちが\n
+	+ へってきました。
     15	/
     16	/
     17	/
-    18	= There is not enough available\n
-	+ space in Wii system memory.\n
-	+ Create %d blocks\n
-	+ of free space either by moving data to\n
-	+ an SD Card or by deleting data in\n
-	+ the Save Data screen.
-    19	= There is not enough available\n
-	+ space in Wii system memory for\n
-	+ My Pokémon Ranch Platinum Version.\n
-	+ Create %d blocks\n
-	+ of free space either by moving data to\n
-	+ an SD Card or by deleting data in\n
-	+ the Save Data screen.
-    1a	= There is not enough available\n
-	+ space in Wii system memory.\n
-	+ Create 1 block\n
-	+ of free space either by moving data to\n
-	+ an SD Card or by deleting data in\n
-	+ the Save Data screen.
-    1b	= There is not enough available\n
-	+ space in Wii system memory for\n
-	+ My Pokémon Ranch Platinum Version.\n
-	+ Create 1 block\n
-	+ of free space either by moving data to\n
-	+ an SD Card or by deleting data in\n
-	+ the Save Data screen.
-    1c	= There is not enough available\n
-	+ space in Wii system memory.\n
-	+ Either move data to an\n
-	+ SD Card or delete data in the\n
-	+ Save Data screen.
-    1d	= There is not enough available\n
-	+ space in Wii system memory for\n
-	+ My Pokémon Ranch Platinum Version.\n
-	+ \fEither move data to an\n
-	+ SD Card or delete data in\n
-	+ My Pokémon Ranch.
-    1e	= There is an abnormal amount\n
-	+ of free space in Wii system memory.\n
+    18	= Wiiほんたい ほぞんメモリの\n
+	+ あきようりょうが ふそくしています。\n
+	+ セーブデータがめんで データを\n
+	+ SDカードに いどうするか、\n
+	+ \fデータを しょうきょして\n
+	+ %dブロックの あきブロックを\n
+	+ よういしてください。
+    19	= プラチナたいおうばんに　ひつような\n
+	+ Wiiほんたい ほぞんメモリの\n
+	+ あきようりょうが ふそくしています。\n
+	+ \fセーブデータがめんで\n
+	+ ポケモンぼくじょう いがいの データを\n
+	+ SDカードに いどうするか、\n
+	+ データを しょうきょして\n
+	+ \f%dブロックの あきブロックを\n
+	+ よういしてください。
+    1a	= Wiiほんたい ほぞんメモリの\n
+	+ あきようりょうが ふそくしています。\n
+	+ セーブデータがめんで データを\n
+	+ SDカードに いどうするか、\n
+	+ \fデータを しょうきょして\n
+	+ 1ブロックの あきブロックを\n
+	+ よういしてください。
+    1b	= プラチナたいおうばんに　ひつような\n
+	+ Wiiほんたい ほぞんメモリの\n
+	+ あきようりょうが ふそくしています。\n
+	+ \fセーブデータがめんで\n
+	+ ポケモンぼくじょう いがいの データを\n
+	+ SDカードに いどうするか、\n
+	+ データを しょうきょして\n
+	+ \f1ブロックの あきブロックを\n
+	+ よういしてください。
+    1c	= Wiiほんたい ほぞんメモリの\n
+	+ あきファイルすうが\n
+	+ ふそくしています。\n
+	+ \fセーブデータがめんで データを\n
+	+ SDカードに いどうするか、\n
+	+ データを しょうきょしてください。
+    1d	= プラチナたいおうばんに　ひつような\n
+	+ Wiiほんたい ほぞんメモリの\n
+	+ あきファイルすうが\n
+	+ ふそくしています。\n
+	+ \fセーブデータがめんで\n
+	+ ポケモンぼくじょう いがいの データを\n
+	+ SDカードに いどうするか、\n
+	+ データを しょうきょしてください。
+    1e	= Wiiほんたい ほぞんメモリの\n
+	+ あきようりょうが いじょうです。\n
 	+ \n
-	+ Refer to the Wii Operations\n
-	+ Manual for details.
-    1f	= There is an abnormal number\n
-	+ of files in Wii system memory.\n
+	+ くわしくは Wiiほんたいの\n
+	+ とりあつかい せつめいしょを\n
+	+ およみください。
+    1f	= Wiiほんたい ほぞんメモリの\n
+	+ あきファイルすうが いじょうです。\n
 	+ \n
-	+ Refer to the Wii Operations\n
-	+ Manual for details.
+	+ くわしくは Wiiほんたいの\n
+	+ とりあつかい せつめいしょを\n
+	+ およみください。
     20	/
-    21	= The Wii system memory\n
-	+ has been damaged.\n
+    21	= Wiiほんたい ほぞんメモリが\n
+	+ こわれました。\n
 	+ \n
-	+ Refer to the Wii Operations\n
-	+ Manual for details.
-    22	= Saving...\n
-	+ Don't turn off the power or\n
-	+ press RESET.
+	+ くわしくは Wiiほんたいの\n
+	+ とりあつかい せつめいしょを\n
+	+ およみください。
+    22	= セーブちゅうです。\n
+	+ でんげんボタンや リセットボタンに\n
+	+ さわらないでください。
     23	/
-    24	= Could not access Wii system\n
-	+ memory.\n
-	+ \fRefer to the Wii Operations\n
-	+ Manual for details.
-    25	= An error occurred while\n
-	+ accessing Wii system memory.\n
-	+ \fRefer to the Wii Operations\n
-	+ Manual for details.
-    26	= The save data cannot be read.\n
-	+ You cannot start the game.\n
-	+ Please contact a Nintendo Service\n
-	+ Center. For more information,\n
-	+ see the Wii Operations Manual.\n
-	+ The error code is %03d%03d.\n
+    24	= Wiiほんたい ほぞんメモリの\n
+	+ かきこみ/よみだしが\n
+	+ できませんでした。\n
+	+ \fくわしくは Wiiほんたいの\n
+	+ とりあつかい せつめいしょを\n
+	+ およみください。
+    25	= Wiiほんたい ほぞんメモリの\n
+	+ かきこみ/よみだしちゅうに\n
+	+ エラーが はっせいしました。\n
+	+ \fくわしくは Wiiほんたいの\n
+	+ とりあつかい せつめいしょを\n
+	+ およみください。
+    26	= セーブデータを よめないため\n
+	+ ゲームを はじめることが できません。\n
+	+ Wiiほんたいの とりあつかい せつめいしょに\n
+	+ かかれてある Wiiサポートセンターに\n
+	+ おといあわせください。\n
+	+ エラーコードは %03d%03d です。\n
 	+ \n
-	+ Please press and hold the\n
-	+ POWER Button for at least\n
-	+ four seconds to turn the\n
-	+ console off.	
-    27	= There is a problem with the\n
-	+ Wii system memory, so\n
-	+ WiiConnect24 cannot be\n
-	+ used.
-    28	= To use WiiConnect24, a\n
-	+ system update is required.\n
-	+ Refer to the Wii Operations\n
-	+ Manual for details.
-    29	= WiiConnect24 cannot be\n
-	+ used because an error has\n
-	+ occurred. Reset and try\n
-	+ again.
-    2a	= WiiConnect24 is\n
-	+ temporarily unavailable.\n
-	+ Please try again later.
-    2b	= The WiiConnect24 setting\n
-	+ is not turned on. Please\n
-	+ check the settings under\n
-	+ Wii Options. Refer to the\n
-	+ Wii Operations Manual for\n
-	+ details.
-    2c	= An Internet connection\n
-	+ cannot be established, so\n
-	+ WiiConnect24 cannot be\n
-	+ used. Check the Internet\n
-	+ settings and connection.\n
-	+ Refer to the Wii Operations\n
-	+ Manual for details.
-    2d	= WiiConnect24 is\n
-	+ temporarily unavailable.\n
-	+ Please try again later.
-    2e	== WiiConnect24 is\n
-	+ temporarily unavailable.\n
-	+ Please try again later.
-    2f	= There is a problem with the\n
-	+ Wii system memory, so\n
-	+ WiiConnect24 cannot be\n
-	+ used.
-    30	= WiiConnect24 cannot be\n
-	+ used because an error has\n
-	+ occurred. Reset and try\n
-	+ again.\n
+	+ Wiiほんたいの でんげんボタンを\n
+	+ 4びょういじょう おして\n
+	+ でんげんを おきりください。
+    27	= Wiiほんたい ほぞんメモリに\n
+	+ もんだいが あるため、\n
+	+ WiiConnect24を しようできません。
+    28	= WiiConnect24の きのうを\n
+	+ しようするためには、\n
+	+ ほんたいの こうしんが ひつようです。\n
+	+ \fくわしくは、ほんたいの とりあつかい\n
+	+ せつめいしょを およみください。
+    29	= エラーが はっせいしたため、\n
+	+ WiiConnect24の きのうを\n
+	+ しようできません。\n
+	+ \fリセットして やりなおしてください。
+    2a	= WiiConnect24の サービスが\n
+	+ いちじてきに りようできません。\n
+	+ \fしばらく たってから もういちど\n
+	+ おためしください。
+    2b	= WiiConnect24の せっていが\n
+	+ ONに なっていません。\n
+	+ Wiiオプションで せっていを\n
+	+ かくにんしてください。\n
+	+ \fくわしくは、ほんたいの とりあつかい\n
+	+ せつめいしょを およみください。
+    2c	= インターネットに\n
+	+ せつぞくできないため、\n
+	+ WiiConnect24が しようできません。\n
+	+ \fインターネットの せっていから\n
+	+ せつぞくさきを ごかくにんください。\n
+	+ \fくわしくは、ほんたいの とりあつかい\n
+	+ せつめいしょを およみください。
+    2d	= WiiConnect24の サービスが\n
+	+ いちじてきに りようできません。\n
+	+ \fしばらく たってから もういちど\n
+	+ おためしください。
+    2e	= WiiConnect24の サービスが\n
+	+ いちじてきに りようできません。\n
+	+ \fしばらく たってから もういちど\n
+	+ おためしください。
+    2f	= Wiiほんたい ほぞんメモリに\n
+	+ もんだいが あるため、\n
+	+ WiiConnect24を しようできません。
+    30	= エラーが はっせいしたため、\n
+	+ WiiConnect24の きのうを\n
+	+ しようできません。\n
+	+ \fリセットして やりなおしてください。
     31	/
-    32	= Use of network features has\n
-	+ been restricted.\n
-	+ \n
-	+ \n
-	+ Please check the settings\n
-	+ for Parental Controls under\n
-	+ Wii Options.
+    32	= ネットワークきのうの りようが\n
+	+ せいげんされています。\n
+	+ \fWiiオプションの\n
+	+ ペアレンタル コントロールの\n
+	+ せっていを かくにんしてください。
     33	/
     34	/
     35	/
     36	/
-    37	= Yes
-    38	= No
+    37	= はい
+    38	= いいえ
     39	/
-    3a	= Return
+    3a	= もどる
     3b	/
     3c	/
     3d	/
-    3e	= Return to the Wii Menu.
+    3e	= Wiiメニューへ
     3f	/
     40	/
     41	/
@@ -220,10 +235,11 @@
     47	/
     48	/
     49	/
-    4a	= Unable to load Mii Channel data.
-	+ Please access the Mii Channel
-	+ and check Mii Channel data.
-    4b	= My Pokémon Ranch
+    4a	= にがおえチャンネルの セーブデータが\n
+	+ よみこめませんでした。\n
+	+ にがおえチャンネルで\n
+	+ かくにんしてください。
+    4b	= みんなのポケモンぼくじょう
     4c	/
     4d	/
     4e	/

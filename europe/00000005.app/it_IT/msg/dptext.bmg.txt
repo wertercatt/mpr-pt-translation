@@ -1,0 +1,353 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xd0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Ottenuto al L. $3$.
+     1	= $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Probabilmente ottenuto\n
+	+ al L. $3$.
+     2	= $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Arrivato al L. $3$.
+     3	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ottenuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo schiuso.
+     4	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ottenuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo forse schiuso lì.
+     5	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ricevuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo schiuso.
+     6	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ricevuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo forse schiuso lì.
+     7	= $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Ottenuto in un'occasione\n
+	+ speciale al L. $3$.
+     8	= $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Probabilmente ottenuto\n
+	+ in un'occasione\n
+	+ speciale al L. $3$.
+     9	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ottenuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo schiuso.\n
+	+ Occasione speciale.
+     a	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ottenuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo forse schiuso lì.\n
+	+ Occasione speciale.
+     b	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo arrivato.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo schiuso.\n
+	+ Occasione speciale.
+     c	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo arrivato.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo forse schiuso lì.\n
+	+ Occasione speciale.
+     d	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ottenuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo schiuso.\n
+	+ Occasione speciale.
+     e	= $7$ $6$ 20$5$\n
+	+ $8$\n
+	+ Uovo ottenuto.\n
+	+ $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Uovo forse schiuso lì.\n
+	+ Occasione speciale.
+     f	= $2$ $1$ 20$0$\n
+	+ $4$\n
+	+ Arrivato al L. $3$.
+    10	= $7$ $6$ 20$5$\n
+	+ Uovo di Pokémon\n
+	+ misterioso ricevuto da:\n
+	+ $8$.
+    11	= $7$ $6$ 20$5$\n
+	+ Uovo di Pokémon\n
+	+ misterioso ottenuto a:\n
+	+ $8$.
+    12	= $7$ $6$ 20$5$\n
+	+ Uovo di Pokémon molto\n
+	+ misterioso ottenuto a:\n
+	+ $8$.
+    13	= $7$ $6$ 20$5$\n
+	+ Uovo di Pokémon molto\n
+	+ misterioso arrivato da:\n
+	+ $8$.
+    14	= Zona Misteriosa
+    15	= Duefoglie
+    16	= Sabbiafine
+    17	= Giardinfiorito
+    18	= Flemminia
+    19	= Memoride
+    1a	= Giubilopoli
+    1b	= Canalipoli
+    1c	= Mineropoli
+    1d	= Evopoli
+    1e	= Cuoripoli
+    1f	= Pratopoli
+    20	= Rupepoli
+    21	= Arenipoli
+    22	= Nevepoli
+    23	= Lega Pokémon
+    24	= Percorso 201
+    25	= Percorso 202
+    26	= Percorso 203
+    27	= Percorso 204
+    28	= Percorso 205
+    29	= Percorso 206
+    2a	= Percorso 207
+    2b	= Percorso 208
+    2c	= Percorso 209
+    2d	= Percorso 210
+    2e	= Percorso 211
+    2f	= Percorso 212
+    30	= Percorso 213
+    31	= Percorso 214
+    32	= Percorso 215
+    33	= Percorso 216
+    34	= Percorso 217
+    35	= Percorso 218
+    36	= Percorso 219
+    37	= Percorso 220
+    38	= Percorso 221
+    39	= Percorso 222
+    3a	= Percorso 223
+    3b	= Percorso 224
+    3c	= Percorso 225
+    3d	= Percorso 226
+    3e	= Percorso 227
+    3f	= Percorso 228
+    40	= Percorso 229
+    41	= Percorso 230
+    42	= Cava Mineropoli
+    43	= Impianto Turbine
+    44	= Bosco Evopoli
+    45	= Fonderie Fuego
+    46	= Monte Corona
+    47	= Vetta Lancia
+    48	= Gran Palude
+    49	= Rovine Flemminia
+    4a	= Via Vittoria
+    4b	= Parco Amici
+    4c	= Parco Concordia
+    4d	= Cammino Roccioso
+    4e	= Prato Fiorito
+    4f	= Varco Mineropoli
+    50	= Isola Lunapiena
+    51	= Fonte Saluto
+    52	= Grotta Ritorno
+    53	= Paradiso Fiore
+    54	= Tempio Nevepoli
+    55	= Grotta Labirinto
+    56	= Grotta Rovine
+    57	= Tunnel Rovine
+    58	= Giardino Trofeo
+    59	= Isola Ferrosa
+    5a	= Antico Château
+    5b	= Sede Galassia
+    5c	= Riva Verità
+    5d	= Riva Valore
+    5e	= Riva Arguzia
+    5f	= Sentiero Fonte
+    60	= Lago Verità
+    61	= Lago Valore
+    62	= Lago Arguzia
+    63	= Isola Lunanuova
+    64	= Torre Lotta
+    65	= Area Sfida
+    66	= Area Provviste
+    67	= Area Svago
+    68	= Monte Ostile
+    69	= Via Frangimare
+    6a	= Spazio Origine
+    6b	= Grotta Verità
+    6c	= Grotta Valore
+    6d	= Grotta Arguzia
+    6e	= Giubilo TV
+    6f	= PokéKron SpA
+    70	= GTS
+    71	= Sc. Allenatori
+    72	= Museo Minerario
+    73	= Fiorista
+    74	= Negozio Bici
+    75	= Arena Virtù
+    76	= Casa Poffin
+    77	= Edificio Culture
+    78	= Pensione Pokémon
+    79	= C. C. Rupepoli
+    7a	= Casinò
+    7b	= Bibl. Canalipoli
+    7c	= Faro Panorama
+    7d	= Merc. Arenipoli
+    7e	= Villa Pokémon
+    7f	= Casa Impronta
+    80	= Caffè
+    81	= Grande Lago
+    82	= Ristorante
+    83	= Giardino Lotta
+    84	= Luogo grazioso
+    85	= Pokémon Ranger
+    86	= Luogo Remoto
+    87	= Film Pokémon
+    88	= Film Pokémon 06
+    89	= Film Pokémon 07
+    8a	= Film Pokémon 08
+    8b	= Film Pokémon 09
+    8c	= Film Pokémon 10
+    8d	= Film Pokémon 11
+    8e	= Film Pokémon 12
+    8f	= Film Pokémon 13
+    90	= Film Pokémon 14
+    91	= Film Pokémon 15
+    92	= Film Pokémon 16
+    93	= Cartone Pokémon
+    94	= Space World
+    95	= Space World 06
+    96	= Space World 07
+    97	= Space World 08
+    98	= Space World 09
+    99	= Space World 10
+    9a	= Space World 11
+    9b	= Space World 12
+    9c	= Space World 13
+    9d	= Space World 14
+    9e	= Space World 15
+    9f	= Space World 16
+    a0	= Pokémon Festa
+    a1	= Pokémon Festa 06
+    a2	= Pokémon Festa 07
+    a3	= Pokémon Festa 08
+    a4	= Pokémon Festa 09
+    a5	= Pokémon Festa 10
+    a6	= Pokémon Festa 11
+    a7	= Pokémon Festa 12
+    a8	= Pokémon Festa 13
+    a9	= Pokémon Festa 14
+    aa	= Pokémon Festa 15
+    ab	= Pokémon Festa 16
+    ac	= POKéPARK
+    ad	= POKéPARK 06
+    ae	= POKéPARK 07
+    af	= POKéPARK 08
+    b0	= POKéPARK 09
+    b1	= POKéPARK 10
+    b2	= POKéPARK 11
+    b3	= POKéPARK 12
+    b4	= POKéPARK 13
+    b5	= POKéPARK 14
+    b6	= POKéPARK 15
+    b7	= POKéPARK 16
+    b8	= Centro Pokémon
+    b9	= CP Tokyo
+    ba	= CP Osaka
+    bb	= CP Fukuoka
+    bc	= CP Nagoya
+    bd	= CP Sapporo
+    be	= CP Yokohama
+    bf	= Nintendo World
+    c0	= Evento Pokémon
+    c1	= Even. Pokémon 06
+    c2	= Even. Pokémon 07
+    c3	= Even. Pokémon 08
+    c4	= Even. Pokémon 09
+    c5	= Even. Pokémon 10
+    c6	= Even. Pokémon 11
+    c7	= Even. Pokémon 12
+    c8	= Even. Pokémon 13
+    c9	= Even. Pokémon 14
+    ca	= Even. Pokémon 15
+    cb	= Even. Pokémon 16
+    cc	= Evento Wi-Fi
+    cd	= Dono Wi-Fi
+    ce	= Pokémon Fan Club
+    cf	= Luogo Evento
+    d0	= Concerto
+    d1	= Coppia Pensione
+    d2	= Scambio in link
+    d3	= Scambio in link
+    d4	= Kanto
+    d5	= Johto
+    d6	= Hoenn
+    d7	= Sinnoh
+    d8	= ----------
+    d9	= Terra Lontana
+    da	= Viaggiatore
+    db	= Marisio
+

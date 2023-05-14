@@ -1,0 +1,173 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0x70000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= -
+     1	= Tanfo
+     2	= Piovischio
+     3	= Acceleratore
+     4	= Lottascudo
+     5	= Vigore
+     6	= Umidità
+     7	= Scioltezza
+     8	= Sabbiavelo
+     9	= Statico
+     a	= Assorbivolt
+     b	= Assorbacqua
+     c	= Indifferenza
+     d	= Antimeteo
+     e	= Insettocchi
+     f	= Insonnia
+    10	= Cambiacolore
+    11	= Immunità
+    12	= Fuocardore
+    13	= Polvoscudo
+    14	= Mente Locale
+    15	= Ventose
+    16	= Prepotenza
+    17	= Pedinombra
+    18	= Cartavetro
+    19	= Magidifesa
+    1a	= Levitazione
+    1b	= Spargispora
+    1c	= Sincronismo
+    1d	= Corpochiaro
+    1e	= Alternacura
+    1f	= Parafulmine
+    20	= Leggiadro
+    21	= Nuotovelox
+    22	= Clorofilla
+    23	= Risplendi
+    24	= Traccia
+    25	= Macroforza
+    26	= Velenopunto
+    27	= Fuocodentro
+    28	= Magmascudo
+    29	= Idrovelo
+    2a	= Magnetismo
+    2b	= Antisuono
+    2c	= Copripioggia
+    2d	= Sabbiafiume
+    2e	= Pressione
+    2f	= Grassospesso
+    30	= Sveglialampo
+    31	= Corpodifuoco
+    32	= Fugafacile
+    33	= Sguardofermo
+    34	= Ipertaglio
+    35	= Raccolta
+    36	= Pigrone
+    37	= Tuttafretta
+    38	= Incantevole
+    39	= Più
+    3a	= Meno
+    3b	= Previsioni
+    3c	= Antifurto
+    3d	= Muta
+    3e	= Dentistretti
+    3f	= Pelledura
+    40	= Melma
+    41	= Erbaiuto
+    42	= Aiutofuoco
+    43	= Acquaiuto
+    44	= Aiutinsetto
+    45	= Testadura
+    46	= Siccità
+    47	= Trappoarena
+    48	= Spiritovivo
+    49	= Fumochiaro
+    4a	= Forzapura
+    4b	= Guscioscudo
+    4c	= Riparo
+    4d	= Intricopiedi
+    4e	= Elettrorapid
+    4f	= Antagonismo
+    50	= Cuordeciso
+    51	= Mantelneve
+    52	= Voracità
+    53	= Grancollera
+    54	= Agiltecnica
+    55	= Antifuoco
+    56	= Disinvoltura
+    57	= Pellearsa
+    58	= Download
+    59	= Ferropugno
+    5a	= Velencura
+    5b	= Adattabilità
+    5c	= Abillegame
+    5d	= Idratazione
+    5e	= Solarpotere
+    5f	= Piedisvelti
+    60	= Normalità
+    61	= Cecchino
+    62	= Magicscudo
+    63	= Nullodifesa
+    64	= Rallentatore
+    65	= Tecnico
+    66	= Fogliamanto
+    67	= Impaccio
+    68	= Rompiforma
+    69	= Supersorte
+    6a	= Scoppio
+    6b	= Presagio
+    6c	= Premonizione
+    6d	= Imprudenza
+    6e	= Lentifumé
+    6f	= Filtro
+    70	= Lentoinizio
+    71	= Nervisaldi
+    72	= Acquascolo
+    73	= Corpogelo
+    74	= Solidroccia
+    75	= Scendineve
+    76	= Mielincetta
+    77	= Indagine
+    78	= Temerarietà
+    79	= Multitipo
+    7a	= Regalfiore
+    7b	= Sogniamari
+

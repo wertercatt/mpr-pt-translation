@@ -1,0 +1,1221 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =    0xa0000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= 
+     1	= ¡Hola! Acabas de llegar a\n
+	+ My Pokémon Ranch.
+     2	= Encantada de conocerte. Me\n
+	+ llamo Eulalia y soy la creadora\n
+	+ de My Pokémon Ranch. ¡Espero\n
+	+ que lo pases bien aquí!
+     3	= My Pokémon Ranch se compone\n
+	+ de ranchos donde las personas\n
+	+ y los Pokémon viven juntos, se\n
+	+ relajan y se divierten.
+     4	= La mejor manera de entender\n
+	+ My Pokémon Ranch es echando\n
+	+ un vistazo...
+     5	= Abre bien los ojos, en un\n
+	+ momento voy a ir para allá...
+     6	= Prepárate para ver algo genial.
+     7	= Tres...
+     8	= Dos...
+     9	= Uno...
+     a	= ¡Vamos allá!
+     b	= ¡Ya hemos llegado!\n
+	+ Esto es My Pokémon Ranch.
+     c	= Este es el aspecto que tenemos\n
+	+ las personas y los Pokémon\n
+	+ aquí. ¿No te parece adorable?
+     d	= My Pokémon Ranch es un lugar\n
+	+ donde puedes tener un montón\n
+	+ de Pokémon.
+     e	= Por supuesto, no solo los\n
+	+ tenemos por ahí como si\n
+	+ fuesen trastos...
+     f	= También podemos ver lo que\n
+	+ hacen en su vida cotidiana.
+    10	= ¡Lo que realmente me gustaría\n
+	+ es llenar el rancho con muchos\n
+	+ Pokémon!
+    11	= El sueño de mi vida es vivir\n
+	+ rodeada de Pokémon...
+    12	= Ah... Un rancho abarrotado de\n
+	+ Pokémon... Sería fantástico...\n
+	+ Sería fabuloso... Fantabuloso...
+    13	= ¡Ah...!
+    14	= Huy, perdona. Ya estaba yo\n
+	+ pensando en mis cosas...
+    15	= De momento, solo tengo unos\n
+	+ cuantos Pokémon...
+    16	= Pero pretendo ponerle remedio\n
+	+ muy pronto a esta situación.
+    17	= Mira, ahora que lo pienso...\n
+	+ ¿Te puedo pedir un favor?
+    18	= Me gustaría que me ayudases a\n
+	+ llenar este rancho de Pokémon.
+    19	= ¿Puedo contar contigo?
+    1a	= ¿Eh?\n
+	+ Esto... No te he oído bien.\n
+	+ ¡Te preguntaré de nuevo!
+    1b	= ¡Genial! Sabía que podía\n
+	+ contar contigo... ¡Tienes cara\n
+	+ de ser buena persona!
+    1c	= Lo primero es lo primero...\n
+	+ Antes de nada, ¡vamos a ver\n
+	+ el rancho!
+    1d	= Elige los Miis que te gustaría\n
+	+ traer al rancho. No te cortes.\n
+	+ Siempre digo que cuantos más\n
+	+ seamos, mejor.
+    1e	= Bueno, ahora voy a explicarte\n
+	+ cómo pretendo llenar este\n
+	+ rancho de Pokémon.
+    1f	= A partir de hoy, voy a traer un\n
+	+ Pokémon nuevo todos los días\n
+	+ que nos veamos.
+    20	= ¡Y me gustaría que cuidases\n
+	+ bien de ellos!
+    21	= Así que, si me visitas a diario,\n
+	+ ¡recibirás un Pokémon nuevo\n
+	+ cada día!
+    22	= Con tu ayuda, podré llenar\n
+	+ de Pokémon este rancho.
+    23	= También te puedes traer los\n
+	+ Pokémon que hayas capturado\n
+	+ en las Ediciones Diamante o\n
+	+ Perla de Pokémon.
+    24	= ¡Así podremos reunir Pokémon\n
+	+ mucho más rápido!
+    25	= Vamos, que si tienes algún\n
+	+ Pokémon, ¡espero que lo\n
+	+ traigas aquí!
+    26	= Esto... ¿tienes las Ediciones\n
+	+ Diamante o Perla de Pokémon?
+    27	= ¿Sí? ¡Estupendo!\n
+	+ ¡Así podrás traer al rancho\n
+	+ todos los Pokémon que tengas!
+    28	= ¡Eso nos facilitará la tarea de\n
+	+ traer Pokémon al rancho!
+    29	= ¡Si tienes Pokémon, no te\n
+	+ olvides de traértelos!
+    2a	= Ah, qué lástima...\n
+	+ Es una pena... Eso nos ayudaría\n
+	+ bastante a aumentar el número\n
+	+ de Pokémon del rancho.
+    2b	= Bueno, no pasa nada...\n
+	+ De todas formas, ¡yo pienso\n
+	+ traer un Pokémon cada día!\n
+	+ ¡Así iremos tirando!
+    2c	= ¿Has entendido mi plan para\n
+	+ reunir mogollón de Pokémon?
+    2d	= Como hoy es el primer día,\n
+	+ ¡he traído seis Pokémon al\n
+	+ rancho en vez de uno!
+    2e	= ¡Vamos a inaugurar el rancho\n
+	+ con estos seis Pokémon!
+    2f	= A partir de mañana, el día\n
+	+ %ls, traeré un\n
+	+ Pokémon cada día que nos\n
+	+ veamos. ¿No es genial?
+    30	= Si quieres saber más, pulsa el\n
+	+ botón "?" de la parte inferior\n
+	+ izquierda de la pantalla.
+    31	= Según aumente el número\n
+	+ de Pokémon, notarás que el\n
+	+ rancho se vuelve cada vez más\n
+	+ interesante y animado.
+    32	= ¡Diviértete observando a los\n
+	+ Pokémon del rancho!
+    33	= ¡Muchas gracias de nuevo por\n
+	+ echarme una mano!\n
+	+ ¡Manos a la obra!
+    34	= ¿Ya te vas?\n
+	+ ¡Gracias por tu visita!
+    35	= Antes de que te marches...\n
+	+ ¿Te puedo hacer una pregunta?
+    36	= ¿Qué clase de Pokémon te\n
+	+ gustaría que trajese al rancho\n
+	+ el %ls?
+    37	= ¿Qué te parecería un Pokémon\n
+	+ %ls?
+    38	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon rojo?
+    39	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon azul?
+    3a	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon amarillo?
+    3b	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon verde?
+    3c	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon negro?
+    3d	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon marrón?
+    3e	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon morado?
+    3f	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon gris?
+    40	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon blanco?
+    41	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon rosa?
+    42	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon pequeño?
+    43	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon grande?
+    44	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon ligero?
+    45	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon pesado?
+    46	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon ígneo?
+    47	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon gélido?
+    48	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon terrorífico?
+    49	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon rapidísimo?
+    4a	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon redondo?
+    4b	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon volador?
+    4c	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon fuerte?
+    4d	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon enérgico?
+    4e	= ¿Quieres que la próxima vez\n
+	+ traiga un Pokémon paralizante?
+    4f	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon tranquilo?
+    50	= ¿Te gustaría que me trajese un\n
+	+ Pokémon despreocupado?
+    51	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon maloliente?
+    52	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon cantarín?
+    53	= ¿Te gustaría que la próxima vez\n
+	+ trajera un Pokémon aromático?
+    54	= Ah... ¿Y un Pokémon\n
+	+ %ls?
+    55	= ¿Y qué te parecería entonces\n
+	+ un Pokémon rojo?
+    56	= ¿Y qué te parecería entonces\n
+	+ un Pokémon azul?
+    57	= ¿Y qué te parecería entonces\n
+	+ un Pokémon amarillo?
+    58	= ¿Y qué te parecería entonces\n
+	+ un Pokémon verde?
+    59	= ¿Y qué te parecería entonces\n
+	+ un Pokémon negro?
+    5a	= ¿Y qué te parecería entonces\n
+	+ un Pokémon marrón?
+    5b	= ¿Y qué te parecería entonces\n
+	+ un Pokémon morado?
+    5c	= ¿Y qué te parecería entonces\n
+	+ un Pokémon gris?
+    5d	= ¿Y qué te parecería entonces\n
+	+ un Pokémon blanco?
+    5e	= ¿Y qué te parecería entonces\n
+	+ un Pokémon rosa?
+    5f	= ¿Y qué te parecería entonces\n
+	+ un Pokémon pequeño?
+    60	= ¿Y qué te parecería entonces\n
+	+ un Pokémon grande?
+    61	= ¿Y qué te parecería entonces\n
+	+ un Pokémon ligero?
+    62	= ¿Y qué te parecería entonces\n
+	+ un Pokémon pesado?
+    63	= ¿Y qué te parecería entonces\n
+	+ un Pokémon ígneo?
+    64	= ¿Y qué te parecería entonces\n
+	+ un Pokémon gélido?
+    65	= ¿Y qué te parecería entonces\n
+	+ un Pokémon terrorífico?
+    66	= ¿Y qué te parecería entonces\n
+	+ un Pokémon rapidísimo?
+    67	= ¿Y qué te parecería entonces\n
+	+ un Pokémon redondo?
+    68	= ¿Y qué te parecería entonces\n
+	+ un Pokémon volador?
+    69	= ¿Y qué te parecería entonces\n
+	+ un Pokémon fuerte?
+    6a	= ¿Y qué te parecería entonces\n
+	+ un Pokémon enérgico?
+    6b	= ¿Y qué te parecería entonces\n
+	+ un Pokémon paralizante?
+    6c	= ¿Y qué te parecería entonces\n
+	+ un Pokémon tranquilo?
+    6d	= ¿Y qué te parecería entonces\n
+	+ un Pokémon despreocupado?
+    6e	= ¿Y qué te parecería entonces\n
+	+ un Pokémon maloliente?
+    6f	= ¿Y qué te parecería entonces\n
+	+ un Pokémon cantarín?
+    70	= ¿Y qué te parecería entonces\n
+	+ un Pokémon aromático?
+    71	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ %ls!
+    72	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ rojo!
+    73	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ azul!
+    74	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ amarillo!
+    75	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ verde!
+    76	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ negro!
+    77	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ marrón!
+    78	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ morado!
+    79	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ gris!
+    7a	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ blanco!
+    7b	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ rosa!
+    7c	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ pequeño!
+    7d	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ grande!
+    7e	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ ligero!
+    7f	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ pesado!
+    80	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ ígneo!
+    81	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ gélido!
+    82	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ terrorífico!
+    83	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ rapidísimo!
+    84	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ redondo!
+    85	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ volador!
+    86	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ fuerte!
+    87	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ enérgico!
+    88	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ paralizante!
+    89	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ tranquilo!
+    8a	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ despreocupado!
+    8b	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ maloliente!
+    8c	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ cantarín!
+    8d	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ aromático!
+    8e	= ¡Vale, ya decido yo! ¡Creo que\n
+	+ me voy a traer un Pokémon\n
+	+ que me guste a mí!
+    8f	= Creo que ya sé cuál es el\n
+	+ Pokémon adecuado...
+    90	= ¡Apuesto a que tienes muchas\n
+	+ ganas de ver el Pokémon que\n
+	+ voy a traer!
+    91	= ¡Estupendo! ¡Nos vemos!
+    92	= ¡Qué bien! Hemos conseguido\n
+	+ traer %ls Pokémon al\n
+	+ rancho...
+    93	= 
+    94	= ¡Hay que ampliar este rancho!\n
+	+ El %ls concluirán las\n
+	+ obras, ¡así que habrá que estar\n
+	+ pendientes!
+    95	= Vaya, ¡parece que ya tenemos\n
+	+ %ls Pokémon en el rancho!
+    96	= 
+    97	= ¡Parece que tendremos que\n
+	+ ampliar el rancho aún más!
+    98	= La construcción debería\n
+	+ finalizar el %ls,\n
+	+ ¡tenemos que estar pendientes!
+    99	= El rancho se nos ha quedado\n
+	+ algo pequeño, pero vamos a\n
+	+ remediar este problema el día\n
+	+ %ls. ¡Aguantemos!
+    9a	= ¡He traído otro Pokémon!
+    9b	= Para celebrar la ampliación\n
+	+ del rancho, ¡he traído más\n
+	+ Pokémon que de costumbre!
+    9c	= Esta vez no me he traído al\n
+	+ rancho ningún Pokémon.
+    9d	= Hasta ahora he traído %ls\n
+	+ Pokémon.
+    9e	= 
+    9f	= Estos son mis queridísimos\n
+	+ Pokémon. ¡Cuídamelos bien!
+    a0	= Este Pokémon es muy especial\n
+	+ para mí. Lo cuidarás bien,\n
+	+ ¿a que sí?
+    a1	= Aunque no podamos seguir\n
+	+ ampliando el rancho...
+    a2	= ¡Espero que sigas cuidando a\n
+	+ los Pokémon!
+    a3	= En cuanto consigamos %ls\n
+	+ Pokémon, ¡ampliaremos el\n
+	+ rancho!
+    a4	= 
+    a5	= ¡Llenemos el rancho con más\n
+	+ Pokémon!
+    a6	= ¡Consigamos cientos de\n
+	+ Pokémon! ¡Y ampliemos el\n
+	+ rancho también!
+    a7	= En cuanto consigamos reunir\n
+	+ %ls Pokémon, ¡vamos a\n
+	+ ampliar el rancho!
+    a8	= 
+    a9	= Hum...
+    aa	= Parece que te has habituado\n
+	+ muy bien a la vida en el rancho.
+    ab	= Usa el modo libre cuando\n
+	+ quieras echar un vistazo por\n
+	+ el rancho.\n
+	+ ¡Lo encontrarás muy útil!
+    ac	= ¡Ahora puedes usar el\n
+	+ modo libre!
+    ad	= ¡Tengo noticias estupendas!\n
+	+ A partir de ahora, ¡el rancho\n
+	+ recibirá una Caja de Juegos\n
+	+ cada día!
+    ae	= En el interior de cada Caja de\n
+	+ Juegos hay un juguete con el\n
+	+ que podrán jugar tus Pokémon.
+    af	= ¡Abrirlas es divertidísimo!\n
+	+ Aparecerán por todo el rancho,\n
+	+ así que usa el modo libre para\n
+	+ buscarlas.
+    b0	= ¿Qué? ¿Que cómo se abren?\n
+	+ Vaya... Me temo que no lo sé...
+    b1	= ¿Por qué no pruebas a hacer\n
+	+ cosas distintas en el modo\n
+	+ libre?
+    b2	= El número de Pokémon del\n
+	+ rancho ha aumentado bastante,\n
+	+ ¿verdad?
+    b3	= ¡No va a ser fácil controlar a\n
+	+ todos estos Pokémon ahora\n
+	+ que hay tantos!
+    b4	= No te olvides de probar la\n
+	+ función Favoritos.
+    b5	= ¡Ya puedes usar la función\n
+	+ Favoritos!
+    b6	= Además, de hoy en adelante,\n
+	+ ¡cada día nos llegarán dos\n
+	+ Cajas de Juegos nuevas!
+    b7	= ¡Qué emoción!...
+    b8	= Por cierto, ¡ahora puedes traer\n
+	+ hasta 20 Miis al rancho!
+    b9	= No puedes traer más de 20 Miis\n
+	+ al rancho. Pero debería ser\n
+	+ más que suficiente, ¿no?
+    ba	= ¡Haz muchos Miis y tráetelos al\n
+	+ rancho!
+    bb	= たくさん いたほうが たのしいし、\n
+	+ ぼくじょうの しごとも らくだしね。
+    bc	= Además, ¡a partir de ahora\n
+	+ vamos a recibir tres Cajas de\n
+	+ Juegos cada día!
+    bd	= ¡Lo que nos vamos a divertir!
+    be	= Seguro que pensabas que las\n
+	+ cosas no podían ir mejor...\n
+	+ ¡Pues he traído un Pokémon\n
+	+ muy especial!
+    bf	= PHIONE es un Pokémon muy\n
+	+ especial que sale de un\n
+	+ huevo encontrado junto a\n
+	+ MANAPHY y un Pokémon afín.
+    c0	= 「ときわたり」という じかんを こえる ちからを\n
+	+ もっているという ウワサのある、\n
+	+ ものすごく めずらしい ポケモンだよ。
+    c1	= Se instalará en el rancho,\n
+	+ así que pórtate especialmente\n
+	+ bien, ¿vale?
+    c2	= Casi se me olvida...\n
+	+ Desde hoy, ¡recibiremos cuatro\n
+	+ Cajas de Juegos cada día!
+    c3	= ¿No es fantástico? Todo está\n
+	+ saliendo a pedir de boca.
+    c4	= ¡Ahora pueden vivir hasta 1000\n
+	+ Pokémon en el rancho!\n
+	+ ¿Puedes creerlo?
+    c5	= ¡Enhorabuena!
+    c6	= El rancho seguirá ampliándose\n
+	+ conforme suba de nivel.
+    c7	= ¡Ahora, trataremos de llenarlo\n
+	+ con 1000 Pokémon!
+    c8	= Otra cosa...\n
+	+ Desde hoy, ¡recibiremos cinco\n
+	+ Cajas de Juegos cada día!\n
+	+ ¡Qué bien!
+    c9	= Y eso no es todo, ahora hay una\n
+	+ mayor variedad de juguetes en\n
+	+ las cajas.
+    ca	= ¡Hasta podrías encontrar el\n
+	+ misterioso juguete que permite\n
+	+ que los Pokémon dibujen!
+    cb	= ¡Hasta me mareo de la ilusión!
+    cc	= Ah, sí, y también se ha\n
+	+ renovado el establo para\n
+	+ que sea mucho más cómodo.
+    cd	= Cuando el rancho esté lleno,\n
+	+ haré que mis Pokémon se\n
+	+ queden en el establo.
+    ce	= Así no tendrás problemas para\n
+	+ tener 1000 Pokémon. Si vas a\n
+	+ traer muchos, es esencial tener\n
+	+ espacio y no hacinarlos.
+    cf	= No te preocupes por mis\n
+	+ Pokémon. ¡Sigue trayendo\n
+	+ todos los que quieras!
+    d0	= ¡Genial!\n
+	+ ¡El rancho ha alcanzado el nivel\n
+	+ máximo! ¡Felicidades!
+    d1	= Mi sueño ha sido desde siempre\n
+	+ tener un rancho lleno hasta\n
+	+ arriba de Pokémon...
+    d2	= Casi no puedo creérmelo...\n
+	+ ¡El rancho de mis sueños está\n
+	+ aquí mismo!
+    d3	= ¡Sabía que podía contar con\n
+	+ tu ayuda para levantar este\n
+	+ rancho!
+    d4	= Creo que voy a divertirme un\n
+	+ montón aquí...
+    d5	= Todos aquí juntitos, por\n
+	+ siempre jamás...
+    d6	= ¿Por qué no?...\n
+	+ Ja, ja...
+    d7	= Como hoy es un día muy\n
+	+ especial, ¡me he traído un\n
+	+ Pokémon realmente raro!
+    d8	= Este es MEW, un Pokémon del\n
+	+ que se dice que contiene el\n
+	+ código genético de todos los\n
+	+ demás Pokémon.
+    d9	= ねがいごとを かなえてくれる ちからを\n
+	+ もっているという ウワサなんだけど、\n
+	+ きみたちも ねがいごとを してみたらどうかな?
+    da	= Lo dejaré en el rancho, cuida\n
+	+ muchísimo de él, ¿vale?
+    db	= Ah, ya se me olvidaba...\n
+	+ Desde hoy, ¡recibiremos seis\n
+	+ Cajas de Juegos cada día!
+    dc	= ¡Qué ilusión!
+    dd	= Ah, ¿te he dicho ya que ha\n
+	+ terminado la ampliación del\n
+	+ rancho? ¡Ahora es más grande\n
+	+ que nunca!
+    de	= ¡Más sitio para los Pokémon!...
+    df	= ¡El rancho acaba de subir al\n
+	+ nivel %d!
+    e0	= ¡El rancho ha pasado del nivel\n
+	+ %d al nivel %d debido a\n
+	+ la gran cantidad de Pokémon\n
+	+ que tiene!
+    e1	= ¡El rancho se ha ampliado!
+    e2	= ¡El número de Pokémon que\n
+	+ puedes cuidar ha pasado de\n
+	+ %ls a %ls!
+    e3	= 
+    e4	= ¡El número de Miis que puedes\n
+	+ traer al rancho ha pasado de\n
+	+ %d a %d!
+    e5	= ¡Oye! ¡Qué bien!\n
+	+ ¡Sigue así!
+    e6	= ¡Ahora el rancho ya está mucho\n
+	+ más animado! ¡Muchas gracias!
+    e7	= Pokémon buscado:\n
+	+ %ls
+    e8	= Pokémon buscados:\n
+	+ %ls\n
+	+ %ls
+    e9	= Pokémon buscados:\n
+	+ %ls\n
+	+ %ls\n
+	+ %ls
+    ea	= A partir de ahora, si traes\n
+	+ Pokémon al rancho, me fijaré\n
+	+ para ver si es uno de los\n
+	+ Pokémon buscados.
+    eb	= Encontrarás pistas para\n
+	+ capturarlos en el tablón de\n
+	+ anuncios. Procura leerlo, ¿vale?
+    ec	= Si capturas un Pokémon\n
+	+ buscado, ¡no olvides traerlo!
+    ed	= Confío en que traerás los\n
+	+ Pokémon buscados al rancho.
+    ee	= En cuanto captures uno de los\n
+	+ Pokémon buscados, me lo\n
+	+ traerás al rancho, ¿verdad?
+    ef	= Ahora que lo pienso, acabas de\n
+	+ traer un %{},\n
+	+ ¿no?
+    f0	= Creo que %ls\n
+	+ buscaba uno de esos.
+    f1	= Creo que %ls\n
+	+ buscaba uno de esos.
+    f2	= Así que estaría bien que le\n
+	+ dieras consejos y trucos sobre\n
+	+ cómo atrapar uno.
+    f3	= Así que estaría bien que le\n
+	+ dieras consejos y trucos sobre\n
+	+ cómo atrapar uno.
+    f4	= También puedes ir a la Global\n
+	+ Trade Station (Estación de\n
+	+ Intercambio Global) para lograr\n
+	+ los Pokémon que te faltan.
+    f5	= ¡Buena suerte!
+    f6	= Encontrarás pistas para\n
+	+ capturarlos en el tablón de\n
+	+ anuncios. Procura leerlo, ¿vale?
+    f7	= Ahora que lo pienso,\n
+	+ ¿has capturado algún\n
+	+ Pokémon recientemente?
+    f8	= Me gustaría ver tu Pokédex...\n
+	+ ¿Por qué no conectas tu\n
+	+ consola Nintendo DS?
+    f9	= ¡Pásalo bien! ¡Nos vemos!
+    fa	= ¡Pásalo bien! ¡Nos vemos!
+    fb	= ¡Cuánto tiempo sin verte!\n
+	+ ¡¿Cuántos años han pasado?!\n
+	+ Por lo menos %d...
+    fc	= ¡Cuánto tiempo sin verte!\n
+	+ ¡¿Cuántos años han pasado?!\n
+	+ Por lo menos 1...
+    fd	= ¡Los Pokémon te han echado\n
+	+ muchísimo de menos!
+    fe	= ¡Cuánto tiempo sin verte!\n
+	+ ¡¿Cuántos meses han pasado?!\n
+	+ Si no me equivoco... %d.
+    ff	= ¡Cuánto tiempo sin verte!\n
+	+ ¡¿Cuántos meses han pasado?!\n
+	+ Si no me equivoco... 1.
+   100	= ¡Los Pokémon te han\n
+	+ echado mucho de menos!
+   101	= ¡Cuánto tiempo sin verte!\n
+	+ ¡¿Hace cuántas semanas que\n
+	+ no nos vemos?!\n
+	+ Si no me equivoco... %d.
+   102	= ¡Cuánto tiempo sin verte! \n
+	+ Hace como una semana que \n
+	+ no nos vemos, ¿no?
+   103	= ¡Parece que los Pokémon se\n
+	+ alegran de verte!
+   104	= ¿Qué tal?\n
+	+ ¡Gracias por venir de nuevo!
+   105	= ¡Hola!\n
+	+ Me alegra verte de nuevo.
+   106	= ¿Qué hay?\n
+	+ Espero que hoy nos lo pasemos\n
+	+ genial en el rancho.
+   107	= ¡Hemos llegado! ¡Aquí tiene\n
+	+ %1$ls el Rancho\n
+	+ %2$ls!
+   108	= ¡Diviértete muchísimo en el\n
+	+ Rancho %ls!
+   109	= Cuando quieras volver a casa,\n
+	+ apunta a la puerta que verás\n
+	+ en la parte superior izquierda\n
+	+ de la pantalla y pulsa \x{e042}.
+   10a	= Venga, ¡diviértete!
+   10b	= Tú tranqui y disfruta en el\n
+	+ Rancho %ls.
+   10c	= Cuando quieras volver a casa,\n
+	+ apunta a la puerta que verás\n
+	+ en la parte superior izquierda\n
+	+ de la pantalla y pulsa \x{e042}.
+   10d	= Pues venga, ¡a disfrutar!
+   10e	= Este es mi rancho... Es la niña\n
+	+ de mis ojos. Adelante, echa un\n
+	+ vistazo si quieres.
+   10f	= Cuando quieras volver a casa,\n
+	+ apunta a la puerta que verás\n
+	+ en la parte superior izquierda\n
+	+ de la pantalla y pulsa \x{e042}.
+   110	= ¡Vale, pásatelo bien!
+   111	= Este rancho es mi orgullo...\n
+	+ Tómate tu tiempo, mira por aquí\n
+	+ y por allá, y sobre todo...\n
+	+ ¡diviértete!
+   112	= Cuando quieras volver a casa,\n
+	+ apunta a la puerta que verás\n
+	+ en la parte superior izquierda\n
+	+ de la pantalla y pulsa \x{e042}.
+   113	= Bueno, ¡ya te dejo en paz!
+   114	= %2$ls ha venido\n
+	+ del Rancho %1$ls\n
+	+ a visitarnos.
+   115	= ¡Hola! He traído una foto del \n
+	+ Rancho %ls.
+   116	= ¡Hola!\n
+	+ Soy %2$ls, del\n
+	+ Rancho %1$ls.
+   117	= ¡Hola! ¡Me he traído una foto\n
+	+ del Rancho\n
+	+ %ls!
+   118	= ¡¿Qué tal?!\n
+	+ Soy %2$ls, del\n
+	+ Rancho %1$ls.
+   119	= Si tienes un rato, ¿por qué no\n
+	+ te vienes a ver el Rancho\n
+	+ %ls?
+   11a	= Genial, ¡entonces vamos al\n
+	+ Rancho %ls!
+   11b	= No importa. Pásate cuando\n
+	+ tengas un rato.
+   11c	= ¡Ya nos veremos!\n
+	+ ¡Hasta la vista!
+   11d	= ¿Te apetece venir al Rancho\n
+	+ %ls un rato?\n
+	+ A no ser que ya tengas planes...
+   11e	= Estupendo. ¡Vamos al\n
+	+ Rancho %ls!
+   11f	= No pasa nada.\n
+	+ En otra ocasión será.
+   120	= ¡Ya nos veremos!\n
+	+ ¡Chao!
+   121	= ¿Te apuntas?
+   122	= ¡Muchas gracias por visitar el\n
+	+ Rancho %ls!
+   123	= Vendré a verte otro día para\n
+	+ invitarte de nuevo. ¡Hasta otra!
+   124	= Gracias por todo.\n
+	+ ¡Cuídate!
+   125	= ¡Gracias por venir a visitar el\n
+	+ Rancho %ls!
+   126	= Te volveré a invitar otro día\n
+	+ de estos. ¡Hasta otra!
+   127	= Gracias de nuevo.\n
+	+ ¡Cuídate!
+   128	= ¡Es un placer conocerte!
+   129	= Así que este es el rancho que\n
+	+ tenéis Eulalia y tú.\n
+	+ ¡La verdad es que es un sitio\n
+	+ muy bonito!
+   12a	= Soy el miembro n.º %1$d del\n
+	+ Club Mírame. ¡Mi nombre es\n
+	+ %2$ls!
+   12b	= Hay dos cosas que debes\n
+	+ saber del Club Mírame...
+   12c	= ¡Regla número uno!\n
+	+ ¡Para construir un rancho hay\n
+	+ que ser perfeccionista!
+   12d	= ¡Regla número dos!\n
+	+ ¡Los ranchos son para irlos\n
+	+ enseñando a los demás!
+   12e	= Bueno, esas son las dos reglas\n
+	+ de nuestro club.
+   12f	= Para entender realmente lo que\n
+	+ quiero decir, ¡deberías venir a\n
+	+ echar un vistazo a mi rancho!
+   130	= ¿Quieres venir a verlo?
+   131	= ¡Venga! Anímate...
+   132	= ¡Me gustaría mostrarte las\n
+	+ ventajas del Club Mírame!
+   133	= ¡Excelente! ¡Pues en marcha!\n
+	+ ¡Venga, vamos a mi rancho\n
+	+ ahora mismo!
+   134	= Así que este es el rancho que\n
+	+ tenéis Eulalia y tú. ¡Parece que\n
+	+ la gente no bromeaba cuando\n
+	+ decía que era precioso!
+   135	= Soy el miembro n.º %1$d del\n
+	+ Club Mírame, y mi nombre es\n
+	+ %2$ls.
+   136	= Je, je, je...\n
+	+ Seguro que no sabes cuál es\n
+	+ mi Pokémon favorito.
+   137	= Si deseas saberlo... ¡ven a mi\n
+	+ rancho! ¿Qué te parece?
+   138	= ¡Ajá! ¡Sabía que te apuntarías!\n
+	+ Venga, vamos a mi rancho.
+   139	= Ya veo...\n
+	+ Contaba con tu visita.\n
+	+ Es una pena...
+   13a	= Bueno, ya vendré a invitarte\n
+	+ en otra ocasión. ¡Otra vez será!
+   13b	= ¡Cuídate!\n
+	+ ¡Hasta pronto!
+   13c	= Así que este es el rancho que\n
+	+ tenéis Eulalia y tú, ¿verdad?\n
+	+ ¡Pues era verdad lo que decían!\n
+	+ ¡Es maravilloso!
+   13d	= Soy el miembro n.º %1$d del\n
+	+ Club Mírame.\n
+	+ ¡Me llamo %2$ls!
+   13e	= ¡Ji, ji!\n
+	+ ¿A que no adivinas qué\n
+	+ Pokémon me obsesiona?
+   13f	= Si quieres saberlo, ¡pásate por\n
+	+ mi rancho! ¿Te parece bien?
+   140	= ¡Genial! ¡Qué alegría!\n
+	+ ¡Venga, vámonos a mi rancho!\n
+	+ ¡Vamos, vamos, vamos!
+   141	= Bueno, vale...\n
+	+ Tenía muchas ganas de que\n
+	+ lo vieras, pero como quieras...\n
+	+ Es una pena.
+   142	= Ya me pasaré a invitarte en otra\n
+	+ ocasión. Espero que la próxima\n
+	+ vez puedas venir.
+   143	= Bueno, ¡chao!\n
+	+ ¡Hasta pronto!
+   144	= ¡Muchas gracias por venir a ver\n
+	+ mi rancho!
+   145	= Vaya. ¡Cómo me alegra que\n
+	+ hayas podido venir a visitarme!
+   146	= ¡Sí! Ya verás cuando les hable\n
+	+ de ti a los demás miembros del\n
+	+ Club Mírame.
+   147	= Si te visitan otros miembros\n
+	+ del Club Mírame, ¡espero que\n
+	+ también vayas a visitar sus\n
+	+ ranchos! ¡No te cortes!
+   148	= ¡Que tengas un buen viaje\n
+	+ de vuelta!
+   149	= Gracias por venir a mi rancho.\n
+	+ ¿Y bien? ¿Qué te parece?\n
+	+ ¿Te impresiona?
+   14a	= Ya sabes, siempre puedes\n
+	+ pedirme consejo si necesitas\n
+	+ inspiración para tu rancho.
+   14b	= Si algún otro miembro del\n
+	+ Club Mírame visita tu rancho,\n
+	+ ¿por qué no le correspondes y\n
+	+ le devuelves la visita?
+   14c	= Muy bien... ¡Cuídate!
+   14d	= Gracias por venir a ver mi\n
+	+ rancho. ¿Qué te parece?\n
+	+ ¿Te ha gustado?
+   14e	= Si te apeteciera, no dudes\n
+	+ en pedirme consejo sobre\n
+	+ cómo mejorar tu rancho.
+   14f	= Si recibes algún visitante del\n
+	+ Club Mírame, no dejes de ir a\n
+	+ visitar sus ranchos.\n
+	+ ¡Seguro que se alegrarán!
+   150	= Bueno, ¡que tengas un\n
+	+ buen viaje de vuelta!
+   151	= ¡Mírame!
+   152	= %ls se\n
+	+ quedará en este rancho hasta\n
+	+ el %ls.
+   153	= %ls se\n
+	+ quedarán en este rancho hasta\n
+	+ el %ls.
+   154	= ¡Tienes visita!
+   155	= ¡Tienes visita!
+   156	= Al parecer, si llevas un\n
+	+ %ls, te lo\n
+	+ cambian por un\n
+	+ %ls.
+   157	= ¡Enviando %ls \n
+	+ a %ls!
+   158	= ¡Adiós, %ls!
+   159	= Cuida bien de\n
+	+ %{}, ¿vale?
+   15a	= ¿Eh? Oye... Pues parece que\n
+	+ %2${} estaba\n
+	+ buscando precisamente un\n
+	+ %1${}.
+   15b	= ¿Quieres intercambiar tu\n
+	+ %1${} y obtener\n
+	+ el %3${} de\n
+	+ %2${}?
+   15c	= El %2${} de\n
+	+ %1${} tiene este\n
+	+ aspecto.
+   15d	= Ah... Bueno, vale.\n
+	+ Pero %1${} tiene\n
+	+ un %2${} muy\n
+	+ bonito, ¿no es verdad?
+   15e	= ¡%ls\n
+	+ se ha alegrado muchísimo!\n
+	+ ¡Gracias por el intercambio!
+   15f	= Oye, ese %ls\n
+	+ que has traído... ¡Siempre he\n
+	+ querido tener uno así!
+   160	= ¿Qué me dices? ¿Lo cambias\n
+	+ por mi %ls?
+   161	= ¡Vaya! ¡Justo lo que buscaba!\n
+	+ ¡Un %ls!
+   162	= ¡Si quieres, cambiamos tu\n
+	+ %ls por mi\n
+	+ %ls!
+   163	= Mi %ls es así.
+   164	= Ya veo. Como quieras.\n
+	+ ¡Pero déjame jugar de vez\n
+	+ en cuando por aquí con tu\n
+	+ %ls!
+   165	= En realidad estoy intentando\n
+	+ capturar un %ls,\n
+	+ pero la cosa no va muy bien...
+   166	= Entonces, si capturas un\n
+	+ %ls...\n
+	+ ¿lo cambiarías por mi\n
+	+ %ls?
+   167	= No es un mal trato, ¿verdad?\n
+	+ Si logras un %ls,\n
+	+ ¡tráelo a mi rancho, por favor!
+   168	= ¡Gracias por el intercambio!\n
+	+ %{}, pásalo bien.
+   169	= Quiero volver a experimentar la\n
+	+ emoción que se siente al cuidar\n
+	+ un Pokémon por primera vez.\n
+	+ ¡Qué experiencia!
+   16a	= Por eso, ¡me gustaría conseguir\n
+	+ el huevo de un Pokémon\n
+	+ desconocido! ¡Seguro que me\n
+	+ llevo una grata sorpresa!
+   16b	= もし、%lsを みつけたら\n
+	+ この %lsと\n
+	+ こうかんして くれないかな?
+   16c	= Si por un casual encuentras un\n
+	+ huevo de Pokémon, ¿me lo\n
+	+ darías a cambio de mi querido\n
+	+ %ls?
+   16d	= ¿Qué me dices? Un buen trato,\n
+	+ ¿verdad? Si me consigues uno,\n
+	+ ¡tráemelo sin falta al rancho!
+   16e	= ¿Quieres intercambiar\n
+	+ Pokémon?
+   16f	= ¿Quieres intercambiar este\n
+	+ %{}?
+   170	= ¿Intercambias entonces este\n
+	+ %{}?
+   171	= ¿De verdad intercambias este\n
+	+ %{}?
+   172	= Este Pokémon tiene un objeto.\n
+	+ ¿De verdad lo intercambias?
+   173	= Oh... ¿Cancelamos el\n
+	+ intercambio entonces?
+   174	= %ls  %ls  Nv. %d\n
+	+ Nombre: %ls\n
+	+ Entrenador original: %ls\n
+	+ Entrenador: %ls\n
+	+ Marcas: %ls
+   175	= %ls  %ls  Nv. %d\n
+	+ Nombre: %ls\n
+	+ Entrenador original: %ls
+   176	= Huevo\n
+	+ Recibido: %ls\n
+	+ Entrenador: %ls\n
+	+ Marcas: %ls
+   177	= ¡Gracias por traer tus Pokémon\n
+	+ al rancho!
+   178	= Gracias a ti, ¡este rancho está\n
+	+ mucho más animado!
+   179	= Me gustaría que siguieras\n
+	+ capturando y trayendo más\n
+	+ Pokémon...
+   17a	= Eso sí, si vas a atrapar más,\n
+	+ ¿no crees que sería una buena\n
+	+ idea buscar alguno que no\n
+	+ tengas en tu Pokédex?
+   17b	= Veamos tu Pokédex...\n
+	+ Vistos: %d\n
+	+ Capturados: %d
+   17c	= 
+   17d	= ¡Asombroso! ¡Has capturado\n
+	+ todos y cada uno de los\n
+	+ Pokémon de la Pokédex!
+   17e	= Quería ayudarte a completar\n
+	+ tu Pokédex, ¡pero parece que\n
+	+ no hay nada en lo que pueda\n
+	+ ayudarte ya!
+   17f	= ¡Tienes grandes dotes de\n
+	+ entrenador! Hum... A lo mejor\n
+	+ me podrías echar una mano en\n
+	+ la captura de unos Pokémon.
+   180	= Veamos... ¿Cómo podría\n
+	+ ayudarte a completar tu\n
+	+ Pokédex?... Esto...
+   181	= ¡Ya sé!\n
+	+ ¿Por qué no intentas\n
+	+ capturar este Pokémon?
+   182	= Vale. Estaba pensando que\n
+	+ estaría bien que trajeras\n
+	+ algunos Pokémon distintos\n
+	+ al rancho.
+   183	= Has completado tu Pokédex,\n
+	+ pero no te importará que te\n
+	+ pida algún que otro favorcillo\n
+	+ de vez en cuando, ¿verdad?
+   184	= Veamos tu Pokédex...\n
+	+ Vistos: %d\n
+	+ Capturados: %d
+   185	= 
+   186	= ¡Así se hace! ¡Has capturado\n
+	+ todos y cada uno de los\n
+	+ Pokémon de la Pokédex!\n
+	+ ¡Genial!
+   187	= Ya que has completado tu\n
+	+ Pokédex, ¿puedo pedirte que\n
+	+ captures los Pokémon que más\n
+	+ me interesan?
+   188	= ¡Vaya!\n
+	+ ¡Al fin has completado\n
+	+ tu Pokédex! ¡Enhorabuena!
+   189	= ¡Vamos a seguir esforzándonos\n
+	+ hasta que logremos completar\n
+	+ tu Pokédex!
+   18a	= A ver qué ha pasado desde la\n
+	+ última vez...\n
+	+ Vistos: %d\n
+	+ Capturados: %d
+   18b	= 
+   18c	= Cada vez te queda menos\n
+	+ para completar tu Pokédex...\n
+	+ ¡Enhorabuena!
+   18d	= Muy bien... ¿Qué puedo hacer\n
+	+ para ayudarte a completar tu\n
+	+ Pokédex? Hum... Veamos...
+   18e	= ¡Ya lo tengo! ¿Qué te parecería\n
+	+ capturar este Pokémon?
+   18f	= rojo
+   190	= azul
+   191	= amarillo
+   192	= verde
+   193	= negro
+   194	= marrón
+   195	= morado
+   196	= gris
+   197	= blanco
+   198	= rosa
+   199	= pequeño
+   19a	= grande
+   19b	= ligero
+   19c	= pesado
+   19d	= ígneo
+   19e	= gélido
+   19f	= terrorífico
+   1a0	= rapidísimo
+   1a1	= redondo
+   1a2	= volador
+   1a3	= fuerte
+   1a4	= enérgico
+   1a5	= paralizante
+   1a6	= tranquilo
+   1a7	= despreocupado
+   1a8	= maloliente
+   1a9	= cantarín
+   1aa	= aromático
+   1ab	= mi favorito
+   1ac	= %ls se ha\n
+	+ marchado.
+   1ad	= %ls se han\n
+	+ marchado.
+   1ae	= Puedes capturar a BUNEARY en\n
+	+ el Bosque Vetusto.\n
+	+ \fEs tan blandito y tan mono...\n
+	+ ¿No te parece?\n
+	+ \fBUNEARY evoluciona cuando\n
+	+ se lleva bien con su entrenador.\n
+	+ ¡A ver si puedes caerle bien!
+   1af	= Este STARAVIA evolucionó a\n
+	+ partir de un STARLY que crié.\n
+	+ \fEs genial en los combates,\n
+	+ ¡y muy útil si le enseñas Vuelo!\n
+	+ ¡La de tiempo que te ahorras\n
+	+ para ir de un lado a otro!
+   1b0	= Puedes conseguir SHROOMISH\n
+	+ en el Gran Pantano\n
+	+ de Ciudad Pradera.\n
+	+ \fPuede aprender movimientos\n
+	+ muy útiles para atrapar\n
+	+ otros Pokémon.\n
+	+ \f¡Creo que este SHROOMISH \n
+	+ que he criado te ayudará a\n
+	+ atrapar a muchísimos Pokémon!
+   1b1	= Usando la Caña Buena en la\n
+	+ Ruta 205 atrapé este FINNEON.\n
+	+ \fSi evoluciona, ¡se convierte en\n
+	+ un Pokémon la mar de bonito!
+   1b2	= Capturé a PACHIRISU en la\n
+	+ Ruta 205.\n
+	+ \fTiene una colita mullidita y\n
+	+ dientecitos sobresalientes.\n
+	+ ¡Es de lo más adorable!
+   1b3	= Capturé a este PONYTA\n
+	+ en la Ruta 211.\n
+	+ \f¡Es una aportación excelente al\n
+	+ rancho, con esa cola de color\n
+	+ rojo carmín!
+   1b4	= Capturé a este SHELLOS en la\n
+	+ Ruta 213.\n
+	+ \fEl color de este Pokémon varía\n
+	+ según su hábitat.\n
+	+ \fDicen que hay SHELLOS de\n
+	+ color rosa en la Ruta 205...\n
+	+ ¿Por qué no buscas por allí?
+   1b5	= Capturé este CROAGUNK\n
+	+ en el Gran Pantano\n
+	+ de Ciudad Pradera.\n
+	+ \fEs muy descarado, pero tiene\n
+	+ una carita adorable.\n
+	+ \fPuede aprender varios\n
+	+ movimientos que resultan muy\n
+	+ útiles en los combates.
+   1b6	= Capturé a este SNOVER en la\n
+	+ Ruta 216.\n
+	+ \fEs un Pokémon realmente\n
+	+ amable y simpático.\n
+	+ \fSi lo cuidas, creo que al\n
+	+ evolucionar se convierte en un\n
+	+ Pokémon muy poderoso.
+   1b7	= Capturé a este PIKACHU en el\n
+	+ Jardín Trofeo.\n
+	+ \fEste Pokémon es un encanto,\n
+	+ ¡toda una monada!\n
+	+ \fSi llevas a PIKACHU en tu\n
+	+ equipo, podrás entrar en la\n
+	+ Plaza Amistad.
+   1b8	= Atrapé a este WAILMER con\n
+	+ una Supercaña en la Ruta 223.\n
+	+ \f¡He oído por ahí que cuando\n
+	+ evoluciona se vuelve enorme!
+   1b9	= Puedes capturar a MILTANK\n
+	+ si usas el Pokéradar\n
+	+ en la Ruta 209.\n
+	+ \f¿No crees que MILTANK es\n
+	+ justo lo que necesita el rancho?
+   1ba	= Puedes capturar a YANMA en\n
+	+ el Gran Pantano de Ciudad\n
+	+ Pradera.\n
+	+ \fPuede convertirse en un\n
+	+ Pokémon formidable al subir\n
+	+ de nivel tras aprender el\n
+	+ movimiento Poder Pasado.
+   1bb	= Atrapé a este LICKITUNG una\n
+	+ vez que aparecieron un montón\n
+	+ de ellos en el Lago Valor.\n
+	+ \fTiene una lengua larguísima,\n
+	+ ¡pero es un Pokémon adorable!
+   1bc	= He criado a este WYNAUT\n
+	+ desde que salió del cascarón.\n
+	+ \fUn Pokémon muy mono\n
+	+ al que da gusto mirarlo.\n
+	+ \fSi evoluciona, ¡se convierte en\n
+	+ un Pokémon interesantísimo!
+   1bd	= Capturé este EEVEE en el\n
+	+ Jardín Trofeo.\n
+	+ \fEEVEE es un Pokémon raro que\n
+	+ evoluciona de varias maneras.
+   1be	= Reviví a este AERODACTYL del\n
+	+ Ámbar Viejo que conseguí en el\n
+	+ Subsuelo.\n
+	+ \f¡Es un Pokémon de la era\n
+	+ prehistórica!
+   1bf	= Conseguí este VULPIX en la\n
+	+ Ruta 209.\n
+	+ \fEste Pokémon no aparece\n
+	+ a menudo, ¡así que no dejes de\n
+	+ enseñárselo a tus amigos si\n
+	+ consigues uno!
+   1c0	= Capturé este TANGELA\n
+	+ en el Parque Compi.\n
+	+ \f¡Es un Pokémon misterioso\n
+	+ que tiene todo el cuerpo\n
+	+ cubierto de enredaderas!
+   1c1	= A COMBEE le encanta el dulce,\n
+	+ así que usé Miel para su\n
+	+ captura.\n
+	+ \fLos COMBEE de sexo femenino\n
+	+ son los únicos que pueden\n
+	+ evolucionar, ¡pero son muy\n
+	+ difíciles de encontrar!
+   1c2	= PHIONE es un Pokémon muy\n
+	+ raro que nace de un huevo\n
+	+ puesto por MANAPHY y otros\n
+	+ Pokémon compatibles.\n
+	+ \f¿Por qué no te llevas contigo\n
+	+ a PHIONE y se lo presentas a\n
+	+ tus amigos?
+   1c3	= MEW es un Pokémon muy raro\n
+	+ del que se dice que posee el\n
+	+ código genético de todos los\n
+	+ demás Pokémon.\n
+	+ \f¡Usa a MEW en los combates y\n
+	+ deja a tus amigos estupefactos!
+

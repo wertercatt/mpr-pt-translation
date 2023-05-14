@@ -1,0 +1,610 @@
+#BMG  <<<  The first 4 characters '#BMG' are the magic for a BMG text file.
+#     <<<  Don't remove them!
+#
+# Details about BMG text files are available in the Web:
+#  * Syntax and Semantics: https://szs.wiimm.de/doc/bmg/text
+#  * The BMG file format:  https://szs.wiimm.de/r/wiki/BMG
+#
+#
+#------------------------------------------------------------------------------
+
+# The endianness of binary files: 0=big endian (default), 1=little endian.
+# Little endian is only tested for encoding UTF-8 (need examples of analysis).
+@ENDIAN = 0
+
+# If 1, then enable legacy (GameCube) mode for old binary BMG files.
+# If enabled, ENCODING is always CP1252.
+@LEGACY = 0
+
+# Define encoding of BMG: 1=CP1252, 2=UTF-16/be, 3=Shift-JIS, 4=UTF-8
+@ENCODING = 2
+
+# Create »MID1« section: 0=off, 1=on
+@BMG-MID = 0
+
+# Size of each element of section 'INF1' (MKW=8).
+# This setting has impact to attributes and MKW features.
+@INF-SIZE = 0x08
+
+# Default attribute values for this BMG (MKW=[1])
+@DEFAULT-ATTRIBS = [0]
+
+# Use MKW specific color names: 0=off, 1=auto, 2=on
+@COLOR-NAMES = 1
+
+# Use MKW messages and track names: 0=off, 1=auto, 2=on
+@MKW-MESSAGES = 1
+
+#
+#------------------------------------------------------------------------------
+
+# This part defines values for unknown parameters of section headers.
+@UNKNOWN-INF32-0C =   0x100000	# 32 bit value of section INF1 offset 0x0c
+@UNKNOWN-MID16-0A =     0x1000	# 16 bit value of section MID1 offset 0x0a
+@UNKNOWN-MID32-0C =          0	# 32 bit value of section MID1 offset 0x0c
+
+#
+#------------------------------------------------------------------------------
+
+     0	= Value
+     1	= Cancel
+     2	= OK
+     3	= Star Explosion
+     4	= Water
+     5	= Fire
+     6	= Yellow Star Explosion
+     7	= Operate
+     8	= Stinky Ball
+     9	= Big Tornado
+     a	= Smoke
+     b	= Lv 100
+     c	= For distribution
+     d	= Run
+     e	= Land
+     f	= Sleep attack
+    10	= Normal attack
+    11	= Normal defense
+    12	= Fire attack
+    13	= Fire defense
+    14	= Water attack
+    15	= Water defense
+    16	= Electric attack
+    17	= Electric defense
+    18	= Grass attack
+    19	= Grass defense
+    1a	= Psychic attack
+    1b	= Psychic defense
+    1c	= Fighting attack
+    1d	= Fighting defense
+    1e	= Poison attack
+    1f	= Poison defense
+    20	= Ground attack
+    21	= Dragon attack
+    22	= Tornado
+    23	= Bug attack
+    24	= Bug defense
+    25	= Rock attack
+    26	= Ghost attack
+    27	= Ice attack
+    28	= Steel attack
+    29	= Steel defense
+    2a	= Dark attack
+    2b	= Dark defense
+    2c	= Parade
+    2d	= Mii warp
+    2e	= Mii twinkle
+    2f	= Mii feeding
+    30	= Pokéball appears
+    31	= Pokéball flashes
+    32	= Pokeball disappears
+    33	= Pii introduction
+    34	= Pose
+    35	= Walk
+    36	= Flail
+    37	= Angry
+    38	= Dodge attack
+    39	= carry
+    3a	= carry_end
+    3b	= carry_kamae
+    3c	= carry_shake
+    3d	= carry_walk
+    3e	= Attacked
+    3f	= Dance 1
+    40	= Dance 2
+    41	= (composite) Acts depressed\n
+	+ with its heads down
+    42	= What? (Question)
+    43	= Flicker
+    44	= Feeding
+    45	= Threatened
+    46	= Dizzy
+    47	= (composite) Raising hands
+    48	= Glad
+    49	= Glad 2
+    4a	= Glad 3
+    4b	= Hear
+    4c	= Jump
+    4d	= Kick
+    4e	= Laugh
+    4f	= Look around
+    50	= Hurry
+    51	= March with the Drum
+    52	= Fall
+    53	= Pose 1
+    54	= Pose 2
+    55	= Pose 3
+    56	= Pose 4
+    57	= Repair
+    58	= Push a ball
+    59	= Pet 2L
+    5a	= Pet L
+    5b	= Pet M
+    5c	= Pet S
+    5d	= Run
+    5e	= Sit down
+    5f	= Sit down (loop)
+    60	= Asleep
+    61	= Twitch while asleep
+    62	= Fall backward: from walking
+    63	= Fall backward: loop
+    64	= Fall backward: \n
+	+ jump-up → pose
+    65	= Sneeze
+    66	= Stand up
+    67	= Faint (loop)
+    68	= Surprised (normal)
+    69	= Surprised (short)
+    6a	= Talk
+    6b	= Fall and stand back up
+    6c	= Fall: from walking
+    6d	= Fall: loop
+    6e	= Fall: stand-up → pose
+    6f	= Wake up
+    70	= Walk 2
+    71	= Yawn
+    72	= Shake
+    73	= Spin → Land
+    74	= → Pose
+    75	= → Dream (motion)
+    76	= Dream (motion) (loop)
+    77	= Startle motions
+    78	= → Shake a fist
+    79	= → Shake a fist (loop)
+    7a	= → Shake a fist (end)
+    7b	= → Put a hand to an ear \n
+	+ (motion)
+    7c	= → Jump slightly,\n
+	+ put arms up, and look happy
+    7d	= → Take out a flip board\n
+	+ from the bottom
+    7e	= → Hold a flip board (loop)
+    7f	= Put one arm up (motion)
+    80	= → Cock the head as if\n
+	+ saying "Please♪"
+    81	= → Point at left hand\n
+	+ with the other hand
+    82	= → Wave both hands
+    83	= HELLO
+    84	= WAVE
+    85	= (composite) Look around at Pii,\n
+	+ sit down, and see the camera
+    86	= (composite) Sit down (loop)
+    87	= → Special pose
+    88	= → Look-See pose
+    89	= →Wave good-bye
+    8a	= Look This Way, wave both hands, and leave
+    8b	= Take out a ball, put Pokémon down,\n
+	+ and throw a ball into the sky (near)
+    8c	= Take out a ball, put Pokémon down,\n
+	+ and throw a ball into the sky (far)
+    8d	= Catch and throw a ball（near）
+    8e	= Catch and throw a ball (far)
+    8f	= Small wave
+    90	= Ride (begin)
+    91	= Ride (loop)
+    92	= Ride (end)
+    93	= None
+    94	= Day
+    95	= Night
+    96	= Standing
+    97	= Walk
+    98	= Walk 2
+    99	= Run
+    9a	= Flail
+    9b	= Surprised
+    9c	= Parade
+    9d	= Carry
+    9e	= Angry
+    9f	= Shiver
+    a0	= Glad
+    a1	= Intimidate
+    a2	= Intimidating smile
+    a3	= Confused
+    a4	= Surprised
+    a5	= Crushed → Normal
+    a6	= Landing
+    a7	= (HEAD)Drink
+    a8	= (HEAD)
+    a9	= (HEAD)Look around
+    aa	= (HEAD)Laugh
+    ab	= (HEAD)Shake heads
+    ac	= (HEAD)Nod
+    ad	= (HEAD)Sleep short loop
+    ae	= (HEAD)Sleep long loop
+    af	= 01/07/08 15th approval
+    b0	= 03/10/08 29th fix
+    b1	= 03/10/08 29th approval
+    b2	= 03/06/08 28th approval
+    b3	= 03/05/08 27th approval
+    b4	= 02/29/08 26th approval
+    b5	= 02/28/08 25th approval (action)
+    b6	= 02/28/08 25th approval (color)
+    b7	= 02/27/08 24th approval
+    b8	= 02/22/08 23rd approval
+    b9	= 02/19/08 22nd approval
+    ba	= 02/17/08 CHIMCHAR approval
+    bb	= 02/14/08 21st approval
+    bc	= 02/10/08 20th approval
+    bd	= 02/03/08 19th approval
+    be	= 01/27/08 18th approval
+    bf	= 01/21/08 17th approval
+    c0	= 01/14/08 16th approval
+    c1	= 01/07/08 15th approval
+    c2	= 12/24/07 14th approval
+    c3	= 12/15/07 13th approval
+    c4	= 12/08/07 12th approval
+    c5	= 12/02/07 11th approval
+    c6	= 11/24/07 10th approval
+    c7	= 11/17/07 9th approval
+    c8	= 11/10/07 8th approval
+    c9	= 11/04/07 7th approval
+    ca	= 10/28/07 6th approval
+    cb	= 10/20/07 5th approval
+    cc	= 10/06/07 4th approval
+    cd	= 09/29/07 3rd approval
+    ce	= 09/21/07 2nd approval
+    cf	= 08/24/07 1st approval
+    d0	= Completed models so far
+    d1	= Event distribution Pokémon
+    d2	= ♂♀ variation
+    d3	= 03/02/08 final version
+    d4	= Palette
+    d5	= Normal
+    d6	= Angry
+    d7	= Melancholic
+    d8	= Glad
+    d9	= Happy
+    da	= Panic
+    db	= Question
+    dc	= Sleep
+    dd	= Surprised
+    de	= Scared
+    df	= Unhappy
+    e0	= Cheerful
+    e1	= Camera
+    e2	= Stop enabling Free Mode
+    e3	= Enable Free Mode
+    e4	= Disable auto camera
+    e5	= Disable free camera
+    e6	= Change FOVY by +/-
+    e7	= DS connect
+    e8	= Quit
+    e9	= Abort
+    ea	= Max # of DS
+    eb	= Start/Press A/Skip download
+    ec	= Effects
+    ed	= Blackout limit distance
+    ee	= (Stop effects)
+    ef	= Instructions
+    f0	= GC controller 1P Operation Index
+    f1	= 3D stick: selected Xii operations
+    f2	= Y button: look this way
+    f3	= Z button: pause
+    f4	= Items
+    f5	= Lift up
+    f6	= Both hands
+    f7	= Center
+    f8	= Head
+    f9	= Left hand
+    fa	= Right hand
+    fb	= Pseudo Depth-of-Field filter
+    fc	= No collision detection
+    fd	= over %4d items
+    fe	= (ditto) distance
+    ff	= over %3.0fm
+   100	= LoD1
+   101	= over %4d items
+   102	= LoD1 distance
+   103	= over %3.0fm
+   104	= LoD2
+   105	= over %4d items
+   106	= LoD2 distance
+   107	= over %3.0fm
+   108	= Distance to start magnif.
+   109	= over %3.0fm
+   10a	= NoDraw
+   10b	= over %4d items
+   10c	= NoDraw distance
+   10d	= over %3.0fm
+   10e	= Reduce calc
+   10f	= Reduced calc count
+   110	= 1/%d times
+   111	= (ditto) distance
+   112	= over %3.0fm
+   113	= over %4d items
+   114	= Distance to hide shadow
+   115	= over %3.0fm
+   116	= Distance to soften shadow
+   117	= over %3.0fm
+   118	= Remove DP assignment history
+   119	= Show distant Mii face
+   11a	= Motions
+   11b	= (Stop composite motion)
+   11c	= Change date
+   11d	= Day #%d
+   11e	= Favorites
+   11f	= Turn construction-completed flag on tomorrow
+   120	= LV4 15 Piis achived: Free Mode
+   121	= LV20 500 Piis achieved: comfortable stable
+   122	= LV15 250 Piis achieved: want to trade?
+   123	= LV25 1000 Piis achieved: let's trade!
+   124	= LV11 100 Piis achieved: full of Miis
+   125	= LV8 50 Piis achieved: favorites
+   126	= Keep LV (LV+1 tomorrow)
+   127	= Parade info test
+   128	= Performance monitor
+   129	= Show collision balls
+   12a	= Debug Pokémon Icon Projection
+   12b	= Show safe frame
+   12c	= Use Free Mode button
+   12d	= Screen Shots
+   12e	= Hide Focus Lock
+   12f	= Hide # of Piis
+   130	= Hide Album button
+   131	= Stop calc
+   132	= Hide clock
+   133	= Hide Free Mode
+   134	= Hide DS connections, etc.
+   135	= Hide Parade things
+   136	= Hide Telop
+   137	= Set date back 1 day, save, and reset
+   138	= Really?
+   139	= Dump Test Data Exchange PPP
+   13a	= Exit (not working)
+   13b	= Really?
+   13c	= Automatic conversation
+   13d	= Answer Yes to all questions
+   13e	= Memory dump
+   13f	= Save (only when no events are occurring)
+   140	= Corrupt
+   141	= Delete
+   142	= Really?
+   143	= Save
+   144	= Really?
+   145	= Load
+   146	= Really?
+   147	= Pokémon to bring tomorrow
+   148	= Reset
+   149	= Really?
+   14a	= Sound
+   14b	= Chorus
+   14c	= →adjust R
+   14d	= →adjust V
+   14e	= Delay
+   14f	= →adjust R
+   150	= →adjust V
+   151	= Reverb
+   152	= →adjust R
+   153	= →adjust V
+   154	= Exceptional process at startup
+   155	= No Pokémon, no Club Look-See
+   156	= Skip first-time introduction
+   157	= Now loading save data
+   158	= Message test: Parade
+   159	= Fatal error
+   15a	= Fatal error (buttons ignored)
+   15b	= Cannot keep any more Pokémon
+   15c	= Keep Pokémon
+   15d	= Data process complete
+   15e	= Supervise flavor text
+   15f	= Expansion complete
+   160	= Expansion plan
+   161	= Twinkle Test
+   162	= Keep by LvUP
+   163	= Trade Pokémon
+   164	= Prologue
+   165	= Wanted complete
+   166	= Begin Wanted
+   167	= One celebrity appears w/o a Pokémon exchange
+   168	= Two celebrities appear w/o a Pokémon trade
+   169	= Three celebrities appear w/o a Pokémon trade
+   16a	= One celebrity appears w/ a Pokémon trade
+   16b	= Two celebrities appear w/ a Pokémon trade
+   16c	= Three celebrities appear w/ a Pokémon trade
+   16d	= Trade Pokémon with a celebrity
+   16e	= Trade Pokémon with two celebrities
+   16f	= Trade Pokémon with three celebrities
+   170	= Close in 5 sec.
+   171	= Messages
+   172	= With face icon
+   173	= Width check\n
+	+ (farm_event.gmm)
+   174	= Width check\n
+	+ (pokemonfarm.gmm)
+   175	= Width check\n
+	+ (static.gmm)
+   176	= YES/NO options
+   177	= Name check
+   178	= 1 line (1)
+   179	= 1 line (2)
+   17a	= 1 line (3)
+   17b	= 2 lines (1)
+   17c	= 2 lines (2)
+   17d	= Many lines
+   17e	= Many lines (focus object)
+   17f	= Album
+   180	= Controls overview
+   181	= Bulletin Board
+   182	= Connect to DS
+   183	= Connection lost
+   184	= Max # of DS
+   185	= Save
+   186	= Favorites
+   187	= Free Mode
+   188	= Mii select
+   189	= WC24 Guests
+   18a	= WC24 Check out My Ranch
+   18b	= Options
+   18c	= Deposit Details
+   18d	= Wanted
+   18e	= Issue normal Wanted
+   18f	= Add normal non-Wanted Pii to the Ranch
+   190	= Issue normal Wanted
+   191	= Add normal Wanted Pii to the Ranch
+   192	= Add special Wanted Pii to the Ranch
+   193	= Add celebrity Wanted Pii to the Ranch
+   194	= Approval flag
+   195	= Browse all Wanteds
+   196	= Add Pikachu to success history
+   197	= Network
+   198	= Matsumoto Debug 2
+   199	= Force celebrity visiting flag off
+   19a	= Clear Club Look-See history
+   19b	= Celebrity goes home at next startup
+   19c	= One celebrity w/o trade at next startup
+   19d	= Two celebrities w/o trade at next startup
+   19e	= Three celebrities w/o trade at next startup
+   19f	= One celebrity w/ trade at next startup
+   1a0	= Two celebrities w/ trade at next startup
+   1a1	= Three celebrities w/ trade at next startup
+   1a2	= Visit at next startup
+   1a3	= Send visit data to anyone ("Guests" must be open)
+   1a4	= Visit my own Ranch
+   1a5	= Visit my own Ranch (data destroy test)
+   1a6	= Celebrity's letter
+   1a7	= Club Look-See on at next startup
+   1a8	= Force WC24 open retries
+   1a9	= %d times
+   1aa	= Matsumoto Debug 1
+   1ab	= Club Look-See
+   1ac	= Add Hayley's Pii
+   1ad	= Add 1
+   1ae	= Add 100
+   1af	= Add to 1,000
+   1b0	= Add to 500
+   1b1	= Add (DP Bad Egg)
+   1b2	= Add (Hayley's Bad Egg)
+   1b3	= # of Pokémon
+   1b4	= Delete (DP Bad Egg)
+   1b5	= Do-nothing mode
+   1b6	= Yukari's 998 Pokémon (Data only)
+   1b7	= Form flock
+   1b8	= Rebuild flock
+   1b9	= Remove
+   1ba	= Reduce to 100?
+   1bb	= Remove all
+   1bc	= Add
+   1bd	= Add rare
+   1be	=  Flying
+   1bf	=  Headband
+   1c0	= Add Pokémon to trade
+   1c1	= Celebrity's Pokémon
+   1c2	= Motions
+   1c3	= Select
+   1c4	= Stage
+   1c5	= Change Level
+   1c6	= Time
+   1c7	= Rainbow
+   1c8	= Show path
+   1c9	= No change to the Time
+   1ca	= Approve
+   1cb	= Add by set
+   1cc	= Eyes
+   1cd	= Angry
+   1ce	= Close
+   1cf	= Glad
+   1d0	= Normal
+   1d1	= Motions
+   1d2	= (Stop)
+   1d3	= Look this way
+   1d4	= Face this way
+   1d5	= Activity
+   1d6	= Activity type
+   1d7	= DEBUG:\n
+	+ Ignoring the Mii Celebrity data\n
+	+ because it is restricted by\n
+	+ Parental Controls settings.
+   1d8	= DEBUG:\n
+	+ Ignoring the Mii Celebrity data\n
+	+ because it is not its distibution\n
+	+ period yet.
+   1d9	= DEBUG:\n
+	+ Ignoring the Celebrity Mii data\n
+	+ because the received data\n
+	+ contains illegal settings.
+   1da	= DEBUG:\n
+	+ Ignoring the Celebrity Mii data\n
+	+ because of a wrong region\n
+	+ code.
+   1db	= DEBUG:\n
+	+ Ignoring the Celebrity Mii data\n
+	+ because of a wrong language\n
+	+ settings.
+   1dc	= DEBUG:\n
+	+ Ignoring the Celebrity Mii data\n
+	+ because forced exit flag is on.
+   1dd	= DEBUG:\n
+	+ Ignoring the Celebrity Mii data\n
+	+ because the distibution period\n
+	+ has expired.
+   1de	= DEBUG:\n
+	+ Ignoring the Celebrity Mii data\n
+	+ because their distibution date\n
+	+ is identical.
+   1df	= DEBUG:\n
+	+ You cannot send any more\n
+	+ invitations today.
+   1e0	= DEBUG:\n
+	+ Not sending any data\n
+	+ because the interaction\n
+	+ setting is turned off.
+   1e1	= DEBUG:\n
+	+ Not sending any data\n
+	+ because WiiConnect24 is\n
+	+ temporarily unavailable.
+   1e2	= DEBUG:\n
+	+ Not sending any data\n
+	+ because WiiConnect24 is\n
+	+ unavailable.
+   1e3	= DEBUG:\n
+	+ Not sending any data\n
+	+ because the WiiConnect24\n
+	+ Message function is disabled.
+   1e4	= DEBUG:\n
+	+ Not sending any data\n
+	+ because no Wii Friends\n
+	+ were found.
+   1e5	= DEBUG:\n
+	+ Not sending any data\n
+	+ because no picture was\n
+	+ found.
+   1e6	= DEBUG:\n
+	+ You could not select\n
+	+ Mii and Pii to send.
+   1e7	= DEBUG:\n
+	+ You could not select a recipient\n
+	+ or pictures.
+   1e8	= DEBUG:\n
+	+ You could not serialize My\n
+	+ Pokémon Ranch data.
+   1e9	= DEBUG:\n
+	+ You could not send an\n
+	+ invitation.
+   1ea	= DEBUG:\n
+	+ You sent an invitation.
+   1eb	= %ls\n
+	+ Sending to: %04d %04d %04d %04d
+   1ec	= %ls\n
+	+ Sending to: %04d %04d %04d %04d\n
+	+ (%ls)
+
