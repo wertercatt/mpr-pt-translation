@@ -86,7 +86,7 @@
     25	= I saw a Showdown.
     26	= I took a group picture.
     27	= I saw Happy Birthday.
-    28	= I completed Wanted Pokemon.
+    28	= I completed Pokémon Wanted.
     29	= I received a trade from %{}.
     2a	= The ranch reached level %d.
     2b	= I came to the Ranch.

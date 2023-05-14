@@ -234,19 +234,20 @@
     7b	= Data was corrupted, and all of\n
 	+ the pictures were deleted.
     7c	= Could not load the picture data.
-    7d	= SDカードに しゃしんを\n
-	+ すべて ほぞん
-    7e	= アルバムの しゃしんを すべて\n
-	+ SDカードに ほぞんします。
-    7f	= すべて ほぞんしても よろしいですか?
-    80	= すべての しゃしんを SDカードの\n
-	+ ¥DCIM¥%03dNIN01フォルダに\n
-	+ ほぞんしました。
-    81	= ほごしていない アルバムの しゃしんを\n
-	+ すべて さくじょしますか?
-    82	= ほんとうに すべて さくじょしますか?
-    83	= ほごしていない アルバムの しゃしんを\n
-	+ すべて さくじょしました。
+    7d	= Save all pictures to the\n
+	+ SD Card.
+    7e	= Save all pictures in the album\n
+	+ to the SD Card.
+    7f	= Is it okay to save everything?
+    80	= All pictures have been saved\n
+	+ to folder \\DCIM\\%1$03dNIN01\n
+	+ in the SD Card.
+    81	= Delete all unsecured\n
+	+ pictures?
+    82	= Are you sure you want to\n
+	+ delete everything?
+    83	= All unsecured pictures have\n
+	+ been deleted.
     84	= An SD Card is not inserted.
     85	= Cannot write data to an\n
 	+ SD Card. Check the\n
@@ -293,8 +294,8 @@
     98	= An SD Card read error has\n
 	+ occurred.\n
 	+ Press RESET and try again.
-    99	= SDカードが さしなおされたので\n
-	+ ほぞんを とりやめます。
+    99	= Saving was canceled because\n
+	+ the SD Card was reinserted.
     9a	= Select a Mii to take to the Ranch
     9b	= Now: %d You can choose %d more.
     9c	= Previous Page
@@ -393,21 +394,21 @@
     ce	= Okay and Return
     cf	= Others
     d0	= (No Music)
-    d1	= ♪プラチナファーム
-    d2	= ♪やわらかいひざし
-    d3	= ♪ゆっくりあるこう
-    d4	= ♪つながるせかい
-    d5	= ♪わたしのゆめ
-    d6	= ♪はりきってゴー!
-    d7	= ♪ぼくじょうにようこそ
-    d8	= ♪みんなでパレード
-    d9	= ♪プリンのうた
+    d1	= ♪Platinum Farm
+    d2	= ♪Soft Sunlight
+    d3	= ♪Leisurely Walk
+    d4	= ♪Connected World
+    d5	= ♪My Dream
+    d6	= ♪Let's Go!
+    d7	= ♪Welcome to the Ranch
+    d8	= ♪My Pokémon Parade
+    d9	= ♪Jigglypuff's Song
     da	= Club Look-See
     db	= Previous Page
     dc	= Next Page
     dd	= Return
-    de	= %lsぼくじょうに\n
-	+ いきますか?
+    de	= Would you like to go to\n
+	+ the %ls Ranch?
     df	= ???
     e0	= Tomorrow...
     e1	= The Ranch's expanding!
@@ -442,26 +443,26 @@
     fa	= Pokémon on the Ranch
     fb	= All
     fc	= Favorites
-    fd	= あずけたポケモン
-    fe	= %dひき
-    ff	= %dひき だします。
-   100	= %d%ls だします。
+    fd	= Stored Pokémon
+    fe	= %d
+    ff	= %d stored.
+   100	= %d%ls stored.
    101	= Previous Page
    102	= Next Page
    103	= Return
    104	= Cancel
    105	= Go to a Parade
    106	= Trainer
-   107	= あずけた かず
-   108	= せわがかり
-   109	= パレード
-   10a	= ひき
-   10b	= どんなのを だす?
-   10c	= きほん
-   10d	= なんびきか えらぶ
-   10e	= タイプで えらぶ
-   10f	= マーキングで えらぶ
-   110	= イメージで えらぶ
+   107	= Deposit amount
+   108	= Caretaker
+   109	= Parade
+   10a	= 
+   10b	= What do you want to store?
+   10c	= Default
+   10d	= List by Pokédex order
+   10e	= List by type
+   10f	= List by marking
+   110	= List by body style
    111	= %d/%d
    112	= red
    113	= blue
@@ -492,7 +493,7 @@
    12c	= singing
    12d	= sweet-smelling
    12e	= rare
-   12f	= ぼくじょうのウワサ%02d
+   12f	= Ranch Rumor %02d
    130	= %02d:%ls
    131	= Attention
    132	= Zigzag Parade
@@ -691,25 +692,26 @@
 	+ Pokémon Diamond, Pearl and Platinum!\n
    1d1	= 
    1d2	= 
-   1d3	= へんこうてん(1)
-   1d4	= プラチナばんの とくちょう
-   1d5	= ・DSばん ポケットモンスターの プラチナと\n
-	+ 　せつぞくできるように なりました。\n
+   1d3	= Platinum Update Information (1)
+   1d4	= Platinum Version Features
+   1d5	= ・My Pokémon Ranch can now connect to\n
+	+ 　Pokémon Platinum Version for\n
+	+ 　the Nintendo DS.\n
 	+ \n
-	+ ・ぼくじょうが おおきくなると、\n
-	+ 　ポケモンを さいだい 1500ぴきまで\n
-	+ 　あずけられるように なりました。
-   1d6	= へんこうてん(2)
-   1d7	= あらたに できるように なったこと
-   1d8	= ・うちわけで えらべることが ふえました。\n
+	+ ・As the Ranch expands,\n
+	+  you can keep up to 1,500 Pokémon.\n
+   1d6	= Platinum Update Information (2)
+   1d7	= "There are new things to try!"
+   1d8	= ・More options have been added\n
+    + to the menu.\n
 	+ \n
-	+ ・しゃしんが 30まいまで とれるように\n
-	+ 　なりました。\n
+	+ ・You can now save up to\n
+	+ 　30 pictures.\n
 	+ \n
-	+ ・おんがくが かえられるように なりました。\n
+	+ ・The music can now be changed.\n
 	+ \n
-	+ ・いちど いった みてみて☆クラブの\n
-	+ 　ぼくじょうへ いけるように なりました。
+	+ ・You can now visit a Club Look-See\n
+	+ 　Ranch more than once.
    1d9	= Operation Index
    1da	= Focus
    1db	= Find
@@ -841,26 +843,29 @@
    224	= 
    225	= Deposit Details (1)
    226	= Friends at the Ranch
-   227	= だれが なんびき ポケモンを あずけているか\n
-	+ チェックできます。\n
-	+ ぼくじょうに だす ポケモンを、せわがかりや\n
-	+ しゅるいごとに かえることも できます。\n
+   227	= You can check how many Pokémon\n
+	+ are deposited, and who stored them.\n
+	+ You can also sort the Pokémon\n
+	+ to be deposited at the Ranch by\n
+	+ their Pokédex number and type.	
 	+ \n
-	+ また、DSから あずけた ポケモンたちの\n
-	+ 「せわがかり」の Miiを かえることも できます。
+	+ Also, you can change the Mii\n
+	+ Caretaker for Pokémon deposited\n
+	+ from your Nintendo DS.
    228	= 
    229	= 
    22a	= Deposit Details (2)
    22b	= Pokémon on the Ranch
-   22c	= ぼくじょうに どんな ポケモンを\n
-	+ だしているのか わかります。 \n
-	+ このボタンから「どんなのを だす?」\n
-	+ がめんを ひらきます。
-   22d	= どんなのを だす?
-   22e	= だれの ポケモンを だすか、\n
-	+ または ぼくじょうに だす\n
-	+ ポケモンの しゅるいや\n
-	+ かずなどを えらびます。
+   22c	= You can view the Pokémon\n
+	+ you have stored.\n
+	+ This button opens the\n
+	+ "What do you want to store?"\n
+	+ screen.
+   22d	= What do you want to store?
+   22e	= Choose which Pokémon you'd\n
+	+ like to send to the Ranch.\n
+	+ You can select a type or\n
+	+ Pokédex number.
    22f	= Deposit Details (3)
    230	= Parade
    231	= Pokémon selected from Pokémon\n
@@ -897,9 +902,9 @@
 	+ \n
 	+ You can also see the Ranch\n
 	+ Info.
-   241	= 「きょうの おんがく」を かえることが できます。\n
-	+ いちど いった「みてみて☆クラブ」の\n
-	+ ぼくじょうへ いくことが できます。
+   241	= You can change "Today's Music".\n
+	+ You can revisit a "Club Look-See"\n
+	+ Ranch you've already visited,
    242	= 
    243	= Pokémon Wanted (1)
    244	= Pokémon Wanted
@@ -920,35 +925,35 @@
 	+ posting to see information\n
 	+ on the Wanted Pokémon and\n
 	+ how to catch it.\n
-   24b	= プラチナなどの きりかえ
-   24c	= ボタンを おして、プラチナ・\n
-	+ ダイヤモンド・パールを\n
-	+ きりかえて、しらべます。
+   24b	= Change Versions
+   24c	= Press the button to switch\n
+	+ between viewing Pokémon Platinum,\n
+	+ Diamond or Pearl.
    24d	= Ranch Info
    24e	= Ranch Info
    24f	= You can check the current status\n
 	+ of the Ranch.
    250	= 
    251	= 
-   252	= きょうの おんがく(1)
-   253	= きょうの おんがく
-   254	= ぼくじょうに ながれている\n
-	+ おんがくの なまえが わかります。\n
-	+ きょくを えらんで\n
-	+ へんこうすることも できます。
+   252	= Today's Music (1)
+   253	= Today's Music
+   254	= You can see the names of the\n
+	+ music heard in the Ranch.\n
+	+ You can also select a song\n
+	+ to change the music.
    255	= 
    256	= 
-   257	= きょうの おんがく(2)
-   258	= そのほか
-   259	= さらに いろいろな きょくの なかから\n
-	+ おんがくを えらぶことが できます。
-   25a	= (おんがく なし)
-   25b	= おんがくを とめます。
-   25c	= みてみて☆クラブ
-   25d	= みてみて☆クラブ
-   25e	= いちど いったことが ある、\n
-	+ みてみて☆クラブの ぼくじょうへ\n
-	+ いくことが できます。
+   257	= Today's Music (2)
+   258	= Others
+   259	= In addition, you can choose\n
+	+ music from a variety of songs.
+   25a	= (No Music)
+   25b	= Stop the music.
+   25c	= Club Look-See
+   25d	= Club Look-See
+   25e	= You can revisit a\n
+	+ Club Look-See Ranch if \n
+	+ you've been there before.
    25f	= Options
    260	= Options
    261	= You can select the Miis to\n
@@ -1101,44 +1106,43 @@
    2ab	= No Pokédex was found.
    2ac	= A Pokédex is required to deposit\n
 	+ Pokémon to the Ranch.
-   2ad	= Wiiほんたいの でんげんボタンを\n
-	+ 4びょういじょう おして\n
-	+ でんげんを おきりください\n
+   2ad	= Please press the power\n
+	+ button on the wii for\n
+	+ 4 seconds to turn off\n
+	+ the power.	
 	+ \n
-	+ そのあと もういちど でんげんを\n
-	+ いれて ほんたいニックネームを\n
-	+ もとに もどしてください
-   2ae	= セーブデータを ニンテンドーに\n
-	+ おくることが できませんでした\n
-	+ \fネットワークせっていを かくにんして\n
-	+ じかんを おいて やりなおしてください
-   2af	= セーブデータを ニンテンドーに\n
-	+ おくりますか?
-   2b0	= セーブデータを ニンテンドーに\n
-	+ おくっています……
-   2b1	= セーブデータを ニンテンドーに\n
-	+ おくりました
-   2b2	= セーブデータを ニンテンドーへ\n
-	+ といあわせるのに しっぱいしました\n
-	+ \fネットワークせっていを かくにんして\n
-	+ じかんを おいて やりなおしてください
-   2b3	= セーブデータを ニンテンドーから\n
-	+ うけとりますか?
-   2b4	= セーブデータを ニンテンドーに\n
-	+ といあわせています……
-   2b5	= セーブデータを ニンテンドーから\n
-	+ うけとりました
-   2b6	= セーブデータは ニンテンドーには\n
-	+ ありませんでした\n
-	+ ニンテンドーへ おといあわせ\n
-	+ ください
-   2b7	= セーブデータの かきこみに\n
-	+ しっぱいしました\n
-	+ ニンテンドーへ おといあわせ\n
-	+ ください
-   2b8	= ネットワークの せつぞくを\n
-	+ かくにんして います\n
-	+ しばらく おまちください…
+	+ Afterwards, please turn the\n
+	+ power back on and restore\n
+	+ your Console Nickname.
+   2ae	= Failed to send save data\n
+	+ to Nintendo.\n
+	+ \fPlease check your Connection\n
+	+ Settings and try again later.
+   2af	= Send your save data\n
+	+ to Nintendo?
+   2b0	= Sending your save data\n
+	+ to Nintendo…
+   2b1	= Sent your save data\n
+	+ to Nintendo.
+   2b2	= Failed to send save data\n
+	+ to Nintendo.\n
+	+ \fPlease check your Connection\n
+	+ Settings and try again later.
+   2b3	= Receive your save data\n
+	+ from Nintendo?
+   2b4	= Receiving your save data\n
+	+ from Nintendo…
+   2b5	= Received your save data\n
+	+ from Nintendo.
+   2b6	= No save data was found\n
+	+ at Nintendo.\n
+	+ Please contact Nintendo\n
+	+ Consumer Service.
+   2b7	= Failed to write save data.\n
+	+ Please contact Nintendo\n
+	+ Consumer Service.
+   2b8	= Checking network connection\n
+	+ please wait a moment…
    2b9	= In order to use this save data,\n
 	+ you must set your Wii console\n
 	+ language to English.
@@ -1156,8 +1160,8 @@
 	+ language to Italian.
    2be	= Would you like to return\n
 	+ to your Ranch?
-   2bf	= バージョン
-   2c0	= ダイヤモンド
-   2c1	= パール
-   2c2	= プラチナ
+   2bf	= Version
+   2c0	= Diamond
+   2c1	= Pearl
+   2c2	= Platinum
 

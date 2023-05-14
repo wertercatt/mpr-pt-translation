@@ -488,7 +488,7 @@
    1aa	= WC24 Guests
    1ab	= WC24 Check out My Ranch
    1ac	= Options
-   1ad	= Platinum Change Point
+   1ad	= Platinum Update Information
    1ae	= Deposit Details
    1af	= Wanted
    1b0	= Issue normal Wanted

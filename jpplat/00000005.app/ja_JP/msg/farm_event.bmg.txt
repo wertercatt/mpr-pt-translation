@@ -676,264 +676,264 @@
 	+ the top left of the screen and\n
 	+ press \x{e042}.
    10d	= Enjoy!
-   10e	= 「おきにいり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   10f	= 「オーナー」が\n
-	+ きょうの ぼくじょうの テーマです。
-   110	= 「あずけたポケモン」が\n
-	+ きょうの ぼくじょうの テーマです。
-   111	= 「%ls」が\n
-	+ きょうの ぼくじょうの テーマです。
-   112	= 「6ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   113	= 「20ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   114	= 「50ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   115	= 「100ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   116	= 「200ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   117	= 「500ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   118	= 「800ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   119	= 「1000ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   11a	= 「ノーマル」が\n
-	+ きょうの ぼくじょうの テーマです。
-   11b	= 「かくとう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   11c	= 「ひこう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   11d	= 「どく」が\n
-	+ きょうの ぼくじょうの テーマです。
-   11e	= 「じめん」が\n
-	+ きょうの ぼくじょうの テーマです。
-   11f	= 「いわ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   120	= 「むし」が\n
-	+ きょうの ぼくじょうの テーマです。
-   121	= 「ゴースト」が\n
-	+ きょうの ぼくじょうの テーマです。
-   122	= 「はがね」が\n
-	+ きょうの ぼくじょうの テーマです。
+   10e	"Favorite"\n
+	+ is today's ranch theme.
+   10f	"Owner"\n
+	+ is today's ranch theme.
+   110	"Stored Pokémon"\n
+	+ is today's ranch theme.
+   111	"%ls"\n
+	+ is today's ranch theme.
+   112	"6 Pokémon"\n
+	+ is today's ranch theme.
+   113	"20 Pokémon"\n
+	+ is today's ranch theme.
+   114	"50 Pokémon"\n
+	+ is today's ranch theme.
+   115	"100 Pokémon"\n
+	+ is today's ranch theme.
+   116	"200 Pokémon"\n
+	+ is today's ranch theme.
+   117	"500 Pokémon"\n
+	+ is today's ranch theme.
+   118	"800 Pokémon"\n
+	+ is today's ranch theme.
+   119	"1000 Pokémon"\n
+	+ is today's ranch theme.
+   11a	"Normal"\n
+	+ is today's ranch theme.
+   11b	"Fighting"\n
+	+ is today's ranch theme.
+   11c	"Flying"\n
+	+ is today's ranch theme.
+   11d	"Poison"\n
+	+ is today's ranch theme.
+   11e	"Ground"\n
+	+ is today's ranch theme.
+   11f	"Rock"\n
+	+ is today's ranch theme.
+   120	"Bug"\n
+	+ is today's ranch theme.
+   121	"Ghost"\n
+	+ is today's ranch theme.
+   122	"Steel"\n
+	+ is today's ranch theme.
    123	= ?
-   124	= 「ほのお」が\n
-	+ きょうの ぼくじょうの テーマです。
-   125	= 「みず」が\n
-	+ きょうの ぼくじょうの テーマです。
-   126	= 「くさ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   127	= 「でんき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   128	= 「エスパー」が\n
-	+ きょうの ぼくじょうの テーマです。
-   129	= 「こおり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   12a	= 「ドラゴン」が\n
-	+ きょうの ぼくじょうの テーマです。
-   12b	= 「あく」が\n
-	+ きょうの ぼくじょうの テーマです。
-   12c	= 「●」が\n
-	+ きょうの ぼくじょうの テーマです。
-   12d	= 「▲」が\n
-	+ きょうの ぼくじょうの テーマです。
-   12e	= 「■」が\n
-	+ きょうの ぼくじょうの テーマです。
-   12f	= 「♥」が\n
-	+ きょうの ぼくじょうの テーマです。
-   130	= 「★」が\n
-	+ きょうの ぼくじょうの テーマです。
-   131	= 「◆」が\n
-	+ きょうの ぼくじょうの テーマです。
-   132	= 「あか」が\n
-	+ きょうの ぼくじょうの テーマです。
-   133	= 「あお」が\n
-	+ きょうの ぼくじょうの テーマです。
-   134	= 「きいろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   135	= 「みどり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   136	= 「くろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   137	= 「ちゃいろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   138	= 「むらさき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   139	= 「はいいろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   13a	= 「しろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   13b	= 「ピンク」が\n
-	+ きょうの ぼくじょうの テーマです。
-   13c	= 「ちいさい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   13d	= 「おおきい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   13e	= 「かるい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   13f	= 「おもい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   140	= 「あつい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   141	= 「つめたい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   142	= 「こわい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   143	= 「すばやい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   144	= 「まるい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   145	= 「とぶ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   146	= 「がんじょう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   147	= 「きあいが はいってる」が\n
-	+ きょうの ぼくじょうの テーマです。
-   148	= 「しびれる」が\n
-	+ きょうの ぼくじょうの テーマです。
-   149	= 「マイペース」が\n
-	+ きょうの ぼくじょうの テーマです。
-   14a	= 「どんかん」が\n
-	+ きょうの ぼくじょうの テーマです。
-   14b	= 「くさい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   14c	= 「うたう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   14d	= 「あまい かおり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   14e	= 「めずらしい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   14f	= 「おきにいり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   150	= 「オーナー」が\n
-	+ きょうの ぼくじょうの テーマです。
-   151	= 「あずけたポケモン」が\n
-	+ きょうの ぼくじょうの テーマです。
-   152	= 「%ls」が\n
-	+ きょうの ぼくじょうの テーマです。
-   153	= 「6ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   154	= 「20ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   155	= 「50ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   156	= 「100ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   157	= 「200ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   158	= 「500ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   159	= 「800ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   15a	= 「1000ひき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   15b	= 「ノーマル」が\n
-	+ きょうの ぼくじょうの テーマです。
-   15c	= 「かくとう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   15d	= 「ひこう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   15e	= 「どく」が\n
-	+ きょうの ぼくじょうの テーマです。
-   15f	= 「じめん」が\n
-	+ きょうの ぼくじょうの テーマです。
-   160	= 「いわ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   161	= 「むし」が\n
-	+ きょうの ぼくじょうの テーマです。
-   162	= 「ゴースト」が\n
-	+ きょうの ぼくじょうの テーマです。
-   163	= 「はがね」が\n
-	+ きょうの ぼくじょうの テーマです。
-   164	= ?
-   165	= 「ほのお」が\n
-	+ きょうの ぼくじょうの テーマです。
-   166	= 「みず」が\n
-	+ きょうの ぼくじょうの テーマです。
-   167	= 「くさ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   168	= 「でんき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   169	= 「エスパー」が\n
-	+ きょうの ぼくじょうの テーマです。
-   16a	= 「こおり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   16b	= 「ドラゴン」が\n
-	+ きょうの ぼくじょうの テーマです。
-   16c	= 「あく」が\n
-	+ きょうの ぼくじょうの テーマです。
-   16d	= 「●」が\n
-	+ きょうの ぼくじょうの テーマです。
-   16e	= 「▲」が\n
-	+ きょうの ぼくじょうの テーマです。
-   16f	= 「■」が\n
-	+ きょうの ぼくじょうの テーマです。
-   170	= 「♥」が\n
-	+ きょうの ぼくじょうの テーマです。
-   171	= 「★」が\n
-	+ きょうの ぼくじょうの テーマです。
-   172	= 「◆」が\n
-	+ きょうの ぼくじょうの テーマです。
-   173	= 「あか」が\n
-	+ きょうの ぼくじょうの テーマです。
-   174	= 「あお」が\n
-	+ きょうの ぼくじょうの テーマです。
-   175	= 「きいろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   176	= 「みどり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   177	= 「くろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   178	= 「ちゃいろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   179	= 「むらさき」が\n
-	+ きょうの ぼくじょうの テーマです。
-   17a	= 「はいいろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   17b	= 「しろ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   17c	= 「ピンク」が\n
-	+ きょうの ぼくじょうの テーマです。
-   17d	= 「ちいさい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   17e	= 「おおきい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   17f	= 「かるい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   180	= 「おもい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   181	= 「あつい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   182	= 「つめたい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   183	= 「こわい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   184	= 「すばやい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   185	= 「まるい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   186	= 「とぶ」が\n
-	+ きょうの ぼくじょうの テーマです。
-   187	= 「がんじょう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   188	= 「きあいが はいってる」が\n
-	+ きょうの ぼくじょうの テーマです。
-   189	= 「しびれる」が\n
-	+ きょうの ぼくじょうの テーマです。
-   18a	= 「マイペース」が\n
-	+ きょうの ぼくじょうの テーマです。
-   18b	= 「どんかん」が\n
-	+ きょうの ぼくじょうの テーマです。
-   18c	= 「くさい」が\n
-	+ きょうの ぼくじょうの テーマです。
-   18d	= 「うたう」が\n
-	+ きょうの ぼくじょうの テーマです。
-   18e	= 「あまい かおり」が\n
-	+ きょうの ぼくじょうの テーマです。
-   18f	= 「めずらしい」が\n
-	+ きょうの ぼくじょうの テーマです。
+   124	"Fire"\n
+	+ is today's ranch theme.
+   125	"Water"\n
+	+ is today's ranch theme.
+   126	"Grass"\n
+	+ is today's ranch theme.
+   127	"Electric"\n
+	+ is today's ranch theme.
+   128	"Psychic"\n
+	+ is today's ranch theme.
+   129	"Ice"\n
+	+ is today's ranch theme.
+   12a	"Dragon"\n
+	+ is today's ranch theme.
+   12b	"Dark"\n
+	+ is today's ranch theme.
+   12c	"●"\n
+	+ is today's ranch theme.
+   12d	"▲"\n
+	+ is today's ranch theme.
+   12e	"■"\n
+	+ is today's ranch theme.
+   12f	"♥"\n
+	+ is today's ranch theme.
+   130	"★"\n
+	+ is today's ranch theme.
+   131	"◆"\n
+	+ is today's ranch theme.
+   132	"Red"\n
+	+ is today's ranch theme.
+   133	"Blue"\n
+	+ is today's ranch theme.
+   134	"Yellow"\n
+	+ is today's ranch theme.
+   135	"Green"\n
+	+ is today's ranch theme.
+   136	"Black"\n
+	+ is today's ranch theme.
+   137	"Brown"\n
+	+ is today's ranch theme.
+   138	"Purple"\n
+	+ is today's ranch theme.
+   139	"Gray"\n
+	+ is today's ranch theme.
+   13a	"White"\n
+	+ is today's ranch theme.
+   13b	"Pink"\n
+	+ is today's ranch theme.
+   13c	"Short"\n
+	+ is today's ranch theme.
+   13d	"Tall"\n
+	+ is today's ranch theme.
+   13e	"Light"\n
+	+ is today's ranch theme.
+   13f	"Heavy"\n
+	+ is today's ranch theme.
+   140	"Fiery"\n
+	+ is today's ranch theme.
+   141	"Cold"\n
+	+ is today's ranch theme.
+   142	"Scary"\n
+	+ is today's ranch theme.
+   143	"Fast"\n
+	+ is today's ranch theme.
+   144	"Round"\n
+	+ is today's ranch theme.
+   145	"Flying"\n
+	+ is today's ranch theme.
+   146	"Sturdy"\n
+	+ is today's ranch theme.
+   147	"Focused"\n
+	+ is today's ranch theme.
+   148	"Paralyzing"\n
+	+ is today's ranch theme.
+   149	"Easygoing"\n
+	+ is today's ranch theme.
+   14a	"Oblivious"\n
+	+ is today's ranch theme.
+   14b	"Stinky"\n
+	+ is today's ranch theme.
+   14c	"Singing"\n
+	+ is today's ranch theme.
+   14d	"Sweet-Smelling"\n
+	+ is today's ranch theme.
+   14e	"Rare"\n
+	+ is today's ranch theme.
+   14f	"Favorite"\n
+	+ is today's ranch theme.
+   150	"Owner"\n
+	+ is today's ranch theme.
+   151	"Stored Pokémon"\n
+	+ is today's ranch theme.
+   152	"%ls"\n
+	+ is today's ranch theme.
+   153	"6 Pokémon"\n
+	+ is today's ranch theme.
+   154	"20 Pokémon"\n
+	+ is today's ranch theme.
+   155	"50 Pokémon"\n
+	+ is today's ranch theme.
+   156	"100 Pokémon"\n
+	+ is today's ranch theme.
+   157	"200 Pokémon"\n
+	+ is today's ranch theme.
+   158	"500 Pokémon"\n
+	+ is today's ranch theme.
+   159	"800 Pokémon"\n
+	+ is today's ranch theme.
+   15a	"1000 Pokémon"\n
+	+ is today's ranch theme.
+   11a	"Normal"\n
+	+ is today's ranch theme.
+   11b	"Fighting"\n
+	+ is today's ranch theme.
+   11c	"Flying"\n
+	+ is today's ranch theme.
+   11d	"Poison"\n
+	+ is today's ranch theme.
+   11e	"Ground"\n
+	+ is today's ranch theme.
+   11f	"Rock"\n
+	+ is today's ranch theme.
+   120	"Bug"\n
+	+ is today's ranch theme.
+   121	"Ghost"\n
+	+ is today's ranch theme.
+   122	"Steel"\n
+	+ is today's ranch theme.
+   123	= ?
+   124	"Fire"\n
+	+ is today's ranch theme.
+   125	"Water"\n
+	+ is today's ranch theme.
+   126	"Grass"\n
+	+ is today's ranch theme.
+   127	"Electric"\n
+	+ is today's ranch theme.
+   128	"Psychic"\n
+	+ is today's ranch theme.
+   129	"Ice"\n
+	+ is today's ranch theme.
+   12a	"Dragon"\n
+	+ is today's ranch theme.
+   12b	"Dark"\n
+	+ is today's ranch theme.
+   12c	"●"\n
+	+ is today's ranch theme.
+   12d	"▲"\n
+	+ is today's ranch theme.
+   12e	"■"\n
+	+ is today's ranch theme.
+   12f	"♥"\n
+	+ is today's ranch theme.
+   130	"★"\n
+	+ is today's ranch theme.
+   131	"◆"\n
+	+ is today's ranch theme.
+   132	"Red"\n
+	+ is today's ranch theme.
+   133	"Blue"\n
+	+ is today's ranch theme.
+   134	"Yellow"\n
+	+ is today's ranch theme.
+   135	"Green"\n
+	+ is today's ranch theme.
+   136	"Black"\n
+	+ is today's ranch theme.
+   137	"Brown"\n
+	+ is today's ranch theme.
+   138	"Purple"\n
+	+ is today's ranch theme.
+   139	"Gray"\n
+	+ is today's ranch theme.
+   13a	"White"\n
+	+ is today's ranch theme.
+   17c	"Pink"\n
+	+ is today's ranch theme.
+   17d	"Short"\n
+	+ is today's ranch theme.
+   17e	"Tall"\n
+	+ is today's ranch theme.
+   17f	"Light"\n
+	+ is today's ranch theme.
+   180	"Heavy"\n
+	+ is today's ranch theme.
+   181	"Fiery"\n
+	+ is today's ranch theme.
+   182	"Cold"\n
+	+ is today's ranch theme.
+   183	"Scary"\n
+	+ is today's ranch theme.
+   184	"Fast"\n
+	+ is today's ranch theme.
+   185	"Round"\n
+	+ is today's ranch theme.
+   186	"Flying"\n
+	+ is today's ranch theme.
+   187	"Sturdy"\n
+	+ is today's ranch theme.
+   188	"Focused"\n
+	+ is today's ranch theme.
+   189	"Paralyzing"\n
+	+ is today's ranch theme.
+   18a	"Easygoing"\n
+	+ is today's ranch theme.
+   18b	"Oblivious"\n
+	+ is today's ranch theme.
+   18c	"Stinky"\n
+	+ is today's ranch theme.
+   18d	"Singing"\n
+	+ is today's ranch theme.
+   18e	"Sweet-Smelling"\n
+	+ is today's ranch theme.
+   18f	"Rare"\n
+	+ is today's ranch theme.
    190	= I'm very proud of this Ranch!\n
 	+ Check out every corner of it!
    191	= To leave this Ranch, move the\n
@@ -1058,20 +1058,22 @@
    1c5	= So long!\n
 	+ \n
 	+ Look-See ya!
-   1c6	= かいいんばんごう %1$dばん\n
-	+ %2$ls、\n
-	+ ただいま さんじょう!
-   1c7	= よんだ ってことは……\n
-	+ ぼくの ぼくじょうが みたいんだね?
-   1c8	= かいいんばんごう %1$dばん\n
-	+ %2$ls、\n
-	+ ただいま さんじょう!
-   1c9	= よんだ ってことは……\n
-	+ ワタシの ぼくじょうが みたいのね?
-   1ca	= いまから また ぼくの ぼくじょうを\n
-	+ みにきて くれないかな?
-   1cb	= いまから また ワタシの ぼくじょうを\n
-	+ みにきて くれないかしら?
+   1c6	= My name is %2$ls, \n
+	+ a member of Club Look-See.\n
+	+ My Member No. is %1$d!
+   1c7	= So…\n
+	+ I'd heard you're coming to
+	+ visit my Ranch, right?	
+   1c8	= My name is %2$ls, \n
+	+ a member of Club Look-See.\n
+	+ My Member No. is %1$d!
+   1c9	= So…\n
+	+ I hear you'd like to see my
+	+ Ranch, huh?
+   1ca	= Won't you come and visit\n
+	+ my Ranch again sometime?
+   1cb	= Come and visit my Ranch\n
+	+ again sometime, will ya?
    1cc	= Thanks for coming and\n
 	+ checking out my Ranch!
    1cd	= You know?\n
@@ -1082,10 +1084,11 @@
    1cf	= When you meet other members\n
 	+ of Club Look-See, please take\n
 	+ the time to visit their Ranches!
-   1d0	= あっ、それから!\n
-	+ 「けいじばん」から よんでくれれば\n
-	+ むかえにいくよ。\n
-	+ また いつでも あそびにきてくれ。
+   1d0	= Oh, one more thing!\n
+	+ If you call me from the BBS,\n
+	+ I will come and pick you up.\n
+	+ Please come and visit again\n
+	+ at any time.
    1d1	= All right, please take care!
    1d2	= So...how did you like it?\n
 	+ Are you impressed?
@@ -1096,10 +1099,10 @@
 	+ of Club Look-See, please take\n
 	+ some time to visit their\n
 	+ Ranches!
-   1d5	= 「けいじばん」から よんでくれれば\n
-	+ むかえにいくよ。\n
-	+ また いつでも あそびにきてくれ。\n
-	+ たのんだよ!
+   1d5	= If you call me from the BBS,\n
+	+ I will come and pick you up.\n
+	+ Come and visit again at any time,\n
+	+ okay?
    1d6	= All right, please take care!
    1d7	= Thanks for visiting my Ranch!\n
 	+ How was it? Did you like it?
@@ -1110,10 +1113,10 @@
 	+ of Club Look-See, take some\n
 	+ time to visit their Ranches,\n
 	+ will ya?
-   1da	= 「けいじばん」から よんでくれれば\n
-	+ むかえにいくわよ。\n
-	+ また いつでも あそびにきてね。\n
-	+ おねがいよ!
+   1da	= If you call me from the BBS,\n
+	+ I will come and pick you up.\n
+	+ Come and visit again at any time,\n
+	+ all right?
    1db	= Okay, please take care!
    1dc	= Look-See ya!
    1dd	= %ls is staying\n
@@ -1268,17 +1271,17 @@
 	+ You've finally seen all the\n
 	+ Pokémon in the Pokédex!\n
 	+ Congratulations!
-   214	= この ちょうしで、ポケモンずかんの\n
-	+ ポケモンを ぜんぶ\n
-	+ つかまえよう!
-   215	= このまえから\n
-	+ みつけたかずが %dひき、\n
-	+ つかまえたかずが %dひき、\n
-	+ ふえたみたいね。
-   216	= このまえから\n
-	+ みつけたかずが %d%ls、\n
-	+ つかまえたかずが %d%ls、\n
-	+ ふえたみたいね。
+   214	= Keep this up and you'll\n
+	+ catch all the Pokémon in\n
+	+ the Pokédex!
+   215	= Since last time,\n
+	+ the number has increased by...\n
+	+ Seen: %d%ls\n
+	+ Obtained: %d%ls
+   216	= Since last time,\n
+	+ the number has increased by...\n
+	+ Seen: %d%ls\n
+	+ Obtained: %d%ls
    217	= You are one step closer to\n
 	+ completing your Pokédex!\n
 	+ Congratulations!
@@ -1414,34 +1417,33 @@
 	+ \fNo doubt it is useful for\n
 	+ battle, and you could show\n
 	+ it off to your friends!
-   233	= こんにちは! ユカリだよ。
-   234	= こんにちは! ユカリだよ。\n
-	+ おひさしぶりだね!
-   235	= ぼくじょうに いくまえに\n
-	+ ちょっと いいかな?\n
-	+ きみたちに つたえたいことが あるの。
-   236	= なんと!\n
-	+ わたしたちの ぼくじょうが\n
-	+ ポケットモンスター プラチナとも\n
-	+ つながるように なったんだよ!
-   237	= さらに!\n
-	+ ぼくじょうの いろんなとこを\n
-	+ グレードアップしちゃったよ!
-   238	= こんかい あたらしく なったのは\n
-	+ こんな ところだよ。
-   239	= それじゃ さっそく\n
-	+ あたらしく なった ぼくじょうに\n
-	+ いってみましょ!\n
-	+ レッツ ゴー!
-   23a	= ここが わたしたちの\n
-	+ あたらしく なった ぼくじょうだよ!
-   23b	= ぼくじょうが おおきく なって\n
-	+ ポケットモンスター プラチナと\n
-	+ つながるように なったよ!
-   23c	= いろんな ところが\n
-	+ まえとは かわっているけど\n
-	+ ぜんぶは おしえないでおくよ。\n
-	+ あとは これからの おたのしみ!
-   23d	= それじゃ あらためて\n
-	+ これからも よろしくね!
+   233	= Hello! I'm Hayley
+   234	= Hello! I'm Hayley\n
+	+ Long time no see!
+   235	= Do you have a moment before\n
+	+ I go back to my Ranch?\n
+	+ I have something to tell you!
+   236	= Wow!\n
+	+ Our Ranch is now connected\n
+	+ to Pokémon Platinum!
+   237	= There's more!\n
+	+ Many parts of the Ranch\n
+	+ have been upgraded!
+   238	= Here's what's new.\n
+   239	= Hurry!\n
+	+ Let's see what's new\n
+	+ at the Ranch!\n
+	+ Let's go!
+   23a	= This is our newly upgraded\n
+	+ Ranch!
+   23b	= The Ranch has grown since\n
+	+ connecting to Pokémon\n
+	+ Platinum!
+   23c	= A lot has changed,\n
+	+ but I won't tell you\n
+	+ about all of it.\n
+	+ The rest is for you\n
+	+ to find!
+   23d	= Well then, let's continue\n
+	+ to work together!
 
