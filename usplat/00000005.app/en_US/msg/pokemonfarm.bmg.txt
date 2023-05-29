@@ -440,7 +440,7 @@
     f6	= Lv. %d
     f7	= ♂
     f8	= ♀
-    f9	= Friends at the Ranch
+    f9 [2,3] = Friends at the Ranch
     fa	= Pokémon on the Ranch
     fb	= All
     fc	= Favorites
