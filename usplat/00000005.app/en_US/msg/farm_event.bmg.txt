@@ -1189,7 +1189,7 @@
    1f5	= So, I want an Egg without\n
 	+ knowing what Pokémon\n
 	+ hatches from it!
-   1f6	= (DELETE)
+   1f6	= 
    1f7	= If you find an Egg,\n
 	+ will you trade it in return for\n
 	+ my %ls?
