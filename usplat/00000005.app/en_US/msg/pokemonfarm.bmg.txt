@@ -36,7 +36,7 @@
 @MKW-MESSAGES = 1
 
 #
-#------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
 
 # This part defines values for unknown parameters of section headers.
 @UNKNOWN-INF32-0C =    0x90000	# 32 bit value of section INF1 offset 0x0c
