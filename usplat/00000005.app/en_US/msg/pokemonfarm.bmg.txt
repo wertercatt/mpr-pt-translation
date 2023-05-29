@@ -256,7 +256,7 @@
 	+ inserted into the SD Card slot.
     87	= The SD Card is corrupted.\n
 	+ Would you like to format it?
-    88	== An unrecognized card is\n
+    88	= An unrecognized card is\n
 	+ inserted into the SD Card slot.
     89	= There is not enough available\n
 	+ space on the SD Card.\n
