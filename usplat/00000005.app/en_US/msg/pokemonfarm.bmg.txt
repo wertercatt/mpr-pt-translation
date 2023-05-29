@@ -659,7 +659,7 @@
    1be	= Point at the object you want\n
 	+ to look at and press \x{e042}.
    1bf	= Basic Operations (2)
-   1c0	 Take Picture (or press \x{e047})
+   1c0	= Take Picture (or press \x{e047})
    1c1	= You can take a picture.\n
 	+ The number shows how many\n
 	+ pictures are remaining.
