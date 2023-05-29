@@ -440,8 +440,8 @@
     f6	= Lv. %d
     f7	= ♂
     f8	= ♀
-    f9 [2,3] = Friends at the Ranch
-    fa	= Pokémon on the Ranch
+    f9	= Friends at the Ranch
+    fa [2,3] = Pokémon on the Ranch
     fb	= All
     fc	= Favorites
     fd	= My Pokémon
@@ -458,7 +458,7 @@
    108	= Caretaker
    109	= Parade
    10a	= 
-   10b	= Release which Pokémon?
+   10b [1,2] = Release which Pokémon?
    10c	= Default
    10d	= Amount
    10e	= Type
