@@ -178,7 +178,7 @@
     2d	= WiiConnect24 is\n
 	+ temporarily unavailable.\n
 	+ Please try again later.
-    2e	== WiiConnect24 is\n
+    2e	= WiiConnect24 is\n
 	+ temporarily unavailable.\n
 	+ Please try again later.
     2f	= There is a problem with the\n

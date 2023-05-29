@@ -95,7 +95,7 @@
     21	= \n
 	+ Failed to connect.\n
 	+ Please try again.
-   22	= \n
+    22	= \n
 	+ Failed to connect.\n
 	+ Please try again.
     23	= Would you like to quit\n
@@ -987,7 +987,7 @@
    270	= Maybe an unexpected guest will show\n
 	+ up at the Ranch? You never know!
    271	= Let's set this to ON!
-   272	 The initial setting is OFF.\n
+   272	= The initial setting is OFF.\n
 	+ Your Ranch data will not be sent\n
 	+ without your knowledge, even\n
 	+ when this setting is turned on.
