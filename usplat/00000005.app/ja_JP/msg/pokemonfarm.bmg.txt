@@ -256,7 +256,7 @@
 	+ inserted into the SD Card slot.
     87	= The SD Card is corrupted.\n
 	+ Would you like to format it?
-    88	== An unrecognized card is\n
+    88	= An unrecognized card is\n
 	+ inserted into the SD Card slot.
     89	= There is not enough available\n
 	+ space on the SD Card.\n
@@ -593,18 +593,18 @@
    190	= Horror
    191	= Burmy
    192	= Tropical
-   193  = Toxic Mouth
-   194  = Evolution
-   195  = Underground
-   196  = Mystic
-   197  = Snow Land
-   198  = Wild Bull
-   199  = Wool
-   19a  = Milk Cow
-   19b  = Dragon
-   19c  = Ground
-   19d  = Big Sky
-   19e  = Red
+   193	= Toxic Mouth
+   194	= Evolution
+   195	= Underground
+   196	= Mystic
+   197	= Snow Land
+   198	= Wild Bull
+   199	= Wool
+   19a	= Milk Cow
+   19b	= Dragon
+   19c	= Ground
+   19d	= Big Sky
+   19e	= Red
    19f	= Hungry
    1a0	= Bouncy
    1a1	= © Pokémon/Nintendo.
@@ -659,7 +659,7 @@
    1be	= Point at the object you want\n
 	+ to look at and press \x{e042}.
    1bf	= Basic Operations (2)
-   1c0	 Take Picture (or press \x{e047})
+   1c0	= Take Picture (or press \x{e047})
    1c1	= You can take a picture.\n
 	+ The number shows how many\n
 	+ pictures are remaining.
@@ -692,7 +692,7 @@
 	+ Pokémon Diamond, Pearl and Platinum!\n
    1d1	= 
    1d2	= 
-   1d3	= Platinum Update Information (1)
+   1d3	= Platinum Update Info (1)
    1d4	= Platinum Version Features
    1d5	= ・My Pokémon Ranch can now connect to\n
 	+ 　Pokémon Platinum Version for\n
@@ -700,7 +700,7 @@
 	+ \n
 	+ ・As the Ranch expands,\n
 	+  you can keep up to 1,500 Pokémon.\n
-   1d6	= Platinum Update Information (2)
+   1d6	= Platinum Update Info (2)
    1d7	= "There are new things to try!"
    1d8	= ・More options have been added\n
     + to the menu.\n
@@ -902,7 +902,8 @@
 	+ \n
 	+ You can also see the Ranch\n
 	+ Info.
-   241	= You can change "Today's Music".\n
+   241	=  \n
+	+ You can change "Today's Music".\n
 	+ You can revisit a "Club Look-See"\n
 	+ Ranch you've already visited,
    242	= 
