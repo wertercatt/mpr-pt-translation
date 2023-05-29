@@ -458,7 +458,7 @@
    108	= Caretaker
    109	= Parade
    10a	= 
-   10b [1,2] = Release which Pokémon?
+   10b [2,3] = Release which Pokémon?
    10c	= Default
    10d	= Amount
    10e	= Type
