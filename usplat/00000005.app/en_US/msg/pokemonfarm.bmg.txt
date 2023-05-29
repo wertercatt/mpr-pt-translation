@@ -167,7 +167,8 @@
     5b	= Next Picture
     5c	= Previous Picture
     5d	= Delete
-    5e	= Post on the Wii Message Board
+    5e	= Post on the Wii Message\n
+	+ Board
     5f	= At %ls Ranch
     60	= %2d/%2d
     61	= Post this picture on\n
@@ -908,10 +909,9 @@
    242	= 
    243	= Pokémon Wanted (1)
    244	= Pokémon Wanted
-   245	= Hayley often gives advice on how\n
-	+ to complete your Pokédex in\n
-	+ Pokémon Diamond, Pearl and\n
-	+ Platinum.\n	
+   245	= Hayley often gives advice on how to\n
+	+ complete your Pokédex in Pokémon\n
+	+ Diamond, Pearl and Platinum.\n
 	+ It's done by catching the Wanted\n
 	+ Pokémon in these games and\n
 	+ bringing them to the Ranch.\n
