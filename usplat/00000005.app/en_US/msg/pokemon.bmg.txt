@@ -109,7 +109,7 @@
     3c	= POLIWHIRL
     3d	= POLIWRATH
     3e	= ABRA
-    3f	= KADABRA
+    3f	= BIDOOF
     40	= ALAKAZAM
     41	= MACHOP
     42	= MACHOKE
