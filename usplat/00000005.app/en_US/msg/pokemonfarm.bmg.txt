@@ -114,7 +114,7 @@
 	+ connection to the DS.\f\n
 	+ Please restart My Pokémon\n
 	+ Ranch and try again.
-    2c	= (DELETE)
+    2c	= 
     2d	= Waiting for the DS's response...
     2e	= \n
 	+ Disconnected from the DS.
@@ -859,9 +859,9 @@
    22a	= Deposit Details (2)
    22b	= Pokémon on the Ranch
    22c	= You can view the Pokémon\n
-	+ you have stored. This button\n
-	+ opens the "Release Pokémon?"\n
-	+ screen.\n.
+	+ you have stored.\n
+	+ This button opens the\n
+	+ "Release Pokémon?" screen.\n.
    22d	= Release Pokémon?
    22e	= Choose which Pokémon you\n
 	+ want to release to the Ranch.\n
