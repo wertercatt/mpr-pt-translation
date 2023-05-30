@@ -46,7 +46,7 @@
 #
 #------------------------------------------------------------------------------
 
-     0	= 
+     0	=  
      1	= Welcome to My Pokémon\n
 	+ Ranch!
      2	= My name is Hayley.\n
@@ -483,7 +483,7 @@
 	+ Twenty is enough, isn't it?
     ba	= Bring more Miis to the Ranch,\n
 	+ please!
-    bb	= 
+    bb	=  
     bc	= More great news!\n
 	+ Three Toy Boxes will be\n
 	+ delivered to the Ranch every\n
@@ -495,7 +495,7 @@
 	+ that hatched from an Egg found\n
 	+ with MANAPHY and a Pokémon\n
 	+ that gets along with it.
-    c0	= 
+    c0	=  
     c1	= I'll add it to the Ranch.\n
 	+ Please take good care of it!
     c2	= More great news!\n
@@ -555,7 +555,7 @@
     d8	= This is MEW, a Pokémon that\n
 	+ is said to possess the genes\n
 	+ of all Pokémon.
-    d9	= 
+    d9	=  
     da	= I will add it to the Ranch.\n
 	+ Please take good care of it!
     db	= More great news!\n
@@ -1196,7 +1196,7 @@
    1f5	= So, I want an Egg without\n
 	+ knowing what Pokémon\n
 	+ hatches from it!
-   1f6	= 
+   1f6	=  
    1f7	= If you find an Egg,\n
 	+ will you trade it in return for\n
 	+ my %ls?
