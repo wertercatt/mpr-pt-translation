@@ -534,7 +534,7 @@
 	+ Bring as many Pokémon as you\n
 	+ like!
     d0	= The Ranch has finally reached\n
-	+ its max level! Congratulations!
+	+ level %d! Congratulations!
     d1	= The Ranch I was longing for...\n
 	+ So vast...\n
 	+ So full of Pokémon...
@@ -957,21 +957,21 @@
 	+ the top left of the screen and\n
 	+ press \x{e042}.
    195	= Enjoy!
-   196	= %2$ls has arrived\n
-	+ from %1$ls\n
+   196	= %ls has arrived\n
+	+ from %ls\n
 	+ Ranch.
    197	= Hello!\n
 	+ I brought a picture of\n
 	+ %ls Ranch.
    198	= Hello!\n
-	+ I'm %2$ls\n
-	+ from %1$ls Ranch!
+	+ I'm %ls\n
+	+ from %ls Ranch!
    199	= Hello!\n
 	+ I brought a picture of\n
 	+ %ls Ranch.
    19a	= Hello!\n
-	+ I'm %2$ls\n
-	+ from %1$ls Ranch.
+	+ I'm %ls\n
+	+ from %ls Ranch.
    19b	= Why don't you come to\n
 	+ %ls Ranch?
    19c	= Okay!\n
@@ -1002,9 +1002,9 @@
    1aa	= How do you do?
    1ab	= So... This is your and Hayley's\n
 	+ Ranch? Looks nice!
-   1ac	= My name is %2$ls,\n
+   1ac	= My name is %1$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %1$d!
+	+ My Member No. is %2$d!
    1ad	= The mottos of Club Look-See\n
 	+ are...
    1ae	= Ranch!\n
@@ -1027,9 +1027,9 @@
    1b6	= So... This is your and Hayley's\n
 	+ Ranch? I heard a great deal\n
 	+ about it!
-   1b7	= My name is %2$ls,\n
+   1b7	= My name is %1$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %1$d!
+	+ My Member No. is %2$d!
    1b8	= Haha!\n
 	+ Do you know what my favorite\n
 	+ Pokémon is?
@@ -1048,9 +1048,9 @@
    1be	= So... This is your and Hayley's\n
 	+ Ranch? I heard so much\n
 	+ about it!
-   1bf	= My name is %2$ls,\n
+   1bf	= My name is %1$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %1$d!
+	+ My Member No. is %2$d!
    1c0	= Hehe.\n
 	+ Do you want to take a guess\n
 	+ which Pokémon I love?
@@ -1067,15 +1067,15 @@
    1c5	= So long!\n
 	+ \n
 	+ Look-See ya!
-   1c6	= My name is %2$ls,\n
+   1c6	= My name is %1$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %1$d!
+	+ My Member No. is %2$d!
    1c7	= So…\n
 	+ I'd heard you're coming to\n
 	+ visit my Ranch, right?	
-   1c8	= My name is %2$ls,\n
+   1c8	= My name is %1$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %1$d!
+	+ My Member No. is %2$d!
    1c9	= So…\n
 	+ I hear you'd like to see my\n
 	+ Ranch, huh?
