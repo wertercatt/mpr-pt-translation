@@ -441,7 +441,7 @@
     f7	= ♂
     f8	= ♀
     f9	= Friends at the Ranch
-    fa [2,3] = Pokémon on the Ranch
+    fa	= Pokémon on the Ranch
     fb	= All
     fc	= Favorites
     fd	= My Pokémon
@@ -458,7 +458,7 @@
    108	= Caretaker
    109	= Parade
    10a	= 
-   10b [2,3] = Release which Pokémon?
+   10b	= Release which Pokémon?
    10c	= Default
    10d	= Amount
    10e	= Type
@@ -1046,10 +1046,10 @@
    28d	= Question
    28e	= How do I play without music?
    28f	= Answer
-   290	= Hold down \x{e043} and \x{e041}↓\n
-	+ when you start the game.\n
-	+ Then you can play the game without\n
-	+ music.
+   290	= 	Select (No Music) under "Today's Music".\n
+	+ from the BBS, or hold down \x{e043} and \x{e041}↓\n
+	+ when you start the game. Then you\n
+	+ can play the game without music.
    291	= Miis at the Ranch (1)
    292	= Select a Mii
    293	= You can bring a Mii to the Ranch by\n
