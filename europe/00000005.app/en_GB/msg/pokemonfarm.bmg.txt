@@ -397,8 +397,8 @@
     d7	= ♀
     d8	= Friends at the Ranch
     d9	= Pokémon on the Ranch
-    da	= Favorites
-    db	= Trainer
+    da	= All
+    db	= Favorites
     dc	= Previous Page
     dd	= Next Page
     de	= Back

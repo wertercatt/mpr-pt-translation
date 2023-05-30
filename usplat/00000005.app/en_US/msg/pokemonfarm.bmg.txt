@@ -443,8 +443,8 @@
     f9	= Friends at the Ranch
     fa	= Pokémon on the\n
 	+ Ranch
-    fb	= All
-    fc	= Favorites
+    fb	= Favorites
+    fc	= Trainer
     fd	= My Pokémon
     fe	= %d
     ff	= Released %d Pokémon.
