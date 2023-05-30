@@ -114,7 +114,7 @@
 	+ connection to the DS.\f\n
 	+ Please restart My Pokémon\n
 	+ Ranch and try again.
-    2c	= 
+    2c	= (DELETE)
     2d	= Waiting for the DS's response...
     2e	= \n
 	+ Disconnected from the DS.
