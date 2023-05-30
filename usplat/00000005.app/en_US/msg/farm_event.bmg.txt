@@ -46,7 +46,7 @@
 #
 #------------------------------------------------------------------------------
 
-     0	=  
+     0	= 
      1	= Welcome to My Pokémon\n
 	+ Ranch!
      2	= My name is Hayley.\n
@@ -378,7 +378,7 @@
 	+ I will bring a\n
 	+ singing Pokémon tomorrow!
     8d	= All right. Leave it to me!\n
-	+ I will bring a sweet-smelling \n
+	+ I will bring a sweet-smelling\n
 	+ Pokémon tomorrow!
     8e	= All right. Leave it to me!\n
 	+ I will bring a Pokémon\n
@@ -483,7 +483,7 @@
 	+ Twenty is enough, isn't it?
     ba	= Bring more Miis to the Ranch,\n
 	+ please!
-    bb	=  
+    bb	= 
     bc	= More great news!\n
 	+ Three Toy Boxes will be\n
 	+ delivered to the Ranch every\n
@@ -495,7 +495,7 @@
 	+ that hatched from an Egg found\n
 	+ with MANAPHY and a Pokémon\n
 	+ that gets along with it.
-    c0	=  
+    c0	= 
     c1	= I'll add it to the Ranch.\n
 	+ Please take good care of it!
     c2	= More great news!\n
@@ -511,7 +511,7 @@
     c7	= Let's try to get 1,000 Pokémon\n
 	+ on the Ranch!
     c8	= More great news!\n
-	+ Five Toy Boxes will be delivered \n
+	+ Five Toy Boxes will be delivered\n
 	+ to the Ranch every day starting\n
 	+ today!
     c9	= Not only that, but the variety of\n
@@ -546,7 +546,7 @@
 	+ as my Ranch partner!
     d4	= I believe I'll enjoy living here\n
 	+ with everyone for a long time.
-    d5	= With everyone... \n
+    d5	= With everyone...\n
 	+ My whole life...
     d6	= ...Why not?\n
 	+ Hehe.
@@ -555,7 +555,7 @@
     d8	= This is MEW, a Pokémon that\n
 	+ is said to possess the genes\n
 	+ of all Pokémon.
-    d9	=  
+    d9	= 
     da	= I will add it to the Ranch.\n
 	+ Please take good care of it!
     db	= More great news!\n
@@ -643,7 +643,7 @@
     fc	= Long time no see!\n
 	+ I haven't seen you for\n
 	+ 1 year!
-    fd	= The Pokémon missed you \n
+    fd	= The Pokémon missed you\n
 	+ so much!
     fe	= Long time no see!\n
 	+ I haven't seen you for\n
@@ -1002,7 +1002,7 @@
    1aa	= How do you do?
    1ab	= So... This is your and Hayley's\n
 	+ Ranch? Looks nice!
-   1ac	= My name is %2$ls, \n
+   1ac	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
 	+ My Member No. is %1$d!
    1ad	= The mottos of Club Look-See\n
@@ -1067,17 +1067,17 @@
    1c5	= So long!\n
 	+ \n
 	+ Look-See ya!
-   1c6	= My name is %2$ls, \n
+   1c6	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
 	+ My Member No. is %1$d!
    1c7	= So…\n
-	+ I'd heard you're coming to
+	+ I'd heard you're coming to\n
 	+ visit my Ranch, right?	
-   1c8	= My name is %2$ls, \n
+   1c8	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
 	+ My Member No. is %1$d!
    1c9	= So…\n
-	+ I hear you'd like to see my
+	+ I hear you'd like to see my\n
 	+ Ranch, huh?
    1ca	= Won't you come and visit\n
 	+ my Ranch again sometime?
@@ -1130,13 +1130,13 @@
    1dc	= Look-See ya!
    1dd	= %ls is staying\n
 	+ at this Ranch until\n
-	+ %ls.。
+	+ %ls.
    1de	= %ls is staying\n
 	+ at this Ranch until\n
 	+ %ls.
-   1df	= You have a guest visiting the \n
+   1df	= You have a guest visiting the\n
 	+ Ranch!
-   1e0	= You have a guest visiting the \n
+   1e0	= You have a guest visiting the\n
 	+ Ranch!
    1e1	= If you bring %ls,\n
 	+ you can trade it for\n
@@ -1196,7 +1196,7 @@
    1f5	= So, I want an Egg without\n
 	+ knowing what Pokémon\n
 	+ hatches from it!
-   1f6	=  
+   1f6	= 
    1f7	= If you find an Egg,\n
 	+ will you trade it in return for\n
 	+ my %ls?
