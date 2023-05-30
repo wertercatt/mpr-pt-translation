@@ -1046,8 +1046,8 @@
    28d	= Question
    28e	= How do I play without music?
    28f	= Answer
-   290	= Select (No Music) under "Today's Music".\n
-	+ from the BBS, or hold down \x{e043} and \x{e041}↓\n
+   290	= Select (No Music) from "Today's Music"\n
+	+ under the BBS, or hold down \x{e043} and \x{e041}↓\n
 	+ when you start the game. Then you\n
 	+ can play the game without music.
    291	= Miis at the Ranch (1)
