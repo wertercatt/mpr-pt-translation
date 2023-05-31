@@ -838,7 +838,7 @@
 	+ is today's ranch theme.
    15a	= "1000 Pokémon"\n
 	+ is today's ranch theme.
-   15a	= "Normal"\n
+   15b	= "Normal"\n
 	+ is today's ranch theme.
    15c	= "Fighting"\n
 	+ is today's ranch theme.
