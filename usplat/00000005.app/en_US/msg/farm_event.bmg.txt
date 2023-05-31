@@ -527,9 +527,7 @@
     cd	= When the Ranch is filled, I will\n
 	+ ask my Pokémon to stay inside\n
 	+ the stable.
-    ce	= That means you can bring up to\n
-	+ 1,000 of your Pokémon to the\n
-	+ Ranch!
+    ce	= 
     cf	= Don't worry about my Pokémon.\n
 	+ Bring as many Pokémon as you\n
 	+ like!
