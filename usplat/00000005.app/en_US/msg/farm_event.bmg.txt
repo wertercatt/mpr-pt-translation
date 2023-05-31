@@ -838,70 +838,70 @@
 	+ is today's ranch theme.
    15a	= "1000 Pokémon"\n
 	+ is today's ranch theme.
-   11a	= "Normal"\n
+   15a	= "Normal"\n
 	+ is today's ranch theme.
-   11b	= "Fighting"\n
+   15c	= "Fighting"\n
 	+ is today's ranch theme.
-   11c	= "Flying"\n
+   15d	= "Flying"\n
 	+ is today's ranch theme.
-   11d	= "Poison"\n
+   15e	= "Poison"\n
 	+ is today's ranch theme.
-   11e	= "Ground"\n
+   15f	= "Ground"\n
 	+ is today's ranch theme.
-   11f	= "Rock"\n
+   160	= "Rock"\n
 	+ is today's ranch theme.
-   120	= "Bug"\n
+   161	= "Bug"\n
 	+ is today's ranch theme.
-   121	= "Ghost"\n
+   162	= "Ghost"\n
 	+ is today's ranch theme.
-   122	= "Steel"\n
+   163	= "Steel"\n
 	+ is today's ranch theme.
-   123	= ?
-   124	= "Fire"\n
+   164	= ?
+   165	= "Fire"\n
 	+ is today's ranch theme.
-   125	= "Water"\n
+   166	= "Water"\n
 	+ is today's ranch theme.
-   126	= "Grass"\n
+   167	= "Grass"\n
 	+ is today's ranch theme.
-   127	= "Electric"\n
+   168	= "Electric"\n
 	+ is today's ranch theme.
-   128	= "Psychic"\n
+   169	= "Psychic"\n
 	+ is today's ranch theme.
-   129	= "Ice"\n
+   16a	= "Ice"\n
 	+ is today's ranch theme.
-   12a	= "Dragon"\n
+   16b	= "Dragon"\n
 	+ is today's ranch theme.
-   12b	= "Dark"\n
+   16c	= "Dark"\n
 	+ is today's ranch theme.
-   12c	= "●"\n
+   16d	= "●"\n
 	+ is today's ranch theme.
-   12d	= "▲"\n
+   16e	= "▲"\n
 	+ is today's ranch theme.
-   12e	= "■"\n
+   16f	= "■"\n
 	+ is today's ranch theme.
-   12f	= "♥"\n
+   170	= "♥"\n
 	+ is today's ranch theme.
-   130	= "★"\n
+   171	= "★"\n
 	+ is today's ranch theme.
-   131	= "◆"\n
+   172	= "◆"\n
 	+ is today's ranch theme.
-   132	= "Red"\n
+   173	= "Red"\n
 	+ is today's ranch theme.
-   133	= "Blue"\n
+   174	= "Blue"\n
 	+ is today's ranch theme.
-   134	= "Yellow"\n
+   175	= "Yellow"\n
 	+ is today's ranch theme.
-   135	= "Green"\n
+   176	= "Green"\n
 	+ is today's ranch theme.
-   136	= "Black"\n
+   177	= "Black"\n
 	+ is today's ranch theme.
-   137	= "Brown"\n
+   178	= "Brown"\n
 	+ is today's ranch theme.
-   138	= "Purple"\n
+   179	= "Purple"\n
 	+ is today's ranch theme.
-   139	= "Gray"\n
+   17a	= "Gray"\n
 	+ is today's ranch theme.
-   13a	= "White"\n
+   17b	= "White"\n
 	+ is today's ranch theme.
    17c	= "Pink"\n
 	+ is today's ranch theme.
