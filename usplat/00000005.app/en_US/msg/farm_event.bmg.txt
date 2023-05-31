@@ -1285,8 +1285,8 @@
 	+ the Pokédex!
    215	= Since last time,\n
 	+ the number has increased by...\n
-	+ Seen: %d%ls\n
-	+ Obtained: %d%ls
+	+ Seen: %d\n
+	+ Obtained: %d
    216	= Since last time,\n
 	+ the number has increased by...\n
 	+ Seen: %d%ls\n
