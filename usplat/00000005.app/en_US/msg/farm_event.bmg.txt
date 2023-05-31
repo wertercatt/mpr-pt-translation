@@ -1000,9 +1000,9 @@
    1aa	= How do you do?
    1ab	= So... This is your and Hayley's\n
 	+ Ranch? Looks nice!
-   1ac	= My name is %1$d,\n
+   1ac	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %2$ls!
+	+ My Member No. is %1$d!
    1ad	= The mottos of Club Look-See\n
 	+ are...
    1ae	= Ranch!\n
@@ -1025,9 +1025,9 @@
    1b6	= So... This is your and Hayley's\n
 	+ Ranch? I heard a great deal\n
 	+ about it!
-   1b7	= My name is %1$d,\n
+   1b7	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %2$ls!
+	+ My Member No. is %1$d!
    1b8	= Haha!\n
 	+ Do you know what my favorite\n
 	+ Pokémon is?
@@ -1046,9 +1046,9 @@
    1be	= So... This is your and Hayley's\n
 	+ Ranch? I heard so much\n
 	+ about it!
-   1bf	= My name is %1$d,\n
+   1bf	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %2$ls!
+	+ My Member No. is %1$d!
    1c0	= Hehe.\n
 	+ Do you want to take a guess\n
 	+ which Pokémon I love?
@@ -1065,14 +1065,14 @@
    1c5	= So long!\n
 	+ \n
 	+ Look-See ya!
-   1c6	= My name is %1$d,\n
+   1c6	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %2$ls!
+	+ My Member No. is %1$d!
    1c7	= So... I'd heard you're coming to\n
 	+ visit my Ranch, right?	
-   1c8	= My name is %1$d,\n
+   1c8	= My name is %2$ls,\n
 	+ a member of Club Look-See.\n
-	+ My Member No. is %2$ls!
+	+ My Member No. is %1$d!
    1c9	= So... I hear you'd like to see\n
 	+ my Ranch, huh?
    1ca	= Won't you come and visit\n
