@@ -144,7 +144,7 @@
     5f	= %{} is taking a break.
     60	= %{} looks like it wants to run wild.
     61	= %{} looks friendly.
-    62	= %{} is not getting along with the %{} type.
+    62	= %{} is not getting along with the %ls type.
     63	= %{} seems more energetic at night.
     64	= %{} is taking a stroll.
     65	= %{} likes to stay close to its friends.
@@ -240,13 +240,13 @@
     bf	= %{} fell down.
     c0	= %{} fell down.
     c1	= %{} fell down.
-    c2	= This is %{} %{}.
+    c2	= This is %ls %ls.
     c3	= This is %{}.
     c4	= This is %{}.
     c5	= %{} is practicing a move.
     c6	= %{} seems to be calling everybody.
-    c7	= This is %{}'s %{}.
-    c8	= This is %{}'s %{}. Its nickname is %{}.
+    c7	= This is %{}'s %ls.
+    c8	= This is %{}'s %ls. Its nickname is %{}.
     c9	= %{} is enjoying the %{}.
     ca	= %{} is enjoying the %{}.
     cb	= %{} is enjoying the %{}.
