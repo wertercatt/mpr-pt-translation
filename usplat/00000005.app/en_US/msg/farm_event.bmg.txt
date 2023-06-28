@@ -124,8 +124,8 @@
 	+ Ranch with Pokémon\n
 	+ little by little!
     23	= You can bring Pokémon that\n
-	+ you caught in Pokémon game versions\n
-	+ for the Nintendo DS.
+	+ you caught in Pokémon game\n
+	+ versions for the Nintendo DS.
     24	= That's one way to add more\n
 	+ Pokémon to the Ranch!
     25	= If you have any Pokémon,\n
