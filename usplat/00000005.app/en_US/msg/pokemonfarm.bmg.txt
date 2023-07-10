@@ -566,9 +566,9 @@
    173	= Nita
    174	= Trevor
    175	= Lucius
-   176	= Munchin
-   177	= Bunny
-   178	= Rita
+   176	= Rita
+   177	= Munchin
+   178	= Bunny
    179	= Flower
    17a	= Water
    17b	= Fire
