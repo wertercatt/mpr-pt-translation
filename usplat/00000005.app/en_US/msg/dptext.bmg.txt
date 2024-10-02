@@ -360,7 +360,7 @@
     e3	= Johto
     e4	= Hoenn
     e5	= Sinnoh
-    e6	= ----------
+    e6	= ----
     e7	= Distant land
     e8	= Traveling Man
     e9	= Riley

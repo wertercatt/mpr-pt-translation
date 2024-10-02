@@ -346,7 +346,7 @@
     d5	= Johto
     d6	= Hoenn
     d7	= Sinnoh
-    d8	= ----------
+    d8	= ----
     d9	= Distant land
     da	= Traveling Man
     db	= Riley
